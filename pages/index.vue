@@ -1,28 +1,16 @@
 <template>
+  <peacetech-hero />
   <article>
-    <stack-l>
+    <base-section>
+      <h1 class="color:primary text-align:center margin-bottom:s3">Jury & Panelists</h1>
 
-      <center-l>
-        <base-card heading="Heading" />
-      </center-l>
-
-      <base-section>
-        <div class="center stack">
-          <popup-trigger target="001">Open Dialog 1</popup-trigger>
-          <popup-trigger target="002">Open Dialog 2</popup-trigger>
-
-          <base-popup dialog-id="001">
-            <h1>Dialog 1</h1>
-          </base-popup>
-          <base-popup dialog-id="002">
-            <h1>Dialog 2</h1>
-          </base-popup>
-        </div>
-      </base-section>
-
-    </stack-l>
-
+      <people-grid />
+      
+    </base-section>
   </article>
+  <footer class="background-color:primary padding:s0">
+    <p class="text-align:center color:white"><strong>© 2023 by Kluz Ventures</strong></p>
+  </footer>
 </template>
 
 <script>
