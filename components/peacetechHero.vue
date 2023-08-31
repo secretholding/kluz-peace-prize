@@ -13,8 +13,8 @@
     </template>
 
     <div class="peacetech-hero__main">
-      <img src="assets/images/kluz-peace-prize-logo.svg" alt="">
-      <base-button 
+      <img src="/assets/images/kluz-peace-prize-logo.svg" alt="">
+      <base-button
         class="margin-top:s4"
         color="accent"
         visual="primary"
@@ -22,7 +22,7 @@
         href="https://docs.google.com/forms/d/e/1FAIpQLSd8CgtAlsnCpD1w5lR5ykQpER6EESyItVpnldHSB0sV1qmo_g/viewform">Apply Now</base-button>
     </div>
 
-    
+
 
     <template #bottom>
       <p class="peacetech-hero__bottom | color:white text-align:center">Applications open: August 1st, 2023 - September 1st, 2023 11:59 PM EDT</p>
@@ -59,7 +59,7 @@
 
 .main-menu {
   padding: var(--s0);
-  
+
   > * {
     gap: var(--s2);
     justify-content: center;

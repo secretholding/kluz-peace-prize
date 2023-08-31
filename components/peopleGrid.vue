@@ -4,7 +4,7 @@
       <kluz-card v-for="i in people" :card="i"/>
     </div>
   </center-l>
-  
+
 </template>
 
 <script setup>
@@ -20,7 +20,11 @@ const people = [
     name: 'Artur Kluz',
     job: 'Founder & CEO of Kluz Ventures',
     linkedin: 'https://linkedin.com/in/akluz',
+<<<<<<< HEAD
     headshot: 'https://pbs.twimg.com/profile_images/1589259287561486337/CY7y7gB9_400x400.jpg',
+=======
+    headshot: 'http://globalpeacetech.org/wp-content/uploads/2022/05/artok.jpg',
+>>>>>>> main
     bio: "Artur Kluz is an investor and entrepreneur. He is an ardent believer that breakthrough technologies can shape the future of humanity and the world, and should be used to empower human flourishing, improve lives, and safeguard human dignity and universal rights. Investments in these technologies can build a global movement and culture of genuine human growth that meets the current and future needs of all people, and serve new generations. '",
   },
   {
