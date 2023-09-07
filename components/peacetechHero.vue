@@ -5,7 +5,7 @@
         <nav class="main-menu">
           <cluster-l>
             <a class="main-menu__item" href="https://www.kluzprize.org/">Home</a>
-            <a class="main-menu__item" href="https://www.kluzprize.org/applications">Applications</a>
+            <a class="main-menu__item" href="https://www.kluzprize.org/agenda">Agenda</a>
             <a class="main-menu__item active" href="https://www.kluzprize.org/jury-and-panelists">Jury & Panelists</a>
           </cluster-l>
         </nav>
