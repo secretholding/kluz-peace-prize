@@ -25,7 +25,7 @@
 
 
     <template #bottom>
-      <p class="peacetech-hero__bottom | color:white text-align:center">Applications open: August 1st, 2023 - September 1st, 2023 11:59 PM EDT</p>
+      <p class="peacetech-hero__bottom | color:white text-align:center">Applications are closed</p>
     </template>
   </ccm-hero>
 </template>
