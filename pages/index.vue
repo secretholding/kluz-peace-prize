@@ -136,7 +136,7 @@ definePageMeta({
 
 
 .bg-decor {
-  background-image: url(assets/images/decor-01.webp);
+  background-image: url('assets/images/decor-01.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -155,26 +155,26 @@ definePageMeta({
 }
 
 .bg-decoration-1 { 
-  background-image: url(assets/images/texture-01.webp); 
+  background-image: url('assets/images/texture-01.webp'); 
   background-position: 150% 50%;
   background-size: 65%; 
   background-repeat: no-repeat;
 }
 .bg-decoration-2 { 
-  background-image: url(assets/images/texture-02.webp); 
+  background-image: url('assets/images/texture-02.webp'); 
   background-position: 500px 0;
   background-size: 100%; 
   background-repeat: no-repeat;
 }
 .bg-decoration-3 { 
-  background-image: url(assets/images/texture-03.svg); 
+  background-image: url('assets/images/texture-03.svg'); 
   background-position: center right;
   background-size: 55%; 
   background-repeat: no-repeat;
   background-blend-mode: screen;
 }
 .bg-decoration-4 { 
-  background-image: url(assets/images/texture-04.webp); 
+  background-image: url('assets/images/texture-04.webp'); 
   background-position: bottom center;
   background-size: cover; 
   background-repeat: no-repeat;
