@@ -1,6 +1,13 @@
 .twin-panel { 
   display: flex; 
-  gap: var(--s4);
+  align-items: center;
+  gap: var(--s2);
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    gap: var(--s4);
+  }
 }
 .twin-panel > * { flex: 1; }
 
@@ -17,6 +24,7 @@ blockquote {
 cite { 
   font-weight: 600;
   margin-top: var(--s0);
+  font-style: normal;
 }
 
 h3, [visual='h3'] { text-align: center; }

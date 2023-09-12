@@ -1,5 +1,4 @@
 <template>
-  <peacetech-hero />
   <article>
     <base-section id="intro" class="bg-decoration-1">
       <center-l size="wide">
@@ -10,7 +9,7 @@
         </stack-l>
       </center-l>    
     </base-section>
-    <base-section color="primary" class="bg-decoration-2">
+    <base-section color="primary" class="bg-decoration-3">
       <center-l size="wide">
         <div class="twin-panel">
           <stack-l>
@@ -19,13 +18,13 @@
             <p>This year, the award ceremony will take place on Wednesday, September 20th, on the eve of the <a href="https://internationaldayofpeace.org/" target="_blank">International Day of Peace</a> during the 78th United Nations General Assembly.</p>
           </stack-l>
           <div>
-            <img src="assets/images/decor-03.webp" alt="">
+            <img class="decoration-image" src="assets/images/decor-03.webp" alt="">
           </div>
         </div>
       </center-l>
     </base-section>
 
-    <base-section textAlign="center" class="bg-decoration-3">
+    <base-section textAlign="center" class="bg-decoration-4">
       <center-l size="wide">
         <stack-l>
           <blockquote class="stack">
@@ -54,7 +53,7 @@
       </center-l>
     </base-section>
 
-    <base-section textAlign="center">
+    <base-section textAlign="center" id="themes">
       <center-l size="wide">
         <stack-l>
           <h2 class="section-heading">In particular, the Prize seeks to:</h2>
@@ -68,7 +67,7 @@
       </center-l>    
     </base-section>
 
-    <base-section class="bg-decoration-5">
+    <base-section class="bg-decoration-3">
       <center-l size="wide">
         <stack-l space="var(--s3)">
           <h3>"PeaceTech" encapsulates the strategic and responsible deployment of innovative technologies to reinforce peace, prevent conflicts, and steer peacebuilding initiatives. It harnesses, for instance:</h3>
@@ -92,7 +91,7 @@
       </center-l>
     </base-section>
 
-    <base-section color="primary" class="bg-decoration-2">
+    <base-section color="primary" class="bg-decoration-2" id="ventures">
       <center-l size="wide">
         <div class="twin-panel">
           <stack-l>
@@ -125,48 +124,16 @@
       </center-l>    
     </base-section>
   </article>
-  
-  <base-section>
-      <center-l size="wide">
-        <div class="twin-panel">
-          <stack-l>
-            <img src="assets/images/kluz-peace-prize-logo.svg" alt="">
-            <ul>
-              <li><NuxtLink to="/">Home</NuxtLink></li>
-              <li><NuxtLink to="/agenda">Agenda</NuxtLink></li>
-              <li><NuxtLink to="/people">Jury and Panelists</NuxtLink></li>
-            </ul>
-          </stack-l>
-          <stack-l>
-            <p><strong>Applications are closed</strong></p>
-            <p>For more information, please get in touch with <a href="mailto:info@kluzprize.org">info@kluzprize.org</a></p>
-            <p>The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/copyright-and-fair-use/digital-privacy-statement.html" target="_blank">review the full statement here</a>.</p>
-          </stack-l>
-        </div>
-      </center-l>    
-  </base-section>
-
-  <footer class="background-color:primary padding:s0">
-    <p class="text-align:center color:white"><strong>© 2023 by Kluz Ventures</strong></p>
-  </footer>
 </template>
 
-<script>
+<script setup>
+definePageMeta({
+  layout: "default",
+});
 </script>
 
 <style lang="scss" scoped>
-.prize-theme {
-  box-sizing: border-box;
-  max-width: calc(25% - var(--s0));
-  padding: var(--s0);
-  align-self: flex-start;
 
-  img {
-    max-width: 120px;
-    margin-inline: auto;
-    height: 100px;
-  }
-}
 
 .bg-decor {
   background-image: url(assets/images/decor-01.webp);
@@ -184,39 +151,47 @@
 .decoration-image {
   border-radius: 6px;
   box-shadow: 0 0 6px var(--base-color-20);
-  max-width: 440px;
+  @media screen and (min-width: 768px) { max-width: 440px; }
 }
-
-
-.bg-decoration-1,
-.bg-decoration-2,
-.bg-decoration-3,
-.bg-decoration-4 { background-size: cover; }
 
 .bg-decoration-1 { 
   background-image: url(assets/images/texture-01.webp); 
-  background-position: center right;
+  background-position: 150% 50%;
+  background-size: 65%; 
+  background-repeat: no-repeat;
 }
 .bg-decoration-2 { 
   background-image: url(assets/images/texture-02.webp); 
-  background-position: center right;
+  background-position: 500px 0;
+  background-size: 100%; 
+  background-repeat: no-repeat;
 }
 .bg-decoration-3 { 
   background-image: url(assets/images/texture-03.svg); 
   background-position: center right;
+  background-size: 55%; 
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
 }
 .bg-decoration-4 { 
   background-image: url(assets/images/texture-04.webp); 
-  background-position: center right;
+  background-position: bottom center;
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
-.columns { 
-  columns: 2; 
-  gap: var(--s4)
+.columns {
+  @media screen and (min-width: 768px) {
+    columns: 2; 
+    gap: var(--s4)  
+  }
 }
 .column > li + li { margin-top: var(--s-1); }
 
 .columns-item {
+  @media screen and (max-width: 768px) {
+    margin-left: var(--s2)
+  }
   margin-bottom: var(--s-1);
   position: relative;
 }
@@ -231,6 +206,42 @@
   margin-top: var(--s-3);
   border-radius: 3px;
 }
+
+#ventures {
+  .stack {
+    --space: var(--s1);
+  }
+  .decoration-image {
+    max-width: 500px;
+  }
+}
+
+#themes {
+  border: 1px solid hsla(var(--base-hsl), .1);
+  box-shadow: 4px 4px 6px hsla(var(--base-hsl), .2);
+
+  .cluster {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .prize-theme {
+    box-sizing: border-box;
+    padding: var(--s0);
+    align-self: flex-start;
+
+    img {
+      max-width: 120px;
+      margin-inline: auto;
+      height: 100px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: calc(25% - var(--s0));
+    }
+  }
+}
+
 
 
 </style>

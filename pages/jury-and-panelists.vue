@@ -1,5 +1,4 @@
 <template>
-  <peacetech-hero />
   <article>
     <base-section>
       <center-l class="margin-bottom:s3">
@@ -13,12 +12,12 @@
       
     </base-section>
   </article>
-  <footer class="background-color:primary padding:s0">
-    <p class="text-align:center color:white"><strong>© 2023 by Kluz Ventures</strong></p>
-  </footer>
 </template>
 
-<script>
+<script setup>
+definePageMeta({
+  layout: "default",
+});
 </script>
 
 <style scoped>

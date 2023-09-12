@@ -17,10 +17,18 @@
       <div class="pill | margin-top:s3">Applications Closed</div>
     </div>
 
+    <pre>
+      {{isRouteActive}}
+    </pre>
+
     <template #bottom>
       <p class="peacetech-hero__bottom | color:white text-align:center">Applications are closed</p>
     </template>
+
+
   </ccm-hero>
+
+
 </template>
 
 <script setup>
@@ -68,7 +76,7 @@
     text-decoration: underline;
   }
 
-  &.active {
+  &.router-link-active {
     color: var(--primary-color);
     text-decoration: underline;
   }
