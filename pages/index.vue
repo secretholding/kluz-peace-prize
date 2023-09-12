@@ -35,7 +35,7 @@
       </center-l>
     </base-section>
 
-    <base-section class="bg-decor" >
+    <base-section class="bg-decor">
       <img src="assets/images/kluz-peacetech-prize-logo-white.svg" alt="" class="center:all">
     </base-section>
 
@@ -47,7 +47,7 @@
             <p>The Kluz Prize for PeaceTech is an initiative to celebrate, distinguish, and promote the use of new technologies in fostering peace, reducing conflict, and protecting human dignity and universal human rights across the globe. The Prize is dedicated to individuals, organizations, or initiatives for their distinguished achievements in peacebuilding, peacemaking, peacekeeping, or peace enforcement efforts.  The goal of the Prize is to engage individuals, societies, and states in building up a local, national, and global PeaceTech movement.</p>
           </stack-l>
           <div>
-            <img class="decoration-image" src="assets//images/decor-02.webp" alt="">
+            <img class="decoration-image" src="assets/images/decor-02.webp" alt="">
           </div>
         </div>
       </center-l>
