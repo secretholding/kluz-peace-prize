@@ -7,7 +7,7 @@
             <ul>
               <li><NuxtLink to="/">Home</NuxtLink></li>
               <li><NuxtLink to="/agenda">Agenda</NuxtLink></li>
-              <li><NuxtLink to="/people">Jury and Panelists</NuxtLink></li>
+              <li><NuxtLink to="/jury-and-panelists">Jury and Panelists</NuxtLink></li>
             </ul>
           </stack-l>
           <stack-l>
