@@ -1,0 +1,27 @@
+.twin-panel { 
+  display: flex; 
+  gap: var(--s4);
+}
+.twin-panel > * { flex: 1; }
+
+.columns { columns: 2; }
+.column > li + li { margin-top: var(--s-1); }
+
+.narrow-content { max-width: 50ch; }
+
+strong { color: inherit !important; }
+
+blockquote {
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 60ch;
+  margin-inline: auto;
+}
+cite { 
+  font-weight: 600;
+  margin-top: var(--s0);
+}
+
+h3, [visual='h3'] {
+  text-align: center;
+}
