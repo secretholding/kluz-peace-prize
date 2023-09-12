@@ -4,12 +4,9 @@
       <center-l>
         <nav class="main-menu">
           <cluster-l>
-            <NuxtLink class="main-menu__item" to="/homepage">Home</NuxtLink>
+            <NuxtLink class="main-menu__item" to="/">Home</NuxtLink>
             <NuxtLink class="main-menu__item" to="/agenda">Agenda</NuxtLink>
-            <NuxtLink class="main-menu__item active" to="/jury-and-panelists">Jury & Panelists</NuxtLink>
-            <!-- <a class="main-menu__item" href="https://www.kluzprize.org/">Home</a>
-            <a class="main-menu__item" href="https://www.kluzprize.org/agenda">Agenda</a>
-            <a class="main-menu__item active" href="https://www.kluzprize.org/jury-and-panelists">Jury & Panelists</a> -->
+            <NuxtLink class="main-menu__item" to="/jury-and-panelists">Jury & Panelists</NuxtLink>
           </cluster-l>
         </nav>
       </center-l>
@@ -17,15 +14,8 @@
 
     <div class="peacetech-hero__main">
       <img src="/assets/images/kluz-peace-prize-logo.svg" alt="">
-      <base-button
-        class="margin-top:s4"
-        color="accent"
-        visual="primary"
-        size="l"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSd8CgtAlsnCpD1w5lR5ykQpER6EESyItVpnldHSB0sV1qmo_g/viewform">Apply Now</base-button>
+      <div class="pill | margin-top:s3">Applications Closed</div>
     </div>
-
-
 
     <template #bottom>
       <p class="peacetech-hero__bottom | color:white text-align:center">Applications are closed</p>
@@ -82,6 +72,17 @@
     color: var(--primary-color);
     text-decoration: underline;
   }
+}
+
+.pill {
+  display: inline-block;
+  width: auto;
+  padding: var(--s0) var(--s3);
+  background-color: var(--primary-color-10);
+  margin-inline: auto;
+  border-radius: 40px;
+  font-weight: 600;
+  color: var(--primary-color);
 }
 
 </style>
