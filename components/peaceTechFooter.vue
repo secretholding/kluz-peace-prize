@@ -3,7 +3,7 @@
       <center-l size="wide">
         <div class="twin-panel">
           <stack-l class="footer-menu">
-            <img src="assets/images/kluz-peace-prize-logo.svg" alt="">
+            <img src="/assets/images/kluz-peace-prize-logo.svg" alt="">
             <ul>
               <li><NuxtLink to="/">Home</NuxtLink></li>
               <li><NuxtLink to="/agenda">Agenda</NuxtLink></li>
