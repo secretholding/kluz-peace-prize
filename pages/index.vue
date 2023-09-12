@@ -18,7 +18,7 @@
             <p>This year, the award ceremony will take place on Wednesday, September 20th, on the eve of the <a href="https://internationaldayofpeace.org/" target="_blank">International Day of Peace</a> during the 78th United Nations General Assembly.</p>
           </stack-l>
           <div>
-            <img class="decoration-image" src="assets/images/decor-03.webp" alt="">
+            <img class="decoration-image" src="/assets/images/decor-03.webp" alt="">
           </div>
         </div>
       </center-l>
@@ -36,7 +36,7 @@
     </base-section>
 
     <base-section class="bg-decor">
-      <img src="assets/images/kluz-peacetech-prize-logo-white.svg" alt="" class="center:all">
+      <img src="/assets/images/kluz-peacetech-prize-logo-white.svg" alt="" class="center:all">
     </base-section>
 
     <base-section color="primary" class="bg-decoration-2">
@@ -47,7 +47,7 @@
             <p>The Kluz Prize for PeaceTech is an initiative to celebrate, distinguish, and promote the use of new technologies in fostering peace, reducing conflict, and protecting human dignity and universal human rights across the globe. The Prize is dedicated to individuals, organizations, or initiatives for their distinguished achievements in peacebuilding, peacemaking, peacekeeping, or peace enforcement efforts.  The goal of the Prize is to engage individuals, societies, and states in building up a local, national, and global PeaceTech movement.</p>
           </stack-l>
           <div>
-            <img class="decoration-image" src="assets/images/decor-02.webp" alt="">
+            <img class="decoration-image" src="/assets/images/decor-02.webp" alt="">
           </div>
         </div>
       </center-l>
@@ -58,10 +58,10 @@
         <stack-l>
           <h2 class="section-heading">In particular, the Prize seeks to:</h2>
           <cluster-l>
-            <stack-l class="prize-theme"><img src="assets/images/theme-icon-heart.svg" alt=""><p>Recognize and reward groundbreaking PeaceTech achievements</p></stack-l>
-            <stack-l class="prize-theme"><img src="assets/images/theme-icon-smile.svg" alt=""><p>Encourage collaboration among global leaders, peacebuilders, technologists, entrepreneurs, investors, and policymaker</p></stack-l>
-            <stack-l class="prize-theme"><img src="assets/images/theme-icon-star.svg" alt=""><p>Raise awareness about the potential of technology in fostering peace</p></stack-l>
-            <stack-l class="prize-theme"><img src="assets/images/theme-icon-check.svg" alt=""><p>Engage individuals, societies, states, international organizations, and by and large new generations of young people in building up a local, national, and global PeaceTech movement</p></stack-l>
+            <stack-l class="prize-theme"><img src="/assets/images/theme-icon-heart.svg" alt=""><p>Recognize and reward groundbreaking PeaceTech achievements</p></stack-l>
+            <stack-l class="prize-theme"><img src="/assets/images/theme-icon-smile.svg" alt=""><p>Encourage collaboration among global leaders, peacebuilders, technologists, entrepreneurs, investors, and policymaker</p></stack-l>
+            <stack-l class="prize-theme"><img src="/assets/images/theme-icon-star.svg" alt=""><p>Raise awareness about the potential of technology in fostering peace</p></stack-l>
+            <stack-l class="prize-theme"><img src="/assets/images/theme-icon-check.svg" alt=""><p>Engage individuals, societies, states, international organizations, and by and large new generations of young people in building up a local, national, and global PeaceTech movement</p></stack-l>
           </cluster-l>
         </stack-l>
       </center-l>    
@@ -99,7 +99,7 @@
             <p>Kluz Ventures is a values-driven investment firm with a long-term vision of empowering human flourishing and technological development by investing in the exceptional entrepreneurs and technologies of tomorrow. Investments in these technologies can promote a global culture of genuine human growth that meets the current and future needs of all people, serving as an inspiration for future generations. Founded by Artur Kluz.</p>
             <p><base-button el="a" color="accent" visual="primary" href="https://www.kluzventures.com/" target="_blank">Learn More</base-button></p>
           </stack-l>
-          <div><img class="decoration-image" src="assets/images/kluz-ventures.webp" alt=""></div>
+          <div><img class="decoration-image" src="/assets/images/kluz-ventures.webp" alt=""></div>
         </div>
       </center-l>    
     </base-section>
@@ -107,7 +107,7 @@
     <base-section>
       <center-l size="wide">
         <div class="twin-panel">
-          <img src="assets/images/govlab-logo.svg" alt="">
+          <img src="/assets/images/govlab-logo.svg" alt="">
           <stack-l>
             <p>The GovLab is the main partner supporting the Kluz Prize for PeaceTech, and is an action research center based at New York University’s that aims to improve people's lives by changing the way we govern. The GovLab seeks to strengthen the ability of institutions — including but not limited to governments — and people to work more openly, collaboratively, effectively, and legitimately to make better decisions and solve public problems.</p>
             <p><base-button el="a" color="accent" visual="primary" href="https://thegovlab.org/" target="_blank">More Information</base-button></p>
@@ -155,26 +155,26 @@ definePageMeta({
 }
 
 .bg-decoration-1 { 
-  background-image: url('assets/images/texture-01.webp'); 
+  background-image: url('/assets/images/texture-01.webp'); 
   background-position: 150% 50%;
   background-size: 65%; 
   background-repeat: no-repeat;
 }
 .bg-decoration-2 { 
-  background-image: url('assets/images/texture-02.webp'); 
+  background-image: url('/assets/images/texture-02.webp'); 
   background-position: 500px 0;
   background-size: 100%; 
   background-repeat: no-repeat;
 }
 .bg-decoration-3 { 
-  background-image: url('assets/images/texture-03.svg'); 
+  background-image: url('/assets/images/texture-03.svg'); 
   background-position: center right;
   background-size: 55%; 
   background-repeat: no-repeat;
   background-blend-mode: screen;
 }
 .bg-decoration-4 { 
-  background-image: url('assets/images/texture-04.webp'); 
+  background-image: url('/assets/images/texture-04.webp'); 
   background-position: bottom center;
   background-size: cover; 
   background-repeat: no-repeat;
