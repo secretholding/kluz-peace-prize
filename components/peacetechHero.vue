@@ -4,9 +4,12 @@
       <center-l>
         <nav class="main-menu">
           <cluster-l>
-            <a class="main-menu__item" href="https://www.kluzprize.org/">Home</a>
+            <NuxtLink class="main-menu__item" to="/homepage">Home</NuxtLink>
+            <NuxtLink class="main-menu__item" to="/agenda">Agenda</NuxtLink>
+            <NuxtLink class="main-menu__item active" to="/jury-and-panelists">Jury & Panelists</NuxtLink>
+            <!-- <a class="main-menu__item" href="https://www.kluzprize.org/">Home</a>
             <a class="main-menu__item" href="https://www.kluzprize.org/agenda">Agenda</a>
-            <a class="main-menu__item active" href="https://www.kluzprize.org/jury-and-panelists">Jury & Panelists</a>
+            <a class="main-menu__item active" href="https://www.kluzprize.org/jury-and-panelists">Jury & Panelists</a> -->
           </cluster-l>
         </nav>
       </center-l>
