@@ -136,7 +136,7 @@ definePageMeta({
 
 
 .bg-decor {
-  background-image: url('assets/images/decor-01.webp');
+  background-image: url('/assets/images/decor-01.webp');
   background-size: cover;
   background-position: center;
   display: flex;
