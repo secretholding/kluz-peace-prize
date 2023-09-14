@@ -1,11 +1,11 @@
 <template>
-  <article>
+  <article class="page">
     <base-section id="intro" class="bg-decoration-1">
       <center-l size="wide">
         <stack-l class="narrow-content">
           <h2 class="section-heading">Celebrating Innovation for a <strong>Peaceful World</strong></h2>
           <p>The Kluz Prize for PeaceTech 2023 celebrates, recognizes, and propels the groundbreaking use of emerging technologies in fostering peace, reducing conflict, and safeguarding human dignity and universal human rights across the globe.</p>
-          <p>The first Kluz Prize for PeaceTech 2022 was awarded to Juan Carlos Lucero, Co-Founder of the Magnolia Foundation, to further his organization’s School of Peace, a multidisciplinary approach to teaching peace, mediation, and rehabilitation.</p>
+          <p><a href="https://www.globalpeacetech.o…nce-2022-highlights/" target="_blank">The first Kluz Prize for PeaceTech 2022</a> was awarded to Juan Carlos Lucero, Co-Founder of the <a href="https://www.wearemagnolia.org/" target="_blank">Magnolia Foundation</a>, to further his organization’s School of Peace, a multidisciplinary approach to teaching peace, mediation, and rehabilitation.</p>
         </stack-l>
       </center-l>    
     </base-section>
@@ -85,7 +85,7 @@
           </ul>
           <p visual="h3"> 
             These are just a few examples of PeaceTech. The field is continually evolving as new technologies and methodologies are developed. Learn more about the key themes and challenges of technologies used by and created for peace efforts in 
-            <a href="">“PeaceTech Topic Map: A Research Base for an Emerging Field”</a>.
+            <a href="https://files.thegovlab.org/PeaceTechTopicMap.pdf" target="_blank">“PeaceTech Topic Map: A Research Base for an Emerging Field”</a>.
           </p>
         </stack-l>
       </center-l>

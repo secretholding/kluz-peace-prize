@@ -34,3 +34,6 @@ h3 a,
   color: var(--accent-color) !important; 
 }
 
+.page .base-section a:not(.button) {
+  color: var(--accent-color);
+}
