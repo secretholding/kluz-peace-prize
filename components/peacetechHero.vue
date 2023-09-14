@@ -7,6 +7,7 @@
             <NuxtLink class="main-menu__item" to="/">Home</NuxtLink>
             <NuxtLink class="main-menu__item" to="/agenda">Agenda</NuxtLink>
             <NuxtLink class="main-menu__item" to="/jury-and-panelists">Jury & Panelists</NuxtLink>
+            <NuxtLink class="main-menu__item" to="/updates">Updates</NuxtLink>
           </cluster-l>
         </nav>
       </center-l>
@@ -16,10 +17,6 @@
       <img src="/assets/images/kluz-peace-prize-logo.svg" alt="">
       <div class="pill | margin-top:s3">Applications Closed</div>
     </div>
-
-    <pre>
-      {{isRouteActive}}
-    </pre>
 
     <template #bottom>
       <p class="peacetech-hero__bottom | color:white text-align:center">Applications are closed</p>
