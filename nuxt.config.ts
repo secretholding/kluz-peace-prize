@@ -11,11 +11,9 @@ export default defineNuxtConfig({
     script: [],
     link: [
       { rel: "stylesheet", href: "https://use.typekit.net/tsd2tcy.css" },
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined",
-      },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" },
+      { rel: "icon", type: "image/png", href: "/assets/images/favicon.png" }
+
     ],
   },
   css: [
