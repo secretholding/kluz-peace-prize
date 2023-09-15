@@ -12,19 +12,12 @@
       
     </center-l>
   </base-section>
-  
-  <div>
-    
-  </div>
-  
 </template>
 
 <script setup>
 const route = useRoute()
 
-const blogData = await queryContent('updates').where({
-    slug: route.params.slug
-}).find();
+const blogData = await queryContent('updates').find();
 </script>
 
 <style scoped lang="scss">

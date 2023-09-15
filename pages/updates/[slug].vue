@@ -1,19 +1,19 @@
 <template>
-  <base-section class="headers">
-    <center-l>
-      <stack-l>
-        <h4 class="brow">{{ data.blog.brow ? data.blog.brow : formatDate(data.blog.date) }}</h4>
-        <h2 class="heading">{{ data.blog.heading }}</h2>
-      </stack-l>
-    </center-l>
-  </base-section>
-  <base-section class="body">
-    <center-l>
-      <stack-l v-html="data.blog.main_content">
-      </stack-l>
-    </center-l>
-  </base-section>
-  
+  <div>
+    <base-section class="headers">
+      <center-l>
+        <stack-l>
+          <h4 class="brow">{{ data.blog.brow ? data.blog.brow : formatDate(data.blog.date) }}</h4>
+          <h2 class="heading">{{ data.blog.heading }}</h2>
+        </stack-l>
+      </center-l>
+    </base-section>
+    <base-section class="body">
+      <center-l>
+        <div v-html="data.blog.main_content" class="stack" style="--space: var(--s1)"></div>
+      </center-l>
+    </base-section>
+  </div>
 </template>
 
 <script setup>
