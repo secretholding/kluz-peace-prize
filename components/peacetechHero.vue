@@ -13,13 +13,8 @@
     </template>
 
     <div class="peacetech-hero__main">
-      <img src="/assets/images/kluz-peace-prize-logo.svg" alt="">
-      <base-button
-        class="margin-top:s4"
-        color="accent"
-        visual="primary"
-        size="l"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSd8CgtAlsnCpD1w5lR5ykQpER6EESyItVpnldHSB0sV1qmo_g/viewform">Apply Now</base-button>
+      <img src="/assets/images/kluz-prize-for-peacetech-dark.svg" alt="">
+      <div class="pill | margin-top:s3">Applications Closed</div>
     </div>
 
 
@@ -45,7 +40,7 @@
 
   img {
     width: 100%;
-    max-width: 600px;
+    max-width: 420px;
     margin: 0 auto;
     display: block;
   }
