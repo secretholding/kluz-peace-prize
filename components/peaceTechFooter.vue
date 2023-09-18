@@ -3,7 +3,7 @@
       <center-l size="wide">
         <div class="twin-panel">
           <stack-l class="footer-menu">
-            <img src="/assets/images/kluz-peace-prize-logo.svg" alt="">
+            <img src="/assets/images/kluz-prize-for-peacetech-dark.svg" alt="">
             <ul>
               <li><NuxtLink to="/">Home</NuxtLink></li>
               <li><NuxtLink to="/agenda">Agenda</NuxtLink></li>
@@ -33,6 +33,10 @@
     @media screen and (max-width: 768px) {
       flex-direction: column-reverse;
     }
+  }
+
+  img {
+    max-width: 200px;
   }
 
   .footer-menu {

@@ -14,7 +14,7 @@
     </template>
 
     <div class="peacetech-hero__main">
-      <img src="/assets/images/kluz-peace-prize-logo.svg" alt="">
+      <img src="/assets/images/kluz-prize-for-peacetech-dark.svg" alt="">
       <div class="pill | margin-top:s3">Applications Closed</div>
     </div>
 
@@ -43,7 +43,7 @@
 
   img {
     width: 100%;
-    max-width: 600px;
+    max-width: 420px;
     margin: 0 auto;
     display: block;
   }
