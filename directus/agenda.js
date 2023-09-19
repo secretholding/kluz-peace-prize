@@ -14,6 +14,8 @@ const objectContructor = async (dir, fs) => {
     
     i.end_date = item.end_date ? common.formatDate(item.end_date) : '';
     i.end_time = item.end_date ? common.formatTime(item.end_date) : '';
+
+    i.time = `${ i.start_time.split(" ")[0] } - ${ i.end_time }`
     
     i.activity = item.activity ? item.activity : '';
 

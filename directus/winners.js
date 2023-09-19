@@ -5,13 +5,11 @@ const common = require ("./common");
 
 const objectContructor = async (dir, fs) => {
 
-  const posts = await common.getDirectusData("kluz_blogposts");
+  const winners = await common.getDirectusData("kluz_winners");
 
-  await posts.data.forEach((item) => {
+  await winners.data.forEach((item) => {
     let i = { ...item };
-    i.slug = item.heading ? common.slugify(item.heading) : common.slugify(item.tagline);
-    i.date = item.date ? item.date.split("T")[0] : '';
-    i.cover_image = item.cover_image ? common.getImage(item.cover_image.id) : '';
+    i.slug = item.heading ? common.slugify(item.heading) : common.slugify(item.applicant);
 
     fs.writeFile(
       dir + "/" + i.slug + ".json",
@@ -20,13 +18,13 @@ const objectContructor = async (dir, fs) => {
         if (err) console.log("error", err);
       }
     );
-    console.log("WRITING UPDATES: ", i.slug + ".json");
+    console.log("WRITING WINNERS: ", i.slug + ".json");
   });
 }
 
-const getBlogposts = async () => {
+const getWinners = async () => {
   
-  const dir = "./content/updates";
+  const dir = "./content/winners";
   if (fs.existsSync(dir)) {
     rimraf(dir, async () => {
       if (!fs.existsSync(dir)) {
@@ -56,5 +54,5 @@ const getBlogposts = async () => {
 }
 
 module.exports = {
-  getBlogposts
+  getWinners
 }
