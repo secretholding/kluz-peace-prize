@@ -20,7 +20,9 @@
   </article>
 </template>
 
-<script>
+<script setup>
+  const agendaData = await queryContent('agenda').find();
+  console.log(123, agendaData)
 </script>
 
 <style scoped>
