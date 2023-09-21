@@ -29,7 +29,13 @@
 </template>
 
 <script setup>
+// import route to make the function below work
+const route = useRoute()
 
+// write a function that returns true if the current route is the homepage
+const isHomepage = () => {
+  return route.path === '/'
+}
 
 </script>
 
