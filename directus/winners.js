@@ -9,7 +9,7 @@ const objectContructor = async (dir, fs) => {
 
   await winners.data.forEach((item) => {
     let i = { ...item };
-    i.slug = item.heading ? common.slugify(item.heading) : common.slugify(item.applicant);
+    i.slug = item.title ? common.slugify(item.title) : common.slugify(item.applicant);
 
     fs.writeFile(
       dir + "/" + i.slug + ".json",
