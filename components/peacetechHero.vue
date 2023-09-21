@@ -5,7 +5,7 @@
         <nav class="main-menu">
           <cluster-l>
             <NuxtLink class="main-menu__item" to="/">Home</NuxtLink>
-            <NuxtLink class="main-menu__item" to="/agenda">Agenda</NuxtLink>
+            <NuxtLink class="main-menu__item" to="/prize">Prize Winners</NuxtLink>
             <NuxtLink class="main-menu__item" to="/jury-and-panelists">Jury & Panelists</NuxtLink>
             <NuxtLink class="main-menu__item" to="/updates">Updates</NuxtLink>
           </cluster-l>
@@ -15,11 +15,11 @@
 
     <div class="peacetech-hero__main">
       <img src="/assets/images/kluz-prize-for-peacetech-dark.svg" alt="">
-      <div class="pill | margin-top:s3">Applications Closed</div>
+      <base-button class="margin-top:s3" :to="prizes" size='l' visual='primary' color="accent">Winners and Honorable Mentions</base-button>
     </div>
 
     <template #bottom>
-      <p class="peacetech-hero__bottom | color:white text-align:center">Applications are closed</p>
+      <p class="peacetech-hero__bottom | color:white text-align:center">&nbsp;</p>
     </template>
 
 

@@ -24,7 +24,7 @@ const objectContructor = async (dir, fs) => {
 
 const getWinners = async () => {
   
-  const dir = "./content/winners";
+  const dir = "./content/prize";
   if (fs.existsSync(dir)) {
     rimraf(dir, async () => {
       if (!fs.existsSync(dir)) {

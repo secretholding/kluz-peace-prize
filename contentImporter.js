@@ -8,7 +8,7 @@ const { getWinners } = require('./directus/winners');
 console.log('');
 console.log(chalk.green('Starting importing data from Directus...'));
 console.log('');
-console.log(chalk.green('[ AGENDA - UPDATES - WINNERS ]'));
+console.log(chalk.green('[ AGENDA - UPDATES - PRIZE ]'));
 
 getAgenda();
 getBlogposts();

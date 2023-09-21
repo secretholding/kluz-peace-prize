@@ -126,7 +126,7 @@
   --base-letter-spacing: 0;
 
   /* Sets the base typography configs for buttons */
-  --button-font-family: var(--display-font);
+  --button-font-family: var(--body-font);
   --button-font-weight: var(--base-font-weight);
   --button-letter-spacing: var(--base-letter-spacing);
 
