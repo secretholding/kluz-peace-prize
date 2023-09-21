@@ -15,7 +15,7 @@
 
     <div class="peacetech-hero__main">
       <img src="/assets/images/kluz-prize-for-peacetech-dark.svg" alt="">
-      <base-button class="margin-top:s3" :to="prizes" size='l' visual='primary' color="accent">Winners and Honorable Mentions</base-button>
+      <base-button v-if="isHomepage" class="margin-top:s3" :to="prizes" size='l' visual='primary' color="accent">Winners and Special Distinctions</base-button>
     </div>
 
     <template #bottom>
@@ -29,6 +29,7 @@
 </template>
 
 <script setup>
+
 
 </script>
 

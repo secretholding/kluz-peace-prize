@@ -18,8 +18,8 @@ export default defineNuxtConfig({
   },
   css: [
     '@ccmdesign/ccm-ds/assets/css/main.scss',
-    'public/assets/css/theme.css',
-    'public/assets/css/styles.css'
+    '/public/assets/css/theme.css',
+    '/public/assets/css/styles.css'
   ],
   components: {
     "dirs": [
