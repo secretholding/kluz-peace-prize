@@ -6,6 +6,7 @@
           <div class="prize | g1">
             <span v-if="data.winner.prize == 'Kluz Prize for PeaceTech'" class="prize-item__trophy | material-symbols-outlined">trophy</span>
             <span v-else class="prize-item__award | material-symbols-outlined">award_star</span>
+            <h4 class="mobile-only | margin-bottom:s2">{{ data.winner.prize }}</h4>
           </div>
           <aside class="g2">
             <stack-l class="meta">
@@ -13,14 +14,14 @@
               <span class="applicant">Submitted by {{ data.winner.applicant }}</span>
               <span class="country">{{ data.winner.country }}</span>
 
-              <div class="margin-top:s3">
+              <div class="actions">
                 <base-button class="margin-left:auto" color="accent" el="a" target="_blank" :href="data.winner.project_url">Project Website</base-button>
                 <base-button class="margin-left:auto margin-top:s-1" color="accent" v-if="data.winner.alt_url != null" target="_blank" el="a" :href="data.winner.alt_url">Alternate Website</base-button>
               </div>
             </stack-l>
           </aside>
           <div class="g4">
-            <h4>{{ data.winner.prize }}</h4>
+            <h4 class="desktop-only">{{ data.winner.prize }}</h4>
           </div>
           <div class="content | g3">
             <section>
@@ -88,12 +89,16 @@
 
 
 .prize {
-  display: flex;
-  flex-direction: column;
+  
   color: var(--accent-color);
-  align-items: flex-end;
 
-  * { text-align: right; }
+  @media screen and (min-width: 768px) { 
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    * { text-align: right; } 
+  }
 
   h4 { 
     font-size: 1.25rem; 
@@ -102,13 +107,16 @@
 }
 
 .wrapper { 
-  display: grid; 
-  grid-template-columns: minmax(auto, 300px) 1fr;
-  grid-template-rows: auto auto;
-  grid-gap: var(--s3);
-  grid-template-areas: 
-  'g1 g4' 
-  'g2 g3';
+  
+  @media screen and (min-width: 768px) {
+    display: grid; 
+    grid-template-columns: minmax(auto, 300px) 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: var(--s3);
+    grid-template-areas: 
+    'g1 g4' 
+    'g2 g3';
+  }
 }
 
 .g1 { grid-area: g1; }
@@ -131,7 +139,13 @@
 .content :deep(* + *) { margin-top: var(--s-1); }
 
 .meta {
-  * { text-align: right; }
+  @media screen and (min-width: 768px) { * { text-align: right; } }
+
+  .actions { 
+    margin-top: var(--s0);
+    margin-bottom: var(--s2);
+
+    @media screen and (min-width: 768px) { margin-top: var(--s3); } }
   
   span {
     display: inline-block;
@@ -161,4 +175,7 @@ h4 {
   font-family: var(--body-font);
   color: var(--accent-color) !important;
 }
+
+:deep(blockquote) { font-size: 1rem; }
+
 </style>
