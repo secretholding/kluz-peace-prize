@@ -43,7 +43,7 @@
 
   img {
     width: 100%;
-    max-width: 320px;
+    max-width: 220px;
     margin: 0 auto;
     display: block;
   }
