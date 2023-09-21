@@ -52,8 +52,6 @@
               <h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4>
               <div v-html="data.winner.collaboration"></div>
             </section>
-            
-            <pre>{{ data.winner }}</pre>
           </div>
         </div>
       </center-l>
