@@ -6,8 +6,9 @@
             <img src="/assets/images/kluz-prize-for-peacetech-dark.svg" alt="">
             <ul>
               <li><NuxtLink to="/">Home</NuxtLink></li>
-              <li><NuxtLink to="/agenda">Agenda</NuxtLink></li>
+              <li><NuxtLink to="/prize">Prize Winners</NuxtLink></li>
               <li><NuxtLink to="/jury-and-panelists">Jury and Panelists</NuxtLink></li>
+              <li><NuxtLink to="/updates">Updates</NuxtLink></li>
             </ul>
           </stack-l>
           <stack-l>
