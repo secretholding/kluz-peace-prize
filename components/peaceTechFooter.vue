@@ -36,19 +36,29 @@
     }
   }
 
-  img {
-    max-width: 200px;
-  }
+  a { text-decoration: underline; }
+
+  img { max-width: 210px; }
 
   .footer-menu {
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-menu ul {
+    padding: 0;
+    margin-top: var(--s1);
+    display: flex;
+    flex-direction: column;
     @media screen and (min-width: 768px) { flex-direction: row; }
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .footer-menu li {
     @media screen and (max-width: 768px) { display: inline-block; }
+    text-align: center;
     list-style: none;
     
     margin-right: var(--s0);

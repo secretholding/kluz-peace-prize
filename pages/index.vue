@@ -152,6 +152,7 @@ definePageMeta({
   border-radius: 6px;
   box-shadow: 0 0 6px var(--base-color-20);
   @media screen and (min-width: 768px) { max-width: 440px; }
+  
 }
 
 .bg-decoration-1 { 
@@ -212,7 +213,8 @@ definePageMeta({
     --space: var(--s1);
   }
   .decoration-image {
-    max-width: 500px;
+    max-width: 400px;
+    @media screen and (min-width: 768px) { max-width: 500px; }
   }
 }
 

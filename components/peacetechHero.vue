@@ -40,7 +40,9 @@ const isHomepage = () => {
 </script>
 
 <style lang="scss" scoped>
+
 .peacetech-hero {
+  
   background-color: var(--white-color);
   min-height: 700px;
 }
@@ -51,6 +53,7 @@ const isHomepage = () => {
   img {
     width: 100%;
     max-width: 220px;
+    @media screen and (min-width: 768px) { max-width: 420px; }
     margin: 0 auto;
     display: block;
   }
