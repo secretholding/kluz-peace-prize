@@ -47,6 +47,13 @@
   font-size: 1rem;
 }
 
+.prose :deep(img) {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-top: var(--s2);
+}
+
 /* Font Size for Headings */
 .prose :deep(h1 ~ .brow) { font-size: 1.5em; }
 .prose :deep(h2 ~ .brow) { font-size: 1.15em; }
@@ -82,5 +89,11 @@
 .prose :deep(h3) { --heading-color: var(--primary-color); }
 .prose :deep(h4) { --heading-color: var(--primary-color); }
 .prose :deep(h5) { --heading-color: var(--primary-color); }
+
+.prose :deep(h2) { font-size: 1.8rem; }
+.prose :deep(h3) { 
+  font-size: 1.3rem; 
+  text-align: left;
+}
 
 </style>
