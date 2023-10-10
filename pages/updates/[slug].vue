@@ -30,10 +30,11 @@
   });
 
   const formatDate = (date) => {
-  const dateObj = new Date(date)
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  return dateObj.toLocaleDateString('en-US', options)
-}
+    const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const dateObj = new Date(date)
+
+    return `${month[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`
+  }
 </script>
 
 <style lang="scss" scoped>

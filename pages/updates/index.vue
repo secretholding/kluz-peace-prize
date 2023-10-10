@@ -17,7 +17,7 @@
 <script setup>
 const route = useRoute()
 
-const blogData = await queryContent('updates').find();
+const blogData = await queryContent('updates').sort({date: -1}).find();
 </script>
 
 <style scoped lang="scss">

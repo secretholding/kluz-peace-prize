@@ -21,9 +21,10 @@ const { content } = toRefs(props)
 
 // Function that receives a date like this 2021-01-30 and formats it like this January 30, 2021
 const formatDate = (date) => {
+  const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   const dateObj = new Date(date)
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  return dateObj.toLocaleDateString('en-US', options)
+
+  return `${month[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`
 }
 
 
