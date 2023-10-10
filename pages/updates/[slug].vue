@@ -12,7 +12,7 @@
         <center-l>
           <stack-l>
             <img v-if="data.blog.image" :src="`https://cms.thegovlab.com/assets/${data.blog.image.id}`" alt="">
-            <ccm-prose-2 v-html="data.blog.main_content" class="stack" style="--space: var(--s0)" />
+            <ccm-prose-2 v-html="data.blog.main_content" />
           </stack-l>        
         </center-l>
       </base-section>
