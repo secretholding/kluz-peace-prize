@@ -25,6 +25,10 @@
 </template>
 
 <script setup>
+definePageMeta({
+  layout: "base",
+});
+
   const route = useRoute()
   const winnersData = await queryContent('prize').where({
       slug: route.params.slug

@@ -1,21 +1,12 @@
 <template>
   <ccm-hero class="peacetech-hero">
     <template #top-bar>
-      <center-l>
-        <nav class="main-menu">
-          <cluster-l>
-            <NuxtLink class="main-menu__item" to="/">Home</NuxtLink>
-            <NuxtLink class="main-menu__item" to="/prize">Prize Winners</NuxtLink>
-            <NuxtLink class="main-menu__item" to="/jury-and-panelists">Jury & Panelists</NuxtLink>
-            <NuxtLink class="main-menu__item" to="/updates">Updates</NuxtLink>
-          </cluster-l>
-        </nav>
-      </center-l>
+      <main-nav />
     </template>
 
     <div class="peacetech-hero__main">
       <img src="/assets/images/kluz-prize-for-peacetech-dark.svg" alt="">
-      <base-button v-if="isHomepage()" class="margin-top:s3" :to="prizes" size='m' visual='primary' color="accent">Winners and Special Distinctions</base-button>
+      <base-button v-if="isHomepage()" class="winners-button | margin-top:s3" :to="prizes" size='m' visual='primary' color="accent">Winners and Special Distinctions</base-button>
     </div>
 
     <template #bottom>
@@ -42,21 +33,26 @@ const isHomepage = () => {
 <style lang="scss" scoped>
 
 .peacetech-hero {
-  
   background-color: var(--white-color);
-  min-height: 700px;
+  height: 60vh;
+  max-height: 500px;
 }
 
 .peacetech-hero__main {
   text-align: center;
 
   img {
-    width: 100%;
+    width: 45vh;
+    height: auto;
     max-width: 220px;
-    @media screen and (min-width: 768px) { max-width: 420px; }
+    @media screen and (min-width: 768px) { max-width: 320px; }
     margin: 0 auto;
     display: block;
   }
+}
+
+.winners-button {
+  @media (max-height: 660px) { display: none; }
 }
 
 .peacetech-hero__bottom {
