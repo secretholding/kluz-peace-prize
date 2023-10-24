@@ -26,8 +26,6 @@ const isHomepage = () => {
   return route.path === '/'
 }
 
-console.log(isHomepage());
-
 </script>
 
 <style lang="scss" scoped>

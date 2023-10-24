@@ -5,7 +5,7 @@
         <stack-l class="narrow-content">
           <h2 class="section-heading">Celebrating Innovation for a <strong>Peaceful World</strong></h2>
           <p>The Kluz Prize for PeaceTech 2023 celebrates, recognizes, and propels the groundbreaking use of emerging technologies in fostering peace, reducing conflict, and safeguarding human dignity and universal human rights across the globe.</p>
-          <p><a href="https://www.globalpeacetech.o…nce-2022-highlights/" target="_blank">The first Kluz Prize for PeaceTech 2022</a> was awarded to Juan Carlos Lucero, Co-Founder of the <a href="https://www.wearemagnolia.org/" target="_blank">Magnolia Foundation</a>, to further his organization’s School of Peace, a multidisciplinary approach to teaching peace, mediation, and rehabilitation.</p>
+          <p><a href="https://www.globalpeacetech.org/global-peacetech-conference-2022-highlights/" target="_blank">The first Kluz Prize for PeaceTech 2022</a> was awarded to Juan Carlos Lucero, Co-Founder of the <a href="https://www.wearemagnolia.org/" target="_blank">Magnolia Foundation</a>, to further his organization’s School of Peace, a multidisciplinary approach to teaching peace, mediation, and rehabilitation.</p>
         </stack-l>
       </center-l>    
     </base-section>
