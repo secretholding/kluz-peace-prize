@@ -6,7 +6,7 @@
 
     <div class="peacetech-hero__main">
       <img src="/assets/images/kluz-prize-for-peacetech-dark.svg" alt="">
-      <base-button v-if="isHomepage()" class="winners-button | margin-top:s3" :to="prizes" size='m' visual='primary' color="accent">Winners and Special Distinctions</base-button>
+      <base-button v-if="isHomepage()" class="winners-button | margin-top:s3" :to="prizes" size='m' visual='primary' color="accent"><nuxt-link to="/prize">Winners and Special Distinctions</nuxt-link></base-button>
     </div>
 
     <template #bottom>
@@ -52,6 +52,10 @@ const isHomepage = () => {
 }
 
 .winners-button {
+  & > a {
+    text-decoration: none;
+    color: var(--white-color);
+  }
   @media (max-height: 660px) { display: none; }
 }
 
