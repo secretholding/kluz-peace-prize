@@ -1,5 +1,8 @@
 <template>
   <div>
+    <Head>
+      <Title>{{ data.blog.heading }}</Title>
+    </Head>
     <base-section class="headers">
       <center-l>
         <stack-l>

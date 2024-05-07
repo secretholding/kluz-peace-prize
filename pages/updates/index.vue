@@ -15,6 +15,10 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'PeaceTech Prize - Updates and Announcements',
+})
+
 definePageMeta({
   layout: "base",
 });

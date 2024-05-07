@@ -15,6 +15,10 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'PeaceTech Prize - Jury & Panelists',
+})
+
 definePageMeta({
   layout: "base",
 });
