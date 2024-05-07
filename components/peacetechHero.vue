@@ -1,5 +1,5 @@
 <template>
-  <ccm-hero class="peacetech-hero">
+  <ccm-hero class="peacetech-hero" height="auto">
     <template #top-bar>
       <main-nav />
     </template>
