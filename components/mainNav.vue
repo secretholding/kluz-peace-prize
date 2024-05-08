@@ -80,7 +80,6 @@ function toggleMenu() {
 @media screen and (max-width: 768px) {
   .main-menu {
     position: fixed;
-    // bottom: 0;
     background-color: var(--primary-color);
     width: 100%;
     z-index: 1000;
@@ -101,8 +100,7 @@ function toggleMenu() {
   
   .mobile-trigger {
     align-self: auto;
-    border: 0;
-    
+    border: 0 !important;
   }
 }
 
