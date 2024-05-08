@@ -1,5 +1,5 @@
 <template>
-  <ccm-hero class="peacetech-hero" height="auto">
+  <ccm-hero class="peacetech-hero" height="auto" :is-white="!isHomepage()">
     <template #top-bar>
       <main-nav />
     </template>
@@ -32,11 +32,7 @@ const isHomepage = () => {
 
 <style lang="scss" scoped>
 
-.peacetech-hero {
-  background-color: var(--white-color);
-  height: 60vh;
-  max-height: 500px;
-}
+.peacetech-hero[is-white="true"] { background-color: var(--white-color); }
 
 .peacetech-hero__main {
   text-align: center;
