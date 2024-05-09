@@ -1,0 +1,121 @@
+<template>
+  <div class="main-menu" :color="color">
+    <base-button icon-only icon-before="menu" class="menu-trigger menu-trigger" @click="isOpen = !isOpen" v-if="!isOpen"/>
+
+    <nav v-if="isOpen" class="main-menu__panel" :is-open="isOpen">
+      <base-button icon-only icon-before="close" class="menu-trigger menu-trigger" @click="isOpen = !isOpen" />
+
+      <ul>
+        <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/">Home</NuxtLink></li>
+        <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/event">Event</NuxtLink></li>
+        <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/prizes/">Prizes</NuxtLink></li>
+        <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/updates/">Updates</NuxtLink></li>
+        <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/about">About</NuxtLink></li>
+      </ul>
+    </nav>
+  </div>
+</template>
+
+<script setup>
+const isOpen = ref(false);
+
+const props = defineProps({
+  color: {
+    type: String,
+    default: "" 
+  }
+});
+
+const { color } = toRefs(props)
+</script>
+
+<style lang="scss" scoped>
+.menu-trigger {
+  --button-border-width: 0;
+  --button-font-size: 1.5rem;
+}
+
+.main-menu { position: relative; }
+
+.menu-trigger {
+  position: fixed;
+  top: var(--s2);
+  right: var(--s2);
+  z-index: var(--main-menu-trigger-z-index, 1001);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.main-menu__panel {
+  // core positioning of the menu
+  position: fixed;
+  z-index: var(--main-menu-menu-z-index, 1000);
+  background-color: hsla(var(--white-hsl), 0.95);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-menu ul {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  
+  @media screen and (min-width: 768px){
+    padding-block: var(--s4);  
+  }
+}
+
+.main-menu li {
+  padding: 0;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main-menu__item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--menu-color);
+  font-size: 2rem;
+  font-weight: 100;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  
+  @media screen and (min-width: 768px) { font-size: 4rem; }
+}
+
+.main-menu__item:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.main-menu[is-open=false] {
+  display: none;
+}
+
+.main-menu[is-open=true] {
+  display: block;
+}
+
+.main-menu[color="base"]    { 
+  --menu-color: var(--base-color);
+  
+}
+.main-menu[color="white"]   { 
+  --menu-color: var(--white-color);
+  
+}
+.main-menu[color="primary"] { 
+  --menu-color: var(--primary-color);
+  
+}
+
+</style>

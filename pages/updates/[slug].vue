@@ -1,5 +1,12 @@
 <template>
-  <div>
+  <kpp-hero />
+  <kpp-prose>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quidem quaerat excepturi assumenda voluptatem perspiciatis neque libero architecto commodi ipsa vitae officia totam ipsum, minus ad. Eveniet incidunt est dolor?
+  </kpp-prose>
+
+
+
+  <!-- <div>
     <Head>
       <Title>{{ data.blog.heading }}</Title>
     </Head>
@@ -22,7 +29,7 @@
         </stack-l>        
       </center-l>
     </base-section>
-  </div>
+  </div> -->
 </template>
 
 <script setup>

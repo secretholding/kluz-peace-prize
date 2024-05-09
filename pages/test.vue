@@ -1,11 +1,7 @@
 <template>
-
-  <article>
-    <slot />
-  </article>
-  
-  <kpp-cta />
-  <kpp-footer />
+  <div>
+    <kluz-logo color="primary"/> 
+  </div>
 </template>
 
 <script setup>

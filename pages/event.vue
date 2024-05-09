@@ -1,8 +1,8 @@
 <template>
-    <kpp-highlight-event />
-    <kpp-highlight-prizes />
-    <kpp-highlight-about />
-    <kpp-highlight-updates />
+  <kpp-base-section>
+    <h1>Event Page</h1>
+    <h2>Application Form</h2>
+  </kpp-base-section>
 </template>
 
 <script setup>

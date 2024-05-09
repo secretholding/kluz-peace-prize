@@ -1,4 +1,8 @@
-.twin-panel { 
+h2 { text-transform: uppercase; }
+
+
+
+/* .twin-panel { 
   display: flex; 
   align-items: center;
   gap: var(--s2);
@@ -36,4 +40,4 @@ h3 a,
 
 .page .base-section a:not(.button) {
   color: var(--accent-color);
-}
+} */

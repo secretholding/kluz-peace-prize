@@ -39,7 +39,16 @@ export default defineNuxtConfig({
         "path": resolve(__dirname, 'node_modules/@ccmdesign/ccm-ds/ccm-ds/06-sections'),
         "global": true
       },
-      "~/components"
+      {
+        "path": '~/components/sections/',
+        "global": true
+      },
+      {
+        "path": '~/components/modules/',
+        "global": true
+      },
+      "~/components",
+      
     ]
   },
   modules: [

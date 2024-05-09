@@ -1,9 +1,12 @@
 <template>
-  <main-nav />
+  <kpp-hero />
+
   <article>
     <slot />
   </article>
-  <peace-tech-footer />
+  
+  <kpp-cta />
+  <kpp-footer />
 </template>
 
 <script setup>

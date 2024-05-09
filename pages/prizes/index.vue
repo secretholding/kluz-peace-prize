@@ -1,8 +1,8 @@
 <template>
-    <kpp-highlight-event />
-    <kpp-highlight-prizes />
-    <kpp-highlight-about />
-    <kpp-highlight-updates />
+  <div>
+    <kpp-winners /> <!-- Year Filter -->
+    <kpp-winners /> <!-- Year Filter -->
+  </div>
 </template>
 
 <script setup>
