@@ -1,7 +1,8 @@
 import { ref, computed } from 'vue'
 
+// Function that receives a date like this 2021-01-30 and formats it like this January 30, 2021
 export default function useFormatDate() {
-  const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   
   const formatDate = (date) => {
     const dateObj = new Date(date)

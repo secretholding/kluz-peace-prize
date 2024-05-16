@@ -2,23 +2,13 @@
   <Head>
     <Title>{{ data.blog.heading }}</Title>
   </Head>
-  <kpp-updates-hero class="headers" :cover-image="coverImageUrl" height="70svh" :color="coverImageUrl ? 'white' : 'primary'">
+  <kpp-updates-hero class="headers" :cover-image="coverImageUrl" height="70svh" :color="coverImageUrl ? 'white' : 'primary'" />
+  
+  <section class="body">
     <center-l size="wide">
-      <stack-l>
-        <h4 class="brow">{{ data.blog.brow ? data.blog.brow : formatDate(data.blog.date) }}</h4>
-        <h2 class="heading">{{ data.blog.heading }}</h2>
-        <h4 class="tagline">{{ data.blog.tagline }}</h4>
-        <p class="authors">By {{ data.blog.author }}</p>
-      </stack-l>
+      <ccm-prose-2 v-html="data.blog.main_content" />
     </center-l>
-  </kpp-updates-hero>
-  <div>
-    <section class="body">
-      <center-l size="wide">
-        <ccm-prose-2 v-html="data.blog.main_content" />
-      </center-l>
-    </section>
-  </div>
+  </section>
 
 </template>
 

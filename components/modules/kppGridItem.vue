@@ -1,13 +1,8 @@
 <template>
-  <NuxtLink :to="content._path" :id="slug" class="kpp-update-grid-item | frame" :content="content">
-    <div class="kpp-update-grid-item__content" :bg="content.cover_image">
-      <h4 v-if="content.brow">{{content.brow}}</h4>
-      
-      <h3>{{ content.heading }}</h3>
-      <!-- <h5 v-if="content.tagline">{{ content.tagline }}</h5> -->
-      <h5>{{formatDate(content.date)}}</h5>
+  <NuxtLink :to="content._path" :id="slug" class="kpp-update-grid-item | frame" :content="content" :has-bg="coverImageUrl ? true : false">
+    <div class="kpp-update-grid-item__content" :bg="coverImageUrl">
+      <kpp-headers :content="headerContent"/>
     </div>
-    
   </NuxtLink>
 </template>
 
@@ -29,15 +24,19 @@ if (content.value.cover_image) {
   bgImage = `url(${content.value.cover_image})`
 } 
 
+const headerContent = computed(() => {
+  return {
+    brow: content.value.brow,
+    title: content.value.title,
+    tagline: content.value.tagline,
+    date: content.value.date,
+    author: content.value.author
+  }
+})
 
-// Function that receives a date like this 2021-01-30 and formats it like this January 30, 2021
-const formatDate = (date) => {
-  const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-  const dateObj = new Date(date)
-
-  return `${month[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`
-}
-
+const coverImageUrl = computed(() => {
+  return content.value.image ? `url(https://cms.thegovlab.com/assets/${content.value.image.id})` : false;
+})
 
 </script>
 
@@ -53,9 +52,20 @@ const formatDate = (date) => {
   align-items: flex-start;
   justify-content: flex-end;
   padding: var(--s3);
-  background: v-bind(bgImage);
 
   * { color: white; }
+}
+
+.kpp-update-grid-item[has-bg="true"] {
+  background-image: v-bind(coverImageUrl);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.kpp-update-grid-item[has-bg="false"] {
+  // temp
+  background-color: var(--base-color);
 }
 
 h3, h4, h5 {

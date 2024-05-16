@@ -1,5 +1,6 @@
 <template>
-  <kpp-updates-hero :content="blogData[0]" color="primary"/>
+  <kpp-updates-hero :content="blogData[0]" />
+  
   <kpp-grid-updates>
     <kpp-grid-item v-for="i in blogData" :content="i" />
   </kpp-grid-updates>
