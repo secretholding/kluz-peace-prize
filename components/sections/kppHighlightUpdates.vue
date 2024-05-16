@@ -1,5 +1,5 @@
 <template>
-  <kpp-base-section>
+  <kpp-base-section height="50svh">
     <h1 class="text-align:center">Updates Highlight</h1>
     <kpp-reel />
   </kpp-base-section>

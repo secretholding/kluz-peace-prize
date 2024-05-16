@@ -1,5 +1,5 @@
 <template>
-    <div class="nav" :is-homepage="isHomepage()">
+    <div class="nav" :is-homepage="isHomepage()" :color="color">
       <NuxtLink to="/" class="logo" v-if="!isHomepage()">
         <img class="nav-logo" src="/assets/images/kluz-prize-for-peacetech-dark.svg" alt="" >
       </NuxtLink>
@@ -7,7 +7,7 @@
       <span v-else>&nbsp;</span>
       
       <nav class="main-menu" :is-open="isOpen">
-        <base-button class="mobile-trigger" icon-only icon-before="menu" color="white" @click="toggleMenu"/>
+        <base-button class="mobile-trigger" icon-only icon-before="menu" :color="color" @click="toggleMenu"/>
         <NuxtLink class="main-menu__item" to="/">Home</NuxtLink>
         <NuxtLink class="main-menu__item" to="/prize">Prize Winners</NuxtLink>
         <NuxtLink class="main-menu__item" to="/jury-and-panelists">Jury & Panelists</NuxtLink>
@@ -31,6 +31,15 @@ function toggleMenu() {
   isOpen.value = !isOpen.value;
   console.log(isOpen.value);
 }
+
+
+const props = defineProps({
+  color: {
+    type: String,
+    default: 'white'
+  }
+});
+
 
 </script>
 

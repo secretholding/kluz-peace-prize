@@ -1,5 +1,5 @@
 <template>
-<svg class="kpp-logo" x="0px" y="0px" viewBox="0 0 701 374" style="enable-background:new 0 0 701 374;" xml:space="preserve" :color="color">
+<svg class="kpp-logo" x="0px" y="0px" viewBox="0 0 701 374" style="enable-background:new 0 0 701 374;" xml:space="preserve" :color="color" :max-width="maxWidth">
   <g transform="translate(-111, -188)">
     <g id="Logo" transform="translate(111.4275, 188.1837)">
       <polygon class="color" points="197.1,148.8 89.3,148.8 77.8,160.3 197.1,160.3"/>
@@ -42,10 +42,14 @@ const props = defineProps({
   color: {
     type: String,
     default: '' // Default color value
+  },
+  maxWidth: {
+    type: String,
+    default: '120px' // Default color value
   }
 });
 
-const { color } = toRefs(props)
+const { color, maxWidth } = toRefs(props)
 
 </script>
 
@@ -54,7 +58,7 @@ const { color } = toRefs(props)
 .kpp-logo {
   width: 100%;
   height: auto;
-  max-width: 120px;
+  max-width: v-bind(maxWidth);
   max-height: 100%;
 }
 

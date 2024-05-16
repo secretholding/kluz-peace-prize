@@ -1,4 +1,5 @@
 <template>
+    <kpp-hero color="primary"/>
     <kpp-highlight-event />
     <kpp-highlight-prizes />
     <kpp-highlight-about />

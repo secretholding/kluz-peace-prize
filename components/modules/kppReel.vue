@@ -18,9 +18,16 @@
 
 <style lang="scss" scoped>
 .base-card {
-  --n: 3;
-  --d: 4;
+  --n: 2;
+  --d: 1;
   background-color: hsla(var(--base-hsl), .1);
-  width: 40svw;
+  
+  width: 60svw;
+
+  @media screen and (min-width: 768px) {
+    --n: 3;
+    --d: 4;
+    width: 40svw;
+  }
 }
 </style>

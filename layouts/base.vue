@@ -1,6 +1,4 @@
 <template>
-  <kpp-hero />
-
   <article>
     <slot />
   </article>

@@ -8,7 +8,7 @@
 const props = defineProps({
   height: {
     type: String,
-    default: '90svh'
+    default: 'auto'
   }
 });
 

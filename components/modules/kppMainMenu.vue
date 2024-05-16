@@ -1,9 +1,9 @@
 <template>
   <div class="main-menu" :color="color">
-    <base-button icon-only icon-before="menu" class="menu-trigger menu-trigger" @click="isOpen = !isOpen" v-if="!isOpen"/>
+    <base-button icon-only icon-before="menu" class="menu-trigger menu-trigger" :color="color" @click="isOpen = !isOpen" v-if="!isOpen"/>
 
     <nav v-if="isOpen" class="main-menu__panel" :is-open="isOpen">
-      <base-button icon-only icon-before="close" class="menu-trigger menu-trigger" @click="isOpen = !isOpen" />
+      <base-button icon-only icon-before="close" class="menu-trigger menu-trigger" color="base" @click="isOpen = !isOpen" />
 
       <ul>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/">Home</NuxtLink></li>
@@ -22,7 +22,7 @@ const isOpen = ref(false);
 const props = defineProps({
   color: {
     type: String,
-    default: "" 
+    default: "white" 
   }
 });
 
@@ -39,11 +39,18 @@ const { color } = toRefs(props)
 
 .menu-trigger {
   position: fixed;
-  top: var(--s2);
-  right: var(--s2);
+  top: 0;
+  right: 0;
   z-index: var(--main-menu-trigger-z-index, 1001);
   transition: all 0.3s;
   cursor: pointer;
+  --button-padding-v: var(--s1);
+
+  @media (max-width: 768px) { }
+  @media (min-width: 768px) { 
+    top: var(--s-1);
+    right: var(--s1); 
+  }
 }
 
 .main-menu__panel {
@@ -105,17 +112,17 @@ const { color } = toRefs(props)
   display: block;
 }
 
-.main-menu[color="base"]    { 
-  --menu-color: var(--base-color);
+// .main-menu[color="base"]    { 
+//   --menu-color: var(--base-color);
   
-}
-.main-menu[color="white"]   { 
-  --menu-color: var(--white-color);
+// }
+// .main-menu[color="white"]   { 
+//   --menu-color: var(--white-color);
   
-}
-.main-menu[color="primary"] { 
-  --menu-color: var(--primary-color);
+// }
+// .main-menu[color="primary"] { 
+//   --menu-color: var(--primary-color);
   
-}
+// }
 
 </style>

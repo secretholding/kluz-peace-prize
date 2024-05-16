@@ -1,10 +1,12 @@
 <template>
   <div class="kpp-top-bar" :color="color">
-    <h1 class="kpp-top-bar__logo">
-      <NuxtLink to="/">
+
+    <NuxtLink to="/">
+      <h1 class="kpp-top-bar__logo">
         <kluz-logo :color="color" />
-      </NuxtLink>
-    </h1>
+      </h1>
+    </NuxtLink>
+
     <div class="kpp-top-bar__nav">
       <slot>
         <kpp-main-menu :color="color"/>
@@ -25,5 +27,25 @@ const { color } = toRefs(props);
 </script>
 
 <style lang="scss" scoped>
-.test {}
+.kpp-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--s0);
+  width: 100%;
+
+  @media (min-width: 768px) {
+    padding: var(--s1);
+  }
+}
+
+
+
+.kpp-top-bar__logo {
+  max-width: 100px;
+
+  @media (min-width: 768px) {
+    max-width: 200px;
+  }
+}
 </style>
