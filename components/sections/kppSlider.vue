@@ -12,6 +12,7 @@
 
 <script setup>
 const route = useRoute()
+
 // Vamos precisar ligar o objeto Winner com o slide. 
 const winner = await queryContent('winners').where({
     slug: route.params.slug

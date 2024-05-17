@@ -29,9 +29,20 @@ const updatesHighlights = {
   }
 }
 
+const events = await queryContent('events').find();
+const groupedByYear = (events.reduce((grouped, event) => {
+  const year = event.year; // replace 'year' with the actual attribute name in your event object
+  if (!grouped[year]) {
+    grouped[year] = {};
+  }
+  grouped[year] = event;
+  return grouped;
+}, {}));
+
+
 const eventsHighlights = {
   title: 'Events Highlights',
-  posts: await queryContent('events').find(),
+  posts: groupedByYear,
   action: {
     label: 'View All Events',
     url: '/events'
