@@ -1,14 +1,15 @@
 <template>
   <stack-l>
-    <h2 class="text-align:center">Winners 202X</h2>
+    <h2 class="text-align:center">Winners {{ event.year }}</h2>
     <div class="winners-grid">
       <stack-l class="intro">
         <h3>Winners and Mentions</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem adipisci molestiae esse iusto repellat consequatur quis ea quod eos, consequuntur perspiciatis laborum tempore quia ipsam omnis, sapiente animi quam nostrum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem adipisci molestiae esse iusto repellat consequatur quis ea quod eos, consequuntur perspiciatis laborum tempore quia ipsam omnis, sapiente animi quam nostrum.</p>
+        <p>{{ event.description }}</p>
       </stack-l>
-      <div class="winner winner--1">
-        <img src="https://via.placeholder.com/150" alt="Winner 1">
+      <div class="winner winner--1" v-for="winner of winners" :key="winner.slug">
+        <NuxtLink :to="`prizes/${winner.slug}`">
+          <img :src="winner.image" alt="Winner 1">
+        </NuxtLink>
       </div>
       <div class="winner winner--2">
         <img src="https://via.placeholder.com/150" alt="Winner 2">
@@ -24,6 +25,15 @@
 </template>
 
 <script setup>
+
+const props = defineProps({
+  event: {
+    type: Object,
+    required: true
+  }
+})
+
+const winners = await queryContent('winners').where({ year: props.event.year }).find();
 
 </script>
 
