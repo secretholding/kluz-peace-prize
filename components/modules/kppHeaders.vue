@@ -1,15 +1,14 @@
 <template>
   <hgroup class="headers" :content="content" :color="color">
 
-    <h5 class="brow"    v-if="content.brow">{{ content.brow }}</h5>
-    <h5 class="brow"    v-else>{{ formatDate(content.date) }}</h5>
+    <h5 class="brow" v-if="content.brow">{{ content.brow }}</h5>
+    <h5 class="brow" v-else>{{ computedDate }}</h5>
     
-    <h3 class="title"         >{{ content.title }}</h3>
+    <h3 class="title">{{ content.title }}</h3>
     
     <h4 class="tagline" v-if="content.tagline">{{ content.tagline }}</h4>
-    <h5 class="date"    v-if="content.dateString">{{ content.dateString }}</h5>
-    <h5 class="date"    v-else-if="content.brow">{{ formatDate(content.date) }}</h5>
-    <p class="authors"  v-if="content.author">By {{ content.author }}</p>
+    <h5 class="date">{{ computedDate }}</h5>
+    <p class="authors" v-if="content.author">By {{ content.author }}</p>
   </hgroup>
 </template>
 
@@ -34,6 +33,12 @@ const props = defineProps({
     default: 'base'
   },
 });
+
+const computedDate = computed(() => {
+  const datePattern = /^\d{4}-\d{2}-\d{2}$/; // Basic YYYY-MM-DD pattern check
+  return datePattern.test(props.content.date) ? formatDate(props.content.date) : props.content.date;
+});
+
 
 </script>
 
