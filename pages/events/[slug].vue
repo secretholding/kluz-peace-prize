@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h2>Event YEAR</h2>
+    <h2>{{ event.year }}</h2>
     <pre>
       <!-- Event YEAR -->
+      {{ event.title }}
     </pre>
 
     <pre>
@@ -12,6 +13,12 @@
 </template>
 
 <script setup>
+
+const route = useRoute()
+
+const event = await queryContent('events').where({
+    year: Number(route.params.slug)
+}).findOne();
 
 </script>
 

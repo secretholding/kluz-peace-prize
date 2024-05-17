@@ -5,8 +5,7 @@
     </kpp-hero>
     <center-l size="wide">
       <pre>
-        {{ data.winner }}
-        {{ blogData }}
+        {{ winner }}
       </pre>
 
 
@@ -41,13 +40,12 @@ definePageMeta({
 });
 
 const route = useRoute()
-const blogData = await queryContent('winners').where({
-    slug: route.params.slug
-}).find();
 
-const data = reactive({
-  winner: blogData[0]
-});
+// winner is the obj already
+const winner = await queryContent('winners').where({
+    slug: route.params.slug
+}).findOne();
+
 
 // const headerContent = {
 //   brow: data.winner.prize  + ' | ' + data.winner.year,

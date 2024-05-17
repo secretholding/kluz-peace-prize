@@ -19,7 +19,6 @@
     {
       "name": "Andrew Schroeder",
       "position": "Vice President of Research and Analysis at Direct Relief"
-      // No image available in the assets folder
     },
     {
       "name": "Artur Kluz",
@@ -34,12 +33,10 @@
     {
       "name": "Fatima Roumate",
       "position": "Full Professor of International Law at Mohammed V University, President of the International Institute of Scientific Research, Member of the Ad Hoc Expert Group for the Recommendation on the Ethics of Artificial Intelligence UNESCO"
-      // No image available in the assets folder
     },
     {
       "name": "François Chopard",
       "position": "CEO - Starburst Aerospace"
-      // No image available in the assets folder
     },
     {
       "name": "Kay Firth-Butterfield",
@@ -49,7 +46,6 @@
     {
       "name": "Matthew Sanders",
       "position": "CEO of Humanity 2.0 and Longbeard"
-      // No image available in the assets folder
     },
     {
       "name": "Stefaan Verhulst",
@@ -64,7 +60,6 @@
     {
       "name": "Zara Khan",
       "position": "Business Development at X, the moonshot factory"
-      // No image available in the assets folder
     }
   ]
 }
