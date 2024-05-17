@@ -1,7 +1,10 @@
 <template>
+  <kpp-hero height="20svh"/>
   <kpp-base-section>
-    <h1>Event Page</h1>
-    <h2>Application Form</h2>
+    <center-l size="wide">
+      <h1>Event Page</h1>
+      <h2>Application Form</h2>
+    </center-l>
   </kpp-base-section>
 </template>
 

@@ -1,7 +1,24 @@
 /* This fixes a conflict with @container queries */
-.center--forced { width: 100%; }
+.width\:100\% { width: 100%; }
+.center--forced { width: 100%; } /* This is a hack to center the content in the container shoudl be replaced by .width:100% */
 
+:root {
+  --sidebar-width: 300px;
+}
 
+.has-sidebar {
+  display: flex;
+  justify-content: space-between;
+
+  aside {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+  }
+}
+
+.center--with-sidebar {
+  padding-right: calc(var(--s0) + var(--sidebar-width)) !important;
+}
 
 
 
