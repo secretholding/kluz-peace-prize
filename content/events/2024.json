@@ -1,0 +1,70 @@
+{
+  "id":1,
+  "brow": "Event",
+  "title": "Kluz Peace Prize 2024",
+  "tagline": "Celebrating those who promote peace and resolve conflicts",
+  "year": "2024",
+  "description": "Apply to the 2024 Kluz Prize for PeaceTech and be recognized for your achievements and contributions to the evolving field of technologies for peace.",
+  "action": {
+    "label": "Apply now",
+    "url": "/apply"
+  },
+
+  "jury": [
+    {
+      "name": "Ana Carolina González Peña",
+      "position": "Co-Founder and Director of the Magnolia Foundation",
+      "image": "/images/jury/ana_carolina_gonzalez_pena.jpg"
+    },
+    {
+      "name": "Andrew Schroeder",
+      "position": "Vice President of Research and Analysis at Direct Relief"
+      // No image available in the assets folder
+    },
+    {
+      "name": "Artur Kluz",
+      "position": "Founder & CEO of Kluz Ventures",
+      "image": "/images/jury/artur_kluz.jpg"
+    },
+    {
+      "name": "Bradley Tusk",
+      "position": "Co-Founder & Managing Partner of Tusk Venture Partners, Founder of Tusk Strategies",
+      "image": "/images/jury/bradley_tusk.jpg"
+    },
+    {
+      "name": "Fatima Roumate",
+      "position": "Full Professor of International Law at Mohammed V University, President of the International Institute of Scientific Research, Member of the Ad Hoc Expert Group for the Recommendation on the Ethics of Artificial Intelligence UNESCO"
+      // No image available in the assets folder
+    },
+    {
+      "name": "François Chopard",
+      "position": "CEO - Starburst Aerospace"
+      // No image available in the assets folder
+    },
+    {
+      "name": "Kay Firth-Butterfield",
+      "position": "Executive Director of the Centre for Trustworthy Technology",
+      "image": "/images/jury/kay_firth_butterfield.jpg"
+    },
+    {
+      "name": "Matthew Sanders",
+      "position": "CEO of Humanity 2.0 and Longbeard"
+      // No image available in the assets folder
+    },
+    {
+      "name": "Stefaan Verhulst",
+      "position": "Co-Founder & Chief Research & Development Officer of The GovLab",
+      "image": "/images/jury/stefaan_verhulst.jpg"
+    },
+    {
+      "name": "Stuart E. Eizenstat",
+      "position": "Senior Counsel at Covington & Burling",
+      "image": "/images/jury/stuart_e_eizenstat.jpg"
+    },
+    {
+      "name": "Zara Khan",
+      "position": "Business Development at X, the moonshot factory"
+      // No image available in the assets folder
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "brow": "Event",
+  "title": "Kluz Peace Prize 2023",
+  "tagline": "Celebrating those who promote peace and resolve conflicts",
+  "year": 2023,
+  "description": "The Kluz Peace Prize is awarded annually to individuals or groups who have made a significant contribution to the promotion of peace and the resolution of conflicts. The prize was established in 2020 by the Kluz Foundation, a non-profit organization dedicated to promoting peace and social justice around the world.",
+  "jury": [
+    {
+      "name": "Ana Carolina González Peña",
+      "position": "Co-Founder and Director of the Magnolia Foundation",
+      "image": "/images/jury/ana_carolina_gonzalez_pena.jpg"
+    },
+    {
+      "name": "Artur Kluz",
+      "position": "Founder & CEO of Kluz Ventures",
+      "image": "/images/jury/artur_kluz.jpg"
+    },
+    {
+      "name": "Bradley Tusk",
+      "position": "Co-Founder & Managing Partner of Tusk Venture Partners, Founder of Tusk Strategies",
+      "image": "/images/jury/bradley_tusk.jpg"
+    },
+    {
+      "name": "Chris Larsen",
+      "position": "Angel Investor and Business Executive",
+      "image": "/images/jury/chris_larsen.jpg"
+    },
+    {
+      "name": "Daniel Wilhelm",
+      "position": "President of The Harry Frank Guggenheim Foundation",
+      "image": "/images/jury/daniel_wilhelm.jpg"
+    },
+    {
+      "name": "Evelyn Tauchnitz",
+      "position": "Senior Research Fellow at the University of Lucerne’s Institute of Social Ethics",
+      "image": "/images/jury/evelyn_tauchnitz.jpg"
+    },
+    {
+      "name": "Kay Firth-Butterfield",
+      "position": "Executive Director of the Centre for Trustworthy Technology",
+      "image": "/images/jury/kay_firth_butterfield.jpg"
+    },
+    {
+      "name": "Simona Paravani-Mellinghoff",
+      "position": "Global CIO of Solutions - Multi-Asset Strategies & Solutions at BlackRock",
+      "image": "/images/jury/simona_paravani_mellinghoff.jpg"
+    },
+    {
+      "name": "Stefaan Verhulst",
+      "position": "Co-Founder & Chief Research & Development Officer of The GovLab",
+      "image": "/images/jury/stefaan_verhulst.jpg"
+    },
+    {
+      "name": "Stephen Roberts",
+      "position": "Professor of Machine Learning at University of Oxford & Co-Founder of Mind Foundry",
+      "image": "/images/jury/stephen_roberts.jpg"
+    },
+    {
+      "name": "Stuart E. Eizenstat",
+      "position": "Senior Counsel at Covington & Burling",
+      "image": "/images/jury/stuart_e_eizenstat.jpg"
+    }
+  ]
+}
