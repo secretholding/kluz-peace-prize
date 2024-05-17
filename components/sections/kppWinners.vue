@@ -1,9 +1,9 @@
 <template>
-  <kpp-base-section height="auto">
-    <h1 class="text-align:center">Winners 202X</h1>
+  <stack-l>
+    <h2 class="text-align:center">Winners 202X</h2>
     <div class="winners-grid">
       <stack-l class="intro">
-        <h2>Winners and Mentions</h2>
+        <h3>Winners and Mentions</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem adipisci molestiae esse iusto repellat consequatur quis ea quod eos, consequuntur perspiciatis laborum tempore quia ipsam omnis, sapiente animi quam nostrum.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem adipisci molestiae esse iusto repellat consequatur quis ea quod eos, consequuntur perspiciatis laborum tempore quia ipsam omnis, sapiente animi quam nostrum.</p>
       </stack-l>
@@ -20,8 +20,7 @@
         <img src="https://via.placeholder.com/150" alt="Winner 4">
       </div>
     </div>
-    
-  </kpp-base-section>
+  </stack-l>
 </template>
 
 <script setup>

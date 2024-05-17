@@ -1,5 +1,5 @@
 <template>
-  <reel-l>
+  <reel-l :width="width">
       <slot>
         <div v-for="i in 6">
           <div class="base-card | frame">
@@ -13,6 +13,14 @@
 </template>
 
 <script setup>
+const props = defineProps({
+  width: {
+    type: String,
+    default: '60svw'
+  },
+});
+
+let { width } = toRefs(props)
 
 </script>
 

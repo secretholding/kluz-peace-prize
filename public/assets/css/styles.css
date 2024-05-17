@@ -1,7 +1,22 @@
+/* This fixes a conflict with @container queries */
+.center--forced { width: 100%; }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================== */
 /* h2 { text-transform: uppercase; } */
-
-
 
 /* .twin-panel { 
   display: flex; 

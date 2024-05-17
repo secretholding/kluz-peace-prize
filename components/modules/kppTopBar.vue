@@ -35,7 +35,7 @@ const { color } = toRefs(props);
   width: 100%;
 
   @media (min-width: 768px) {
-    padding: var(--s1);
+    // padding: var(--s1);
   }
 }
 

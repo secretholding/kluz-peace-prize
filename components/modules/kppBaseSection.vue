@@ -1,7 +1,7 @@
 <template>
-  <base-section class="kpp-base-section" :height="height">
+  <section class="kpp-base-section" :height="height" :padding="padding">
     <slot></slot>
-  </base-section>
+  </section>
 </template>
 
 <script setup>
@@ -9,6 +9,10 @@ const props = defineProps({
   height: {
     type: String,
     default: 'auto'
+  },
+  padding: {
+    type: String,
+    default: 'var(--s3)'
   }
 });
 
@@ -16,7 +20,11 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .kpp-base-section {
-  padding: var(--s2);
   min-height: v-bind(height);
+  padding-block: v-bind(padding);
+
+  @media (max-width: 768px) {
+    padding-block: var(--s1);
+  }
 }
 </style>

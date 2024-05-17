@@ -1,9 +1,14 @@
 <template>
-  <hgroup class="headers | stack" :content="content">
+  <hgroup class="headers" :content="content" :color="color">
+
     <h5 class="brow"    v-if="content.brow">{{ content.brow }}</h5>
-    <h3 class="title">{{ content.title }}</h3>
+    <h5 class="brow"    v-else>{{ formatDate(content.date) }}</h5>
+    
+    <h3 class="title"         >{{ content.title }}</h3>
+    
     <h4 class="tagline" v-if="content.tagline">{{ content.tagline }}</h4>
-    <h5 class="date"    v-if="content.date">{{ formatDate(content.date) }}</h5>
+    <h5 class="date"    v-if="content.dateString">{{ content.dateString }}</h5>
+    <h5 class="date"    v-else-if="content.brow">{{ formatDate(content.date) }}</h5>
     <p class="authors"  v-if="content.author">By {{ content.author }}</p>
   </hgroup>
 </template>
@@ -20,14 +25,88 @@ const props = defineProps({
       title: 'This is the title',
       tagline: 'This is the tagline',
       author: 'This is the author',
-      date: ''
+      date: 'Mon DD, YYYY'
     })
+  },
+  
+  color: {
+    type: String,
+    default: 'base'
   },
 });
 
 </script>
 
 <style lang="scss" scoped>
+.headers { 
+  container-type: inline-size; 
+  width: 100%;
+  --header-hsl: var(--base-hsl);
+}
+
+.headers > * {
+  position: relative;
+  z-index: 1;
+  color: hsla(var(--header-hsl), 1);  
+}
+
+.brow {
+  font-weight: 600;  
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: 200;  
+  line-height: 1.3;
+}
+
+.tagline {
+  font-weight: 200;  
+  line-height: 1.45;
+  margin-top: var(--s0);
+  display: none;
+}
+
+.date { 
+  font-weight: 400;  
+  text-transform: uppercase;
+  margin-top: var(--s0);
+}
+
+.authors { 
+  font-weight: 400;  
+  font-style: italic;
+  color: hsla(var(--header-hsl), 0.75);  
+}
+
+.brow    { font-size: .75rem; }
+.title   { font-size: 1.3rem; }
+.tagline { font-size: 1rem;   }
+.authors { font-size: .85rem; }
+.date    { font-size: .75rem; }
+
+.headers[color="base"] *      { --header-hsl: var(--base-hsl); }
+.headers[color="white"] *     { --header-hsl: var(--white-hsl); }
+.headers[color="primary"] *   { --header-hsl: var(--primary-hsl); }
+.headers[color="secondary"] * { --header-hsl: var(--secondary-hsl); }
+.headers[color="accent"] *    { --header-hsl: var(--accent-hsl); }
+
+@container (min-width: 900px) {
+  .headers .brow    { font-size: 1rem;   }
+  .headers .title   { font-size: 3rem;   }
+  
+  .headers .tagline { 
+    font-size: 1.5rem; 
+    display: block;
+  } 
+  
+  .headers .author  { font-size: 1rem;   } 
+  .headers .date    { font-size: 1rem;   } 
+} 
+
+
+
 // .headers {
 //   width: 100%;
 // }
@@ -56,24 +135,5 @@ const props = defineProps({
 //     position: relative;
 //     z-index: 1;
 //   }
-// }
-
-// .headers:after {
-//     position: absolute;
-//     content: "";
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-    
-//     background: linear-gradient(to bottom, transparent, 55%, hsla(var(--base-hsl), 0.75));
-    
-//     @media (max-width: 768px) { background: linear-gradient(to bottom, transparent, 25%, hsla(var(--base-hsl), 0.75)); }
-//   }
-
-// .headers[cover-image="false"] { background: hsla(var(--base-hsl), 0.1);   
-//   .brow,
-//   .heading,
-//   .tagline { color: var(--primary-color); }
 // }
 </style>

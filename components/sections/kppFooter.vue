@@ -1,5 +1,5 @@
 <template>
-  <kpp-base-section class="kpp-footer" height="auto">
+  <kpp-base-section class="kpp-footer | padding-top:s2 padding-bottom:s2" height="auto">
     <center-l size="wide">
     <div class="kpp-footer__content">
       <div class="about | stack">
@@ -37,7 +37,7 @@
     </div>
 
     <p class="copyright | margin-top:s2">
-      &copy; 2021 Kluz Prize for PeaceTech. All rights reserved
+      <small>&copy; 2021 Kluz Prize for PeaceTech. All rights reserved</small>
     </p> 
   </center-l>
 

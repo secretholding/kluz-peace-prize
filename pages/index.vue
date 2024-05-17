@@ -1,9 +1,14 @@
 <template>
-    <kpp-hero color="primary"/>
+    <kpp-slider />
+    
     <kpp-highlight-event />
-    <kpp-highlight-prizes />
+
+    <kpp-highlights :content="eventsHighlights" />
+
+    <kpp-highlights :content="updatesHighlights" />
+
     <kpp-highlight-about />
-    <kpp-highlight-updates />
+    
 </template>
 
 <script setup>
@@ -12,12 +17,31 @@ useHead({
 })
 
 definePageMeta({
-  layout: "base",
+  layout: "base"
 });
+
+const updatesHighlights = {
+  title: 'Updates Highlights',
+  posts: await queryContent('updates').sort({date: -1}).limit(3).find(),
+  action: {
+    label: 'View All Updates',
+    url: '/updates'
+  }
+}
+
+const eventsHighlights = {
+  title: 'Events Highlights',
+  posts: await queryContent('events').find(),
+  action: {
+    label: 'View All Events',
+    url: '/events'
+  }
+}
+
 </script>
 
 <style lang="scss" scoped>
-.test {
-  color: red;
-}
+
+
+
 </style>

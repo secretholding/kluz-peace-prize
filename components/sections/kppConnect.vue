@@ -1,7 +1,8 @@
 <template>
-  <kpp-base-section height="50svh">
-    <h2>Prizes Highlight</h2>
-    <kpp-reel />
+  <kpp-base-section>
+    <center-l size="wide">
+      <slot></slot>
+    </center-l>
   </kpp-base-section>
 </template>
 

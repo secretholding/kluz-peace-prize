@@ -1,12 +1,10 @@
 <template>
   <kpp-hero class="kpp-hero--updates" :cover-image="coverImageUrl" :height="height" :color="coverImageUrl ? 'white' : 'primary'">
-    <center-l size="wide">
-      <stack-l>
-        <slot>
-          <kpp-headers :content="headerContent"/>
-        </slot>
-      </stack-l>
-    </center-l>
+    <slot>
+      <center-l size="wide" class="center--forced">
+        <kpp-headers :content="headerContent" :color="coverImageUrl ? 'white' : 'primary'" />
+      </center-l>
+    </slot>
   </kpp-hero>
 </template>
 
@@ -55,17 +53,23 @@ const headerContent = computed(() => {
 <style lang="scss" scoped>
 .kpp-hero--updates {
   min-height: 70svh;
-  display: flex;
-  align-items: flex-end;
   background-image: v-bind(coverImageUrl);
   background-size: cover;
   position: relative;
+
 }
 
-.kpp-hero-updates {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: var(--s1) var(--s3) var(--s3);
+.kpp-hero--updates[cover-image=true]:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background: linear-gradient(to bottom, transparent, 55%, hsla(var(--base-hsl), 0.75));
+  
+  @media (max-width: 768px) { background: linear-gradient(to bottom, transparent, 25%, hsla(var(--base-hsl), 0.75)); }
 }
+
 </style>

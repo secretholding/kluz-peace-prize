@@ -38,7 +38,7 @@ const { color } = toRefs(props)
 .main-menu { position: relative; }
 
 .menu-trigger {
-  position: fixed;
+  // position: fixed;
   top: 0;
   right: 0;
   z-index: var(--main-menu-trigger-z-index, 1001);
