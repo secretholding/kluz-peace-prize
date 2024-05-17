@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero color="white">
+  <kpp-hero color="white" height="60svh">
     <div class="slider">
       <div class="slide">
         <center-l size="wide" class="center--forced">
@@ -11,7 +11,19 @@
 </template>
 
 <script setup>
+const route = useRoute()
+// Vamos precisar ligar o objeto Winner com o slide. 
+const winner = await queryContent('winners').where({
+    slug: route.params.slug
+}).findOne();
 
+
+const headerContent = {
+  brow: winner.prize  + ' | ' + winner.year,
+  title: winner.title,
+  tagline: winner.country,
+  dateString: winner.applicant
+}
 </script>
 
 <style lang="scss" scoped>
@@ -31,8 +43,10 @@
   right: 0;
   display: flex;
   align-items: flex-end;
-  padding-block: var(--s4);
+  padding-bottom: var(--s4);
   animation: slide 8s infinite alternate;
+  background-size: cover;
+  background-position: center center;
 }
 
 

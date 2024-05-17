@@ -3,7 +3,7 @@
     <h2>{{ event.year }}</h2>
     <pre>
       <!-- Event YEAR -->
-      {{ event.title }}
+      {{ event }}
     </pre>
 
     <pre>

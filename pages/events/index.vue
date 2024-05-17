@@ -3,7 +3,7 @@
     <h2>Event {{ val }}</h2>
     <pre>
       <!-- Dados do Event -->
-      {{ event.title }}
+      {{ event }}
     </pre>
     
     <hr>

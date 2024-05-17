@@ -1,7 +1,7 @@
 <template>
   <div>
     <kpp-hero>
-      <!-- <kpp-headers :content="headerContent" color="primary" />  -->
+      <kpp-headers :content="headerContent" color="primary" /> 
     </kpp-hero>
     <center-l size="wide">
       <pre>
@@ -47,12 +47,12 @@ const winner = await queryContent('winners').where({
 }).findOne();
 
 
-// const headerContent = {
-//   brow: data.winner.prize  + ' | ' + data.winner.year,
-//   title: data.winner.title,
-//   tagline: data.winner.country,
-//   dateString: data.winner.applicant
-// }
+const headerContent = {
+  brow: winner.prize  + ' | ' + winner.year,
+  title: winner.title,
+  tagline: winner.country,
+  dateString: winner.applicant
+}
 </script>
 
 <style lang="scss" scoped>
