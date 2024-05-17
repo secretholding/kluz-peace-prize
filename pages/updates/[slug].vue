@@ -28,8 +28,6 @@
       blog: blogData[0]
   });
 
-  const { formatDate } = useFormatDate();
-
   const coverImageUrl = computed(() => {
     return data.blog.image ? `url(https://cms.thegovlab.com/assets/${data.blog.image.id})` : false;
   })
