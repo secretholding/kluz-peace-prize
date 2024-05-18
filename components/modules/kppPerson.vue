@@ -4,8 +4,8 @@
       <slot name="image">
         <img :src="imgSrc" :alt="`${content.name} | ${content.title}`">
       </slot>
-      <h5>{{ content.name  }}</h5>
-      <h6>{{ content.title  }}</h6>
+      <h5>{{ content.name }}</h5>
+      <h6>{{ content.title }}</h6>
     </slot>
   </section>
 </template>
@@ -36,12 +36,13 @@ const computed = {
 </script>
 
 <style lang="scss" scoped>
-.kpp-base-section {
-  min-height: v-bind(height);
+.kpp-person {
   padding-block: v-bind(padding);
 
-  @media (max-width: 768px) {
-    padding-block: var(--s1);
-  }
+  h5, h6 { margin-block: 0; }
+  
+  h5 { font-weight: 400; }
+  h6 { font-size: .75rem; }
+  
 }
 </style>

@@ -1,0 +1,52 @@
+{
+  "prize": "Big Tech Building Peace",
+  "title": "Palantir Foundry",
+  "slug": "palantir-foundry",
+  "project_url": "https://www.palantir.com/uk/government/#homes-for-ukraine",
+  "applicant": "Ishrq Irteza",
+  "country": "United Kingdom",
+  "year": 2023,
+  "images": {
+    "logo": "palantir-logo.svg",
+    "hero": "palantir-foundry-hero.jpg",
+    "ceremony": "palantir-foundry-ceremony.jpg",
+    "impact": "palantir-foundry-impact.svg"
+
+  },
+  "quote": {
+    "text": "Technology holds the key to unlocking a more peaceful world, and PeaceTech is the driving force behind this transformative opportunity. Together, by showcasing groundbreaking applications of technology to foster peace, we can accelerate the PeaceTech movement and create tangible, life-changing impact on a global scale.",
+    "cite": "Artur Kluz, Founder and CEO of Kluz Ventures"
+  },
+  "impact": {
+    "description": "",
+    "image": "",
+    "metrics": [
+      {
+        "label": "Metric 1",
+        "value": "XX"
+      },
+      {
+        "label": "Metric 2",
+        "value": "XX"
+      },
+      {
+        "label": "Metrica 3",
+        "value": "XX"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Ishrq Irteza",
+      "title": "",
+      "bio": "",
+      "image": "ishrq-irteza.png"
+    }
+  ],
+  "connect": {
+    "message": "Contact Message",
+    "label": "Visit their website",
+    "url": "https://www.palantir.com/uk/government/#homes-for-ukraine"
+  },
+  "content_html": ""
+}

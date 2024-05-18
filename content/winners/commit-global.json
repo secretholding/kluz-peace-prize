@@ -1,0 +1,57 @@
+{
+  "prize": "Kluz Prize for Peacetech",
+  "title": "Commit Global",
+  "slug": "commit-global-2023",
+  "project_url": "https://www.commitglobal.org/en",
+  "applicant": "Bogdan Ivanel",
+  "country": "USA | Global",
+  "year": 2023,
+  "images": {
+    "logo": "commit-global-logo.png",
+    "hero": "commit-global-1.jpg",
+    "ceremony": "commit-global-1.jpg",
+    "impact": "commit-global-impact.svg"
+  },
+  "quote": {
+    "text": "Technology holds the key to unlocking a more peaceful world, and PeaceTech is the driving force behind this transformative opportunity. Together, by showcasing groundbreaking applications of technology to foster peace, we can accelerate the PeaceTech movement and create tangible, life-changing impact on a global scale.",
+    "cite": "Artur Kluz, Founder and CEO of Kluz Ventures"
+  },
+  "impact": {
+    "description": "Access to information and resources is critical in any crisis. Making sure that both are available as quickly as possible in case of an emergency can save lives. Technology can help scale almost instantaneously every effort of intervention if deployed correctly. Having a shared common infrastructure among actors working in the field helps with reducing duplication of efforts, effective distribution of resources, accessing verified and trustworthy data, managing activities and supporting large numbers of beneficiaries simultaneously. Last but not least, it also means safety and standards. In such situations making sure you have the right technology at hand is essential. Our ecosystem is built open-source, making sure that all of the security, accessibility and inclusivity standards are followed in order to service every person as best as possible and reducing vulnerability to the best of its capacity.",
+    "image": "commit-global-impact.svg",
+    "metrics": [
+      {
+        "label": "Countries",
+        "value": "+10"
+      },
+      {
+        "label": "Refugees Assisted",
+        "value": "+265"
+      },
+      {
+        "label": "Total Charitable Support",
+        "value": "$12M"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Bogdan Ivanel",
+      "title": "Founder & CEO",
+      "bio": "Bogdan Ivanel is the Founder and CEO of Commit Global, a global technology company that specializes in localization, translation, and digital solutions. He is a seasoned entrepreneur with a passion for technology and innovation. Bogdan has a strong background in software development and has been involved in numerous projects that leverage technology to drive social impact. He is a firm believer in the power of technology to transform lives and make the world a better place.",
+      "image": "bogdan-ivanel.png"
+    },
+    {
+      "name": "Greg Kempe",
+      "title": "Founder & CTO",
+      "bio": "",
+      "image": "greg-kempe.png"
+    }
+  ],
+  "connect": {
+    "message": "We are always looking for partners to help us scale our impact and reach more people in need. If you are interested in collaborating with us, please reach out.",
+    "label": "Visit their website",
+    "url": "https://www.commitglobal.org/en"
+  },
+  "content_html": "<p>Humanitarian crises are by definition global in nature, transcending national or regional borders. War is the most painful of human experiences and we need to ensure that victims and refugees find shelter and are protected in a timely manner. Commit Global built, deployed and is maintaining a first of its kind Humanitarian Digital Civic Infrastructure in support of the Ukrainian refugees. From ensuring their access to timely and accurate information, housing, transport and health support, to equipping UN and government agencies with the aid management tools they need for rapid effective intervention, an integrated ecosystem of interconnected digital solutions is making sure no refugee is left behind.</p><p>The ecosystem has assisted over 1.6 million refugees with verified trusted information on border crossing, legal information, access to social, medical, educational services, to safe verified housing and counseling in a continuous effort to combat human trafficking and other vulnerabilities. It was designed and implemented in under 48h since the start of the war and deployed in Romania in cooperation with the Romanian Government, UN agencies and national NGOs. Dopomoha.ro, available in 4 languages, is a single point of entry to the ecosystem where refugees can access help. The backend consists of complex case, stock, housing and services management apps that allow for effective response in the field. The initiative is the first integrated humanitarian assistance digital ecosystem bringing together on a shared infrastructure all the key actors involved in crisis response for an effective intervention. In 2022, the initiative was awarded as one of the ten projects of the year at the Paris Peace Forum. The ecosystem continues to support thousands of people every single day.</p><h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Access to information and resources is critical in any crisis. Making sure that both are available as quickly as possible in case of an emergency can save lives. Technology can help scale almost instantaneously every effort of intervention if deployed correctly. Having a shared common infrastructure among actors working in the field helps with reducing duplication of efforts, effective distribution of resources, accessing verified and trustworthy data, managing activities and supporting large numbers of beneficiaries simultaneously. Last but not least, it also means safety and standards. In such situations making sure you have the right technology at hand is essential. Our ecosystem is built open-source, making sure that all of the security, accessibility and inclusivity standards are followed in order to service every person as best as possible and reducing vulnerability to the best of its capacity.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>The ecosystem is designed to bring relief, information, and access to services and resources. Its main goal is to protect those impacted by conflict from all dangers and to provide access to help, be they kids, people with disabilities, chronic patients, or others. Second, the ecosystem ensures that first responders and relief teams have tools to work faster, safer and effectively. The central platform ensures that information and services are easy to find and request. The housing allocation app makes sure that all available housing is verified, the resource manager ensures that all donations coming in are indexed and distributed in an efficient way in the field. The case managers allow refugees to ask for medical assistance and NGOs and hospitals to manage available treatment. The women's center provides information on identifying trafficking and directs women to appropriate local services. The other platforms contribute to alleviate PTSD symptoms, to understand legislation and more.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>By putting together coherent ecosystems that offer a 360 degree response to crisis we transform disparate digital tools into actual infrastructure, exponentially increasing their potential to help. We believe it’s not about the tech it’s made of but about the way it produces results and impact. We’ve seen many cases, in the years we spent in the civic tech area, a lot of tech that does not understand its users even in peaceful contexts. Our team has a very strong bias towards research & design before any line of code gets written in GitHub. We have researchers at the borders, in shelters and experts that inform on the best ways to enhance and scale this ecosystem. We share this knowledge (a) by training students in dedicated programmes to become the next humanitarian UX designers or developers. (b) by informing our field partners on how to design better intervention and (c) by maintaining the system so we do not waste funding and time in reinventing the same process every new crisis.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>The funds will help us with several enhancements brought to the ecosystem from a technical perspective, will allow us to document and better understand how this intervention model can be scaled even faster and be available to intervene in other crises around the world as needed. As we are just setting up capacity and consolidating our partnerships with other international organizations such as the Red Cross or the UN Agencies it is a very important moment for us to ensure sustainability for our organization. At the same time, crises do not go idle in our day and age and the pressure on us to support NGOs in the field is bigger than ever.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>Romania has been lucky (...) the DES has been the first to deploy, thanks to the tireless work of Code for Romania (Commit Global), in a matter of 48h, an unique ecosystem of solutions to manage communication, housing, aid and access to services for refugees crossing the border. This should be the norm for every crisis response, as we are at a time in history when technology cannot be ignored in such situations. These solutions are global in nature and every country should be equipped with such an indispensable digital infrastructure and capacity to respond to emergencies, facilitating collaboration between government, international agencies and civil society on the ground to ensure rapid intervention for those in need. The work that has been done is critical and needs to be scaled for it to continue to serve the most vulnerable and we are in full trust and support of this team to make this possible.</p><p><em>Dr. Raed Arafat, Secretary of State, Department for Emergency Situations</em></p>"
+}

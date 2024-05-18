@@ -1,5 +1,5 @@
 <template>
-  <div class="kpp-hero" :height="height" :color="color" :title="title">
+  <div class="kpp-hero" :height="height" :color="color" :title="title" :bg="bg">
     <kpp-top-bar class="kpp-hero__top-bar" :color="color" />
     <slot>
       <center-l size="wide" class="center--force">
@@ -19,11 +19,20 @@ const props = defineProps({
     type: String,
     default: 'white'
   },
+  bg: {
+    type: String,
+    default: ''
+  },
   title: {
     type: String,
     default: ''
   }
 });
+
+const bgPath = computed(() => {
+  return props.bg ? `url(${props.bg})` : '';
+});
+
 
 </script>
 
@@ -47,11 +56,16 @@ const props = defineProps({
   h1 { color: var(--primary-color); }
 }
 
-
-
 .kpp-hero__top-bar {
   position: relative;
   z-index: 100;
+}
+
+.kpp-hero[bg] {
+  background-image: v-bind(bgPath);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 

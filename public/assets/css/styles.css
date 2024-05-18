@@ -10,9 +10,15 @@
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
   aside {
     width: var(--sidebar-width);
     flex-shrink: 0;
+
+    
   }
 }
 

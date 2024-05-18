@@ -130,7 +130,7 @@
 .prose :deep(h2),
 .prose :deep(h2 strong) { 
   color: var(--primary-color); 
-  font-weight: 400 !important;
+  font-weight: 200 !important;
 }
 .prose :deep(h3) { --heading-color: var(--primary-color); }
 .prose :deep(h4) { --heading-color: var(--primary-color); }

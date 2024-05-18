@@ -1,27 +1,11 @@
 <template>
-  <stack-l>
-    <h2 class="text-align:center">Winners {{ event.year }}</h2>
-    <div class="winners-grid">
-      <stack-l class="intro">
-        <h3>Winners and Mentions</h3>
-        <p>{{ event.description }}</p>
-      </stack-l>
-      <div class="winner winner--1" v-for="winner of winners" :key="winner.slug">
-        <NuxtLink :to="`prizes/${winner.slug}`">
-          <img :src="winner.image" alt="Winner 1">
-        </NuxtLink>
-      </div>
-      <div class="winner winner--2">
-        <img src="https://via.placeholder.com/150" alt="Winner 2">
-      </div>
-      <div class="winner winner--3">
-        <img src="https://via.placeholder.com/150" alt="Winner 3">
-      </div>
-      <div class="winner winner--4">
-        <img src="https://via.placeholder.com/150" alt="Winner 4">
-      </div>
-    </div>
-  </stack-l>
+  <div class="winners-grid">
+    <h3 class="winners-grid__title text-align:center">{{ event.year }}</h3>
+    <NuxtLink :to="`prizes/${winner.slug}`" class="winner" v-for="(winner, index) in winners" :key="winner.slug" :index="index">
+      <img v-if="winner.images.logo != ''" :src="`/assets/images/winners/${winner.images.logo}`" :alt="winner.title">
+      <h3 v-else>{{ winner.title }}</h3>
+    </NuxtLink>
+  </div>
 </template>
 
 <script setup>
@@ -42,38 +26,50 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
+  gap: 0;
   grid-template-areas: 
-      "intro intro "
+      "title title"
       "winner1 winner2"  
       "winner3 winner4";  
-  gap: var(--s0);
-
-  @media screen and (min-width: 768px){
-    grid-template-columns: auto minmax(1fr, 320px) minmax(1fr, 320px);
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-      "intro winner1 winner2"
-      "intro winner3 winner4";  
-  }
 }
 
-.intro {
-  grid-area: intro;
-  max-width: 60ch
+.winners-grid__title {
+  font-weight: 400;
+  border-bottom: 2px solid hsla(var(--primary-hsl), .3);
+  padding-bottom: var(--s0);
 }
-
-
 
 .winner {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsla(var(--base-hsl), .1);
+  padding: var(--s0);
+  height: 360px;
+  width: 360px;
+  transition: all .5s ease;
+
+  > img {
+    width: 100%;
+    max-width:  200px;
+    max-height: 200px;
+    mix-blend-mode: multiply;
+    transition: all .8s ease;
+  }
+  
+  &:hover {
+    background-color: hsla(var(--primary-hsl), .03);
+    color: var(--color-white);
+
+    img {
+      transform: scale(1.1);
+    }
+  }
 }
 
-.winner--1 { grid-area: winner1; }
-.winner--2 { grid-area: winner2; }
-.winner--3 { grid-area: winner3; }
-.winner--4 { grid-area: winner4; }
+.winners-grid__title { grid-area: title; }
+.winner[index="0"] { grid-area: winner1; }
+.winner[index="1"] { grid-area: winner2; }
+.winner[index="2"] { grid-area: winner3; }
+.winner[index="3"] { grid-area: winner4; }
 
 </style>

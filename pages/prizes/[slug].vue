@@ -1,26 +1,39 @@
 <template>
   <div>
-    <kpp-hero height="40svh">
+    <kpp-hero height="80svh" :bg="`${base_path}${winner.bg}`">
       <center-l size="wide" class="width:100%">
-        <kpp-headers :content="headerContent" color="primary" /> 
+        <kpp-headers :content="headerContent" color="white" /> 
       </center-l>
     </kpp-hero>
     
     <kpp-base-section>
         <center-l size="wide">
           <div class="has-sidebar">
-            <kpp-prose v-html="winner.content_html" />
-            <aside>
-              <h3>Winners</h3>
-              <kpp-person v-for="i in winner.people" :content="i" :base-path="base_path">
-                <template v-slot:image>
-                  <img slot="image" :src="`${base_path}${i.image}`" alt="">
-                </template> 
-                
-              </kpp-person>
+            <div class="description">
+              <h2>Overview</h2>
+              <client-only>
+                <kpp-prose v-html="winner.content_html" />
+              </client-only>
+            </div>
+            <!-- ToDo: 
+              O prose não renderiza consistentemente. 
+              Acho que temos um problema de hydration. 
+              O ChatGPT sugeriu esse <client-only> para resolver o problema.
+            -->
+            
+
+            <aside class="winners__sidebar">
+              <h2>Winners</h2>
+              <div>
+                <kpp-person v-for="i in winner.people" :content="i" :base-path="base_path">
+                  <template v-slot:image>
+                    <img slot="image" :src="`${base_path}${i.image}`" alt="">
+                  </template> 
+                </kpp-person>
+              </div>
+              
             </aside>
           </div>
-          
         </center-l>
     </kpp-base-section>
     
@@ -112,5 +125,31 @@ const headerContent = {
 </script>
 
 <style lang="scss" scoped>
+.description {
+  h2 + * { padding-top: var(--s1);}
+}
+.winners__sidebar {  
+  > div {
+    padding-top: var(--s1);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s1);
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    padding-top: var(--s1);
 
+    div { 
+      flex-direction: column; 
+      gap: var(--s1);
+    }  
+  }
+
+  @media screen and (min-width: 768px) { 
+    padding-left: var(--s2); 
+  }
+
+  
+}
 </style>
