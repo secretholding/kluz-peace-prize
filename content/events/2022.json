@@ -4,33 +4,42 @@
   "title": "Kluz Peace Prize 2022",
   "tagline": "Celebrating those who promote peace and resolve conflicts",
   "year": 2022,
-  "description": "The Kluz Peace Prize is awarded annually to individuals or groups who have made a significant contribution to the promotion of peace and the resolution of conflicts. The prize was established in 2020 by the Kluz Foundation, a non-profit organization dedicated to promoting peace and social justice around the world.",
+  "description_html": "<p>The 2022 Kluz Prize for PeaceTech was facilitated by the <a href='https://www.eui.eu/research-hub?id=global-peacetech-hub' target='_blank'>Global PeaceTech Hub</a> at the Florence School of Transnational Governance (European University Institute), and awarded at the <a href='https://medium.com/data-stewards-network/situating-peacetech-takeaways-from-the-inaugural-global-peacetech-conference-222b2e1f7ae9' target='_blank'>Global PeaceTech Conference</a>.</p><p>The Kluz Peace Prize is awarded annually to individuals or groups who have made a significant contribution to the promotion of peace and the resolution of conflicts. The prize was established in 2020 by the Kluz Foundation, a non-profit organization dedicated to promoting peace and social justice around the world.</p>",
+  "images": [
+    "/assets/images/winners/palantir-foundry-ceremony.jpg",
+    "/assets/images/winners/commit-global-1.jpg",
+    "/assets/images/winners/project-didi-ceremony.jpg"
+  ],
   "jury": [
     {
       "name": "Andrea Renda",
-      "position": "Head of Global Governance, Regulation, Innovation and the Digital Economy (GRID) at CEPS and Professor of Digital Policy at the School of Transnational Governance (EUI)"
+      "title": "Head of Global Governance, Regulation, Innovation and the Digital Economy (GRID) at CEPS and Professor of Digital Policy at the School of Transnational Governance (EUI)",
+      "image": "/assets/images/jury/andrea-renda.jpg"
     },
     {
       "name": "Artur Kluz",
-      "position": "Founder & CEO of Kluz Ventures",
-      "image": "/images/jury/artur_kluz.jpg"
+      "title": "Founder & CEO of Kluz Ventures",
+      "image": "/assets/images/jury/artur-kluz.jpg"
     },
     {
       "name": "Evelyne Tauchnitz",
-      "position": "Senior Research Fellow at Lucerne Graduate School in Ethics"
+      "title": "Senior Research Fellow at Lucerne Graduate School in Ethics",
+      "image": "/assets/images/jury/evelyne-tauchnitz.jpg"
     },
     {
       "name": "Kalypso Nicolaïdis",
-      "position": "Chair of Global Affairs at the School of Transnational Governance (EUI)"
+      "title": "Chair of Global Affairs at the School of Transnational Governance (EUI)",
+      "image": "/assets/images/jury/kalypso-nicolaidis.jpg"
     },
     {
       "name": "Michele Giovanardi",
-      "position": "Coordinator of the Global PeaceTech Hub at the School of Transnational Governance (EUI)"
+      "title": "Coordinator of the Global PeaceTech Hub at the School of Transnational Governance (EUI)",
+      "image": "/assets/images/jury/michele-giovanardi.jpg"
     },
     {
       "name": "Stefaan Verhulst",
-      "position": "Co-Founder & Chief Research & Development Officer of The GovLab",
-      "image": "/images/jury/stefaan_verhulst.jpg"
+      "title": "Co-Founder & Chief Research & Development Officer of The GovLab",
+      "image": "/assets/images/jury/stefaan-verhulst.jpg"
     }
   ]
 }

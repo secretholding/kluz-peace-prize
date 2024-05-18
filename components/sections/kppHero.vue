@@ -40,13 +40,12 @@ const bgPath = computed(() => {
 
 .kpp-hero {
   --height: v-bind(height);
-  min-height: max(var(--height), 800px);
+  min-height: max(var(--height));
   background-color: hsla(var(--primary-hsl), .1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: var(--s1);
   position: relative;
   
   @media (min-width: 768px) {

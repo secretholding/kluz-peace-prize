@@ -22,9 +22,14 @@ const events = await queryContent('events').sort({year: -1}).find();
 <style lang="scss" scoped>
 .winners-panel {
   display: flex;
+  flex-direction: column;
   width: max-content;
   margin-inline: auto;
-  gap: var(--s0);
+  gap: var(--s3);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 </style>

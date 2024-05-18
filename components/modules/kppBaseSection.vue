@@ -1,5 +1,5 @@
 <template>
-  <section class="kpp-base-section" :height="height" :padding="padding">
+  <section class="kpp-base-section" :height="height" :padding="padding" :color="color">
     <slot></slot>
   </section>
 </template>
@@ -13,6 +13,10 @@ const props = defineProps({
   padding: {
     type: String,
     default: 'var(--s3)'
+  },
+  color: {
+    type: String,
+    default: ''
   }
 });
 
@@ -26,5 +30,15 @@ const props = defineProps({
   @media (max-width: 768px) {
     padding-block: var(--s1);
   }
+}
+
+.kpp-base-section[color="primary"] {
+  background-color: hsla(var(--primary-hsl), 1);
+  :deep(*) { color: var(--white-color); }
+}
+
+.kpp-base-section[color="base"] {
+  background-color: hsla(var(--base-hsl), 1);
+  :deep(*) { color: var(--white-color); }
 }
 </style>

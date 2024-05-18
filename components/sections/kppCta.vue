@@ -1,5 +1,5 @@
 <template>
-  <kpp-base-section height="25svh" class="main-cta">
+  <kpp-base-section height="25svh" class="main-cta" color="primary">
     <center-l size="wide">
       <stack-l>
         <h2>Apply Now</h2>
@@ -17,5 +17,9 @@
 <style lang="scss" scoped>
 .main-cta {
   background-color: #f0f0f0;
+}
+
+.button {
+  // width: 100%;
 }
 </style>

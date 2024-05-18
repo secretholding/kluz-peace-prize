@@ -1,7 +1,11 @@
 <template>
-  <div class="winners-grid">
-    <h3 class="winners-grid__title text-align:center">{{ event.year }}</h3>
-    <NuxtLink :to="`prizes/${winner.slug}`" class="winner" v-for="(winner, index) in winners" :key="winner.slug" :index="index">
+  <div class="winners-grid" :header="header">
+    <hgroup v-if="header == true" class="winners-grid__title | text-align:center">
+      <h3 class="">{{ event.year }}</h3>  
+      <NuxtLink :to="`/events/${event.year}`" class="button" color="primary">View Ceremony</NuxtLink>
+    </hgroup>
+    
+    <NuxtLink :to="`/prizes/${winner.slug}`" class="winner" v-for="(winner, index) in winners" :key="winner.slug" :index="index">
       <img v-if="winner.images.logo != ''" :src="`/assets/images/winners/${winner.images.logo}`" :alt="winner.title">
       <h3 v-else>{{ winner.title }}</h3>
     </NuxtLink>
@@ -14,6 +18,10 @@ const props = defineProps({
   event: {
     type: Object,
     required: true
+  },
+  header: {
+    type: Boolean,
+    default: true
   }
 })
 
@@ -24,19 +32,45 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
 <style lang="scss" scoped>
 .winners-grid {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
   grid-template-areas: 
-      "title title"
-      "winner1 winner2"  
-      "winner3 winner4";  
+    "title"
+    "winner1"
+    "winner2"  
+    "winner3"
+    "winner4";
+  gap: 0;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "title title"
+        "winner1 winner2"  
+        "winner3 winner4";
+  }
 }
 
 .winners-grid__title {
-  font-weight: 400;
-  border-bottom: 2px solid hsla(var(--primary-hsl), .3);
-  padding-bottom: var(--s0);
+  h3 {
+    border-bottom: 2px solid hsla(var(--primary-hsl), .3);
+
+    @media (max-width: 768px) {
+      padding-bottom: var(--s-4);
+      margin-bottom: var(--s0);  
+      font-size: 300%;
+      margin-top: var(--s3);
+    }
+
+    @media (min-width: 768px) {
+      padding-bottom: var(--s0);
+      margin-bottom: var(--s0);  
+    }
+
+    
+    
+  }
 }
 
 .winner {
@@ -44,8 +78,9 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
   justify-content: center;
   align-items: center;
   padding: var(--s0);
-  height: 360px;
-  width: 360px;
+  max-height: 360px;
+  max-width: 360px;
+  min-height: 180px;
   transition: all .5s ease;
 
   > img {
@@ -55,14 +90,17 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
     mix-blend-mode: multiply;
     transition: all .8s ease;
   }
+
+  @media (min-width: 768px) {
+    min-height: 360px;
+    min-width: 360px;
+  }
   
   &:hover {
     background-color: hsla(var(--primary-hsl), .03);
     color: var(--color-white);
 
-    img {
-      transform: scale(1.1);
-    }
+    img { transform: scale(1.1); }
   }
 }
 

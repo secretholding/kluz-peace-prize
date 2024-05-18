@@ -1,9 +1,13 @@
 <template>
-  <section class="kpp-person" :content="content" :padding="padding" :base-path="base_path">
+  <section class="kpp-person" :content="content" :base-path="base_path">
     <slot>
-      <slot name="image">
-        <img :src="imgSrc" :alt="`${content.name} | ${content.title}`">
-      </slot>
+      <div class="frame">
+        <slot name="image">
+          <img v-if="imgSrc" :src="imgSrc" :alt="`${content.name} | ${content.title}`">
+          <img v-else :src="content.image" :alt="`${content.name} | ${content.title}`">
+        </slot>
+      </div>
+
       <h5>{{ content.name }}</h5>
       <h6>{{ content.title }}</h6>
     </slot>
@@ -20,10 +24,6 @@ const props = defineProps({
     type: String,
     default: ''
   },
-  padding: {
-    type: String,
-    default: '0'
-  }
 });
 
 const computed = {
@@ -37,12 +37,35 @@ const computed = {
 
 <style lang="scss" scoped>
 .kpp-person {
-  padding-block: v-bind(padding);
 
-  h5, h6 { margin-block: 0; }
+  h5, h6 { 
+    margin-block: 0; 
+    text-align: center;
+  }
   
   h5 { font-weight: 400; }
   h6 { font-size: .75rem; }
+
+  .frame {
+    --n: 1;
+    --d: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-block: var(--s-2);
+    margin-inline: auto;
+  }
+
+  img { 
+    transition: transform 1s ease-in; 
+    transform-origin: top center;
+  }
+
+
+  &:hover {
+    img { transform: scale(1.1); }
+  }
+
+  
   
 }
 </style>

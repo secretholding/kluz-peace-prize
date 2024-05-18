@@ -20,7 +20,6 @@
               Acho que temos um problema de hydration. 
               O ChatGPT sugeriu esse <client-only> para resolver o problema.
             -->
-            
 
             <aside class="winners__sidebar">
               <h2>Winners</h2>
@@ -45,7 +44,6 @@
         </div>
       </center-l>
     </kpp-base-section>
-    
 
     <kpp-base-section>
       <center-l size="wide">
