@@ -8,14 +8,13 @@
     height="70svh" 
     :color="bgUrl ? 'white' : 'primary'" 
   />
-  <kpp-base-section color="base" padding="var(--s0)">
-    <center-l size="wide">
-      <kpp-button el="NuxtLink" visual="ghost" icon-before="arrow_back">Back to Updates</kpp-button>
+  <kpp-base-section class="tagline-section" color="base" padding="var(--s0)">
+    <center-l size="wide" >
+      <p>{{ data.blog.tagline }}</p>
     </center-l>
   </kpp-base-section>
   
   <kpp-base-section class="body">
-
     <center-l size="wide">
       <client-only>
         <kpp-prose v-html="data.blog.main_content" class="blog-post"/>
@@ -52,6 +51,18 @@
 .body { padding-block: var(--s2); }
 .blog-post {
   padding-bottom: var(--s3);
+}
+
+.tagline-section {
+
+}
+
+.tagline-section {
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+  font-size: 1.2rem;
+  font-weight: 200;
 }
 
 
