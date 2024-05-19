@@ -6,6 +6,8 @@
   >
     <slot>
       <center-l size="wide" class="width:100%">
+        <!-- ToDo: fix 'to' attr -->
+        <kpp-button class="back-button" is="NuxtLink" to="/updates" visual="ghost" icon-before="arrow_back" :color="bg != '' ? 'white' : 'primary'" >Back to Updates</kpp-button>
         <kpp-headers class="headers" :content="headerContent" :color="bg != '' ? 'white' : 'primary'" />
       </center-l>
     </slot>
@@ -75,9 +77,14 @@ const hasBackground = computed(() => {
   @media (max-width: 768px) { background: linear-gradient(to bottom, transparent, 25%, hsla(var(--base-hsl), 0.75)); }
 }
 
-.headers {
+.headers,
+.back-button {
   position: relative;
   z-index: 100;
+}
+
+.back-button {
+  margin-bottom: var(--s2);
 }
 
 </style>
