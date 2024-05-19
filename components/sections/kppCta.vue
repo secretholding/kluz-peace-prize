@@ -1,5 +1,5 @@
 <template>
-  <kpp-base-section height="25svh" class="main-cta" color="primary">
+  <kpp-base-section height="auto" class="main-cta" color="primary">
     <center-l size="wide">
       <stack-l>
         <h2>Apply Now</h2>
