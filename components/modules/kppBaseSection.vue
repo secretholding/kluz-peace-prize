@@ -28,7 +28,7 @@ const props = defineProps({
   padding-block: v-bind(padding);
 
   @media (max-width: 768px) {
-    padding-block: var(--s1);
+    padding-block: var(--s0);
   }
 }
 
