@@ -2,11 +2,18 @@
   <Head>
     <Title>{{ data.blog.heading }}</Title>
   </Head>
-  <kpp-updates-hero class="headers" :cover-image="coverImageUrl" height="70svh" :color="coverImageUrl ? 'white' : 'primary'" />
+  <kpp-updates-hero 
+    class="headers" 
+    :bg="bgPath" 
+    height="70svh" 
+    :color="coverImageUrl ? 'white' : 'primary'" 
+  />
   
   <section class="body">
     <center-l size="wide">
-      <ccm-prose-2 v-html="data.blog.main_content" />
+      <client-only>
+        <kpp-prose v-html="data.blog.main_content" class="blog-post"/>
+      </client-only>
     </center-l>
   </section>
 
@@ -28,7 +35,7 @@
       blog: blogData[0]
   });
 
-  const coverImageUrl = computed(() => {
+  const bgPath = computed(() => {
     return data.blog.image ? `url(https://cms.thegovlab.com/assets/${data.blog.image.id})` : false;
   })
 
@@ -37,5 +44,9 @@
 <style lang="scss" scoped>
 
 .body { padding-block: var(--s2); }
+.blog-post {
+  padding-bottom: var(--s3);
+}
+
 
 </style>

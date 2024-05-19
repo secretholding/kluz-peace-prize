@@ -1,8 +1,14 @@
 <template>
-  <div class="kpp-hero" :height="height" :color="color" :title="title" :bg="bg">
+  <div 
+    class="kpp-hero" 
+    :height="height" 
+    :color="color" 
+    :title="title" 
+    :bg="bg"
+  >
     <kpp-top-bar class="kpp-hero__top-bar" :color="color" />
     <slot>
-      <center-l size="wide" class="center--force">
+      <center-l size="wide" class="width:100%">
         <h2 class="text-align:center">{{title}}</h2>
       </center-l>
     </slot>

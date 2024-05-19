@@ -1,7 +1,12 @@
 <template>
-  <kpp-hero class="kpp-hero--updates" :cover-image="coverImageUrl" :height="height" :color="coverImageUrl ? 'white' : 'primary'">
+  <kpp-hero 
+    class="kpp-hero--updates" 
+    :bg="bgPath" 
+    :color="bgPath ? 'white' : 'primary'"
+    
+  >
     <slot>
-      <center-l size="wide" class="center--forced">
+      <center-l size="wide" class="width:100%">
         <kpp-headers :content="headerContent" :color="coverImageUrl ? 'white' : 'primary'" />
       </center-l>
     </slot>
@@ -15,14 +20,10 @@ const props = defineProps({
   content: {
     type: Object,
     default: {}
-  },
-  height: {
-    type: String,
-    default: '70svh'
-  },
+  }
 });
 
-const { content, height } = toRefs(props)
+// const { content, height } = toRefs(props)
 
 
 const route = useRoute()
@@ -34,9 +35,9 @@ const data = reactive({
     blog: blogData[0]
 });
 
-const coverImageUrl = computed(() => {
-  return data.blog.image ? `url(https://cms.thegovlab.com/assets/${data.blog.image.id})` : false;
-})
+const bgPath = computed(() => {
+  return props.bg ? `url(${props.bg})` : '';
+});
 
 const headerContent = computed(() => {
   return {
@@ -53,10 +54,13 @@ const headerContent = computed(() => {
 <style lang="scss" scoped>
 .kpp-hero--updates {
   min-height: 70svh;
-  background-image: v-bind(coverImageUrl);
+  background-image: v-bind(bgPath);
   background-size: cover;
   position: relative;
-
+  @media (max-width: 768px) {
+    padding-bottom: var(--s2);
+  }
+  
 }
 
 .kpp-hero--updates[cover-image=true]:after {

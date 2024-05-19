@@ -131,7 +131,7 @@ const headerContent = {
 }
 
 .ceremony-section {
-  background-color: hsla(var(--primary-hsl), .15);
+  // background-color: hsla(var(--primary-hsl), .15);
 
 }
 
