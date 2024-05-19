@@ -1,15 +1,15 @@
 <template>
   <kpp-hero 
     class="kpp-hero--updates" 
-    :bg="bgPath" 
-    :color="bgPath ? 'white' : 'primary'"
-    
+    :color="bg != '' ? 'white' : 'primary'"
+    :has-background="hasBackground"
   >
     <slot>
       <center-l size="wide" class="width:100%">
-        <kpp-headers :content="headerContent" :color="coverImageUrl ? 'white' : 'primary'" />
+        <kpp-headers class="headers" :content="headerContent" :color="bg != '' ? 'white' : 'primary'" />
       </center-l>
     </slot>
+    
   </kpp-hero>
 </template>
 
@@ -35,10 +35,6 @@ const data = reactive({
     blog: blogData[0]
 });
 
-const bgPath = computed(() => {
-  return props.bg ? `url(${props.bg})` : '';
-});
-
 const headerContent = computed(() => {
   return {
     brow: data.blog.brow,
@@ -48,6 +44,11 @@ const headerContent = computed(() => {
     author: data.blog.author
   }}
 )
+
+const hasBackground = computed(() => {
+  return props.bg !== '';
+});
+
 
 </script>
 
@@ -60,20 +61,23 @@ const headerContent = computed(() => {
   @media (max-width: 768px) {
     padding-bottom: var(--s2);
   }
-  
 }
 
-.kpp-hero--updates[cover-image=true]:after {
+.kpp-hero--updates[has-background=true]:after {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  
   background: linear-gradient(to bottom, transparent, 55%, hsla(var(--base-hsl), 0.75));
   
   @media (max-width: 768px) { background: linear-gradient(to bottom, transparent, 25%, hsla(var(--base-hsl), 0.75)); }
+}
+
+.headers {
+  position: relative;
+  z-index: 100;
 }
 
 </style>

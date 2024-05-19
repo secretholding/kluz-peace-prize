@@ -4,18 +4,24 @@
   </Head>
   <kpp-updates-hero 
     class="headers" 
-    :bg="bgPath" 
+    :bg="bgUrl" 
     height="70svh" 
-    :color="coverImageUrl ? 'white' : 'primary'" 
+    :color="bgUrl ? 'white' : 'primary'" 
   />
+  <kpp-base-section color="base" padding="var(--s0)">
+    <center-l size="wide">
+      <kpp-button el="NuxtLink" visual="ghost" icon-before="arrow_back">Back to Updates</kpp-button>
+    </center-l>
+  </kpp-base-section>
   
-  <section class="body">
+  <kpp-base-section class="body">
+
     <center-l size="wide">
       <client-only>
         <kpp-prose v-html="data.blog.main_content" class="blog-post"/>
       </client-only>
     </center-l>
-  </section>
+  </kpp-base-section>
 
 </template>
 
@@ -35,8 +41,8 @@
       blog: blogData[0]
   });
 
-  const bgPath = computed(() => {
-    return data.blog.image ? `url(https://cms.thegovlab.com/assets/${data.blog.image.id})` : false;
+  const bgUrl = computed(() => {
+    return data.blog.image ? `https://cms.thegovlab.com/assets/${data.blog.image.id}` : false;
   })
 
 </script>
