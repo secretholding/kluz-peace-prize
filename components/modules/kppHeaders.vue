@@ -57,13 +57,16 @@ const computedDate = computed(() => {
 
 .brow {
   font-weight: 600;  
-  line-height: 1.2;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
 .title {
   font-weight: 200;  
-  line-height: 1.3;
+  line-height: 1.15;
+  @media (max-width: 768px) {
+    line-height: 1.3;
+   }
 }
 
 .tagline {
