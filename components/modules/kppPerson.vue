@@ -26,11 +26,9 @@ const props = defineProps({
   },
 });
 
-const computed = {
-  imgSrc() {
-    return `${this.base_path}${this.content.image}`;
-  }
-};
+const imgSrc = computed(() => {
+  return `${ props.base_path }${ props.content.image }`;
+});
 
 
 </script>

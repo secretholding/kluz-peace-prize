@@ -6,8 +6,9 @@
   </kpp-hero>
 
   <kpp-base-section class="tagline" color="base">
-    <!-- ToDo: v-html não renderiza corretamente na página. Esse client-only foi uma sugestão do ChatGPT -->
-    <client-only><center-l size="wide" v-html="headerContent.tagline"></center-l></client-only>
+   <center-l size="wide">
+      <span v-html="headerContent.tagline"></span>
+    </center-l>
   </kpp-base-section>
 
   <kpp-base-section>
@@ -15,16 +16,12 @@
       <div class="panel-grid" >
         <h2 class="header header--1">Overview</h2>
         
-        <!-- ToDo: v-html não renderiza corretamente na página. Esse client-only foi uma sugestão do ChatGPT -->
-        <client-only>
-          <kpp-prose class="description" v-html="event.description_html" />
-        </client-only>
-        
-        
+        <kpp-prose class="description" :vHtmlContent="event.description_html" />
+
         <h2 class="header header--2 header--centered">Awarded Organizations</h2>
         
         <div class="winners">
-          <kpp-winners :event="event" header=false />
+          <kpp-winners :event="event" :header=false />
         </div>
       </div>
     </center-l>

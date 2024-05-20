@@ -16,9 +16,7 @@
   
   <kpp-base-section class="body">
     <center-l size="wide">
-      <client-only>
-        <kpp-prose v-html="data.blog.main_content" class="blog-post"/>
-      </client-only>
+      <kpp-prose :vHtmlContent="data.blog.main_content" class="blog-post"/>
     </center-l>
   </kpp-base-section>
 

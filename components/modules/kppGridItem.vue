@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="content._path" :id="slug" class="kpp-update-grid-item | frame" :content="content" :has-bg="coverImageUrl ? true : false">
+  <NuxtLink :to="content._path" class="kpp-update-grid-item | frame" :content="content" :has-bg="coverImageUrl ? true : false">
     <div class="kpp-update-grid-item__content" :bg="coverImageUrl">
       <kpp-headers :content="headerContent" :color="coverImageUrl ? 'white' : 'primary'"/>
     </div>

@@ -11,15 +11,8 @@
           <div class="has-sidebar">
             <div class="description">
               <h2>Overview</h2>
-              <client-only>
-                <kpp-prose v-html="winner.content_html" />
-              </client-only>
+              <kpp-prose :vHtmlContent="winner.content_html" />
             </div>
-            <!-- ToDo: 
-              O prose não renderiza consistentemente. 
-              Acho que temos um problema de hydration. 
-              O ChatGPT sugeriu esse <client-only> para resolver o problema.
-            -->
 
             <aside class="winners__sidebar">
               <h2>Winners</h2>
@@ -40,7 +33,7 @@
       <center-l size="wide">
         <h2>Prize Announcement</h2>
         <div class="frame">
-          <img v-for="i in winner.ceremony.images" :src="`${base_path}${i}`" alt="">
+          <img :src="`${ base_path }${ winner.images.ceremony }`" alt="">
         </div>
       </center-l>
     </kpp-base-section>

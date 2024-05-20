@@ -7,7 +7,9 @@
       <kpp-grid-item v-for="i in content.posts" class="updates-highlights__item" :content="i" />
     </div>
     <center-l class="margin-top:s2 text-align:center">
-      <base-button el="NuxtLink" :to="content.action.url" size="l">{{ content.action.label }}</base-button>
+      <nuxt-link :to="content.action.url">
+          <base-button el="NuxtLink" size="l">{{ content.action.label }}</base-button>
+      </nuxt-link>
     </center-l>
   </kpp-base-section>
   
