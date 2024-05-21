@@ -14,12 +14,12 @@
   <kpp-base-section>
     <center-l size="wide">
       <div class="panel-grid" >
-        <h2 class="header header--1">Overview</h2>
-        
-        <kpp-prose class="description" :vHtmlContent="event.description_html" />
+        <h2 class="header header--1">Overview</h2>       
 
-        <h2 class="header header--2 header--centered">Awarded Organizations</h2>
+        <kpp-prose class="description" :html-content="event.description_html" />
         
+        <h2 class="header header--2 header--centered">Awarded Organizations</h2>
+      
         <div class="winners">
           <kpp-winners :event="event" :header=false />
         </div>
