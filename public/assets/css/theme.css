@@ -196,7 +196,7 @@
   --wide: 1440px;
   --wrapper: 1280px;
   --scroll-height: 0; /* Accepts a string in VH ex: "70vh" */
-  --main-menu-menu-z-index: 1000;
+  --main-menu-menu-z-index: 10000;
 }
 
 

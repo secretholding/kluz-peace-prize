@@ -2,6 +2,9 @@
 .width\:100\% { width: 100%; }
 .center--forced { width: 100%; } /* This is a hack to center the content in the container shoudl be replaced by .width:100% */
 
+[unstyled="all"] { all: unset; }
+[unstyled="color"] { color: unset; }
+
 :root {
   --sidebar-width: 300px;
 }
@@ -16,27 +19,17 @@
 
   aside {
     width: var(--sidebar-width);
-    flex-shrink: 0;
-
-    
+    flex-shrink: 0;   
   }
 }
 
-.center--with-sidebar {
-  padding-right: calc(var(--s0) + var(--sidebar-width)) !important;
-}
-
+.center--with-sidebar { padding-right: calc(var(--s0) + var(--sidebar-width)) !important; }
 
 .hide,
-[hide] {
-  display: none !important;
-}
+[hide] { display: none !important; }
 
-
-
-.aux {
-  outline: 2px solid red;
-}
+.aux,
+[aux] { outline: 2px solid red; }
 
 
 
