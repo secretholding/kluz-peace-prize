@@ -63,7 +63,7 @@ const bgPath = computed(() => {
 
 .kpp-hero__top-bar {
   position: relative;
-  z-index: 100;
+  z-index: 10;
 }
 
 .kpp-hero[bg] {
