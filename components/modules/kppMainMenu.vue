@@ -41,7 +41,7 @@ const { color } = toRefs(props)
   // position: fixed;
   top: 0;
   right: 0;
-  z-index: var(--main-menu-trigger-z-index, 1001);
+  z-index: var(--main-menu-trigger-z-index, 10001);
   transition: all 0.3s;
   cursor: pointer;
   --button-padding-v: var(--s1);
@@ -56,7 +56,7 @@ const { color } = toRefs(props)
 .main-menu__panel {
   // core positioning of the menu
   position: fixed;
-  z-index: var(--main-menu-menu-z-index, 1000);
+  z-index: var(--main-menu-menu-z-index, 10000);
   background-color: hsla(var(--white-hsl), 0.95);
   top: 0;
   left: 0;
