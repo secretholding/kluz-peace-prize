@@ -90,7 +90,7 @@ const bgPath = computed(() => {
 .headers,
 .back-button {
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 
 .back-button {
