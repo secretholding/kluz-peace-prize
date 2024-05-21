@@ -9,10 +9,10 @@
 </script>
 
 <style lang="scss" scoped>
-.kpp-button[visual="ghost"] {
+.kpp-button[visual="unstyled"] {
   transform: translateX(calc(var(--button-padding-inline)*-1));
 }
-.kpp-button[visual="ghost"]:active { 
+.kpp-button[visual="unstyled"]:active { 
   border: 2px solid transparent;
   transform: scale(.95);
 }
