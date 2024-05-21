@@ -51,15 +51,18 @@ const imgSrc = computed(() => {
     overflow: hidden;
     margin-block: var(--s-2);
     margin-inline: auto;
+    transition: transform .3s ease-in; 
   }
 
   img { 
-    transition: transform 1s ease-in; 
+    transition: transform .3s ease-in; 
     transform-origin: top center;
+    
   }
 
 
   &:hover {
+    .frame { transform: scale(1.05); }
     img { transform: scale(1.1); }
   }
 
