@@ -1,15 +1,14 @@
 <template>
   <kluz-prose>
-
-    <slot>
-      <span v-html="vHtmlContent"></span>
+    <slot >
+      <div v-html="HtmlContent"></div>
     </slot>
   </kluz-prose>
 </template>
 
 <script setup>
   defineProps({
-    vHtmlContent: {
+    HtmlContent: {
       type: String,
       default: ''
     }
