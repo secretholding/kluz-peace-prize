@@ -1,4 +1,5 @@
 <template>
+  <!-- ToDo: Esse Hero deveria pegar o item mais recente da lista de Posts do Directus -->
   <kpp-updates-hero :content="blogData[0]" />
   
   <kpp-grid-updates>

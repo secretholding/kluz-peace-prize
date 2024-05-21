@@ -22,7 +22,7 @@ definePageMeta({
 
 const updatesHighlights = {
   title: 'Updates Highlights',
-  posts: await queryContent('updates').sort({date: -1}).limit(3).find(),
+  posts: await queryContent('updates').sort({date: -1}).limit(2).find(),
   action: {
     label: 'View All Updates',
     url: '/updates'
@@ -42,6 +42,7 @@ const groupedByYear = (events.reduce((grouped, event) => {
 
 const eventsHighlights = {
   title: 'Events Highlights',
+  // ToDo: Inverter a ordem dos eventos. 2023 primeiro, 2022 depois.
   posts: groupedByYear,
   action: {
     label: 'View All Events',
