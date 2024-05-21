@@ -1,9 +1,11 @@
 <template>
-  <ul class="kpp-grid">
-    <slot>
-      
-    </slot>
-  </ul>
+  <center-l size="wide">
+    <ul class="kpp-grid">
+        <slot>
+          
+        </slot>
+    </ul>
+  </center-l>
 </template>
 
 <script setup>
@@ -13,15 +15,15 @@
 <style lang="scss" scoped>
 .kpp-grid {
   display: grid;
-  gap: 0;
+  gap: var(--s1);
   list-style: none;
-  padding: 0;
+  padding-block: var(--s1);
   margin: 0;
 
   grid-template-columns: repeat(1, 1fr);
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
 
 }

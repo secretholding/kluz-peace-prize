@@ -1,7 +1,10 @@
 <template>
-  <NuxtLink :to="content._path" class="kpp-update-grid-item | frame" :content="content" :has-bg="coverImageUrl ? true : false">
-    <div class="kpp-update-grid-item__content" :bg="coverImageUrl">
-      <kpp-headers :content="headerContent" :color="coverImageUrl ? 'white' : 'primary'"/>
+  <NuxtLink :to="content._path" class="kpp-update-grid-item" :content="content" :has-bg="coverImageUrl ? true : false">
+    <div class="frame">
+      <img :src="imagePath" alt="">
+    </div>
+    <div class="kpp-update-grid-item__content">
+      <kpp-headers :content="headerContent" color="white"/>
     </div>
   </NuxtLink>
 </template>
@@ -34,9 +37,13 @@ const headerContent = computed(() => {
   }
 })
 
-const coverImageUrl = computed(() => {
-  return content.value.image ? `url(https://cms.thegovlab.com/assets/${content.value.image.id})` : false;
+const imagePath = computed(() => {
+  return content.value.image ? `https://cms.thegovlab.com/assets/${content.value.image.id}` : false;
 })
+
+// const coverImageUrl = computed(() => {
+//   return content.value.image ? `url(https://cms.thegovlab.com/assets/${content.value.image.id})` : false;
+// })
 
 </script>
 
@@ -44,29 +51,30 @@ const coverImageUrl = computed(() => {
 
 .kpp-update-grid-item {
   display: inline-block;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid hsla(var(--primary-hsl), 0.1);
 }
 
 
 .frame {
-  --n: 1;
-  --d: 1;
+  --n: 9;
+  --d: 16;
   container-type: inline-size;
 }
 
 .kpp-update-grid-item__content {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   padding: var(--s1);
-
-  * { color: white; }
+  background-color: var(--primary-color);
+  height: 100%;
 }
 
 @container (min-width: 500px) {
-  .kpp-update-grid-item__content {
-    padding: var(--s2);
-  }
+  .kpp-update-grid-item__content { padding: var(--s2); }
 }
 
 .kpp-update-grid-item[has-bg="true"] {
@@ -76,32 +84,32 @@ const coverImageUrl = computed(() => {
   background-repeat: no-repeat;
 }
 
-.kpp-update-grid-item[has-bg="true"]:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, transparent, 55%, hsla(var(--base-hsl), 0.75));
-  @media (max-width: 768px) { background: linear-gradient(to bottom, transparent, 25%, hsla(var(--base-hsl), 0.75)); }
-}
+// .kpp-update-grid-item[has-bg="true"]:after {
+//   position: absolute;
+//   content: "";
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background: linear-gradient(to bottom, transparent, 55%, hsla(var(--base-hsl), 0.75));
+//   @media (max-width: 768px) { background: linear-gradient(to bottom, transparent, 25%, hsla(var(--base-hsl), 0.75)); }
+// }
 
 .kpp-update-grid-item[has-bg="true"] .kpp-update-grid-item__content > * {
   position: relative;
   z-index: 1;
 }
 
-.kpp-update-grid-item[has-bg="false"] {
-  // temp
-  background-color: var(--base-color);
-}
+// .kpp-update-grid-item[has-bg="false"] {
+//   // temp
+//   background-color: var(--base-color);
+// }
 
 
 // temp
-.kpp-update-grid-item:nth-child(odd) {
-  opacity: .9;
-}
+// .kpp-update-grid-item:nth-child(odd) {
+//   opacity: .9;
+// }
 
 
 </style>
