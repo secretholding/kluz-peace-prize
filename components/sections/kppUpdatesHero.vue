@@ -6,8 +6,10 @@
   >
     <slot>
       <center-l size="wide" class="width:100%">
-        <!-- ToDo: fix 'to' attr -->
-        <kpp-button class="back-button" is="NuxtLink" to="/updates" visual="ghost" icon-before="arrow_back" :color="bg != '' ? 'white' : 'primary'" >Back to Updates</kpp-button>
+        <NuxtLink v-if="showHeroBackButton" to="/updates">
+          <kpp-button class="back-button" is="NuxtLink" visual="ghost" icon-before="arrow_back" :color="bg != '' ? 'white' : 'primary'" >Back to Updates
+          </kpp-button>
+        </NuxtLink>
         <kpp-headers class="headers" :content="headerContent" :color="bg != '' ? 'white' : 'primary'" />
       </center-l>
     </slot>
@@ -29,6 +31,10 @@ const props = defineProps({
 
 
 const route = useRoute()
+const showHeroBackButton = computed(() => {
+  return route.hasOwnProperty('params') && route.params.hasOwnProperty('slug')
+})
+
 const blogData = await queryContent('updates').where({
     slug: route.params.slug
 }).find();
