@@ -1,16 +1,17 @@
 <template>
   <kpp-hero 
     class="kpp-hero--updates" 
-    :color="bg != '' ? 'white' : 'primary'"
+    :color="content.image != '' ? 'white' : 'primary'"
     :has-background="hasBackground"
+    :bg="content.image"
   >
     <slot>
       <center-l size="wide" class="width:100%">
         <NuxtLink v-if="showHeroBackButton" to="/updates">
-          <kpp-button class="back-button" is="NuxtLink" visual="ghost" icon-before="arrow_back" :color="bg != '' ? 'white' : 'primary'" >Back to Updates
+          <kpp-button class="back-button" is="NuxtLink" visual="ghost" icon-before="arrow_back" :color="content.image != '' ? 'white' : 'primary'" >Back to Updates
           </kpp-button>
         </NuxtLink>
-        <kpp-headers class="headers" :content="headerContent" :color="bg != '' ? 'white' : 'primary'" />
+        <kpp-headers class="headers" :content="headerContent" :color="content.image != '' ? 'white' : 'primary'" />
       </center-l>
     </slot>
     
@@ -54,9 +55,12 @@ const headerContent = computed(() => {
 )
 
 const hasBackground = computed(() => {
-  return props.bg !== '';
+  return props.content.image !== '';
 });
 
+const bgPath = computed(() => {
+  return props.content.image ? `url(${props.content.image})` : '';
+});
 
 </script>
 

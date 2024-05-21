@@ -12,6 +12,7 @@ const objectContructor = async (dir, fs) => {
     i.slug = item.heading ? common.slugify(item.heading) : common.slugify(item.tagline);
     i.date = item.date ? item.date.split("T")[0] : '';
     i.cover_image = item.cover_image ? common.getImage(item.cover_image.id) : '';
+    i.image = item.image ? common.getImage(item.image.id) : '';
 
     fs.writeFile(
       dir + "/" + i.slug + ".json",
