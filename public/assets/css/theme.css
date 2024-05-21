@@ -37,25 +37,25 @@
     so the system will generate the same values for the three colors. 
   */
 
-  --base-h: 266;
-  --base-s: 70%;
-  --base-l: 11%;
+  --base-h: 235;
+  --base-s: 21%;
+  --base-l: 21%;
   
   --primary-h: 223;
   --primary-s: 77%;
   --primary-l: 55%;
   
-  --secondary-h: 223; 
-  --secondary-s: 67%;
-  --secondary-l: 40%;
+  --secondary-h: 203; 
+  --secondary-s: 63%;
+  --secondary-l: 72%;
   
-  /* --tertiary-h: 330; */
-  /* --tertiary-s: 28%; */
-  /* --tertiary-l: 65%; */
+  --tertiary-h: 220;
+  --tertiary-s: 53%;
+  --tertiary-l: 97%;
   
-  --accent-h: 35;
-  --accent-s: 100%;
-  --accent-l: 50%;
+  --accent-h: 161;
+  --accent-s: 68%;
+  --accent-l: 69%;
 
   /* Feedback colors */
   /* These colors are for feedback. Success, Fail, Warning, Attention.  */
@@ -136,14 +136,14 @@
   /* H1 */
   --h1-font-family: var(--display-font);
   --h1-font-size: 3rem;
-  --h1-text-color: var(--accent-color);
+  --h1-text-color: var(--base-color);
   --h1-line-height: 1.2;
   --h1-font-weight:  100;
 
   /* H2 */
   --h2-font-family: var(--display-font);
   --h2-font-size: 2.5rem;
-  --h2-text-color: var(--primary-color);
+  --h2-text-color: var(--secondary-color);
   --h2-line-height: 1.2;
   --h2-font-weight: 100;
 
