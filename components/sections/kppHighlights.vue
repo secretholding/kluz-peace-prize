@@ -7,7 +7,7 @@
       <kpp-grid-item v-for="i in content.posts" class="updates-highlights__item" :content="i" />
     </div>
     <center-l class="margin-top:s2 text-align:center">
-      <nuxt-link :to="content.action.url">
+      <nuxt-link :to="content.action.url" class="nocolor">
           <base-button el="NuxtLink" size="l">{{ content.action.label }}</base-button>
       </nuxt-link>
     </center-l>
@@ -38,6 +38,10 @@ const props = defineProps({
 .highlights-reel__item {
   --n: 1;
   --d: 1;
+}
+
+.nocolor {
+  color: unset;
 }
 
 

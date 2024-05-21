@@ -4,7 +4,7 @@
       <stack-l>
         <h2>Prize 2024 Applications Open</h2>
         <p>Apply for the 2024 Kluz Prize for PeaceTech by X date and be recognized for your achievements and contributions to the evolving field of technologies for peace.</p>
-        <nuxt-link to="/prizes">
+        <nuxt-link to="/prizes" class="nocolor">
           <kpp-button is="NuxtLink" size="l">Apply Now</kpp-button>
         </nuxt-link>
       </stack-l>
@@ -17,5 +17,9 @@
 </script>
 
 <style lang="scss" scoped>
+
+.nocolor {
+  color: unset;
+}
 
 </style>
