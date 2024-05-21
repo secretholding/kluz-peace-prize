@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero title="About Klux PeaceTech Prize"/>
+  <kpp-hero title="About Kluz PeaceTech Prize"/>
   <kpp-base-section>
     <center-l>
       <h2></h2>
