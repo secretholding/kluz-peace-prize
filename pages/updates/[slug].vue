@@ -16,15 +16,13 @@
   
   <kpp-base-section class="body">
     <center-l size="wide">
-      <kpp-prose :vHtmlContent="data.blog.main_content" class="blog-post"/>
+      <kpp-prose :html-content="data.blog.main_content" class="blog-post"/>
     </center-l>
   </kpp-base-section>
 
 </template>
 
 <script setup>
-  import useFormatDate from '@/composables/useFormatDate.js'
-
   definePageMeta({
     layout: "base",
   });

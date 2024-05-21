@@ -11,7 +11,8 @@
           <div class="has-sidebar">
             <div class="description">
               <h2>Overview</h2>
-              <kpp-prose :vHtmlContent="winner.content_html" />
+
+              <kpp-prose :html-content="winner.content_html" />
             </div>
 
             <aside class="winners__sidebar">
