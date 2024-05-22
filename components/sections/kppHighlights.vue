@@ -3,7 +3,7 @@
     <center-l size="wide">
       <h2>{{ content.title }}</h2>
       <div class="updates-highlights | margin-top:s2">
-        <kpp-grid-item v-for="i in content.posts" class="updates-highlights__item" :content="i" />
+        <kpp-grid-item v-for="i in content.posts" class="updates-highlights__item" :content="{ ...i, type: content.type }" />
       </div>
     </center-l>
     

@@ -37,8 +37,15 @@ const headerContent = computed(() => {
   }
 })
 
+// TODO: fix this when image is available on Directus
 const imagePath = computed(() => {
-  return content.value.image ? `https://cms.thegovlab.com/assets/${content.value.image.id}` : false;
+  let image = ''
+  if(content.value.type === 'events') {
+    image = content.value.images ? content.value.images[Number(Math.random().toFixed(0))] : ''
+  } else {
+    image = content.value.image ? content.value.image : ''
+  }
+  return image
 })
 
 // const coverImageUrl = computed(() => {
