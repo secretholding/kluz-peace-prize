@@ -13,7 +13,7 @@
                 <h3>{{ i.title }}</h3>
                 <div class="prize-item__content" v-html="i.intro"></div>
                 <!-- <pre>{{ i }}</pre> -->
-                <p><NuxtLink class="button margin-left:auto" color="accent" :to="`/prize/${i.slug}`">Project Website</NuxtLink></p>
+                <p><NuxtLink class="button margin-left:auto" color="accent" :to="`/_archive/prize/${i.slug}`">Project Website</NuxtLink></p>
               </stack-l>
             </li>
           </stack-l>

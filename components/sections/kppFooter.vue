@@ -15,17 +15,17 @@
         <ul class="stack">
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/event">Event</NuxtLink></li>
-          <li><NuxtLink to="/prizes/">Prizes</NuxtLink></li>
-          <li><NuxtLink to="/updates/">Updates</NuxtLink></li>
+          <li><NuxtLink to="/prizes">Prizes</NuxtLink></li>
+          <li><NuxtLink to="/updates">Updates</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
         </ul>
       </nav>
       <nav class="menu menu-2 | stack">
         <h4>Applications</h4>
         <ul class="stack">
-          <li><NuxtLink to="event/applications">2024(Open)</NuxtLink></li>
-          <li><NuxtLink to="prizes/2023/">2023(See Winners)</NuxtLink></li>
-          <li><NuxtLink to="prizes/2022/">2022(See Winners)</NuxtLink></li>
+          <li><NuxtLink to="/application">2024(Open)</NuxtLink></li>
+          <li><NuxtLink to="/prizes">2023(See Winners)</NuxtLink></li>
+          <li><NuxtLink to="/prizes">2022(See Winners)</NuxtLink></li>
         </ul>
       </nav>
       <nav class="menu menu-3 | stack">
