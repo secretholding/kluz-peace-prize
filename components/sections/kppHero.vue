@@ -47,16 +47,13 @@ const bgPath = computed(() => {
 .kpp-hero {
   --height: v-bind(height);
   min-height: max(var(--height));
-  background-color: hsla(var(--primary-hsl), .1);
+  background-color: var(--tertiary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-  
-  @media (min-width: 768px) {
-    padding: var(--s1) var(--s1) var(--s3);
-  }
+  padding-bottom: var(--s3);
 
   h1 { color: var(--primary-color); }
 }
@@ -72,6 +69,10 @@ const bgPath = computed(() => {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+:deep(.brow) { color: var(--primary-color); }
+
+:deep(.tagline) { color: var(--base-color); }
 
 
 </style>

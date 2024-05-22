@@ -30,19 +30,15 @@ const { color } = toRefs(props);
 .kpp-top-bar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-inline: var(--s0);
+  align-items: felx-start;
   width: 100%;
-
-  @media (min-width: 768px) {
-    // padding: var(--s1);
-  }
 }
 
 
 
 .kpp-top-bar__logo {
   max-width: 100px;
+  padding: var(--s1);
 
   @media (min-width: 768px) {
     max-width: 200px;

@@ -93,10 +93,6 @@ useHead({
   title: 'PeaceTech Prize',
 })
 
-definePageMeta({
-  layout: "base",
-});
-
 const base_path = "/assets/images/winners/";
 
 

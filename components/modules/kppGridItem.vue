@@ -1,10 +1,12 @@
 <template>
   <NuxtLink :to="content._path" class="kpp-update-grid-item" :content="content" :has-bg="coverImageUrl ? true : false">
     <div class="frame">
-      <img :src="imagePath" alt="">
+      <img class="odd" src="/assets/images/slides/drone-watercolor.png" alt="">
+      <img class="even" src="/assets/images/slides/data-watercolor.png" alt="">
+      <!-- <img :src="imagePath" alt=""> -->
     </div>
     <div class="kpp-update-grid-item__content">
-      <kpp-headers :content="headerContent" color="white"/>
+      <kpp-headers :content="headerContent" color="base"/>
     </div>
   </NuxtLink>
 </template>
@@ -23,9 +25,9 @@ const { content } = toRefs(props)
 
 const bgImage = "var(--base-color)";
 
-if (content.value.cover_image) {
-  bgImage = `url(${content.value.cover_image})`
-} 
+// if (content.value.cover_image) {
+//   bgImage = `url(${content.value.cover_image})`
+// } 
 
 const headerContent = computed(() => {
   return {
@@ -63,6 +65,10 @@ const imagePath = computed(() => {
   border: 1px solid hsla(var(--primary-hsl), 0.1);
 }
 
+.kpp-update-grid-item:nth-child(odd) .even { display: none; }
+.kpp-update-grid-item:nth-child(even) .odd { display: none; }
+
+
 
 .frame {
   --n: 9;
@@ -76,7 +82,7 @@ const imagePath = computed(() => {
   align-items: flex-start;
   justify-content: flex-end;
   padding: var(--s1);
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   height: 100%;
 }
 

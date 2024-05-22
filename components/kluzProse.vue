@@ -30,7 +30,7 @@
 }
 
 .prose :deep(a) {
-  color: var(--accent-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 

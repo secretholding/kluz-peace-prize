@@ -13,58 +13,69 @@
   "jury": [
     {
       "name": "Ana Carolina González Peña",
-      "title": "Co-Founder and Director of the Magnolia Foundation",
-      "image": "/assets/images/jury/ana-carolina-gonzalez-pena.jpg"
+      "title": "Vice President of Research and Analysis at Direct Relief",
+      "image": "/assets/images/jury/ana-carolina-gonzalez-pena.jpg",
+      "url": "https://www.linkedin.com/in/anacaro26/"
     },
     {
       "name": "Artur Kluz",
       "title": "Founder & CEO of Kluz Ventures",
-      "image": "/assets/images/jury/artur-kluz.jpg"
+      "image": "/assets/images/jury/artur-kluz.jpg",
+      "url": "https://www.linkedin.com/in/akluz"
     },
     {
       "name": "Bradley Tusk",
       "title": "Co-Founder & Managing Partner of Tusk Venture Partners, Founder of Tusk Strategies",
-      "image": "/assets/images/jury/bradley-tusk.jpg"
+      "image": "/assets/images/jury/bradley-tusk.jpg",
+      "url": "https://www.bradleytusk.com/"
     },
     {
       "name": "Chris Larsen",
       "title": "Angel Investor and Business Executive",
-      "image": "/assets/images/jury/chris-larsen.webp"
+      "image": "/assets/images/jury/chris-larsen.webp",
+      "url": "https://en.m.wikipedia.org/wiki/Chris_Larsen"
     },
     {
       "name": "Daniel Wilhelm",
       "title": "President of The Harry Frank Guggenheim Foundation",
-      "image": "/assets/images/jury/daniel-wilhelm.jpg"
+      "image": "/assets/images/jury/daniel-wilhelm.jpg",
+      "url": "https://www.linkedin.com/in/danielfwilhelm/"
     },
     {
       "name": "Evelyn Tauchnitz",
       "title": "Senior Research Fellow at the University of Lucerne’s Institute of Social Ethics",
-      "image": "/assets/images/jury/evelyne-tauchnitz.jpg"
+      "image": "/assets/images/jury/evelyne-tauchnitz.jpg",
+      "url": "https://linkedin.com/in/evelyne-tauchnitz-0a2a637"
     },
     {
       "name": "Kay Firth-Butterfield",
-      "title": "Executive Director of the Centre for Trustworthy Technology",
-      "image": "/assets/images/jury/kay-firth-butterfield.png"
+      "title": "Executive Director of the Centre for Trustworthy Technology ",
+      "image": "/assets/images/jury/kay-firth-butterfield.png",
+      "url": "https://en.m.wikipedia.org/wiki/Kay_Firth-Butterfield"
     },
     {
       "name": "Simona Paravani-Mellinghoff",
       "title": "Global CIO of Solutions - Multi-Asset Strategies & Solutions at BlackRock",
-      "image": "/assets/images/jury/simona-paravani-mellinghoff.jpg"
+      "image": "/assets/images/jury/simona-paravani-mellinghoff.jpg",
+      "url": "https://linkedin.com/in/simona-paravani-cfa-5129524"
     },
     {
       "name": "Stefaan Verhulst",
-      "title": "Co-Founder & Chief Research & Development Officer of The GovLab",
-      "image": "/assets/images/jury/stefaan-verhulst.jpg"
+      "title": "Co-Founder & Chief Research & Development Officer of The GovLab ",
+      "image": "/assets/images/jury/stefaan-verhulst.jpg",
+      "url": "https://www.linkedin.com/in/stefaan-verhulst"
     },
     {
       "name": "Stephen Roberts",
       "title": "Professor of Machine Learning at University of Oxford & Co-Founder of Mind Foundry",
-      "image": "/assets/images/jury/stephen-roberts.jpg"
+      "image": "/assets/images/jury/stephen-roberts.jpg",
+      "url": "https://linkedin.com/in/stephen-roberts-b0985a17"
     },
     {
       "name": "Stuart E. Eizenstat",
       "title": "Senior Counsel at Covington & Burling",
-      "image": "/assets/images/jury/stuart-eizenstat.webp"
+      "image": "/assets/images/jury/stuart-eizenstat.webp",
+      "url": "https://en.m.wikipedia.org/wiki/Stuart_E._Eizenstat"
     }
   ]
 }

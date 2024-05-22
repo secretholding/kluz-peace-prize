@@ -7,25 +7,27 @@
         <p>The Kluz Prize for PeaceTech is an initiative to celebrate, distinguish, and promote the use of new technologies in fostering peace, reducing conflict, and protecting human dignity and universal human rights across the globe.</p>
         <ul class="kpp-footer__social-media">
           <li><social-link icon="linkedin" color="white" size="28px"/></li>
-          <li><social-link icon="youtube"  color="white" size="28px"/></li>
+          <li><social-link icon="youtube" color="white" size="28px"/></li>
         </ul>
       </div>
       <nav class="menu menu-1 | stack">
         <h4>Quick Links</h4>
         <ul class="stack">
           <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/event">Event</NuxtLink></li>
-          <li><NuxtLink to="/prizes">Prizes</NuxtLink></li>
-          <li><NuxtLink to="/updates">Updates</NuxtLink></li>
+          <li><NuxtLink to="/events/2024">Event</NuxtLink></li>
+          <li><NuxtLink to="/prizes/">Prizes</NuxtLink></li>
+          <li><NuxtLink to="/updates/">Updates</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
         </ul>
       </nav>
       <nav class="menu menu-2 | stack">
         <h4>Applications</h4>
         <ul class="stack">
-          <li><NuxtLink to="/application">2024(Open)</NuxtLink></li>
-          <li><NuxtLink to="/prizes">2023(See Winners)</NuxtLink></li>
-          <li><NuxtLink to="/prizes">2022(See Winners)</NuxtLink></li>
+          <li><NuxtLink to="/events/2024">2024 (Open)</NuxtLink></li>
+          <li><NuxtLink to="/events/2023">2023 (See Winners)</NuxtLink></li>
+          <li><NuxtLink to="/events/2022">2022 (See Winners)</NuxtLink></li>
+          <li><NuxtLink to="/faq">FAQ</NuxtLink></li>
+          <li><NuxtLink to="/roadmap">Roadmap</NuxtLink></li>
         </ul>
       </nav>
       <nav class="menu menu-3 | stack">
@@ -93,6 +95,8 @@
 
   h4 { font-weight: 400; }
   li { font-weight: 100; }
+
+  a:hover { color: var(--accent-color); }
 }
 
 .kpp-footer__social-media {

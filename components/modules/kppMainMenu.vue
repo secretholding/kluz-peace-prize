@@ -3,11 +3,11 @@
     <base-button icon-only icon-before="menu" class="menu-trigger menu-trigger" :color="color" @click="isOpen = !isOpen" v-if="!isOpen"/>
 
     <nav v-if="isOpen" class="main-menu__panel" :is-open="isOpen">
-      <base-button icon-only icon-before="close" class="menu-trigger menu-trigger" color="base" @click="isOpen = !isOpen" />
+      <base-button icon-only icon-before="close" class="menu-trigger" color="base" @click="isOpen = !isOpen" />
 
       <ul>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/">Home</NuxtLink></li>
-        <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/event">Event</NuxtLink></li>
+        <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/events/2024">Event</NuxtLink></li>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/prizes/">Prizes</NuxtLink></li>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/updates/">Updates</NuxtLink></li>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/about">About</NuxtLink></li>
@@ -39,8 +39,9 @@ const { color } = toRefs(props)
 
 .menu-trigger {
   // position: fixed;
-  top: 0;
-  right: 0;
+  // top: 0;
+  // right: 0;
+
   z-index: var(--main-menu-trigger-z-index, 10001);
   transition: all 0.3s;
   cursor: pointer;
@@ -62,13 +63,14 @@ const { color } = toRefs(props)
   left: 0;
   width: 100%;
   height: 100%;
+  text-align: right;
 }
 
 .main-menu ul {
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: stretch;
   align-items: center;
   list-style: none;
   padding: 0;
@@ -80,28 +82,33 @@ const { color } = toRefs(props)
 
 .main-menu li {
   padding: 0;
-  width: 50%;
+  width: 100%;
   text-align: center;
-  display: flex;
-  justify-content: center;
+  height: 100%;
 }
 
 .main-menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  align-items: center;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--menu-color);
   font-size: 2rem;
   font-weight: 100;
-  transition: all 0.3s;
-  display: block;
   width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent, hsla(var(--accent-hsl), 0), transparent);
+  transition: all 3s;
   
   @media screen and (min-width: 768px) { font-size: 4rem; }
 }
 
 .main-menu__item:hover {
-  color: var(--white-color);
-  background-color: var(--primary-color);
+  color: var(--primary-color);
+  background-image: linear-gradient(to right, transparent, hsla(var(--accent-hsl), .2), transparent);
 }
 
 .main-menu[is-open=false] {

@@ -4,7 +4,7 @@
     <slot />
   </article>
   
-  <kpp-cta />
+  <kpp-cta color="tertiary" />
   <kpp-footer />
 </template>
 

@@ -1,13 +1,13 @@
 <template>
   <kpp-base-section :content="content">
     <center-l size="wide">
-      <h2>{{ content.title }}</h2>
+      <h2 class="text-align:center">{{ content.title }}</h2>
       <div class="updates-highlights | margin-top:s2">
         <kpp-grid-item v-for="i in content.posts" class="updates-highlights__item" :content="{ ...i, type: content.type }" />
       </div>
     </center-l>
     
-    <center-l class="margin-top:s2 text-align:center">
+    <center-l class="margin-top:s2 text-align:center" v-if="!hideAction">
       <nuxt-link :to="content.action.url" unstyled="color">
         <base-button el="NuxtLink" size="l">{{ content.action.label }}</base-button>
       </nuxt-link>
@@ -21,6 +21,10 @@ const props = defineProps({
   content: {
     type: Object,
     default: {}
+  },
+  hideAction: {
+    type: Boolean,
+    default: false
   },
 });
 

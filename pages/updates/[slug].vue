@@ -23,10 +23,6 @@
 </template>
 
 <script setup>
-  definePageMeta({
-    layout: "base",
-  });
-
   const route = useRoute()
   const blogData = await queryContent('updates').where({
       slug: route.params.slug

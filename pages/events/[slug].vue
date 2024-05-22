@@ -15,11 +15,8 @@
     <center-l size="wide">
       <div class="panel-grid" >
         <h2 class="header header--1">Overview</h2>       
-
         <kpp-prose class="description" :html-content="event.description_html" />
-        
         <h2 class="header header--2 header--centered">Awarded Organizations</h2>
-      
         <div class="winners">
           <kpp-winners :event="event" :header=false />
         </div>
@@ -29,11 +26,19 @@
 
   <kpp-base-section class="ceremony-section">
     <center-l size="wide">
-      <h2>Ceremony</h2>
-    </center-l>
-    
-    <center-l size="wide">
-      <reel-l class="ceremony-reel" itemWidth="90%" >
+      <stack-l v-if="event.ceremony_video">
+        <h2 class="text-align:center margin-bottom:s1">Ceremony</h2>
+        <div  class="ceremony-video | frame">
+          <iframe width="560" height="315" 
+            :src="event.ceremony_video" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+      </stack-l>
+      <reel-l v-else class="ceremony-reel" itemWidth="90%" >
         <figure class="ceremony-image | frame" v-for="i in event.images">
           <img :src="i" alt="">
         </figure>
@@ -43,7 +48,7 @@
       <!-- <pre>{{event.images}}</pre> -->
   </kpp-base-section>
 
-  <kpp-base-section class="jury-section">
+  <kpp-base-section class="jury-section" >
     <center-l size="wide">
       <h2 class="jury-section__title">Jury</h2>
       <div class="grid">
@@ -114,6 +119,10 @@ const headerContent = {
   }
 }
 
+.header--2 {
+  font-size: 1.75rem;
+}
+
 .description {
   width: 100%;
   height: auto;
@@ -132,8 +141,13 @@ const headerContent = {
 
 }
 
+.ceremony-video {
+  width: 100%;
+  height: 100%;
+
+}
+
 .jury-section {
-  background-color: hsla(var(--primary-hsl), .05);
 
   &__title {
     text-align: center;

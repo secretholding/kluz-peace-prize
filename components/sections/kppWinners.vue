@@ -33,7 +33,9 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
 .winners-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: auto repeat(4, auto);
+  align-items: start;
+  justify-content: center;
   grid-template-areas: 
     "title"
     "winner1"
@@ -42,9 +44,9 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
     "winner4";
   gap: 0;
   
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto minmax(360px, auto) minmax(360px, auto);
     grid-template-areas: 
         "title title"
         "winner1 winner2"  
@@ -53,8 +55,10 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
 }
 
 .winners-grid__title {
+  padding-bottom: var(--s1);
   h3 {
     border-bottom: 2px solid hsla(var(--primary-hsl), .3);
+
 
     @media (max-width: 768px) {
       padding-bottom: var(--s-4);
@@ -67,9 +71,6 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
       padding-bottom: var(--s0);
       margin-bottom: var(--s0);  
     }
-
-    
-    
   }
 }
 
@@ -81,6 +82,7 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
   max-height: 360px;
   max-width: 360px;
   min-height: 180px;
+  margin-inline: auto;
   transition: all .5s ease;
 
   > img {

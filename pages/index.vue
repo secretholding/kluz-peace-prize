@@ -1,9 +1,9 @@
 <template>
     <kpp-slider />
-    
-    <kpp-highlight-event />
+    <!-- <kpp-highlight-event /> -->
+    <kpp-cta color="tertiary"/>
 
-    <kpp-highlights :content="eventsHighlights" />
+    <kpp-highlights :content="eventsHighlights" hide-action />
 
     <kpp-highlights :content="updatesHighlights" />
 
@@ -16,9 +16,6 @@ useHead({
   title: 'PeaceTech Prize',
 })
 
-definePageMeta({
-  layout: "base"
-});
 
 const updatesHighlights = {
   title: 'Updates Highlights',
@@ -33,12 +30,9 @@ let posts = {}
 const events = await queryContent('events').find();
 let groupedByYear = (events.reduce((grouped, event) => {
   const year = event.year; // replace 'year' with the actual attribute name in your event object
-  if (!grouped[year]) {
-    grouped[year] = {};
-  }
   grouped[year] = event;
   return grouped;
-}, {}));
+}, {});
 
 let order = Object.keys(groupedByYear).sort((a, b) => b - a)
 order.forEach((year) => {

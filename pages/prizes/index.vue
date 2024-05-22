@@ -10,12 +10,7 @@ useHead({
   title: 'PeaceTech Prize',
 })
 
-definePageMeta({
-  layout: "base",
-});
-
-
-const events = await queryContent('events').sort({year: -1}).find();
+const events = await queryContent('events').where({year: {$in: [2023, 2022]}}).sort({year: -1}).find();
 
 </script>
 
@@ -24,7 +19,8 @@ const events = await queryContent('events').sort({year: -1}).find();
   margin-top: var(--s2);
   display: flex;
   flex-direction: column;
-  width: max-content;
+  justify-content: center;
+  width: 100%;
   margin-inline: auto;
   gap: var(--s3);
 

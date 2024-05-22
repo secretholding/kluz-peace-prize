@@ -56,9 +56,6 @@ useHead({
   title: 'PeaceTech Prize',
 })
 
-definePageMeta({
-  layout: "base",
-});
 </script>
 
 <style lang="scss" scoped>

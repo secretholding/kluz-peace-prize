@@ -10,6 +10,8 @@
     "/assets/images/winners/commit-global-1.jpg",
     "/assets/images/winners/project-didi-ceremony.jpg"
   ],
+  "cover_image": "/assets/images/slides/drone-watercolor.jpg",
+  "ceremony_video": "https://www.youtube.com/embed/Lxd8t9tappc?si=WOfclzPJg562yW_j",
   "jury": [
     {
       "name": "Andrea Renda",

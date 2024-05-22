@@ -12,11 +12,6 @@ useHead({
   title: 'PeaceTech Prize - Updates and Announcements',
 })
 
-definePageMeta({
-  layout: "default",
-});
-
-
 const route = useRoute()
 
 const blogData = await queryContent('updates').sort({date: -1}).find();
