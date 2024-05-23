@@ -1,17 +1,17 @@
 <template>
-  <base-field>
+  <kpp-field :validate="validate" :maxWords="maxWords" :errorMessage="errorMessage">
     <base-textarea
       class="kpp-textarea"
-      :id="textareaId" 
+      :id="inputId" 
       :resizeX="resizeX"
       :textareaHeight="textareaHeight"
       :rows="textareaHeight"
-      :name="textareaName"
       :placeholder="textareaPlaceholder"
       :wordcount="wordcount"
+      :name="inputName"
     ></base-textarea>
     <p class="wordcount">{{ wordcount }}</p>
-  </base-field>
+  </kpp-field>
 </template>
 
 <script setup>
@@ -22,11 +22,11 @@ const props = defineProps({
     type: String,
     default: 'false'
   },
-  textareaId: {
+  inputId: {
     type: String,
     default: '01'
   },
-  textareaName: {
+  inputName: {
     type: String,
     default: 'textarea-01'
   },
@@ -42,6 +42,18 @@ const props = defineProps({
     type: String,
     default: '8' // The height of the textarea in lines of text
   },
+  validate: {
+    type: String,
+    default: ''
+  },
+  maxWords: {
+    type: String,
+    default: ''
+  },
+  errorMessage: {
+    type: String,
+    default: ''
+  }
 });
 
 const { resizeX, textareaId, textareaName, textareaPlaceholder, textareaHeight } = toRefs(props);
