@@ -1,9 +1,7 @@
 <template>
   <NuxtLink :to="content._path" class="kpp-update-grid-item" :content="content" :has-bg="coverImageUrl ? true : false">
     <div class="frame">
-      <img class="odd" src="/assets/images/slides/drone-watercolor.png" alt="">
-      <img class="even" src="/assets/images/slides/data-watercolor.png" alt="">
-      <!-- <img :src="imagePath" alt=""> -->
+      <img :src="imagePath" alt="">
     </div>
     <div class="kpp-update-grid-item__content">
       <kpp-headers :content="headerContent" color="base"/>
@@ -67,8 +65,6 @@ const imagePath = computed(() => {
 
 .kpp-update-grid-item:nth-child(odd) .even { display: none; }
 .kpp-update-grid-item:nth-child(even) .odd { display: none; }
-
-
 
 .frame {
   --n: 9;

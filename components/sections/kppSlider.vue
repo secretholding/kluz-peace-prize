@@ -53,7 +53,7 @@ const headerContent = {
   background-size: cover;
   background-position: center center;
   padding-inline: var(--s2);
-  background-image: url('/assets/images/slides/satelitte-watercolor.png');
+  background-image: url('/assets/images/slides/slider-spacex.png');
 }
 
 
