@@ -70,9 +70,15 @@ const bgPath = computed(() => {
   background-repeat: no-repeat;
 }
 
-:deep(.brow) { color: var(--primary-color); }
+// :deep(.brow) { color: var(--primary-color); }
+// :deep(.tagline) { color: var(--base-color); }
 
-:deep(.tagline) { color: var(--base-color); }
+.kpp-hero[color="white"] h2 { color: var(--white-color); }
+.kpp-hero[color="primary"] h2 { color: var(--primary-color); }
+.kpp-hero[color="secondary"] h2 { color: var(--secondary-color); }
+.kpp-hero[color="tertiary"] h2 { color: var(--tertiary-color); }
+.kpp-hero[color="accent"] h2 { color: var(--accent-color); }
+.kpp-hero[color="base"] h2 { color: var(--base-color); }
 
 
 </style>
