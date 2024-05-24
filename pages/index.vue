@@ -28,7 +28,7 @@ const updatesHighlights = {
   }
 }
 let posts = {}
-const events = await queryContent('events').find();
+const events = await queryContent('events').limit(2).find();
 let groupedByYear = (events.reduce((grouped, event) => {
   const year = event.year; // replace 'year' with the actual attribute name in your event object
   grouped[year] = event;
