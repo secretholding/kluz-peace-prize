@@ -26,16 +26,47 @@ const images =  [
 ]
 
 // Vamos precisar ligar o objeto Winner com o slide. 
-const winners = await queryContent('winners').find();
+//const winners = await queryContent('winners').find();
 const headerContent = reactive({
-  winners: [],
+  winners: [
+    {
+      slug: 'commit-global-2023',
+      title: 'Commit Global',
+      tagline: 'A first of its kind Humanitarian Digital Civic Infrastructure for Refugees',
+      image: images[0]
+    },
+    {
+      slug: 'human-rights-analysis-group',
+      title: 'Human Rights Data Analysis Group',
+      tagline: 'Using data science to track patterns of violence during armed conflict',
+      image: images[1]
+    },
+    {
+      slug: 'palantir-foundry',
+      title: 'Palantir Foundry',
+      tagline: 'A decentralised immigration scheme that helped ensure the safe matching and resettlement of Refugees',
+      image: images[2]
+    },
+    {
+      slug: 'project-didi',
+      title: 'Project Didi',
+      tagline: 'Operationalizing peacebuilding theory using artificial intelligence, machine learning, and big data',
+      image: images[3]
+    },
+    {
+      slug: 'magnolia-foundation',
+      title: 'The Magnolia Foundation',
+      tagline: 'A multidisciplinary approach to teaching peace, mediation, and rehabilitation',
+      image: images[4]
+    },
+  ],
   activeWinner: {},
   activeImage: images[0]
 });
 const position = ref(0)
 const imagePosition = ref(0)
 
-winners.forEach((w, index) => {
+/*winners.forEach((w, index) => {
   const winner = {
     slug: w.slug,
     brow: `Kluz Prize for PeaceTech | ${w.year}`,
@@ -45,7 +76,7 @@ winners.forEach((w, index) => {
     image: images[index]
   }
   headerContent.winners.push(winner)
-});
+});*/
 
 headerContent.activeWinner = headerContent.winners[0];
 
