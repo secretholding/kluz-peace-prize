@@ -92,7 +92,7 @@ const props = defineProps({
   .button { 
     background-color: var(--accent-color);
     border-color: var(--accent-color);
-    color: var(--base-color);
+    color: var(--white-color);
   }
 }
 
@@ -121,7 +121,7 @@ const props = defineProps({
   .button { 
     background-color: var(--accent-color);
     border-color: var(--accent-color);
-    color: var(--base-color);
+    color: var(--white-color);
   }
 }
 .kpp-cta[color="accent"] {
