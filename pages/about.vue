@@ -55,8 +55,8 @@
       </div>
 
       <div class="split-panel" align-items="center" >
-        <img src="/assets/images/kluz-prize-logo.svg" />
-        <ul>
+        <img src="assets/images/kluz-prize-logo.svg" />
+        <ul class="custom-list | stack">
           <li>Artificial Intelligence (AI) and Machine Learning (ML), predicting conflicts, enhancing decision-making, facilitating mediation, and assessing responses to societal issues</li>
           <li>Predictive modeling, spotting early conflict indicators for timely interventions</li>
           <li>Satellite and drone imaging, serving multifaceted roles from conflict prevention to post-war reconstruction</li>
@@ -84,24 +84,6 @@ useHead({
 })
 </script>
 <style lang="scss" scoped>
-.split-panel {
-  display: grid;
-  grid-template-columns: 1fr;
-  @media (min-width: 768px) { grid-template-columns: auto auto; }
-}
-
-.split-panel[align-items="center"] { align-items: center; }
-.split-panel[align-items="start"] { align-items: start; }
-.split-panel[align-items="end"] { align-items: end; }
-
-
-.span-content { 
-  * + * { margin-top: var(--s-1); }
-
-  @media (max-width: 768px) { }
-  @media (min-width: 768px) { padding-inline: var(--s2); }
- }
-
 .about-section p {
   
   font-size: 1.25rem; 

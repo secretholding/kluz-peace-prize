@@ -7,7 +7,7 @@
           <p class="question">What do we mean by PeaceTech?</p>
           <div class="answer">
             <p>"PeaceTech" encapsulates the strategic deployment of innovative technologies to reinforce peace, prevent conflicts, and steer peacebuilding initiatives. It harnesses, for instance:</p>
-            <ul class="stack">
+            <ul class="custom-list | stack">
               <li>Artificial Intelligence (AI) and Machine Learning (ML) to predict conflicts, enhance decision-making, facilitate mediation, and assess responses to societal issues like infrastructure damage or poverty.</li>
               <li>Predictive modeling, spotting early conflict indicators for timely interventions.</li>
               <li>Satellite and drone imaging, serving multifaceted roles from conflict prevention to post-war reconstruction, social media monitoring for potential social unrest, and providing vital communication in conflict zones.</li>
@@ -29,7 +29,7 @@
           <p class="question">What are the criteria used for selection?</p>
           <div class="answer">
             <p>The Selection Committee will use the following achievement-oriented criteria for selection:</p>
-            <ul class="stack">
+            <ul class="custom-list | stack">
               <li>Demonstrated Impact: Evidence of the achievements or project's tangible improvement on a significant number of lives;</li>
               <li>Proven Relevance: Examples of how the achievements or project has effectively supported, built, kept peace or addressed an urgent need in a humanitarian or developmental context;</li>
               <li>Novelty and Innovation: Instances where the achievements or project has employed a unique approach contributing to solutions in a remarkable way;</li>
@@ -72,7 +72,6 @@ useHead({
 
 <style lang="scss" scoped>
 .faq-wrapper {
-  // max-width: 80ch;
 }
 
 .faq-list { --space: var(--s1); }
@@ -87,21 +86,6 @@ useHead({
     padding-left: var(--s0);
     position: relative;
   }
-
-  li:before {
-      content: '';
-      font-weight: bold;
-      color: var(--primary-color);
-      margin-right: var(--s-2);
-      border-left: 6px solid var(--secondary-color);
-      border-top: 6px solid transparent;
-      border-bottom: 6px solid transparent;
-      width: 0;
-      height: 0;
-      position: absolute;
-      left: 2px;
-      top: 7px;
-    }
 }
 
 .question {
