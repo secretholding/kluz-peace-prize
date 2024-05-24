@@ -1,6 +1,6 @@
 <template>
   <div>
-    <kpp-hero height="80svh" :bg="`${base_path}${winner.bg}`">
+    <kpp-hero height="80svh" :bg="`${base_path}${winner.images.hero}`">
       <center-l size="wide" class="width:100%">
         <kpp-headers :content="headerContent" color="white" /> 
       </center-l>
