@@ -83,7 +83,7 @@ useHead({
   title: 'PeaceTech Prize',
 })
 </script>
-<style>
+<style lang="scss" scoped>
 .split-panel {
   display: grid;
   grid-template-columns: 1fr;
