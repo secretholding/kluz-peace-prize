@@ -1,16 +1,16 @@
 <template>
-  <kpp-base-section class="kpp-cta" height="auto" :color="color">
+  <kpp-base-section class="kpp-cta" height="auto" :color="color" :content="content">
     <center-l size="wide">
       <div class="wrapper">
         <stack-l class="panel panel--header">
-          <h3 class="brow">Prize 2024</h3>
-          <h2 class="title">Applications Open</h2>
-          <p>Apply for the 2024 Kluz Prize for PeaceTech by X date and be recognized for your achievements and contributions to the evolving field of technologies for peace.</p>
+          <h3 class="brow">{{ content.brow }}</h3>
+          <h2 class="title">{{ content.title }}</h2>
+          <p>{{ content.text }}</p>
         </stack-l>
         <stack-l class="panel panel--action">
-          <nuxt-link to="/application" unstyled="color">
-            <kpp-button color="accent" visual="primary" to="/application" size="xl">Apply Now</kpp-button>
-          </nuxt-link>  
+          <nuxt-link :to="content.action.url" unstyled="color">
+            <kpp-button class="button" visual="primary" :to="content.action.url" size="xl">{{ content.action.label }}</kpp-button>
+          </nuxt-link>
         </stack-l>
       </div>
     </center-l>
@@ -22,6 +22,18 @@ const props = defineProps({
   color: {
     type: String,
     default: 'base'
+  },
+  content: {
+    type: Object,
+    default: {
+      brow: 'Kluz Prize for PeaceTech 2024',
+      title: 'Applications Open',
+      text: 'Apply to the 2024 Kluz Prize for PeaceTech and be recognized for your achievements and contributions to the evolving field of technologies for peace.',
+      action: {
+        label: 'Apply Now',
+        url: '/application'
+      }
+    }
   }
 });
 
@@ -63,12 +75,11 @@ const props = defineProps({
     --space: 0;
   }
 
-  p { --space: var(--s1); }
+  p { 
+    --space: var(--s1); 
+    font-size: 125%;
+  }
 }
-
-
-
-
 
 .panel--action {
   flex: 2;
@@ -78,24 +89,48 @@ const props = defineProps({
 .kpp-cta[color="base"] {
   background-color: var(--base-color);
   color: var(--white-color);
+  .button { 
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--base-color);
+  }
 }
 
 .kpp-cta[color="primary"] {
   background-color: var(--primary-color);
   color: var(--white-color);
+  .button { 
+    background-color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+    color: var(--base-color);
+  }
 }
 .kpp-cta[color="secondary"] {
   background-color: var(--secondary-color);
   color: var(--base-color);
+  .button { 
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
+  }
   
 }
 .kpp-cta[color="tertiary"] {
   background-color: var(--tertiary-color);
   color: var(--primary-color);
-  
+  .button { 
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--base-color);
+  }
 }
 .kpp-cta[color="accent"] {
   background-color: var(--accent-color);
   color: var(--base-color);
+  .button { 
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--base-color);
+  }
 }
 </style>
