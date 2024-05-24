@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero color="primary" height="max(70svh, 650px)" bg="linear-gradient(0deg, var(--white-color) 0%, var(--white-color) 100%)">
+  <kpp-hero color="white" height="max(70svh, 650px)" bg="linear-gradient(0deg, var(--white-color) 0%, var(--white-color) 100%)">
     <div class="slider">
       <div class="slider__background" :style="`background-image: url('${headerContent.activeWinner.image}');`"></div>
       <div class="slide">
@@ -140,14 +140,14 @@ onUnmounted(() => {
 }
 
   .slide__content {
-    transform: translateX(0);
+    transform: translateY(10%);
     opacity: 1;
     transition: all 0.2s ease-in-out;
   }
 
     .slide__content--left {
       opacity: 0;
-      transform: translateX(-30%);
+      transform: translateY(0%);
     }
 
     .slide__content--right {
@@ -167,16 +167,18 @@ onUnmounted(() => {
 }
 
   .slider-nav__trigger {
-    width: var(--s0);
-    height: var(--s0);
+    width: 12px;
+    height: 12px;
+    
     border: none;
-    border-radius: 50%;
-    background-color: var(--white-color-70);
+    // border-radius: 50%;
+    background-color: var(--tertiary-color);
     transition: all 0.4s ease-in-out;
   }
 
     .slider-nav__trigger--active {
-      background-color: var(--secondary-color);
+      transform: rotate(45deg);
+      background-color: var(--accent-color);
     }
 
     @keyframes scale {
