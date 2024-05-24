@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import { reactive, ref, watch, onUnmounted } from 'vue'
+import { reactive, ref, watch, onMounted, onUnmounted } from 'vue'
 const route = useRoute()
 const images =  [
   '/assets/images/slides/slider-atlas.png',
@@ -79,10 +79,13 @@ watch(position, (newValue, oldValue) => {
   }, 800);
 });
 
-let sliderTimer = setInterval(() => {
-  // Your code here
-  position.value = position.value >= (headerContent.winners.length - 1) ? 0 : position.value + 1;
-}, 5000);
+
+onMounted(() => {
+  let sliderTimer = setInterval(() => {
+    // Your code here
+    position.value = position.value >= (headerContent.winners.length - 1) ? 0 : position.value + 1;
+  }, 5000);
+});
 
 onUnmounted(() => {
   clearInterval(sliderTimer);
