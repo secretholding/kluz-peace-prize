@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero color="primary" height="max(70svh, 650px)">
+  <kpp-hero color="white" height="max(70svh, 650px)">
     <div class="slider">
       <div class="slide" :style="`background-image: url('${headerContent.activeWinner.image}');`">
         <center-l size="wide" class="center--forced slide__content">
@@ -91,7 +91,7 @@ onUnmounted(() => {
   display: flex;
   align-items: flex-end;
   padding-bottom: var(--s4);
-  // animation: slide 12s infinite alternate;
+  animation: slide 16s infinite alternate;
   background-size: cover;
   background-position: center center;
   padding-inline: var(--s2);
