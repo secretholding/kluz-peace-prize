@@ -99,6 +99,7 @@ onUnmounted(() => {
   right: 0;
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
+  overflow: hidden;
 }
 
   .slider--transitioning {
