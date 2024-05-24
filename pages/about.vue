@@ -55,7 +55,7 @@
       </div>
 
       <div class="split-panel" align-items="center" >
-        <img src="assets/images/kluz-prize-logo.svg" />
+        <img src="/assets/images/kluz-prize-logo.svg" />
         <ul class="custom-list | stack">
           <li>Artificial Intelligence (AI) and Machine Learning (ML), predicting conflicts, enhancing decision-making, facilitating mediation, and assessing responses to societal issues</li>
           <li>Predictive modeling, spotting early conflict indicators for timely interventions</li>
