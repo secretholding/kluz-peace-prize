@@ -1,4 +1,5 @@
 <template>
+  <main>
     <kpp-slider />
     <!-- <kpp-highlight-event /> -->
     <kpp-cta color="tertiary"/>
@@ -8,7 +9,7 @@
     <kpp-highlights :content="updatesHighlights" />
 
     <kpp-highlight-about />
-    
+  </main>
 </template>
 
 <script setup>

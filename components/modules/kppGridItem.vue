@@ -1,7 +1,7 @@
 <template>
-  <NuxtLink :to="content._path" class="kpp-update-grid-item" :content="content" :cover-image="coverImage" :has-bg="coverImageUrl ? true : false">
+  <NuxtLink :to="content._path" class="kpp-update-grid-item">
     <div class="frame">
-      <img :src="imagePath" alt="">
+      <img :src="content.cover_image" alt="">
     </div>
     <div class="kpp-update-grid-item__content">
       <kpp-headers :content="headerContent" color="base"/>
@@ -17,19 +17,11 @@ const props = defineProps({
     type: Object,
     default: {}
   },
-  coverImage: {
-    type: String,
-    default: {}
-  },
 });
 
 const { content } = toRefs(props)
 
 const bgImage = "var(--base-color)";
-
-// if (content.value.cover_image) {
-//   bgImage = `url(${content.value.cover_image})`
-// } 
 
 const headerContent = computed(() => {
   return {
@@ -40,26 +32,6 @@ const headerContent = computed(() => {
     author: content.value.author
   }
 })
-
-// TODO: fix this when image is available on Directus
-// const imagePath = computed(() => {
-//   let image = ''
-//   if(content.value.type === 'events') {
-//     image = content.value.images ? content.value.images[Number(Math.random().toFixed(0))] : ''
-//   } else {
-//     image = content.value.image ? content.value.image : ''
-//   }
-//   return image
-// })
-
-// const coverImageUrl = computed(() => {
-//   if (coverImage) {
-//     return `url(${coverImage})`;
-//   }
-// })
-// const coverImageUrl = computed(() => {
-//   return content.value.image ? `url(https://cms.thegovlab.com/assets/${content.value.image.id})` : false;
-// })
 
 </script>
 
@@ -96,7 +68,7 @@ const headerContent = computed(() => {
 }
 
 .kpp-update-grid-item[has-bg="true"] {
-  background-image: v-bind(coverImageUrl);
+  // background-image: v-bind(coverImageUrl);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

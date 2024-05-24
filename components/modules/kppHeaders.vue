@@ -2,12 +2,11 @@
   <hgroup class="headers" :content="content" :color="color">
 
     <h5 class="brow" v-if="content.brow">{{ content.brow }}</h5>
-    <h5 class="brow" v-else>{{ computedDate }}</h5>
     
     <h3 class="title">{{ content.title }}</h3>
     
-    <h4 class="tagline" v-if="content.tagline">{{ content.tagline }}</h4>
-    <h5 class="date">{{ computedDate }}</h5>
+    <h4 class="tagline">{{ content.tagline }}</h4>
+    <h5 class="date">{{ content.date }}</h5>
     <p class="authors" v-if="content.author">By {{ content.author }}</p>
   </hgroup>
 </template>
@@ -24,7 +23,8 @@ const props = defineProps({
       title: 'This is the title',
       tagline: 'This is the tagline',
       author: 'This is the author',
-      date: 'Mon DD, YYYY'
+      date: 'Mon DD, YYYY',
+      image: 'Image URL'
     })
   },
   
@@ -73,7 +73,6 @@ const computedDate = computed(() => {
   font-weight: 200;  
   line-height: 1.45;
   margin-top: var(--s0);
-  display: none;
 }
 
 .date { 
