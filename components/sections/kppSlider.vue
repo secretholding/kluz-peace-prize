@@ -1,9 +1,9 @@
 <template>
-  <kpp-hero color="primary" height="70svh">
+  <kpp-hero color="primary" height="max(70svh, 650px)">
     <div class="slider">
-      <div class="slide" :style="`background-image: url('${headerContent.activeImage}');`">
+      <div class="slide" :style="`background-image: url('${headerContent.activeWinner.image}');`">
         <center-l size="wide" class="center--forced slide__content">
-          <kpp-headers :content="headerContent.activeWinner" color="base" />
+          <kpp-headers :content="headerContent.activeWinner" color="white" />
         </center-l>
         <div class="slider-nav">
           <button @click="position = index" class="slider-nav__trigger" :class="{'slider-nav__trigger--active': position == index}" v-for="(w, index) in headerContent.winners" v-bind:key="w.slug"></button>
@@ -17,10 +17,11 @@
 import { reactive, ref, watch, onUnmounted } from 'vue'
 const route = useRoute()
 const images =  [
+  '/assets/images/slides/slider-atlas.png',
+  '/assets/images/slides/slider-drone.png',
   '/assets/images/slides/slider-spacex.png',
-  '/assets/images/slides/slider-spacex-2.png',
-  '/assets/images/slides/satelitte-watercolor.png',
-  '/assets/images/slides/drone-watercolor.png'
+  '/assets/images/slides/slider-starlink.png',
+  '/assets/images/slides/slider-drone.png'
 ]
 
 // Vamos precisar ligar o objeto Winner com o slide. 
@@ -33,32 +34,22 @@ const headerContent = reactive({
 const position = ref(0)
 const imagePosition = ref(0)
 
-winners.forEach(w => {
+winners.forEach((w, index) => {
   const winner = {
     slug: w.slug,
     brow: `Kluz Prize for PeaceTech | ${w.year}`,
     title: w.title,
     tagline: w.quote.text,
     date: w.quote.cite,
-    image: w.images.hero
+    image: images[index]
   }
   headerContent.winners.push(winner)
 });
 
 headerContent.activeWinner = headerContent.winners[0];
 
-const getRandomIndex = () => {
-  const newIndex = imagePosition.value >= (images.length - 1) ? 0 : imagePosition.value + 1;
-  console.log(newIndex, imagePosition.value, images.length - 1)
-  // Update imagePosition with the new index
-  imagePosition.value = newIndex;
-  headerContent.activeImage = images[newIndex];
-  
-  return newIndex;
-}
 
 watch(position, (newValue, oldValue) => {
-  headerContent.activeImage = images[getRandomIndex()]
   const content = document.querySelector('.slide__content');
   content.classList.add('slide__content--left');
   window.setTimeout(() => {
@@ -74,7 +65,7 @@ watch(position, (newValue, oldValue) => {
 let sliderTimer = setInterval(() => {
   // Your code here
   position.value = position.value >= (headerContent.winners.length - 1) ? 0 : position.value + 1;
-}, 3000);
+}, 5000);
 
 onUnmounted(() => {
   clearInterval(sliderTimer);
@@ -105,6 +96,15 @@ onUnmounted(() => {
   background-position: center center;
   padding-inline: var(--s2);
   transition: background-image 0.5s ease-in-out;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(0deg, transparent 0%, var(--base-color-70) 70%, var(--base-color-70) 100%);
+  }
 }
 
   .slide__content {
@@ -139,7 +139,7 @@ onUnmounted(() => {
     height: var(--s0);
     border: none;
     border-radius: 50%;
-    background-color: var(--base-color-30);
+    background-color: var(--white-color-70);
     transition: all 0.2s ease-in-out;
   }
 
