@@ -99,6 +99,7 @@ onUnmounted(() => {
   right: 0;
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
+  overflow: hidden;
 }
 
   .slider--transitioning {
@@ -134,7 +135,7 @@ onUnmounted(() => {
     top: 0;
     bottom: 0;
     right: 0;
-    background-image: linear-gradient(0deg, transparent 0%, var(--base-color-70) 70%, var(--base-color-70) 100%);
+    background-image: linear-gradient(180deg, transparent 0%, var(--base-color-70) 70%, var(--base-color-70) 100%);
   }
 }
 
@@ -171,7 +172,7 @@ onUnmounted(() => {
     border: none;
     border-radius: 50%;
     background-color: var(--white-color-70);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
     .slider-nav__trigger--active {
