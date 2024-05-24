@@ -1,7 +1,8 @@
 <template>
-  <kpp-hero color="primary" height="max(70svh, 650px)">
+  <kpp-hero color="primary" height="max(70svh, 650px)" bg="linear-gradient(0deg, var(--white-color) 0%, var(--white-color) 100%)">
     <div class="slider">
-      <div class="slide" :style="`background-image: url('${headerContent.activeWinner.image}');`">
+      <div class="slider__background" :style="`background-image: url('${headerContent.activeWinner.image}');`"></div>
+      <div class="slide">
         <center-l size="wide" class="center--forced slide__content">
           <kpp-headers :content="headerContent.activeWinner" color="white" />
         </center-l>
@@ -49,9 +50,11 @@ winners.forEach((w, index) => {
 headerContent.activeWinner = headerContent.winners[0];
 
 
-watch(position, (newValue, oldValue) => {
+/*watch(position, (newValue, oldValue) => {
+  const slider = document.querySelector('.slider');
   const content = document.querySelector('.slide__content');
   content.classList.add('slide__content--left');
+  slider.classList.add('slider--transitioning');
   window.setTimeout(() => {
     headerContent.activeWinner = headerContent.winners[newValue]
     content.classList.remove('slide__content--left');
@@ -60,6 +63,20 @@ watch(position, (newValue, oldValue) => {
   window.setTimeout(() => {
     content.classList.remove('slide__content--right');
   }, 400);
+  window.setTimeout(() => {
+    slider.classList.remove('slider--transitioning');
+  }, 800);
+});*/
+
+watch(position, (newValue, oldValue) => {
+  const slider = document.querySelector('.slider');
+  slider.classList.add('slider--transitioning');
+  window.setTimeout(() => {
+    headerContent.activeWinner = headerContent.winners[newValue]
+  }, 500);
+  window.setTimeout(() => {
+    slider.classList.remove('slider--transitioning');
+  }, 800);
 });
 
 let sliderTimer = setInterval(() => {
@@ -80,6 +97,24 @@ onUnmounted(() => {
   top: 0;
   bottom: 0;
   right: 0;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+  .slider--transitioning {
+    opacity: 0;
+  }
+
+.slider__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: background-image 0.5s ease-in-out;
+  animation: scale 20s infinite alternate;
 }
 
 .slide {
@@ -91,11 +126,7 @@ onUnmounted(() => {
   display: flex;
   align-items: flex-end;
   padding-bottom: var(--s4);
-  // animation: slide 12s infinite alternate;
-  background-size: cover;
-  background-position: center center;
   padding-inline: var(--s2);
-  transition: background-image 0.5s ease-in-out;
   &::before {
     content: '';
     position: absolute;
@@ -147,16 +178,16 @@ onUnmounted(() => {
       background-color: var(--secondary-color);
     }
 
+    @keyframes scale {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
 
-// @keyframes slide {
-//   0% {
-//     background-image: url('/assets/images/slides/drone-watercolor.png');
-//   }
-//   50% {
-//     background-image: url('/assets/images/slides/data-watercolor.png');
-//   }
-//   100% {
-//     background-image: url('/assets/images/slides/satelitte-watercolor.png');
-//   }
-// }
 </style>
