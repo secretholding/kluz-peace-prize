@@ -11,7 +11,7 @@ const objectContructor = async (dir, fs) => {
     let i = { ...item };
     i.slug = item.heading ? common.slugify(item.heading) : common.slugify(item.tagline);
     i.date = item.date ? item.date.split("T")[0] : '';
-    i.cover_image = item.cover_image ? common.getImage(item.cover_image.id) : '';
+    i.cover_image = item.cover_image ? common.getImage(item.cover_image.id) : i.image ? common.getImage(item.image.id) : '';
     i.image = item.image ? common.getImage(item.image.id) : '';
 
     fs.writeFile(

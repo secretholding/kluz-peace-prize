@@ -5,7 +5,7 @@
     <center-l size="wide">
       <div class="split-panel">
         <p>The Kluz Prize for PeaceTech is an initiative to celebrate, distinguish, and promote the use of new technologies in fostering peace, reducing conflict, and protecting human dignity and universal human rights across the globe. The Prize is dedicated to individuals, organizations, or initiatives for their distinguished achievements in peacebuilding, peacemaking, peacekeeping, or peace enforcement efforts. The goal of the Prize is to engage individuals, societies, and states in building up a local, national, and global PeaceTech movement.</p>
-        <img src="assets/images/map.svg" alt="">
+        <img src="/assets/images/map.svg" alt="">
       </div>
     </center-l>
   </kpp-base-section>
@@ -38,7 +38,7 @@
     <center-l size="wide">
       <div class="split-panel" align-items="center">
         
-        <img src="assets/images/jury/artur-kluz.jpg" alt="Artur Kluz">
+        <img src="/assets/images/jury/artur-kluz.jpg" alt="Artur Kluz">
         
         <blockquote>
           <p>Technology holds the key to unlocking a more peaceful world, and PeaceTech is the driving force behind this transformative opportunity. Together, by showcasing groundbreaking applications of technology to foster peace, we can accelerate the PeaceTech movement and create tangible, life-changing impact on a global scale.</p>
@@ -55,7 +55,7 @@
       </div>
 
       <div class="split-panel" align-items="center" >
-        <img src="assets/images/kluz-prize-logo.svg" />
+        <img src="/assets/images/kluz-prize-logo.svg" />
         <ul>
           <li>Artificial Intelligence (AI) and Machine Learning (ML), predicting conflicts, enhancing decision-making, facilitating mediation, and assessing responses to societal issues</li>
           <li>Predictive modeling, spotting early conflict indicators for timely interventions</li>
