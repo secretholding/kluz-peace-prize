@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero color="white" height="max(70svh, 650px)" bg="linear-gradient(0deg, var(--white-color) 0%, var(--white-color) 100%)">
+  <kpp-hero color="white" height="max(70svh, 650px)" class="hero__slider">
     <div class="slider">
       <div class="slider__background" :style="`background-image: url('${headerContent.activeWinner.image}');`"></div>
       <div class="slide">
@@ -134,6 +134,11 @@ onUnmounted(() => {
   opacity: 1;
   transition: opacity .5s ease-in-out;
   overflow: hidden;
+}
+
+.hero__slider {
+  // temporary. Client didn't understand the white transition. 
+  background-color: var(--base-color);
 }
 
   .slider--transitioning {
