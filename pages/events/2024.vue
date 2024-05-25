@@ -52,7 +52,7 @@
             <kpp-prose>
               <p>If you have any questions, please visit our <a href="/faq">FAQs page</a> or contact the organizers at: <a href="mailto:info@kluzprize.org">info@kluzprize.org</a>.</p>
               <p><NuxtLink to="/faq" class="button">FAQs</NuxtLink></p>
-              <p><NuxtLink to="/events/2024/timeline" class="button">2024 Roadmap</NuxtLink></p>
+              <p><NuxtLink to="/roadmap" class="button">2024 Roadmap</NuxtLink></p>
             </kpp-prose>
           </div>
         </div>

@@ -7,7 +7,13 @@
           <kpp-headers :content="headerContent.activeWinner" color="white" />
         </center-l>
         <div class="slider-nav">
-          <button @click="position = index" class="slider-nav__trigger" :class="{'slider-nav__trigger--active': position == index}" v-for="(w, index) in headerContent.winners" v-bind:key="w.slug"></button>
+          <button 
+            @click="position = index" 
+            class="slider-nav__trigger" 
+            :class="{'slider-nav__trigger--active': position == index}" 
+            v-for="(w, index) in headerContent.winners" 
+            v-bind:key="w.slug"
+          ></button>
         </div>
       </div>
     </div>
