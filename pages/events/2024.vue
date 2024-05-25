@@ -39,7 +39,16 @@
       </div>
       </center-l>
     </kpp-base-section>
-    
+
+    <!-- <kpp-base-section class="jury-section">
+      <center-l size="wide">
+        <h2 class="jury-section__title">Jury</h2>
+        <div class="grid">
+          <kpp-person v-for="i in event.jury" :content="i" />         
+        </div>
+      </center-l>
+    </kpp-base-section> -->
+
     <kpp-base-section>
       <center-l size="wide">
         <div class="split-panel">
@@ -58,9 +67,17 @@
         </div>
       </center-l>
     </kpp-base-section>
+
+    <pre>{{ event }}</pre>
 </template>
 
 <script setup>
+const route = useRoute()
+
+const event = await queryContent('events');
+
+
+
 const ctaContent = {
   brow: 'Call for Applications',
   title: 'Applications Open',
@@ -70,6 +87,8 @@ const ctaContent = {
     url: '/application'
   }
 } 
+
+
 </script>
 
 <style lang="scss" scoped>
