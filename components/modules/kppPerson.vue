@@ -1,5 +1,5 @@
 <template>
-  <section class="kpp-person" :content="content" :base-path="base_path">
+  <section class="kpp-person" :content="content" :base-path="base_path" :title="`${content.name} | ${content.title}`">
     <slot>
       <div class="frame">
         <slot name="image">
@@ -9,7 +9,7 @@
       </div>
 
       <h5>{{ content.name }}</h5>
-      <h6>{{ content.title }}</h6>
+      <h6>{{ content.title.length > 55 ? content.title.slice(0, 55) + '...' : content.title }}</h6>
     </slot>
   </section>
 </template>
