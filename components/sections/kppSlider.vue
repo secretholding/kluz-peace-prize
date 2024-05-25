@@ -36,7 +36,7 @@ const images =  [
 const headerContent = reactive({
   winners: [
     {
-      slug: 'commit-global-2023',
+      slug: 'commit-global',
       title: 'Commit Global',
       tagline: 'A first of its kind Humanitarian Digital Civic Infrastructure for Refugees',
       image: images[0]
