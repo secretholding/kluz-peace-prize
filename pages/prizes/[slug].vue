@@ -128,10 +128,12 @@ const headerContent = {
     display: flex;
     flex-direction: column;
     gap: var(--s1);
+    
   }
   
   @media screen and (max-width: 768px) {
     padding-top: var(--s1);
+    margin-inline: auto;
 
     div { 
       flex-direction: column; 
