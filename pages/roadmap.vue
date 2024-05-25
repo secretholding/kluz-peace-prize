@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero title="2024 Kluz Prize for PeaceTech Timeline" bg="/assets/images/slides/slider-atlas.png" height="20svh"/>
+  <kpp-hero title="Roadmap" height="20svh" color="primary"/> <!-- bg="/assets/images/slides/slider-atlas.png" -->
   <kpp-base-section>
     <center-l size="wide">
       <ul class="roadmap">

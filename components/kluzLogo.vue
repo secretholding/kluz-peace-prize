@@ -58,8 +58,8 @@ const { color, maxWidth } = toRefs(props)
 .kpp-logo {
   width: 100%;
   height: auto;
-  max-width: v-bind(maxWidth);
   max-height: 100%;
+  max-width: v-bind(maxWidth);
 }
 
 .kpp-logo[color="base"]    .color { fill: var(--base-color); }

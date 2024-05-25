@@ -37,7 +37,7 @@ const { color } = toRefs(props);
 
 
 .kpp-top-bar__logo {
-  max-width: 100px;
+  max-width: 160px;
   padding: var(--s1);
 
   @media (min-width: 768px) {

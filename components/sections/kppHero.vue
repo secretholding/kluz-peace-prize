@@ -9,7 +9,7 @@
     <kpp-top-bar class="kpp-hero__top-bar" :color="color" />
     <slot>
       <center-l size="wide" class="width:100%">
-        <h2 class="text-align:center">{{title}}</h2>
+        <h2 class="title-only">{{title}}</h2>
       </center-l>
     </slot>
   </div>
@@ -68,6 +68,14 @@ const bgPath = computed(() => {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.title-only {
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--primary-color);
+
 }
 
 // :deep(.brow) { color: var(--primary-color); }

@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero height="50svh" title="2024" color="white" bg="assets/images/events/2022/kluz-peace-tech-prize-2022-01.jpg"/>
+  <kpp-hero height="50svh" title="2024" color="white" bg="/assets/images/events/2022/kluz-peace-tech-prize-2022-01.jpg"/>
   <kpp-cta color="base" :content="ctaContent"/>
   <kpp-base-section color="secondary">
     <center-l size="wide">
@@ -47,13 +47,12 @@
             <kpp-prose>
               <p><em>The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/privacy-policy.html">review the full statement here</a>.</em></p>
             </kpp-prose>
-            
           </div>
           <div class="panel">
             <kpp-prose>
               <p>If you have any questions, please visit our <a href="/faq">FAQs page</a> or contact the organizers at: <a href="mailto:info@kluzprize.org">info@kluzprize.org</a>.</p>
-              <p><a href="/faq" class="faq-link">View FAQs</a></p>
-              <p><a href="/events/2024/timeline" class="timeline-link">View 2024 Prize timeline</a></p>
+              <p><NuxtLink to="/faq" class="button">FAQs</NuxtLink></p>
+              <p><NuxtLink to="/events/2024/timeline" class="button">2024 Roadmap</NuxtLink></p>
             </kpp-prose>
           </div>
         </div>
@@ -70,7 +69,6 @@ const ctaContent = {
     label: 'Apply Now',
     url: '/application'
   }
-
 } 
 </script>
 
@@ -84,9 +82,12 @@ const ctaContent = {
   @media screen and (min-width: 768px) { font-size: 1.5rem; }
 }
 
-.split-panel {
-  gap: var(--s3);
+.split-panel { 
+  @media screen and (min-width: 768px) { gap: var(--s3); }
 }
+
+.panel { flex: 1; }
+
 ul {
   @media screen and (min-width: 768px) { margin: 0; }
 }
