@@ -66,8 +66,9 @@ const bgPath = computed(() => {
 
 <style lang="scss" scoped>
 .kpp-hero--updates {
-  min-height: 70svh;
+  min-height: 20svh;
   background-image: v-bind(bgPath);
+  background-color: var(--tertiary-color);
   background-size: cover;
   position: relative;
   @media (max-width: 768px) {

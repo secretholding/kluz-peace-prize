@@ -107,15 +107,15 @@ watch(position, (newValue, oldValue) => {
   }, 500);
   window.setTimeout(() => {
     slider.classList.remove('slider--transitioning');
-  }, 800);
+  }, 500);
 });
 
 
 onMounted(() => {
   let sliderTimer = setInterval(() => {
-    // Your code here
+    // This controls the time interval for each slide
     position.value = position.value >= (headerContent.winners.length - 1) ? 0 : position.value + 1;
-  }, 5000);
+  }, 8000);
 });
 
 onUnmounted(() => {
@@ -132,7 +132,7 @@ onUnmounted(() => {
   bottom: 0;
   right: 0;
   opacity: 1;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity .5s ease-in-out;
   overflow: hidden;
 }
 
@@ -148,7 +148,7 @@ onUnmounted(() => {
   right: 0;
   background-size: cover;
   background-position: center center;
-  transition: background-image 0.5s ease-in-out;
+  transition: background-image .5s ease-in-out;
   animation: scale 20s infinite alternate;
 }
 

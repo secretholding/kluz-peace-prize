@@ -6,7 +6,7 @@
     <h3 class="title">{{ content.title }}</h3>
     
     <h4 class="tagline">{{ content.tagline }}</h4>
-    <h5 class="date" v-if="content.date">{{ content.date }}</h5>
+    <h5 class="date" v-if="content.date">{{ computedDate }}</h5>
     <p class="authors" v-if="content.author">By {{ content.author }}</p>
     <base-button el="a" label="Learn more" :href="`/prizes/${content.slug}`" v-if="content.slug" />
   </hgroup>
@@ -72,7 +72,7 @@ const computedDate = computed(() => {
 
 .tagline {
   font-weight: 200;  
-  line-height: 1.45;
+  line-height: 1.62;
   margin-block: var(--s0);
 }
 
@@ -90,7 +90,7 @@ const computedDate = computed(() => {
 
 .brow    { font-size: .75rem; }
 .title   { font-size: 1.3rem; }
-.tagline { font-size: 1rem;   }
+.tagline { font-size: .9rem;   }
 .authors { font-size: .85rem; }
 .date    { font-size: .75rem; }
 

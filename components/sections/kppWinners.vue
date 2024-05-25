@@ -1,5 +1,5 @@
 <template>
-  <div class="winners-grid" :header="header">
+  <div class="winners-grid" :header="header" :n="winners.length">
     <hgroup v-if="header == true" class="winners-grid__title | text-align:center">
       <h3 class="">{{ event.year }}</h3>  
       <NuxtLink :to="`/events/${event.year}`" class="button" color="primary">View Ceremony</NuxtLink>
@@ -52,6 +52,13 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
         "winner1 winner2"  
         "winner3 winner4";
   }
+}
+
+.winners-grid[n="1"] {
+  grid-template-rows: auto repeat(2, auto);
+  grid-template-areas: 
+    "title"
+    "winner1";
 }
 
 .winners-grid__title {

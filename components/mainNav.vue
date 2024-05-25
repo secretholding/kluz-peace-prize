@@ -49,7 +49,8 @@ const props = defineProps({
   padding: var(--s0);  
   display: block;
   width: 100%;
-  max-width: 140px;
+  @media screen and (max-width: 768px) { max-width: 240px; }
+  @media screen and (min-width: 768px) { max-width: 140px; }
 }
 
 .nav {
