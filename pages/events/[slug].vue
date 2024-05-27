@@ -39,7 +39,7 @@
         </div>
       </stack-l>
       <reel-l v-else class="ceremony-reel" itemWidth="90%" >
-        <figure class="ceremony-image | frame" v-for="i in event.images">
+        <figure class="ceremony-image | frame" v-for="i in event.images" :key="i">
           <img :src="i" alt="">
         </figure>
       </reel-l>

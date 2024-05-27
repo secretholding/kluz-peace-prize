@@ -6,6 +6,8 @@
   "applicant": "Ana Carolina González Peña",
   "country": "",
   "year": 2022,
+  "sort": 1,
+  "order": 1,
   "images": {
     "logo": "magnolia-foundation-logo.svg",
     "hero": "magnolia-foundation-hero.jpg",

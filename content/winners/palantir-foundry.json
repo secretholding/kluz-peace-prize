@@ -6,6 +6,7 @@
   "applicant": "Ishrq Irteza",
   "country": "United Kingdom",
   "year": 2023,
+  "order": 3,
   "images": {
     "logo": "palantir-logo.svg",
     "hero": "palantir-foundry-hero.jpg",
