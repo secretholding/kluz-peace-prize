@@ -1,8 +1,8 @@
 <template>
   <div>
-    <kpp-hero height="80svh" :bg="`${base_path}${winner.images.hero}`">
+    <kpp-hero :height="winner.images.hero ? '80svh' : 'auto'" :bg="`${base_path}${winner.images.hero}`" :color="winner.images.hero ? 'white' : 'primary'">
       <center-l size="wide" class="width:100%">
-        <kpp-headers :content="headerContent" color="white" /> 
+        <kpp-headers :content="headerContent" :color="winner.images.hero ? 'white' : 'primary'" /> 
       </center-l>
     </kpp-hero>
     
@@ -32,7 +32,15 @@
         </center-l>
     </kpp-base-section>
     
-    <kpp-base-section>
+    <kpp-base-section v-if="winner.youtube_video">
+      <center-l size="wide" class="width:100%">
+        <div class="frame">
+          <iframe width="560" height="315" :src="winner.youtube_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </center-l>
+    </kpp-base-section>
+
+    <kpp-base-section v-if="winner.images.ceremony">
       <center-l size="wide">
         <h2 class="margin-bottom:s2">Prize Announcement</h2>
         <div class="frame">
