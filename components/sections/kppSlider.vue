@@ -116,9 +116,9 @@ watch(position, (newValue, oldValue) => {
   }, 500);
 });
 
-
+let sliderTimer = null;
 onMounted(() => {
-  let sliderTimer = setInterval(() => {
+  sliderTimer = setInterval(() => {
     // This controls the time interval for each slide
     position.value = position.value >= (headerContent.winners.length - 1) ? 0 : position.value + 1;
   }, 8000);
