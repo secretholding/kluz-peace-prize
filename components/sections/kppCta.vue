@@ -5,7 +5,10 @@
         <stack-l class="panel panel--header">
           <h3 class="brow">{{ content.brow }}</h3>
           <h2 class="title">{{ content.title }}</h2>
-          <p>{{ content.text }}</p>
+          <div class="margin-top:s1">
+            <p>{{ content.text }}</p>
+            <p v-if="content.extra"><strong>{{ content.extra }}</strong></p>
+          </div>
         </stack-l>
         <stack-l class="panel panel--action">
           <nuxt-link :to="content.action.url" unstyled="color">
@@ -29,6 +32,7 @@ const props = defineProps({
       brow: 'Kluz Prize for PeaceTech 2024',
       title: 'Applications Open',
       text: 'Apply to the 2024 Kluz Prize for PeaceTech and be recognized for your achievements and contributions to the evolving field of technologies for peace.',
+      extra: 'Applications are due by 11:59 PM EDT on X Date.',
       action: {
         label: 'Apply Now',
         url: '/application'
@@ -105,16 +109,6 @@ const props = defineProps({
     color: var(--base-color);
   }
 }
-.kpp-cta[color="secondary"] {
-  background-color: var(--secondary-color);
-  color: var(--base-color);
-  .button { 
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--white-color);
-  }
-  
-}
 .kpp-cta[color="tertiary"] {
   background-color: var(--tertiary-color);
   color: var(--primary-color);
@@ -122,15 +116,6 @@ const props = defineProps({
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     color: var(--white-color);
-  }
-}
-.kpp-cta[color="accent"] {
-  background-color: var(--accent-color);
-  color: var(--base-color);
-  .button { 
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    color: var(--base-color);
   }
 }
 </style>

@@ -39,11 +39,6 @@ const props = defineProps({
   :deep(*) { color: var(--white-color); }
 }
 
-.kpp-base-section[color="secondary"] {
-  background-color: hsla(var(--secondary-hsl), 1);
-  :deep(*) { color: var(--base-color); }
-}
-
 .kpp-base-section[color="tertiary"] {
   background-color: hsla(var(--tertiary-hsl), 1);
   :deep(*) { color: var(--base-color); }
