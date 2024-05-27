@@ -4,9 +4,9 @@
     <!-- <kpp-highlight-event /> -->
     <kpp-cta color="tertiary"/>
 
-    <kpp-highlights :content="eventsHighlights" hide-action />
-
     <kpp-highlights :content="updatesHighlights" />
+
+    <kpp-highlights :content="eventsHighlights" hide-action />
 
     <kpp-highlight-about />
   </main>
