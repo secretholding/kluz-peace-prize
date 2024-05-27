@@ -90,7 +90,7 @@
 
 // Skin
 .kpp-footer {
-  background-color: var(--base-color);
+  background-color: var(--primary-color);
   * { color: var(--white-color); }
 
   h4 { font-weight: 400; }
