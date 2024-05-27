@@ -1,11 +1,6 @@
 <template>
   <kpp-hero height="50svh" title="2024" color="white" bg="/assets/images/events/2022/kluz-peace-tech-prize-2022-01.jpg"/>
   <kpp-cta color="base" :content="ctaContent"/>
-  <kpp-base-section color="secondary">
-    <center-l size="wide">
-      <p class="callout">Applications are due by 11:59 PM EDT on <time datetime="YYYY-MM-DD">X Date</time>.</p>
-    </center-l>
-  </kpp-base-section>
   <kpp-base-section color="tertiary">
     <center-l class="padding-bottom:s2" size="wide">
       <kpp-prose class="custom">
@@ -71,15 +66,13 @@
 
 <script setup>
 const route = useRoute()
-
 const event = await queryContent('events');
-
-
 
 const ctaContent = {
   brow: 'Call for Applications',
   title: 'Applications Open',
   text: 'The Kluz Prize for PeaceTech is pleased to announce its Call for Applications, inviting individuals, organizations, peacebuilding enthusiasts, inventors, and tech entrepreneurs to submit their PeaceTech achievements and/or innovative projects that harness the power of emerging technologies to foster peace.',
+  extra: 'Applications are due by 11:59 PM EDT on X Date.',
   action: {
     label: 'Apply Now',
     url: '/application'
