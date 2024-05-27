@@ -10,9 +10,9 @@
       visual="unstyled"
       icon-after="arrow_forward"
       el="a" 
-      label="Learn more" 
-      :href="`/prizes/${content.slug}`" 
-      v-if="content.slug" 
+      :label="content.action ? content.action : 'Learn more'" 
+      :href="`${content.path}`" 
+      v-if="content.path" 
     />
     
   </hgroup>
