@@ -33,7 +33,7 @@
   });
 
   const bgUrl = computed(() => {
-    return data.blog.image ? `https://cms.thegovlab.com/assets/${data.blog.image.id}` : false;
+    return data.blog.image ? data.blog.image : false;
   })
 
 </script>

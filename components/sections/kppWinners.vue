@@ -100,9 +100,14 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
     transition: all .8s ease;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1080px) {
     min-height: 360px;
     min-width: 360px;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 270px;
+    min-width: 270px;
   }
   
   &:hover {

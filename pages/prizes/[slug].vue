@@ -9,7 +9,7 @@
     <kpp-base-section>
         <center-l size="wide">
           <div class="has-sidebar">
-            <div class="description">
+            <div class="description" v-if="winner.content_html">
               <h2>Overview</h2>
 
               <kpp-prose :html-content="winner.content_html" />

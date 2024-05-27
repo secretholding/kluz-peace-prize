@@ -85,6 +85,10 @@ useHead({
 })
 </script>
 <style lang="scss" scoped>
+.about-section {
+  overflow: hidden;
+}
+
 .about-section p {
   
   font-size: 1.25rem; 

@@ -25,7 +25,7 @@
 
 .prose :deep(*) {
   max-width: var(--max-width);
-  margin-left: auto;
+  margin-inline: auto;
   font-size: var(--font-size);
 }
 

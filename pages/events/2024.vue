@@ -67,8 +67,6 @@
         </div>
       </center-l>
     </kpp-base-section>
-
-    <pre>{{ event }}</pre>
 </template>
 
 <script setup>
