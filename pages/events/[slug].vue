@@ -71,7 +71,7 @@ const event = await queryContent('events').where({
 const headerContent = {
   brow: 'Kluz Peace Prize',
   title: `${event.year} Winners`,
-  tagline: 'The 2022 Kluz Prize for PeaceTech was facilitated by the Global PeaceTech Hub at the Florence School of Transnational Governance (European University Institute), and awarded at the Global PeaceTech Conference.',
+  tagline: `${event.tagline}`,
   // author: 'This is the author',
   // date: 'Mon DD, YYYY'
 }
