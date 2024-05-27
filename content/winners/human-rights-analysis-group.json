@@ -6,6 +6,7 @@
   "applicant": "Megan Price",
   "country": "Colombia",
   "year": 2023,
+  "order": 4,
   "images": {
     "logo": "human-rights-analysis-group-logo.png",
     "hero": "human-rights-analysis-group-hero.jpg",

@@ -6,6 +6,7 @@
   "applicant": "Shawn Guttman",
   "country": "Israel",
   "year": 2023,
+  "order": 2,
   "images": {
     "logo": "project-didi-logo.webp",
     "hero": "project-didi-ceremony.jpg",
