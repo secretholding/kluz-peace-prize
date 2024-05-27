@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero title="About" height="50svh" color="white" bg="/assets/images/events/2023/kluz-peace-tech-prize-2023-01.jpg"/>
+  <kpp-hero title="About" height="50svh" color="white" bg="/assets/images/events/2023/kluz-peace-tech-prize-2023-10.jpg"/>
 
   <kpp-base-section class="about-section">
     <center-l size="wide">
@@ -55,7 +55,8 @@
       </div>
 
       <div class="split-panel" align-items="center" >
-        <img src="/assets/images/kluz-prize-logo.svg" />
+        <!-- <img src="/assets/images/kluz-prize-logo.svg" class="about-logo"/> -->
+        <kluz-about-logo />
         <ul class="custom-list | stack">
           <li>Artificial Intelligence (AI) and Machine Learning (ML), predicting conflicts, enhancing decision-making, facilitating mediation, and assessing responses to societal issues</li>
           <li>Predictive modeling, spotting early conflict indicators for timely interventions</li>
@@ -98,6 +99,11 @@ useHead({
     @media (max-width: 768px) { display: none; }
   }
 }
+
+.about-logo path {
+  fill: var(--primary-color);
+}
+
 
 .prize-seeks-section {
   .numbers { list-style-type: none; }
