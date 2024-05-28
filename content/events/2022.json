@@ -25,7 +25,8 @@
     "winner": {
       "name": "Magnolia Foundation",
       "prize": "winner",
-      "slug": "magnolia-foundation"
+      "slug": "magnolia-foundation",
+      "logo": "/assets/images/winners/magnolia-foundation-logo.svg"
     }
   },
   "jury": [
