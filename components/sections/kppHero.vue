@@ -59,6 +59,17 @@ const bgPath = computed(() => {
   
 
   h1 { color: var(--primary-color); }
+  @media (min-aspect-ratio: 3/4) and (max-height: 1000px) {
+    height: 60vh;
+    min-height: 0;
+  }
+  @media (max-aspect-ratio: 3/4) {
+    height: 50vh;
+    min-height: 0;
+  }
+  @media (max-height: 700px) {
+    height: 60vh;
+  }
 }
 
 .kpp-hero__top-bar {

@@ -66,6 +66,7 @@ const props = defineProps({
   .brow {
     font-size: 150%;
     @media screen and (max-width: 768px) { font-size: 100%; }
+    @media (max-aspect-ratio: 3/4) { font-size: 85%; }
     line-height: 1;
     font-weight: 800;
     text-transform: uppercase;
@@ -75,6 +76,7 @@ const props = defineProps({
     font-size: 400%;
     font-weight: 200;
     @media screen and (max-width: 768px) { font-size: 200%; }
+    @media (max-aspect-ratio: 3/4) { font-size: 175%; }
     line-height: 1.2;
     --space: 0;
   }
@@ -82,6 +84,7 @@ const props = defineProps({
   p { 
     --space: var(--s1); 
     font-size: 125%;
+    @media (max-aspect-ratio: 3/4) { font-size: 100%; }
   }
 }
 
