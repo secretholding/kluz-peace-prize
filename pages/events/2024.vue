@@ -1,6 +1,6 @@
 <template>
   <kpp-hero height="50svh" title="2024" color="white" bg="/assets/images/events/2022/kluz-peace-tech-prize-2022-01.jpg"/>
-  <kpp-cta color="base" :content="ctaContent"/>
+  <kpp-cta color="primary" :content="ctaContent"/>
   <kpp-base-section color="tertiary">
     <center-l class="padding-bottom:s2" size="wide">
       <kpp-prose class="custom">
@@ -40,25 +40,6 @@
         <h2 class="jury-section__title">Jury</h2>
         <div class="grid">
           <kpp-person v-for="i in jury" :content="i" />         
-        </div>
-      </center-l>
-    </kpp-base-section>
-
-    <kpp-base-section>
-      <center-l size="wide">
-        <div class="split-panel">
-          <div class="panel">
-            <kpp-prose>
-              <p><em>The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/privacy-policy.html">review the full statement here</a>.</em></p>
-            </kpp-prose>
-          </div>
-          <div class="panel">
-            <kpp-prose>
-              <p>If you have any questions, please visit our <a href="/faq">FAQs page</a> or contact the organizers at: <a href="mailto:info@kluzprize.org">info@kluzprize.org</a>.</p>
-              <p><NuxtLink to="/faq" class="button">FAQs</NuxtLink></p>
-              <p><NuxtLink to="/roadmap" class="button">2024 Roadmap</NuxtLink></p>
-            </kpp-prose>
-          </div>
         </div>
       </center-l>
     </kpp-base-section>
