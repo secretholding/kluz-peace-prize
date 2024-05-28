@@ -106,6 +106,9 @@ const props = defineProps({
 .kpp-cta[color="primary"] {
   background-color: var(--primary-color);
   color: var(--white-color);
+
+  .brow { color: var(--white-color); }
+
   .button { 
     background-color: var(--tertiary-color);
     border-color: var(--tertiary-color);
