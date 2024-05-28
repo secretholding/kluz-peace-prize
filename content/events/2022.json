@@ -21,6 +21,13 @@
   ],
   "cover_image": "/assets/images/events/2022/kluz-peace-tech-prize-2022-01.jpg",
   "ceremony_video": "https://www.youtube.com/embed/Lxd8t9tappc?si=WOfclzPJg562yW_j",
+  "winners": {
+    "winner": {
+      "name": "Magnolia Foundation",
+      "prize": "winner",
+      "slug": "magnolia-foundation"
+    }
+  },
   "jury": [
     {
       "name": "Andrea Renda",

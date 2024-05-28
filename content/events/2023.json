@@ -16,6 +16,28 @@
     "/assets/images/events/2023/kluz-peace-tech-prize-2023-10.jpg"
   ],
   "cover_image": "/assets/images/events/2023/kluz-peace-tech-prize-2023-03.jpg",
+  "winners": {
+    "winner": {
+      "name": "Commit Global",
+      "prize": "winner",
+      "slug": "commit-global"
+    },
+    "ai_ml": {
+      "name": "Project Didi",
+      "prize": "Innovative Use of AI/ML",
+      "slug": "project-didi"
+    },
+    "non_profit": {
+      "name": "Human Rights Data Analysis Group",
+      "prize": "Non Profit Organization Advancing Peace",
+      "slug": "human-rights-analysis-group"
+    },
+    "big_tech": {
+      "name": "Palantir Foundry",
+      "prize": "Big Tech Building Peace",
+      "slug": "palantir-foundry"
+    }
+  },
   "jury": [
     {
       "name": "Ana Carolina González Peña",
