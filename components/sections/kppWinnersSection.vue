@@ -12,23 +12,23 @@
 
         <div class="winner">
           <h2 class="winner__title">Winner</h2>
-          <div class="winner__logo">
+          <NuxtLink :to="`/prizes/${content.winner.slug}`" class="winner__logo">
             <img :src="content.winner.logo" alt="">
             <!-- {{ content.winner }} -->
-          </div>
+          </NuxtLink>
           
         </div>
         
         <h2 v-if="hasHonorableMentions" class="honorable-mentions-title">Honorable Mentions</h2>
-        <div v-if="content.ai_ml" class="mention honorable-mention__logo mention__ai-ml">
+        <NuxtLink :to="`/prizes/${content.ai_ml.slug}`" v-if="content.ai_ml" class="mention honorable-mention__logo mention__ai-ml">
           <img :src="content.ai_ml.logo" :alt="`${content.ai_ml.name} | ${content.ai_ml.prize}`">
-        </div>
-        <div v-if="content.non_profit" class="mention honorable-mention__logo mention__non-profit">
+        </NuxtLink>
+        <NuxtLink :to="`/prizes/${content.non_profit.slug}`" v-if="content.non_profit" class="mention honorable-mention__logo mention__non-profit">
           <img :src="content.non_profit.logo" :alt="`${content.non_profit.name} | ${content.non_profit.prize}`">
-        </div>
-        <div v-if="content.big_tech" class="mention honorable-mention__logo mention__big-tech">
+        </NuxtLink>
+        <NuxtLink :to="`/prizes/${content.big_tech.slug}`" v-if="content.big_tech" class="mention honorable-mention__logo mention__big-tech">
           <img :src="content.big_tech.logo" :alt="`${content.big_tech.name} | ${content.big_tech.prize}`">
-        </div>
+        </NuxtLink>
       </div>
       <!-- <pre>{{ content }}</pre> -->
     </center-l>
@@ -57,7 +57,7 @@ const hasHonorableMentions = computed(() => {
   grid-auto-rows: minmax(100px, auto);
   gap: var(--s2);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 800px) {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto auto auto;
     grid-template-areas: 
@@ -65,9 +65,9 @@ const hasHonorableMentions = computed(() => {
       "title title title title title title"
       "mentions1 mentions1 mentions2 mentions2 mentions3 mentions3";
     }
-}
+  }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .overview { grid-area: overview; }
   .winner { grid-area: winner; }
   .honorable-mentions-title { grid-area: title; }
@@ -85,7 +85,7 @@ const hasHonorableMentions = computed(() => {
 
 .winner__title,
 .honorable-mentions-title {
-  @media screen and (min-width: 768px) { text-align: center; }
+  @media screen and (min-width: 800px) { text-align: center; }
 }
 
 .winner__logo,
@@ -113,11 +113,6 @@ const hasHonorableMentions = computed(() => {
     min-height: 360px;
     min-width: 360px;
   }
-
-  @media (min-width: 768px) {
-    min-height: 270px;
-    min-width: 270px;
-  }
   
   &:hover {
     background-color: hsla(var(--primary-hsl), .03);
@@ -137,12 +132,7 @@ const hasHonorableMentions = computed(() => {
     max-height: 280px;
   }
 
-  @media (min-width: 768px) {
-    min-height: 270px;
-    min-width: 270px;
-  }
-
-  @media (min-width: 1080px) {
+  @media (min-width: 1000px) {
     min-height: 400px;
     min-width: 400px;
   }

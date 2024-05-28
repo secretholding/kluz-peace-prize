@@ -70,6 +70,21 @@ const bgPath = computed(() => {
   @media (max-height: 700px) {
     height: 60vh;
   }
+
+  @media (min-aspect-ratio: 4/2) {
+    &[hide-on-wide] { 
+      height: auto;
+      min-height: 0;
+      padding-block: 0;
+      background: var(--primary-color);
+      &[bg] {
+        background-image: none;
+      }
+      & > :not(.kpp-top-bar) {
+        display: none;
+      }
+     }
+  }
 }
 
 .kpp-hero__top-bar {
