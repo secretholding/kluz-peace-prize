@@ -56,7 +56,7 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
 }
 
 .winners-grid[n="1"] {
-  grid-template-rows: auto repeat(2, auto);
+  grid-template-rows: auto repeat(2, 1fr);
   grid-template-areas: 
     "title"
     "winner1";
