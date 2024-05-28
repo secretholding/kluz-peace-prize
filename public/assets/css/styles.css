@@ -65,6 +65,12 @@
 
 .center--with-sidebar { padding-right: calc(var(--s0) + var(--sidebar-width)) !important; }
 
+.section-title {
+  text-align: center;
+  padding-bottom: var(--s2);
+  @media (max-width: 768px) { font-size: 300%; }
+}
+
 .hide,
 [hide] { display: none !important; }
 
