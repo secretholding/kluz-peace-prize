@@ -20,8 +20,8 @@
 
 :root, :after, :before {
   /* Set the project fonts */
-  --display-font: "Ringside Wide SSm A", "Ringside Wide SSm B";
-  --body-font: "Ringside Regular A", "Ringside Regular B";
+  --display-font: "Ringside Wide SSm A", "Ringside Wide SSm B", sans-serif;
+  --body-font: "Ringside Regular A", "Ringside Regular B", sans-serif;
   --icon-font: 'Material Symbols Outlined';
   --icon-weight: 300; /* This variable is here in case we have multiple weights of the material symbols. */
   --base-font-size: 16px;
