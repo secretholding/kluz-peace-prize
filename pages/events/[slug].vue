@@ -70,6 +70,10 @@ const event = await queryContent('events').where({
     year: Number(route.params.slug)
 }).findOne();
 
+useHead({
+  title: "Kluz Prize for PeaceTech",
+})
+
 const headerContent = {
   brow: 'Kluz Prize for PeaceTech',
   title: `${event.year} Winners`,

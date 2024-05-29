@@ -23,6 +23,10 @@
 </template>
 
 <script setup>
+
+useHead({
+  title: "Kluz Prize for PeaceTech",
+})
   const route = useRoute()
   const blogData = await queryContent('updates').where({
       slug: route.params.slug

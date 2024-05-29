@@ -49,6 +49,10 @@
 const route = useRoute()
 const event = await queryContent('events');
 
+useHead({
+  title: "Kluz Prize for PeaceTech",
+})
+
 // const ctaContent = {
 //   brow: 'Call for Applications',
 //   title: 'Applications Open',

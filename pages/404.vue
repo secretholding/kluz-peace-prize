@@ -6,7 +6,9 @@
 </template>
 
 <script setup>
-
+useHead({
+  title: "Kluz Prize for PeaceTech",
+})
 </script>
 
 <style lang="scss" scoped>

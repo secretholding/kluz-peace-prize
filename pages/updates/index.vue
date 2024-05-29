@@ -11,7 +11,7 @@
 
 <script setup>
 useHead({
-  title: 'Kluz Prize for PeaceTech - Updates',
+  title: "Kluz Prize for PeaceTech",
 })
 
 const route = useRoute()

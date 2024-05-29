@@ -101,7 +101,7 @@
 
 <script setup>
 useHead({
-  title: 'PeaceTech Prize',
+  title: "Kluz Prize for PeaceTech",
 })
 
 const base_path = "/assets/images/winners/";
