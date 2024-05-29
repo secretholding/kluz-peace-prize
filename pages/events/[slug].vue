@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero height="35svh" color="primary">
+  <kpp-hero height="auto" color="primary">
     <center-l size="wide" class="width:100%">
       <kpp-headers :content="headerContent" color="primary" />
     </center-l>
