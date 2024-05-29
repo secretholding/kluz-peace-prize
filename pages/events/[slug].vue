@@ -5,11 +5,11 @@
     </center-l>
   </kpp-hero>
 
-  <kpp-base-section class="tagline" color="primary">
+  <!-- <kpp-base-section class="tagline" color="primary">
    <center-l size="wide">
       <span v-html="headerContent.tagline"></span>
     </center-l>
-  </kpp-base-section>
+  </kpp-base-section> -->
 
   <kpp-winners-section :content="event.winners">
 

@@ -54,11 +54,19 @@ const bgPath = computed(() => {
   position: relative;
   padding-bottom: var(--s3);
   height: var(--height);
+  
+  @media (min-width: 768px) { min-height: max(var(--height)); }
 
-  @media (min-width: 768px) { min-height: max(var(--height), 650px); }
+  .title-only { 
+    color: var(--primary-color); 
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
+
+.kpp-hero:not[collapse] {
   
 
-  h1 { color: var(--primary-color); }
   @media (min-aspect-ratio: 3/4) and (max-height: 1000px) {
     height: 60vh;
     min-height: 0;

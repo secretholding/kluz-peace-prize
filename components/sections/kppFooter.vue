@@ -99,7 +99,9 @@
   h4 { font-weight: 400; }
   li { font-weight: 100; }
 
-  a:hover { color: var(--accent-color); }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .kpp-footer__social-media {

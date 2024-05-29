@@ -1,6 +1,6 @@
 <template>
   <kpp-hero 
-    height="10svh"
+    height="auto"
     title="Updates"
     color="primary"
   />
@@ -12,7 +12,7 @@
 
 <script setup>
 useHead({
-  title: 'PeaceTech Prize - Updates and Announcements',
+  title: 'Kluz Prize for PeaceTech - Updates',
 })
 
 const route = useRoute()
