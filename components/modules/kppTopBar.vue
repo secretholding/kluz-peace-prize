@@ -36,7 +36,7 @@ const { color } = toRefs(props);
 .kpp-top-bar {
   display: flex;
   justify-content: space-between;
-  align-items: felx-start;
+  align-items: flex-start;
   width: 100%;
 }
 

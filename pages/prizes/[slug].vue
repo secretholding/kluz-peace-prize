@@ -1,8 +1,8 @@
 <template>
   <div>
-    <kpp-hero :height="winner.images.hero ? '80svh' : 'auto'" :bg="`${base_path}${winner.images.hero}`" :color="winner.images.hero ? 'white' : 'primary'">
+    <kpp-hero height="auto" color="primary">
       <center-l size="wide" class="width:100%">
-        <kpp-headers :content="headerContent" :color="winner.images.hero ? 'white' : 'primary'" /> 
+        <kpp-headers :content="headerContent" color="primary" /> 
       </center-l>
     </kpp-hero>
     
@@ -143,7 +143,6 @@ const hasQuote = computed(() => {
     display: flex;
     flex-direction: column;
     gap: var(--s1);
-    
   }
   
   @media screen and (max-width: 768px) {

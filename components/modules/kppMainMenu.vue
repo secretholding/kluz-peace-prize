@@ -1,9 +1,9 @@
 <template>
   <div class="main-menu" :color="color">
-    <base-button icon-only icon-before="menu" class="menu-trigger menu-trigger" :color="color" @click="isOpen = !isOpen" v-if="!isOpen"/>
+    <base-button icon-only icon-before="menu" class="menu-trigger" :color="color" @click="isOpen = !isOpen" v-if="!isOpen"/>
 
     <nav v-if="isOpen" class="main-menu__panel" :is-open="isOpen">
-      <base-button icon-only icon-before="close" class="menu-trigger" color="base" @click="isOpen = !isOpen" />
+      <base-button icon-only icon-before="close" class="menu-trigger | margin-left:auto" color="base" @click="isOpen = !isOpen" />
 
       <ul>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/">Home</NuxtLink></li>
