@@ -8,11 +8,10 @@
   "year": 2023,
   "order": 3,
   "images": {
-    "logo": "palantir-logo.svg",
+    "logo": "palantir-logo.png",
     "hero": "palantir-foundry-hero.jpg",
     "ceremony": "palantir-foundry-ceremony.jpg",
     "impact": "palantir-foundry-impact.svg"
-
   },
   "quote": {
     "text": "",

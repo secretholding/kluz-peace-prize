@@ -9,6 +9,8 @@
       <img v-if="winner.images.logo != ''" :src="`/assets/images/winners/${winner.images.logo}`" :alt="winner.title">
       <h3 v-else>{{ winner.title }}</h3>
     </NuxtLink>
+
+    <h2 v-if="hasHonorableMentions" class="honorable-mentions-title">Distinctions</h2>
   </div>
 </template>
 
