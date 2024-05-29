@@ -50,31 +50,29 @@
   <kpp-base-section id="strategy-section" class="strategy-section">
     <center-l size="wide">
       <div class="span-content">
-        <h2>Strategic and responsible</h2>
-        <p>"PeaceTech" encapsulates the strategic and responsible deployment of innovative technologies to reinforce peace, prevent conflicts, and steer peacebuilding initiatives. It harnesses, for instance:</p>
+        <h2>Innovative technologies for peace</h2>
+        <p></p>
       </div>
 
       <div class="split-panel" align-items="center" >
-        <!-- <img src="/assets/images/kluz-prize-logo.svg" class="about-logo"/> -->
         <kluz-about-logo />
-        <ul class="custom-list | stack">
-          <li>Artificial Intelligence (AI) and Machine Learning (ML), predicting conflicts, enhancing decision-making, facilitating mediation, and assessing responses to societal issues</li>
-          <li>Predictive modeling, spotting early conflict indicators for timely interventions</li>
-          <li>Satellite and drone imaging, serving multifaceted roles from conflict prevention to post-war reconstruction</li>
-          <li>Social media, monitoring for potential social unrest, and providing vital communication in conflict zones</li>
-          <li>Digital communication platforms, fostering dialogue, promoting understanding, and mediating conflicts</li>
-          <li>Crowdsourcing and citizen reporting, tapping into collective intelligence for conflict mapping, violence reporting, and peace initiatives</li>
-          <li>Digital educational tools, spreading knowledge on peacebuilding and conflict resolution</li>
-          <li>3D printing, meeting essential supply demands swiftly in conflict-stricken regions</li>
-          <li>Biometrics, enabling fair democratic processes like elections and referenda, and facilitating targeted aid distribution</li>
-          <li>Robotics, offering surveillance capabilities, and aid delivery to displaced populations, minimizing wars and fostering peace</li>
-        </ul>
+        <div class="margin-top:s1">
+          <p>PeaceTech is a rapidly growing field that leverages technology to prevent, mitigate, and resolve conflicts, and to build sustainable peace. It encompasses a wide range of technologies and methodologies, including:</p>
+          <ul class="custom-list | stack">
+            <li>Artificial Intelligence (AI) and Machine Learning (ML), predicting conflicts, enhancing decision-making, facilitating mediation, and assessing responses to societal issues</li>
+            <li>Predictive modeling, spotting early conflict indicators for timely interventions</li>
+            <li>Satellite and drone imaging, serving multifaceted roles from conflict prevention to post-war reconstruction</li>
+            <li>Social media, monitoring for potential social unrest, and providing vital communication in conflict zones</li>
+            <li>Digital communication platforms, fostering dialogue, promoting understanding, and mediating conflicts</li>
+            <li>Crowdsourcing and citizen reporting, tapping into collective intelligence for conflict mapping, violence reporting, and peace initiatives</li>
+            <li>Digital educational tools, spreading knowledge on peacebuilding and conflict resolution</li>
+            <li>3D printing, meeting essential supply demands swiftly in conflict-stricken regions</li>
+            <li>Biometrics, enabling fair democratic processes like elections and referenda, and facilitating targeted aid distribution</li>
+            <li>Robotics, offering surveillance capabilities, and aid delivery to displaced populations, minimizing wars and fostering peace</li>
+          </ul>
+          <p>These are just a few examples of PeaceTech. The field is continually evolving as new technologies and methodologies are developed. Learn more about the key themes and challenges of technologies used by and created for peace efforts in “PeaceTech Topic Map: A Research Base for an Emerging Field”.</p>
+        </div>
       </div>
-
-      <div class="span-content">
-        <p>These are just a few examples of PeaceTech. The field is continually evolving as new technologies and methodologies are developed. Learn more about the key themes and challenges of technologies used by and created for peace efforts in “PeaceTech Topic Map: A Research Base for an Emerging Field”.</p>
-      </div>
-      
     </center-l>
   </kpp-base-section>
 </template>
@@ -90,7 +88,6 @@ useHead({
 }
 
 .about-section p {
-  
   font-size: 1.25rem; 
   @media (max-width: 768px) { color: var(--primary-color) !important; }
 }
@@ -166,6 +163,8 @@ useHead({
 }
 
 .strategy-section .split-panel {
+
+
   @media (max-width: 768px) { 
     padding-block: var(--s2); 
   }

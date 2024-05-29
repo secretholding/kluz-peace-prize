@@ -4,7 +4,7 @@
   <kpp-base-section color="tertiary">
     <center-l class="padding-bottom:s2" size="wide">
       <kpp-prose class="custom">
-        <p>This presents an exceptional opportunity to become recognized for your contribution to the evolving field of technologies for peace. We are seeking distinguished and accomplished PeaceTech initiatives and innovative solutions that leverage technology, including but not limited, to:</p>
+        <p>The Kluz Prize for PeaceTech presents an exceptional opportunity to become recognized for your contribution to the evolving field of technologies for peace. We are seeking distinguished and accomplished PeaceTech initiatives and innovative solutions that leverage technology, including but not limited, to:</p>
       </kpp-prose>
     </center-l>
     <center-l size="wide">      
@@ -49,16 +49,16 @@
 const route = useRoute()
 const event = await queryContent('events');
 
-const ctaContent = {
-  brow: 'Call for Applications',
-  title: 'Applications Open',
-  text: 'The Kluz Prize for PeaceTech is pleased to announce its Call for Applications, inviting individuals, organizations, peacebuilding enthusiasts, inventors, and tech entrepreneurs to submit their PeaceTech achievements and/or innovative projects that harness the power of emerging technologies to foster peace.',
-  extra: 'Applications are due by 11:59 PM EDT on X Date.',
-  action: {
-    label: 'Apply Now',
-    url: '/application'
-  }
-} 
+// const ctaContent = {
+//   brow: 'Call for Applications',
+//   title: 'Applications Open',
+//   text: 'The Kluz Prize for PeaceTech is pleased to announce its Call for Applications, inviting individuals, organizations, peacebuilding enthusiasts, inventors, and tech entrepreneurs to submit their PeaceTech achievements and/or innovative projects that harness the power of emerging technologies to foster peace.',
+//   extra: 'Applications are due by 11:59 PM EDT on X Date.',
+//   action: {
+//     label: 'Apply Now',
+//     url: '/application'
+//   }
+// } 
 const jury = [
     {
       "name": "Ana Carolina González Peña",

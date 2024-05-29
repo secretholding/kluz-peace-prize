@@ -2,7 +2,7 @@
   <div class="winners-grid" :header="header" :n="winners.length">
     <hgroup v-if="header == true" class="winners-grid__title | text-align:center">
       <h3 class="">{{ event.year }}</h3>  
-      <NuxtLink :to="`/events/${event.year}`" class="button" color="primary">View Ceremony</NuxtLink>
+      <NuxtLink :to="`/events/${event.year}`" class="button" color="primary">Learn More</NuxtLink>
     </hgroup>
     
     <NuxtLink :to="`/prizes/${winner.slug}`" class="winner" v-for="(winner, index) in winners" :key="winner.slug" :index="index">

@@ -15,33 +15,21 @@
 
   },
   "quote": {
-    "text": "Technology holds the key to unlocking a more peaceful world, and PeaceTech is the driving force behind this transformative opportunity. Together, by showcasing groundbreaking applications of technology to foster peace, we can accelerate the PeaceTech movement and create tangible, life-changing impact on a global scale.",
-    "cite": "Artur Kluz, Founder and CEO of Kluz Ventures"
+    "text": "",
+    "cite": "",
+    "image": ""
   },
   "impact": {
-    "description": "",
+    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Our mission is to assist peacemakers to transform and resolve entrenched conflicts. Our tools are designed to do just that by accurately and quickly measuring the impact of actors within a given conflict. Once we can measure impact, we can also provide guidance to optimize and broaden the effect of actions on a given conflict. This will allow us to foster and generate the moments of ripeness needed to transform and resolve entrenched conflicts, such as the Israeli-Palestinian conflict or a deep-seated large-scale social conflict like racial or gender inequality. Peace is not a utopian ideal beyond reach. Peace is achieved through pragmatic actions informed by quality information and intelligence gathered in real-time. We are harnessing cutting-edge technology to help actors and interested parties achieve the impact they seek. In doing so, we are creating a new paradigm for peacebuilding that has the potential to alleviate suffering and improve safety and prosperity across the globe.</p>",
     "image": "",
-    "metrics": [
-      {
-        "label": "Metric 1",
-        "value": "XX"
-      },
-      {
-        "label": "Metric 2",
-        "value": "XX"
-      },
-      {
-        "label": "Metrica 3",
-        "value": "XX"
-      }
-    ]
+    "metrics": ""
   },
   "people": [
     {
       "name": "Shawn Guttman",
-      "title": "",
+      "title": "CEO",
       "bio": "",
-      "image": "shawn-guttman.png"
+      "image": "shawn-guttman.jpg"
     }
   ],
   "connect": {
@@ -49,5 +37,5 @@
     "label": "Visit their website",
     "url": "https://www.projectdidi.ai/"
   },
-  "content_html": ""
+  "content_html": "<p>Project Didi uses artificial intelligence, machine learning (NLP, LLM) and big data to transform Zartman's Ripeness Theory from a qualitative academic concept into a quantitative tool for use in real-time. This is step one in a larger endeavor to transform qualitative concepts and theories from the field of peacebuilding and mediation that are firmly backed by academic research into quantitative data-driven tools to help solve entrenched conflicts in real-time. To date we have developed a model for identifying ripeness that includes the parameters and conditions held in consensus by academia. We tested our model on the Troubles in Northern Ireland. During our first phase we analyzed over 200 events (terrorism, political acts, rallies, police violence, diplomacy, etc.) in the decade leading to the ratification of the Good Friday Agreement.</p><p>Our algorithm successfully identified moments of ripeness in alignment with academic literature. We were also able to track levels of hurt (MHS) and way-out by side (Catholic, Protestant, British), which are the core pillars of Ripeness Theory. In our next phase we performed a discourse analysis using machine learning (ChatGPT 3.5 using single-shot classification) on 10,000 speeches made in the UK Parliament that related to the conflict itself. Our output matched that of our previous stage, also in accordance with the academic corpus. In other words, we were able to identify moments of ripeness over a decade by analyzing only political statements. In our next phase we will apply our model on an ongoing conflict (Palestinian-Israeli) and perform discourse analysis powered by machine learning algorithms on the 24/7 news cycle, social media data, socioeconomic factors and more to identify the parameters and conditions of Ripeness.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>Actors operating at all levels within a conflict lack the information and intelligence to know whether their actions are having their intended effect. We cannot afford to wait and see whether what we tried six months ago is having the impact we wanted, especially as these conflicts continue to evolve. Every day a conflict persists brings loss of life, destruction of property, displacement, poverty and other humanitarian challenges. Accelerating and optimizing the path to peace is critical when it comes to preventing or resolving these crises. Actors working towards conflict resolution need to know in real-time the effect of their actions and how to adapt as the conflict evolves. We provide the insight to guide them toward the pragmatic actions that will generate the conditions that lead to peace. In other words, we are developing powerful technological tools to take the guesswork out of peacebuilding so we can move faster towards stability and peace.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>We do not need to reinvent the wheel to advance peace. The Cold War spurred new fields of research and development for the peacebuilding world. The concepts and theories developed and tested in the field already provide us with the tools and models that will help us create peace. They are just stuck in a defunct research paradigm that modern technology has already solved. Machine learning and AI provide us with the ability to gather, absorb and analyze amounts of data that no human could. This is what PeaceTech is meant to do: bridge the worlds of tech and peace to create the vehicles for humanity to deal with its greatest global challenges.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>We are currently bootstrapping with all funds provided personally by myself. This award will allow us to move forward into our next phase of adding big data (news media, social media, etc.) into our ripeness tool. Our goal is to operate a pilot program within the Palestinian-Israeli conflict within a year, but will need closer to $500,000 to get there. However, these funds will help to move forward as we continue to look for investors.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>The joy of our tools is that they do not operate within a bubble. We can track the impact and effect of all actors across a conflict. This allows us to identify organizations and people who are doing similar work, creating connections between them and amplifying their effects. For example, it may turn out that a peacebuilding NGO's message overlaps with a for-profit service provider. We can then advise the NGO on how to leverage the company's message to enhance their impact. Peace is built by every actor's theory of change working at its maximum potential in tandem with other actors. We will help them do this smarter, faster and together.</p>"
 }

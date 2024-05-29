@@ -49,12 +49,11 @@
       </center-l>
     </kpp-base-section>
 
-    <kpp-base-section class="impact">
+    <kpp-base-section class="impact" v-if="hasImpact">
       <center-l size="wide">
         <h2 visual="h1">Impact</h2>
-        <kpp-prose class="impact__description">
-          {{ winner.impact.description }}
-        </kpp-prose>
+        <kpp-prose class="impact__description" :html-content="winner.impact.description_html" />
+        
         <div v-if="winner.impact.metrics" class="metrics">
           <img :src="`${base_path}${winner.images.impact}`" alt="">
           <h3 visual="h2" class="text-align:center">Metrics</h3>
@@ -68,17 +67,15 @@
       </center-l>
     </kpp-base-section>
     
-    <kpp-base-section>
+    <kpp-base-section v-if="hasQuote">
       <center-l size="wide">
-        <h2>Quotes</h2>
         <div class="quote">
-          <img src="/assets/images/jury/artur-kluz.jpg" alt="">
+          <img :src="winner.quote.text" :alt="winner.quote.cite">
           <blockquote>
             <p>{{ winner.quote.text }}</p>
             <cite>{{ winner.quote.cite }}</cite>
           </blockquote>
         </div>
-        
       </center-l>
     </kpp-base-section>
 
@@ -124,6 +121,16 @@ const headerContent = {
   tagline: winner.country,
   date: winner.applicant
 }
+
+const hasImpact = computed(() => {
+  return winner.impact.description_html || winner.impact.metrics ? true : false;
+});
+
+const hasQuote = computed(() => {
+  return winner.quote.text && winner.quote.cite && winner.quote.image ? true : false;
+});
+
+
 </script>
 
 <style lang="scss" scoped>

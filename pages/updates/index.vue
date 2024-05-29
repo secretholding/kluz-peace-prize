@@ -1,8 +1,6 @@
 <template>
-  <!-- ToDo: Esse Hero deveria pegar o item mais recente da lista de Posts do Directus -->
-  <!-- <kpp-updates-hero :content="blogData[0]" /> -->
   <kpp-hero 
-    height="20svh"
+    height="10svh"
     title="Updates"
     color="primary"
   />

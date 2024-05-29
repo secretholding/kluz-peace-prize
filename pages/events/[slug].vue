@@ -52,7 +52,7 @@
 
   <kpp-base-section class="jury-section" >
     <center-l size="wide">
-      <h2 class="section-title">Jury</h2>
+      <h2 class="section-title">Selection Committee</h2>
       <div class="grid">
         <kpp-person v-for="i in event.jury" :content="i" />         
       </div>
@@ -71,7 +71,7 @@ const event = await queryContent('events').where({
 }).findOne();
 
 const headerContent = {
-  brow: 'Kluz Peace Prize',
+  brow: 'Kluz Prize for PeaceTech',
   title: `${event.year} Winners`,
   tagline: `${event.tagline}`,
   // author: 'This is the author',

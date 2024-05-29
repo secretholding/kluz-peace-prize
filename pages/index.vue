@@ -19,7 +19,7 @@ useHead({
 
 
 const updatesHighlights = {
-  title: 'Updates Highlights',
+  title: 'Updates',
   type: 'posts',
   posts: await queryContent('updates').sort({date: -1}).limit(2).find(),
   action: {
@@ -42,7 +42,7 @@ order.forEach((year) => {
 
 
 const eventsHighlights = {
-  title: 'Events Highlights',
+  title: 'Events',
   type: 'events',
   posts: posts,
   action: {
