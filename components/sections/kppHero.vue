@@ -5,6 +5,7 @@
     :color="color" 
     :title="title" 
     :bg="bg"
+    :has-background="hasBackground"
   >
     <kpp-top-bar class="kpp-hero__top-bar" :color="color" />
     <slot>
@@ -39,6 +40,10 @@ const bgPath = computed(() => {
   return props.bg ? `url(${props.bg})` : '';
 });
 
+const hasBackground = computed(() => {
+  return props.bg ? true : false;
+});
+
 
 </script>
 
@@ -65,7 +70,6 @@ const bgPath = computed(() => {
 }
 
 .kpp-hero:not[collapse] {
-  
 
   @media (min-aspect-ratio: 3/4) and (max-height: 1000px) {
     height: 60vh;
@@ -103,7 +107,7 @@ const bgPath = computed(() => {
   z-index: 10;
 }
 
-.kpp-hero[bg] {
+.kpp-hero[has-background="true"] {
   background-image: v-bind(bgPath);
   background-size: cover;
   background-position: center;

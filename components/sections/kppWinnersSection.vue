@@ -5,9 +5,8 @@
         <div class="overview">
           <stack-l>
             <h2 class="overview__title">Overview</h2>
-            <div v-html="content.overview"></div>
+            <kpp-prose :htmlContent="content.overview" />
           </stack-l>
-          
         </div>
 
         <div class="winner">

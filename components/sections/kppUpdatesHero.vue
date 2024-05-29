@@ -83,7 +83,7 @@ const bgPath = computed(() => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent, 55%, hsla(var(--base-hsl), 0.75));
+  background: linear-gradient(to bottom, hsla(var(--primary-hsl), 0.85), 55%, hsla(var(--base-hsl), 0.85));
   
   @media (max-width: 768px) { background: linear-gradient(to bottom, transparent, 25%, hsla(var(--base-hsl), 0.75)); }
 }

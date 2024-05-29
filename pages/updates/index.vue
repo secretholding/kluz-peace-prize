@@ -4,7 +4,6 @@
     title="Updates"
     color="primary"
   />
-  
   <kpp-grid-updates>
     <kpp-grid-item v-for="i in blogData" :content="i" />
   </kpp-grid-updates>

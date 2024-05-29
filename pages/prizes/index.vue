@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero title="Prizes" height="70svh" color="white" bg="/assets/images/events/2023/kluz-peace-tech-prize-2023-10.jpg" hide-on-wide="true"/>
+  <kpp-hero title="Prizes" height="auto" color="primary"  hide-on-wide="true"/>
   <kpp-base-section>
     <center-l size="wide" class="width:100% | winners-panel">
        <kpp-winners v-for="event in events" :key="event.slug" :event="event"/>
