@@ -76,9 +76,9 @@
   /* --white-s: 0%;   */
   /* --white-l: 100%;   */
   
-  /* --black-hsl: 0;   */
-  /* --black-hsl: 0%;   */
-  /* --black-hsl: 5%; */
+   --black-h: 0;   
+   --black-s: 0%;   
+   --black-l: 5%; 
 }
 
 :root, :after, :before {

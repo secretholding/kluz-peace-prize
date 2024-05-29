@@ -79,7 +79,7 @@ const bgPath = computed(() => {
     height: 60vh;
   }
 
-  @media (min-aspect-ratio: 4/2) {
+  @media (min-aspect-ratio: 4/3) {
     &[hide-on-wide] { 
       height: auto;
       min-height: 0;
@@ -90,6 +90,9 @@ const bgPath = computed(() => {
       }
       & > :not(.kpp-top-bar) {
         display: none;
+      }
+      &:before {
+       display: none;
       }
      }
   }
@@ -105,6 +108,19 @@ const bgPath = computed(() => {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(180deg, transparent 0%, transparent 40%, var(--black-color-70) 100%);
+  }
+  > .center * {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .title-only {
