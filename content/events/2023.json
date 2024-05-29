@@ -1,7 +1,7 @@
 {
   "slug": "kluz-peace-prize-2023",
   "brow": "Event",
-  "title": "Kluz Prize for Peacetech 2023",
+  "title": "Kluz Prize for PeaceTech 2023",
   "tagline": "Celebrating those who build peace",
   "year": 2023,
   "images": [
@@ -29,17 +29,17 @@
       "slug": "project-didi",
       "logo": "/assets/images/winners/project-didi-logo.webp"
     },
-    "non_profit": {
-      "name": "Human Rights Data Analysis Group",
-      "prize": "Non Profit Organization Advancing Peace",
-      "slug": "human-rights-analysis-group",
-      "logo": "/assets/images/winners/human-rights-analysis-group-logo.png"
-    },
     "big_tech": {
       "name": "Palantir Foundry",
       "prize": "Big Tech Building Peace",
       "slug": "palantir-foundry",
       "logo": "/assets/images/winners/palantir-logo.svg"
+    },
+    "non_profit": {
+      "name": "Human Rights Data Analysis Group",
+      "prize": "Non Profit Organization Advancing Peace",
+      "slug": "human-rights-analysis-group",
+      "logo": "/assets/images/winners/human-rights-analysis-group-logo.png"
     }
   },
   "jury": [

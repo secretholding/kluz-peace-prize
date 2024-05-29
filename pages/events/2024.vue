@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero height="50svh" title="2024" color="white" bg="/assets/images/events/2022/kluz-peace-tech-prize-2022-01.jpg"/>
+  <kpp-hero height="50svh" title="Kluz prize for PeaceTech | 2024" color="white" bg="/assets/images/events/2022/kluz-peace-tech-prize-2022-01.jpg"/>
   <kpp-cta color="primary" :content="ctaContent"/>
   <kpp-base-section color="tertiary">
     <center-l class="padding-bottom:s2" size="wide">
@@ -37,7 +37,7 @@
 
     <kpp-base-section class="jury-section">
       <center-l size="wide">
-        <h2 class="jury-section__title">Jury</h2>
+        <h2 class="jury-section__title">Selection Committee</h2>
         <div class="grid">
           <kpp-person v-for="i in jury" :content="i" />         
         </div>

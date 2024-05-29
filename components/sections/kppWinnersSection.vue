@@ -19,7 +19,7 @@
           
         </div>
         
-        <h2 v-if="hasHonorableMentions" class="honorable-mentions-title">Honorable Mentions</h2>
+        <h2 v-if="hasHonorableMentions" class="honorable-mentions-title">Distinctions</h2>
         <NuxtLink :to="`/prizes/${content.ai_ml.slug}`" v-if="content.ai_ml" class="mention honorable-mention__logo mention__ai-ml">
           <img :src="content.ai_ml.logo" :alt="`${content.ai_ml.name} | ${content.ai_ml.prize}`">
         </NuxtLink>
