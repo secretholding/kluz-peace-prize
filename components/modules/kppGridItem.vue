@@ -31,7 +31,7 @@ const bgImage = "var(--base-color)";
 const headerContent = computed(() => {
   return {
     brow: content.value.brow,
-    title: content.value.title,
+    title: content.value.heading,
     tagline: content.value.tagline,
     date: content.value.date,
     author: content.value.author
