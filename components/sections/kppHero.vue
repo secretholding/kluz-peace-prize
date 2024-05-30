@@ -121,6 +121,7 @@ const hasBackground = computed(() => {
     bottom: 0;
     background-image: linear-gradient(180deg, transparent 0%, hsla(var(--base-hsl), 1) 100%);
   }
+  
   > .center * {
     position: relative;
     z-index: 1;

@@ -4,7 +4,7 @@
       <img :src="coverImage" alt="">
     </div>
     <div class="kpp-update-grid-item__content">
-      <kpp-headers :content="headerContent" color="base"/>
+      <kpp-headers :content="headerContent" color="base" :hide-tagline="hideTagline" />
     </div>
   </NuxtLink>
 </template>
@@ -16,6 +16,10 @@ const props = defineProps({
   content: {
     type: Object,
     default: {}
+  },
+  hideTagline: {
+    type: Boolean,
+    default: false
   },
 });
 
