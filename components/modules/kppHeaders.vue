@@ -2,7 +2,7 @@
   <hgroup class="headers" :content="content" :color="color">
     <h5 class="brow" v-if="content.brow">{{ content.brow }}</h5>
     <h3 class="title">{{ content.title }}</h3>
-    <h4 class="tagline">{{ content.tagline }}</h4>
+    <h4 class="tagline" v-if="!hideTagline">{{ content.tagline }}</h4>
     <h5 class="date" v-if="content.date">{{ computedDate }}</h5>
     <p class="authors" v-if="content.author">By {{ content.author }}</p>
     
@@ -35,7 +35,10 @@ const props = defineProps({
       image: 'Image URL'
     })
   },
-  
+  hideTagline: {
+    type: Boolean,
+    default: false
+  },
   color: {
     type: String,
     default: 'base'

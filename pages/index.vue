@@ -6,7 +6,7 @@
 
     <kpp-highlights :content="updatesHighlights" />
 
-    <kpp-highlights :content="eventsHighlights" hide-action />
+    <kpp-highlights :content="eventsHighlights" hide-action hide-tagline/>
 
     <kpp-highlight-about />
   </main>

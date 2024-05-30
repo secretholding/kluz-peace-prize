@@ -3,7 +3,7 @@
     <center-l size="wide">
       <h2 class="text-align:center">{{ content.title }}</h2>
       <div class="updates-highlights | margin-top:s2">
-        <kpp-grid-item v-for="i in content.posts" class="updates-highlights__item" :content="{ ...i, type: content.type }" />
+        <kpp-grid-item v-for="i in content.posts" class="updates-highlights__item" :content="{ ...i, type: content.type }" :hide-tagline="hideTagline" />
       </div>
     </center-l>
     
@@ -23,6 +23,10 @@ const props = defineProps({
     default: {}
   },
   hideAction: {
+    type: Boolean,
+    default: false
+  },
+  hideTagline: {
     type: Boolean,
     default: false
   },
