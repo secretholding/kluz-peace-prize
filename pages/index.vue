@@ -37,9 +37,8 @@ let groupedByYear = (events.reduce((grouped, event) => {
 
 let order = Object.keys(groupedByYear).sort((a, b) => b - a);
 order.forEach((year) => {
-  posts[year] = groupedByYear[year];
+  posts[`'${year}'`] = groupedByYear[year];
 });
-
 
 const eventsHighlights = {
   title: 'Events',
