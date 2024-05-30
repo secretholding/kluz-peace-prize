@@ -4,7 +4,7 @@
   <kpp-base-section class="about-section">
     <center-l size="wide">
       <div class="split-panel">
-        <p>The Kluz Prize for PeaceTech is an initiative to celebrate, distinguish, and promote the use of new technologies in fostering peace, reducing conflict, and protecting human dignity and universal human rights across the globe. The Prize is dedicated to individuals, organizations, or initiatives for their distinguished achievements in peacebuilding, peacemaking, peacekeeping, or peace enforcement efforts. The goal of the Prize is to engage individuals, societies, and states in building up a local, national, and global PeaceTech movement.</p>
+        <p>The Kluz Prize for PeaceTech is an initiative to celebrate, distinguish, and promote the use of new technologies in fostering peace, reducing conflict, and protecting human dignity and universal human rights across the globe. The Prize is dedicated to individuals, and all tech stakeholders (incl. tech entrepreneurs, engineers, programmers, scientists, start-ups, Big-Tech, accelerators, venture capitalists) for their distinguished achievements in peacebuilding, peacemaking, peacekeeping, or peace enforcement efforts. The goal of the Prize is to engage the tech industry, individuals, societies, states and international organizations in building up a local, national, and global PeaceTech movement.</p>
         <img src="/assets/images/map.svg" alt="">
       </div>
     </center-l>
@@ -27,7 +27,7 @@
             <p>Raise awareness about the potential of technology in fostering peace</p></li>
           <li>
             <span>4</span>
-            <p>Engage individuals, societies, states, international organizations, and by and large new generations of young people in building up a local, national, and global PeaceTech movement</p></li>
+            <p>Engage individuals, societies, states, international organizations, entrepreneurs, engineers, programmers, scientists, and by and large new generations of young people in building up a local, national, and global PeaceTech movement</p></li>
         </ol>
       </stack-l>
       
@@ -55,22 +55,23 @@
       </div>
 
       <div class="split-panel" align-items="center" >
-        <kluz-about-logo />
+        <kluz-logo color="primary" />
         <div class="margin-top:s1">
           <p>PeaceTech is a rapidly growing field that leverages technology to prevent, mitigate, and resolve conflicts, and to build sustainable peace. It encompasses a wide range of technologies and methodologies, including:</p>
           <ul class="custom-list | stack">
             <li>Artificial Intelligence (AI) and Machine Learning (ML), predicting conflicts, enhancing decision-making, facilitating mediation, and assessing responses to societal issues</li>
             <li>Predictive modeling, spotting early conflict indicators for timely interventions</li>
-            <li>Satellite and drone imaging, serving multifaceted roles from conflict prevention to post-war reconstruction</li>
+            <li>Satellite internet consolations and drone imaging, serving multifaceted roles from conflict prevention to post-war reconstruction</li>
+            <li>Robotics, offering surveillance capabilities, and aid delivery to displaced populations, minimizing wars and fostering peace</li>
             <li>Social media, monitoring for potential social unrest, and providing vital communication in conflict zones</li>
             <li>Digital communication platforms, fostering dialogue, promoting understanding, and mediating conflicts</li>
             <li>Crowdsourcing and citizen reporting, tapping into collective intelligence for conflict mapping, violence reporting, and peace initiatives</li>
             <li>Digital educational tools, spreading knowledge on peacebuilding and conflict resolution</li>
             <li>3D printing, meeting essential supply demands swiftly in conflict-stricken regions</li>
             <li>Biometrics, enabling fair democratic processes like elections and referenda, and facilitating targeted aid distribution</li>
-            <li>Robotics, offering surveillance capabilities, and aid delivery to displaced populations, minimizing wars and fostering peace</li>
+            
           </ul>
-          <p>These are just a few examples of PeaceTech. The field is continually evolving as new technologies and methodologies are developed. Learn more about the key themes and challenges of technologies used by and created for peace efforts in “PeaceTech Topic Map: A Research Base for an Emerging Field”.</p>
+          <p>These are just a few examples of PeaceTech. The field is continually evolving as new technologies and methodologies are developed. Learn more about the key themes and challenges of technologies used by and created for peace efforts in <a href="https://sverhulst.medium.com/peace-by-design-unlocking-the-potential-of-seven-technologies-for-a-more-peaceful-future-f8b5eea829e5">“PeaceTech Topic Map: A Research Base for an Emerging Field”</a>.</p>
         </div>
       </div>
     </center-l>
@@ -83,6 +84,10 @@ useHead({
 })
 </script>
 <style lang="scss" scoped>
+a {
+  text-decoration: underline;
+}
+
 .about-section {
   overflow: hidden;
 }

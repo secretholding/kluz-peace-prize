@@ -49,7 +49,7 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
   
   @media (min-width: 1000px) {
     grid-template-columns: auto auto;
-    grid-template-rows: auto minmax(360px, auto) minmax(360px, auto);
+    grid-template-rows: auto auto auto;
     grid-template-areas: 
         "title title"
         "winner1 winner2"  
@@ -68,7 +68,6 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
   padding-bottom: var(--s1);
   h3 {
     border-bottom: 2px solid hsla(var(--primary-hsl), .3);
-
 
     @media (max-width: 768px) {
       padding-bottom: var(--s-4);

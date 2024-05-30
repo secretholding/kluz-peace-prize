@@ -1,8 +1,8 @@
 <template>
-  <kpp-hero height="auto" color="primary">
-    <center-l size="wide" class="width:100%">
+  <kpp-hero height="auto" color="primary" :title="event.heading">
+    <!-- <center-l size="wide" class="width:100%">
       <kpp-headers :content="headerContent" color="primary" />
-    </center-l>
+    </center-l> -->
   </kpp-hero>
 
   <!-- <kpp-base-section class="tagline" color="primary">
@@ -11,9 +11,7 @@
     </center-l>
   </kpp-base-section> -->
 
-  <kpp-winners-section :content="event.winners">
-
-  </kpp-winners-section>
+  <kpp-winners-section :content="event.winners" />
   
   <!-- <kpp-base-section>
     <center-l size="wide">
@@ -28,7 +26,7 @@
     </center-l>
   </kpp-base-section> -->
 
-  <kpp-base-section class="ceremony-section">
+  <kpp-base-section class="ceremony-section" padding="0">
     <center-l size="wide">
       <h2 class="section-title">Event</h2>
       <stack-l v-if="event.ceremony_video">

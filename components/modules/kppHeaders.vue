@@ -9,6 +9,7 @@
     <kpp-button 
       visual="unstyled"
       icon-after="arrow_forward"
+      size="xl"
       el="a" 
       :label="content.action ? content.action : 'Learn more'" 
       :href="`${content.path}`" 
@@ -55,6 +56,8 @@ const computedDate = computed(() => {
   width: 100%;
   --header-hsl: var(--base-hsl);
 }
+
+.headers * + * { margin-top: var(--s-2); }
 
 .headers > * {
   position: relative;
