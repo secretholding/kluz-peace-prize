@@ -22,7 +22,20 @@
   "impact": {
     "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Our mission is to assist peacemakers to transform and resolve entrenched conflicts. Our tools are designed to do just that by accurately and quickly measuring the impact of actors within a given conflict. Once we can measure impact, we can also provide guidance to optimize and broaden the effect of actions on a given conflict. This will allow us to foster and generate the moments of ripeness needed to transform and resolve entrenched conflicts, such as the Israeli-Palestinian conflict or a deep-seated large-scale social conflict like racial or gender inequality. Peace is not a utopian ideal beyond reach. Peace is achieved through pragmatic actions informed by quality information and intelligence gathered in real-time. We are harnessing cutting-edge technology to help actors and interested parties achieve the impact they seek. In doing so, we are creating a new paradigm for peacebuilding that has the potential to alleviate suffering and improve safety and prosperity across the globe.</p>",
     "image": "",
-    "metrics": ""
+    "metrics": [
+      {
+        "label": "Events analyzed",
+        "value": "200+"
+      },
+      {
+        "label": "UK parliament speeches analyzed",
+        "value": "10,000"
+      },
+      {
+        "label": "Regions",
+        "value": "2"
+      }
+    ]
   },
   "people": [
     {

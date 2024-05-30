@@ -21,7 +21,20 @@
   "impact": {
     "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Foundry has helped the UK government resettle over 130,000 Ukraine refugees in just over a year. The software is used by over 3,000 caseworkers to manage the complex operations behind a novel refugee resettlement program.</p><p>With cross-government collaboration of this size, scale and sensitivity, data security and governance is of paramount importance. With the right technology, there need not be a tradeoff between security and collaboration, or force policymakers to compromise on doing the right thing.</p><p>It reduces the risk of homelessness for refugees by providing tools to match housing needs to refugees, allocating over 600,000 available bed spaces to help home those displaced.</p><p>The platform has reduced the risk of unsuitable hosting situations using responsible automation and enabling a collaborative model of safeguarding. Over 400,000 safeguarding checks have been recorded on the platform - ensuring that the speed of resettlement does not compromise the security of guests or hosts.</p>",
     "image": "",
-    "metrics": ""
+    "metrics": [
+      {
+        "label": "Users across local and central government",
+        "value": "3,000+"
+      },
+      {
+        "label": "Ukraine refugees assisted",
+        "value": "130,000+"
+      },
+      {
+        "label": "Safeguarding checks on the platform",
+        "value": "400,000+"
+      }
+    ]
   },
   "people": [
     {

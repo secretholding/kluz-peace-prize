@@ -21,7 +21,20 @@
   "impact": {
     "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Our work provides a way to acknowledge and account for unidentified victims missing from existing documentation efforts. For example, there are 374,567 documented victims of homicides between 1985 and 2018, but we estimate that they could be up to 852,756. Without considering the impacts of missing data, history could be excluding more than 400,000 victims who lost their lives in the Colombian armed conflict.</p><p>Additionally, our open-source package ‘verdata’ can promote a deeper understanding of the armed conflict. It empowers any interested person to conduct further analyses and answer questions that are meaningful to them.</p><p>Lastly, our project can be a leading example of the application of rigorous science to answer human rights-related questions in other contexts. It can be used by other truth commissions, civil society, or States wishing to use quantitative methods to examine patterns of violence by acknowledging the limitations of documented violence.</p>",
     "image": "",
-    "metrics": ""
+    "metrics": [
+      {
+        "label": "Data scientists from the United States and Colombia",
+        "value": "20"
+      },
+      {
+        "label": "Datasets",
+        "value": "112"
+      },
+      {
+        "label": "State institution, victim organization, and civil society organization data",
+        "value": "44"
+      }
+    ]
   },
   "people": [
     {

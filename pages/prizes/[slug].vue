@@ -51,10 +51,10 @@
 
     <kpp-base-section class="impact" v-if="hasImpact">
       <center-l size="wide">
-        <h2 visual="h1">Impact</h2>
+        <h2 visual="h1" v-if="winner.impact.description_html">Impact</h2>
         <kpp-prose class="impact__description" :html-content="winner.impact.description_html" />
         
-        <div v-if="winner.impact.metrics" class="metrics">
+        <div v-if="winner.impact.metrics" class="metrics | margin-top:s2">
           <img :src="`${base_path}${winner.images.impact}`" alt="">
           <h3 visual="h2" class="text-align:center">Metrics</h3>
           <ul class="metrics__panels">
@@ -184,6 +184,7 @@ const hasQuote = computed(() => {
 
   .metrics__label {
     font-size: 1.25rem;
+    line-height: 1.2;
     font-weight: 800;
     display: block;
   }

@@ -21,15 +21,15 @@
     "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Access to information and resources is critical in any crisis. Making sure that both are available as quickly as possible in case of an emergency can save lives. Technology can help scale almost instantaneously every effort of intervention if deployed correctly. Having a shared common infrastructure among actors working in the field helps with reducing duplication of efforts, effective distribution of resources, accessing verified and trustworthy data, managing activities and supporting large numbers of beneficiaries simultaneously. Last but not least, it also means safety and standards. In such situations making sure you have the right technology at hand is essential. Our ecosystem is built open-source, making sure that all of the security, accessibility and inclusivity standards are followed in order to service every person as best as possible and reducing vulnerability to the best of its capacity.</p>",
     "metrics": [
       {
-        "label": "Regional Hubs",
+        "label": "Regional hubs",
         "value": "5"
       },
       {
-        "label": "Refugees Assisted",
+        "label": "Refugees assisted",
         "value": "+1.6M"
       },
       {
-        "label": "NGO Functions Supported",
+        "label": "NGO functions supported",
         "value": "18"
       }
     ]
