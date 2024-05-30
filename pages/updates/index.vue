@@ -2,7 +2,7 @@
   <kpp-hero 
     height="auto"
     title="Updates"
-    color="primary"
+    color="accent"
   />
   <kpp-grid-updates>
     <kpp-grid-item v-for="i in blogData" :content="i" />

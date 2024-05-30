@@ -17,5 +17,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+:deep(h2),
+:deep(h3),
+:deep(h4) { color: var(--accent-color) !important; }
 </style>

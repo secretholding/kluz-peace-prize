@@ -28,6 +28,7 @@ const props = defineProps({
   padding-block: v-bind(padding);
   background-color: var(--white-color);
   :deep(*) { color: var(--base-color); }
+  :deep(h2) { color: var(--accent-color); }
 
   @media (max-width: 768px) {
     padding-block: var(--s0);

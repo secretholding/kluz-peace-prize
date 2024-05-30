@@ -1,8 +1,8 @@
 <template>
   <div>
-    <kpp-hero height="auto" color="primary">
+    <kpp-hero height="auto" color="accent">
       <center-l size="wide" class="width:100%">
-        <kpp-headers :content="headerContent" color="primary" /> 
+        <kpp-headers :content="headerContent" color="accent" /> 
       </center-l>
     </kpp-hero>
     

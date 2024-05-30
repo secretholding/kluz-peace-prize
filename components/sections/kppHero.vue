@@ -63,7 +63,7 @@ const hasBackground = computed(() => {
   @media (min-width: 768px) { min-height: max(var(--height)); }
 
   .title-only { 
-    color: var(--primary-color); 
+    color: var(--accent-color); 
     font-size: 3rem;
     font-weight: 100;
   }
@@ -119,7 +119,7 @@ const hasBackground = computed(() => {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(180deg, transparent 0%, transparent 40%, var(--black-color-70) 100%);
+    background-image: linear-gradient(180deg, transparent 0%, transparent 40%, hsla(var(--primary-hsl), .7) 100%);
   }
   > .center * {
     position: relative;

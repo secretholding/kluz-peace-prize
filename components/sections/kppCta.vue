@@ -70,7 +70,6 @@ const props = defineProps({
     line-height: 1;
     font-weight: 800;
     text-transform: uppercase;
-    color: var(--primary-color);
   }
   .title {
     font-size: 400%;
@@ -117,11 +116,25 @@ const props = defineProps({
 }
 .kpp-cta[color="tertiary"] {
   background-color: var(--tertiary-color);
-  color: var(--primary-color);
+  color: var(--accent-color);
+  .brow { color: var(--accent-color); }
+  
   .button { 
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     color: var(--white-color);
+  }
+}
+
+.kpp-cta[color="accent"] {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+
+  .brow { color: var(--primary-color); }
+  .button { 
+    background-color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+    color: var(--primary-color);
   }
 }
 </style>

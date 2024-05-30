@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero title="Roadmap" height="20svh" color="primary"/> <!-- bg="/assets/images/slides/slider-atlas.png" -->
+  <kpp-hero title="Roadmap" height="20svh" color="accent"/> <!-- bg="/assets/images/slides/slider-atlas.png" -->
   <kpp-base-section>
     <center-l size="wide">
       <ul class="roadmap">

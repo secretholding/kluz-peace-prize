@@ -6,7 +6,7 @@
     class="headers" 
     :bg="bgUrl" 
     height="70svh" 
-    :color="bgUrl ? 'white' : 'primary'" 
+    :color="bgUrl ? 'white' : 'accent'" 
   />
   <kpp-base-section class="tagline-section" color="base" padding="var(--s0)">
     <center-l size="wide" >

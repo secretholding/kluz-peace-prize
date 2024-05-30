@@ -65,5 +65,6 @@ const { color, maxWidth } = toRefs(props)
 .kpp-logo[color="base"]    .color { fill: var(--base-color); }
 .kpp-logo[color="white"]   .color { fill: var(--white-color); }
 .kpp-logo[color="primary"] .color { fill: var(--primary-color); }
+.kpp-logo[color="accent"] .color { fill: var(--accent-color); }
 
 </style>

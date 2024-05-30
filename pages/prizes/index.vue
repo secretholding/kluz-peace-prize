@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero title="Prizes" height="auto" color="primary"  hide-on-wide="true"/>
+  <kpp-hero title="Prizes" height="auto" color="accent"  hide-on-wide="true"/>
   <kpp-base-section>
     <center-l size="wide" class="width:100% | winners-panel">
        <kpp-winners v-for="event in events" :key="event.slug" :event="event"/>

@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero title="About" height="auto" color="primary" />
+  <kpp-hero title="About" height="auto" color="accent" />
 
   <kpp-base-section class="about-section">
     <center-l size="wide">

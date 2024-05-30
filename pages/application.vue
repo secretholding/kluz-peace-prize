@@ -1,9 +1,9 @@
 <template>
 <div>
-  <kpp-hero height="auto" color="primary">
+  <kpp-hero height="auto" color="accent">
     <slot>
       <center-l size="wide">
-        <h2 class="text-align:center">Application for 2024</h2>
+        <h2 class="text-align:center color:accent">Application for 2024</h2>
       </center-l>
     </slot>
   </kpp-hero> 
