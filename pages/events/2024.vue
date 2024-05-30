@@ -72,7 +72,7 @@ const jury = [
     },
     {
       "name": "Andrew Schroeder",
-      "title": "Co-Founder & Managing Partner of Tusk Venture Partners, Founder of Tusk Strategies",
+      "title": "Vice President of Research and Analysis, Co-DirectorCo-Director of CrisisReady, Co-FounderCo-Founder of WeRobotics",
       "image": "/assets/images/jury/andrew-schroeder.jpg",
       "url": "https://www.linkedin.com/in/aischroeder"
     },
