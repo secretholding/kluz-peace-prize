@@ -15,7 +15,6 @@
             <img :src="content.winner.logo" alt="">
             <!-- {{ content.winner }} -->
           </NuxtLink>
-          
         </div>
         
         <h2 v-if="hasHonorableMentions" class="honorable-mentions-title">Distinctions</h2>
@@ -54,15 +53,16 @@ const hasHonorableMentions = computed(() => {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(100px, auto);
-  gap: var(--s2);
+  // gap: var(--s2);
 
   @media screen and (min-width: 800px) {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: 
-      "overview overview overview winner winner winner"
-      "title title title title title title"
-      "mentions1 mentions1 mentions2 mentions2 mentions3 mentions3";
+      "overview overview overview"
+      "winner winner winner"
+      "title title title"
+      "mentions1 mentions2 mentions3";
     }
   }
 
@@ -80,6 +80,7 @@ const hasHonorableMentions = computed(() => {
 .honorable-mentions-title { 
   font-size: 200%; 
   margin-bottom: var(--s0);
+  margin-top: var(--s2);
 }
 
 .winner__title,

@@ -1,28 +1,28 @@
 <template>
-  <kpp-hero title="Roadmap" height="20svh" color="primary"/> <!-- bg="/assets/images/slides/slider-atlas.png" -->
+  <kpp-hero title="Roadmap" height="auto" color="primary"/> <!-- bg="/assets/images/slides/slider-atlas.png" -->
   <kpp-base-section>
     <center-l size="wide">
       <ul class="roadmap">
         <li class="roadmap__item" active="true">
-          <h4>MM DD YYYY <span>| Applications Open</span></h4>
-          <p>Submit your application for the 2024 Kluz PeaceTech Prize.</p>
+          <h4>June 1st, 2024<span> | Applications Open</span></h4>
+          <p>Submit your application for the 2024 Kluz Prize for PeaceTech.</p>
         </li>
         <li class="roadmap__item">
-          <h4>MM DD YYYY <span>| Applications Deadline</span></h4>
+          <h4>July 15th, 2024<span> | Applications Deadline</span></h4>
           <p>Apply by 11:59 PM EDT</p>
         </li>
         <li class="roadmap__item">
-          <h4>MM DD YYYY <span>Final Decision</span></h4>
+          <h4>MM DD YYYY <span> | Final Decision</span></h4>
           <p>Communication of the final decision to the winner(s) and invitation to the award ceremony</p>
         </li>
         <li class="roadmap__item">
-          <h4>September 20, 2024 <span>| Award ceremony</span></h4>
+          <h4>September 20, 2024 <span> | Award ceremony</span></h4>
           <p>Communication of the final decision to the winner(s) and invitation to the award ceremony</p>
         </li>
-        <li class="roadmap__item">
+        <!-- <li class="roadmap__item">
           <h4>March, 2025 <span>| Winner’s official presentation</span></h4>
           <p>Project/initiative final report in a dedicated in-person or online event</p>
-        </li>
+        </li> -->
       </ul>
     </center-l>
   </kpp-base-section>

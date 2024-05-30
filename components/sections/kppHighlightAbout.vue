@@ -3,7 +3,7 @@
     <center-l size="wide">
       <div class="wrapper">
         <div class="panel">
-          <img class="logo logo--kluz" src="/assets/images/kluz-prize-for-peacetech-horizontal.svg" alt="">
+          <img class="logo logo--kluz" src="/assets/images/kluz-ventures-logo.svg" alt="">
           <h3>About Kluz Ventures</h3>
           <p>Kluz Ventures is a values-driven investment firm with a long-term vision of empowering human flourishing and technological development by investing in the exceptional entrepreneurs and technologies of tomorrow. Investments in these technologies can promote a global culture of genuine human growth that meets the current and future needs of all people, serving as an inspiration for future generations. Founded by Artur Kluz.</p>
           <base-button el="a" href="http://www.kluzventures.com" class="margin-top:s2" color="secondary">Learn More</base-button>

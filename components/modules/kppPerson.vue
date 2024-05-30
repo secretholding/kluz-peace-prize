@@ -9,7 +9,8 @@
       </div>
 
       <h5><a :href="content.url">{{ content.name }}</a></h5>
-      <h6>{{ content.title.length > 55 ? content.title.slice(0, 55) + '...' : content.title }}</h6>
+      <h6>{{ content.title }}</h6>
+      <!-- <h6>{{ content.title.length > 55 ? content.title.slice(0, 55) + '...' : content.title }}</h6> -->
     </slot>
   </section>
 </template>

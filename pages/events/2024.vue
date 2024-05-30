@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero height="50svh" title="Kluz prize for PeaceTech | 2024" color="white" bg="/assets/images/events/2022/kluz-peace-tech-prize-2022-01.jpg"/>
+  <kpp-hero height="50svh" title="Kluz Prize for PeaceTech | 2024" color="white" bg="/assets/images/events/2022/kluz-peace-tech-prize-2022-01.jpg"/>
   <kpp-cta color="primary" :content="ctaContent"/>
   <kpp-base-section color="tertiary">
     <center-l class="padding-bottom:s2" size="wide">
@@ -13,22 +13,22 @@
           <kpp-prose>
             <ul class="custom-list">
               <li>Supporting, building and keeping peace;</li>
+              <li>Protecting human dignity and universal human rights written in universal moral law;</li>
               <li>Preventing military conflicts within and between nations;</li>
               <li>Facilitating dialogue between conflicting parties;</li>
-              <li>Protecting human dignity and universal human rights written in universal moral law;</li>
               <li>Addressing conflict, violence and social issues across local, national and international contexts;</li>
             </ul>
           </kpp-prose>
         </div>
         <div class="panel">
           <kpp-prose>
-          <ul class="custom-list">
-            <li>Protecting and supporting those impacted by conflict;</li>
-            <li>Mobilizing disaster relief efforts more rapidly;</li>
-            <li>Providing humanitarian aid to solve welfare conflicts;</li>
-            <li>Monitoring human rights violations and peacekeeping efforts; and</li>
-            <li>Solving the most basic human problems and needs such as poverty, access to water, food, healthcare, and connectivity.</li>
-          </ul>
+            <ul class="custom-list">
+              <li>Protecting and supporting those impacted by conflict;</li>
+              <li>Mobilizing disaster relief efforts more rapidly;</li>
+              <li>Providing humanitarian aid to solve welfare conflicts;</li>
+              <li>Monitoring human rights violations and peacekeeping efforts; and</li>
+              <li>Solving the most basic human problems and needs such as poverty, access to water, food, healthcare, and connectivity.</li>
+            </ul>
           </kpp-prose>
         </div>
       </div>

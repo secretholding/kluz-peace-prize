@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero title="FAQ" color="primary" height="20svh"/>
+  <kpp-hero title="FAQ" color="primary" height="auto"/>
   <kpp-base-section>
     <center-l class="faq-wrapper" size="wide">
       <ul class="faq-list | stack">
