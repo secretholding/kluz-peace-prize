@@ -66,13 +66,13 @@ useHead({
 const jury = [
     {
       "name": "Ana Carolina González Peña",
-      "title": "Vice President of Research and Analysis at Direct Relief",
+      "title": "Co-Founder and Director of the Magnolia Foundation",
       "image": "/assets/images/jury/ana-carolina-gonzalez-pena.jpg",
       "url": "https://www.linkedin.com/in/anacaro26/"
     },
     {
       "name": "Andrew Schroeder",
-      "title": "Vice President of Research and Analysis, Co-DirectorCo-Director of CrisisReady, Co-FounderCo-Founder of WeRobotics",
+      "title": "Vice President of Research and Analysis at Direct Relief",
       "image": "/assets/images/jury/andrew-schroeder.jpg",
       "url": "https://www.linkedin.com/in/aischroeder"
     },
@@ -90,7 +90,7 @@ const jury = [
     },
     {
       "name": "Fatima Roumate",
-      "title": "Full Professor of International Law at Mohammed V University, President of the International Institute of Scientific Research, Member of the Ad Hoc Expert Group for the Recommendation on the Ethics of Artificial Intelligence UNESCO",
+      "title": "Professor of International Law at Mohammed V University, President of the International Institute of Scientific Research, Member of the Ad Hoc Expert Group for the Recommendation on the Ethics of Artificial Intelligence UNESCO",
       "image": "/assets/images/jury/fatima-roumate.jpg",
       "url": "https://www.linkedin.com/in/fatima-roumate-phd-17193920/"
     },
@@ -108,7 +108,7 @@ const jury = [
     },
     {
       "name": "Kay Firth-Butterfield",
-      "title": "Executive Director of the Centre for Trustworthy Technology ",
+      "title": "Executive Director of the Centre for Trustworthy Technology",
       "image": "/assets/images/jury/kay-firth-butterfield.png",
       "url": "https://en.m.wikipedia.org/wiki/Kay_Firth-Butterfield"
     },
