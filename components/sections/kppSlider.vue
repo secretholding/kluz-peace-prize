@@ -3,9 +3,9 @@
     <div class="slider">
       <div class="slider__background" :style="`background-image: url('${headerContent.activeWinner.image}');`"></div>
       <div class="slide">
-        <center-l size="wide" class="center--forced slide__content">
+        <center-l size="wide" class="slide__content | width:100%">
           <kluz-logo v-if="headerContent.activeWinner.image == 'logo'" color="white" maxWidth="320px" class="logo-hero"/>
-          <kpp-headers :content="headerContent.activeWinner" color="white" />
+          <kpp-headers :content="headerContent.activeWinner" color="white" class="hero__headers"/>
         </center-l>
         <div class="slider-nav">
           <button 
@@ -196,6 +196,12 @@ onUnmounted(() => {
     transform: translateY(10%);
     opacity: 1;
     transition: all 0.2s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    height: 100%;
+    align-items: center;
+    justify-items: start;
   }
 
     .slide__content--left {
@@ -237,8 +243,13 @@ onUnmounted(() => {
       100% { transform: scale(1);   }
     }
 
+    .hero__headers {
+      justify-self: flex-end;
+    }
+
     .logo-hero {
-      margin-bottom: 10%;
-      margin-left: -2.75%;      
+      margin-bottom: var(--0);
+      width: auto;
+      @media screen and (min-height: 640px) { margin-left: -2.75%; }
     }
 </style>
