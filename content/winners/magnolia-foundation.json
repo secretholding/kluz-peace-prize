@@ -22,6 +22,10 @@
   },
   "impact": {
     "description": "Access to information and resources is critical in any crisis. Making sure that both are available as quickly as possible in case of an emergency can save lives. Technology can help scale almost instantaneously every effort of intervention if deployed correctly. Having a shared common infrastructure among actors working in the field helps with reducing duplication of efforts, effective distribution of resources, accessing verified and trustworthy data, managing activities and supporting large numbers of beneficiaries simultaneously. Last but not least, it also means safety and standards. In such situations making sure you have the right technology at hand is essential. Our ecosystem is built open-source, making sure that all of the security, accessibility and inclusivity standards are followed in order to service every person as best as possible and reducing vulnerability to the best of its capacity.",
+    "metrics_source": {
+      "label": "Building Peaceful Digital Ecosystem: The Magnolia School of Peace (September 2023)",
+      "url": "https://www.youtube.com/watch?v=lcZj3zQDxhk"
+    },
     "metrics": [
       {
         "label": "Countries participated",

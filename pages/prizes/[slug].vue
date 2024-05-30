@@ -63,6 +63,7 @@
               <span class="metrics__label">{{ i.label }}</span>
             </li>
           </ul>
+          <p v-if="winner.impact.metrics_source" class="metrics_source | text-align:center">Source: <a :href="winner.impact.metrics_source.url" target="_blank">{{ winner.impact.metrics_source.label }}</a></p>
         </div>
       </center-l>
     </kpp-base-section>
@@ -223,6 +224,13 @@ const hasQuote = computed(() => {
 .impact__description {
   max-width: 80ch;
   margin-top: var(--s0);
+}
+
+.metrics_source {
+  text-align: center;
+  font-style: italic;
+  font-size: 75%;
+  opacity: .4;
 }
 
 

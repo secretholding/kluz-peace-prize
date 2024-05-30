@@ -32,7 +32,11 @@
         "label": "NGO functions supported",
         "value": "18"
       }
-    ]
+    ],
+    "metrics_source": {
+      "label": "Commit Global Website",
+      "url": "https://www.commitglobal.org/en/"
+    }
   },
   "people": [
     {
