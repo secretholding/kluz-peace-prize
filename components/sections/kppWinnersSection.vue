@@ -73,8 +73,8 @@ const hasHonorableMentions = computed(() => {
   .winner { grid-area: winner; }
   .honorable-mentions-title { grid-area: title; }
   .mention__ai-ml { grid-area: mentions1; }
-  .mention__non-profit { grid-area: mentions2; }
-  .mention__big-tech { grid-area: mentions3; }
+  .mention__big-tech { grid-area: mentions2; }
+  .mention__non-profit { grid-area: mentions3; }
 }
 
 .overview__title,
