@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero title="About" height="50svh" color="white" bg="/assets/images/events/2023/kluz-peace-tech-prize-2023-10.jpg"/>
+  <kpp-hero title="About" height="50svh" color="white" bg="/assets/images/events/2023/kluz-peace-tech-prize-2023-10.webp"/>
 
   <kpp-base-section class="about-section">
     <center-l size="wide">

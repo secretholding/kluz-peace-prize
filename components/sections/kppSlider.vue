@@ -24,11 +24,11 @@
 import { reactive, ref, watch, onMounted, onUnmounted } from 'vue'
 const route = useRoute()
 const images =  [
-  '/assets/images/slides/slider-atlas.png',
-  '/assets/images/slides/slider-drone.png',
-  '/assets/images/slides/slider-spacex.png',
-  '/assets/images/slides/slider-starlink.png',
-  '/assets/images/slides/slider-drone.png'
+  '/assets/images/slides/slider-atlas.webp',
+  '/assets/images/slides/slider-drone.webp',
+  '/assets/images/slides/slider-spacex.webp',
+  '/assets/images/slides/slider-starlink.webp',
+  '/assets/images/slides/slider-drone.webp'
 ]
 
 // Vamos precisar ligar o objeto Winner com o slide. 
