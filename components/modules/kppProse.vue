@@ -1,5 +1,5 @@
 <template>
-  <kluz-prose>
+  <kluz-prose class="kpp-prose">
     <slot >
       <div v-html="htmlContent"></div>
     </slot>
@@ -17,5 +17,5 @@
 </script>
 
 <style lang="scss" scoped>
-
+.kpp-prose { --max-width: 100%; }
 </style>
