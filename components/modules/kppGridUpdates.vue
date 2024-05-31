@@ -15,7 +15,7 @@
 <style lang="scss" scoped>
 .kpp-grid {
   display: grid;
-  // gap: var(--s1);
+  gap: var(--s1);
   list-style: none;
   padding-block: var(--s1);
   margin: 0;
