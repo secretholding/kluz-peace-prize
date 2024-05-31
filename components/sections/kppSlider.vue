@@ -5,7 +5,11 @@
       <div class="slide">
         <center-l size="wide" class="slide__content | width:100%">
           <kluz-logo v-if="headerContent.activeWinner.image == 'logo'" color="white" maxWidth="320px" class="logo-hero"/>
-          <kpp-headers :content="headerContent.activeWinner" color="white" class="hero__headers"/>
+          <div class="width:100%">
+            <kpp-headers :content="headerContent.activeWinner" color="white" class="hero__headers" hide-tagline/>
+            <h4 visual="h5" class="tagline | color:white">Applications are Open</h4>
+          </div>
+          
         </center-l>
         <div class="slider-nav">
           <button 
@@ -250,6 +254,11 @@ onUnmounted(() => {
     .logo-hero {
       margin-bottom: var(--0);
       width: auto;
+      
+      @media screen and (max-width: 768px) { 
+        max-width: 180px;
+        transform: translateX(-5%);
+      }
       @media screen and (min-height: 640px) { margin-left: -2.75%; }
     }
 </style>
