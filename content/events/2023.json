@@ -1,10 +1,9 @@
 {
   "slug": "kluz-peace-prize-2023",
   "brow": "Event",
-  "title": "Kluz Peace Prize 2023",
-  "tagline": "Celebrating those who promote peace and resolve conflicts",
+  "heading": "Kluz Prize for PeaceTech 2023",
+  "tagline": "Celebrating those who build peace",
   "year": 2023,
-  "description_html": "<p>The Kluz Peace Prize is awarded annually to individuals or groups who have made a significant contribution to the promotion of peace and the resolution of conflicts. The prize was established in 2020 by the Kluz Foundation, a non-profit organization dedicated to promoting peace and social justice around the world.</p>",
   "images": [
     "/assets/images/events/2023/kluz-peace-tech-prize-2023-09.webp",
     "/assets/images/events/2023/kluz-peace-tech-prize-2023-03.webp",
@@ -16,6 +15,33 @@
     "/assets/images/events/2023/kluz-peace-tech-prize-2023-10.webp"
   ],
   "cover_image": "/assets/images/events/2023/kluz-peace-tech-prize-2023-03.webp",
+  "winners": {
+    "overview": "<p>The 2023 Kluz Prize for PeaceTech was awarded to Bogdan Ivanel, Founder and Chairperson of Commit Global. Three Special Distinctions were awarded to Ishraq Irteza (Deployment Strategist at Palantir Technologies’ Foundry) for Big Tech Building Peace, Megan Price (Executive Director of Human Rights Data Analysis Group) for a Non Profit Organization Advancing Peace, and Shawn Guttman (Co-Founder and CEO of Project Didi) for Innovative Use of AI/ML.</p><p>The 2023 Kluz Prize for PeaceTech was organized by Kluz Ventures with the support of The GovLab and awarded in September 2023, on the eve of the International Day of Peace during the 78th United Nations General Assembly. The Award Ceremony was held at the Union League Club in New York City.</p>",
+    "winner": {
+      "name": "Commit Global",
+      "prize": "winner",
+      "slug": "commit-global",
+      "logo": "/assets/images/winners/commit-global-logo.png"
+    },
+    "ai_ml": {
+      "name": "Project Didi",
+      "prize": "Innovative Use of AI/ML",
+      "slug": "project-didi",
+      "logo": "/assets/images/winners/project-didi-logo.webp"
+    },
+    "big_tech": {
+      "name": "Palantir Foundry",
+      "prize": "Big Tech Building Peace",
+      "slug": "palantir-foundry",
+      "logo": "/assets/images/winners/palantir-logo.png"
+    },
+    "non_profit": {
+      "name": "Human Rights Data Analysis Group",
+      "prize": "Non Profit Organization Advancing Peace",
+      "slug": "human-rights-analysis-group",
+      "logo": "/assets/images/winners/human-rights-analysis-group-logo.png"
+    }
+  },
   "jury": [
     {
       "name": "Ana Carolina González Peña",

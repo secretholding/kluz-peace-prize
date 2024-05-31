@@ -2,13 +2,15 @@
   <div class="winners-grid" :header="header" :n="winners.length">
     <hgroup v-if="header == true" class="winners-grid__title | text-align:center">
       <h3 class="">{{ event.year }}</h3>  
-      <NuxtLink :to="`/events/${event.year}`" class="button" color="primary">View Ceremony</NuxtLink>
+      <NuxtLink :to="`/events/${event.year}`" class="button" color="primary">Learn More</NuxtLink>
     </hgroup>
     
     <NuxtLink :to="`/prizes/${winner.slug}`" class="winner" v-for="(winner, index) in winners" :key="winner.slug" :index="index">
       <img v-if="winner.images.logo != ''" :src="`/assets/images/winners/${winner.images.logo}`" :alt="winner.title">
       <h3 v-else>{{ winner.title }}</h3>
     </NuxtLink>
+
+    <h2 v-if="hasHonorableMentions" class="honorable-mentions-title">Distinctions</h2>
   </div>
 </template>
 
@@ -56,7 +58,7 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
 }
 
 .winners-grid[n="1"] {
-  grid-template-rows: auto repeat(2, auto);
+  grid-template-rows: auto repeat(2, 1fr);
   grid-template-areas: 
     "title"
     "winner1";

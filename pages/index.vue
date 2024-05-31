@@ -4,9 +4,9 @@
     <!-- <kpp-highlight-event /> -->
     <kpp-cta color="tertiary"/>
 
-    <kpp-highlights :content="eventsHighlights" hide-action />
-
     <kpp-highlights :content="updatesHighlights" />
+
+    <kpp-highlights :content="eventsHighlights" hide-action />
 
     <kpp-highlight-about />
   </main>
@@ -14,12 +14,12 @@
 
 <script setup>
 useHead({
-  title: 'PeaceTech Prize',
+  title: "Kluz Prize for PeaceTech",
 })
 
 
 const updatesHighlights = {
-  title: 'Updates Highlights',
+  title: 'Updates',
   type: 'posts',
   posts: await queryContent('updates').sort({date: -1}).limit(2).find(),
   action: {
@@ -37,12 +37,11 @@ let groupedByYear = (events.reduce((grouped, event) => {
 
 let order = Object.keys(groupedByYear).sort((a, b) => b - a);
 order.forEach((year) => {
-  posts[year] = groupedByYear[year];
+  posts[`'${year}'`] = groupedByYear[year];
 });
 
-
 const eventsHighlights = {
-  title: 'Events Highlights',
+  title: 'Events',
   type: 'events',
   posts: posts,
   action: {

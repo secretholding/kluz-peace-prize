@@ -1,9 +1,9 @@
 <template>
   <div class="main-menu" :color="color">
-    <base-button icon-only icon-before="menu" class="menu-trigger menu-trigger" :color="color" @click="isOpen = !isOpen" v-if="!isOpen"/>
+    <base-button icon-only icon-before="menu" class="menu-trigger" :color="color" @click="isOpen = !isOpen" v-if="!isOpen"/>
 
     <nav v-if="isOpen" class="main-menu__panel" :is-open="isOpen">
-      <base-button icon-only icon-before="close" class="menu-trigger" color="base" @click="isOpen = !isOpen" />
+      <base-button icon-only icon-before="close" class="menu-trigger | margin-left:auto" color="base" @click="isOpen = !isOpen" />
 
       <ul>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/">Home</NuxtLink></li>
@@ -61,16 +61,19 @@ const { color } = toRefs(props)
   background-color: hsla(var(--white-hsl), 0.95);
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .main-menu ul {
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
   padding: 0;
@@ -84,7 +87,7 @@ const { color } = toRefs(props)
   padding: 0;
   width: 100%;
   text-align: center;
-  height: 100%;
+  flex: 1;
 }
 
 .main-menu__item {
@@ -92,7 +95,6 @@ const { color } = toRefs(props)
   justify-content: center;
   align-items: center;
   flex: 1;
-  align-items: center;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--menu-color);

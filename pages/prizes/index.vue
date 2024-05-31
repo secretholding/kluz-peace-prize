@@ -1,13 +1,15 @@
 <template>
-  <kpp-hero title="Prizes" height="70svh" color="white" bg="/assets/images/events/2023/kluz-peace-tech-prize-2023-10.webp"/>
-  <kpp-base-section class="winners-panel" padding="var(--s1)">
-    <kpp-winners v-for="event in events" :key="event.slug" :event="event"/>
+  <kpp-hero title="Prizes" height="auto" color="primary"  hide-on-wide="true"/>
+  <kpp-base-section>
+    <center-l size="wide" class="width:100% | winners-panel">
+       <kpp-winners v-for="event in events" :key="event.slug" :event="event"/>
+    </center-l>
   </kpp-base-section>
 </template>
 
 <script setup>
 useHead({
-  title: 'PeaceTech Prize',
+  title: 'Kluz Prize for PeaceTech',
 })
 
 const events = await queryContent('events').where({year: {$in: [2023, 2022]}}).sort({year: -1}).find();
@@ -19,7 +21,7 @@ const events = await queryContent('events').where({year: {$in: [2023, 2022]}}).s
   margin-top: var(--s2);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   margin-inline: auto;
   gap: var(--s3);

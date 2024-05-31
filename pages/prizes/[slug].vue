@@ -1,8 +1,8 @@
 <template>
   <div>
-    <kpp-hero height="80svh" :bg="`${base_path}${winner.images.hero}`">
+    <kpp-hero height="auto" color="primary">
       <center-l size="wide" class="width:100%">
-        <kpp-headers :content="headerContent" color="white" /> 
+        <kpp-headers :content="headerContent" color="primary" /> 
       </center-l>
     </kpp-hero>
     
@@ -32,7 +32,15 @@
         </center-l>
     </kpp-base-section>
     
-    <kpp-base-section>
+    <kpp-base-section v-if="winner.youtube_video">
+      <center-l size="wide" class="width:100%">
+        <div class="frame">
+          <iframe width="560" height="315" :src="winner.youtube_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </center-l>
+    </kpp-base-section>
+
+    <kpp-base-section v-if="winner.images.ceremony">
       <center-l size="wide">
         <h2 class="margin-bottom:s2">Prize Announcement</h2>
         <div class="frame">
@@ -41,13 +49,12 @@
       </center-l>
     </kpp-base-section>
 
-    <kpp-base-section class="impact">
+    <kpp-base-section class="impact" v-if="hasImpact">
       <center-l size="wide">
-        <h2 visual="h1">Impact</h2>
-        <kpp-prose class="impact__description">
-          {{ winner.impact.description }}
-        </kpp-prose>
-        <div v-if="winner.impact.metrics" class="metrics">
+        <h2 visual="h1" v-if="winner.impact.description_html">Impact</h2>
+        <kpp-prose class="impact__description" :html-content="winner.impact.description_html" />
+        
+        <div v-if="winner.impact.metrics" class="metrics | margin-top:s2">
           <img :src="`${base_path}${winner.images.impact}`" alt="">
           <h3 visual="h2" class="text-align:center">Metrics</h3>
           <ul class="metrics__panels">
@@ -56,21 +63,21 @@
               <span class="metrics__label">{{ i.label }}</span>
             </li>
           </ul>
+          <p v-if="winner.impact.metrics_source" class="metrics_source">Source: <a :href="winner.impact.metrics_source.url" target="_blank">{{ winner.impact.metrics_source.label }}</a></p>
+          <p v-else class="metrics_source">Source: Provided in the interview above</p>
         </div>
       </center-l>
     </kpp-base-section>
     
-    <kpp-base-section>
+    <kpp-base-section v-if="hasQuote">
       <center-l size="wide">
-        <h2>Quotes</h2>
         <div class="quote">
-          <img src="/assets/images/jury/artur-kluz.jpg" alt="">
+          <img :src="winner.quote.text" :alt="winner.quote.cite">
           <blockquote>
             <p>{{ winner.quote.text }}</p>
             <cite>{{ winner.quote.cite }}</cite>
           </blockquote>
         </div>
-        
       </center-l>
     </kpp-base-section>
 
@@ -96,7 +103,7 @@
 
 <script setup>
 useHead({
-  title: 'PeaceTech Prize',
+  title: "Kluz Prize for PeaceTech",
 })
 
 const base_path = "/assets/images/winners/";
@@ -116,6 +123,16 @@ const headerContent = {
   tagline: winner.country,
   date: winner.applicant
 }
+
+const hasImpact = computed(() => {
+  return winner.impact.description_html || winner.impact.metrics ? true : false;
+});
+
+const hasQuote = computed(() => {
+  return winner.quote.text && winner.quote.cite && winner.quote.image ? true : false;
+});
+
+
 </script>
 
 <style lang="scss" scoped>
@@ -128,7 +145,6 @@ const headerContent = {
     display: flex;
     flex-direction: column;
     gap: var(--s1);
-    
   }
   
   @media screen and (max-width: 768px) {
@@ -170,6 +186,7 @@ const headerContent = {
 
   .metrics__label {
     font-size: 1.25rem;
+    line-height: 1.2;
     font-weight: 800;
     display: block;
   }
@@ -208,6 +225,13 @@ const headerContent = {
 .impact__description {
   max-width: 80ch;
   margin-top: var(--s0);
+}
+
+.metrics_source {
+  text-align: center;
+  font-style: italic;
+  font-size: 75%;
+  opacity: .4;
 }
 
 

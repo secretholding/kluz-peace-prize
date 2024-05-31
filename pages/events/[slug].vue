@@ -1,20 +1,24 @@
 <template>
-  <kpp-hero height="35svh" color="primary">
+  <kpp-hero height="auto" color="primary">
     <center-l size="wide" class="width:100%">
       <kpp-headers :content="headerContent" color="primary" />
     </center-l>
   </kpp-hero>
 
-  <kpp-base-section class="tagline" color="base">
+  <!-- <kpp-base-section class="tagline" color="primary">
    <center-l size="wide">
       <span v-html="headerContent.tagline"></span>
     </center-l>
-  </kpp-base-section>
+  </kpp-base-section> -->
 
-  <kpp-base-section>
+  <kpp-winners-section :content="event.winners">
+
+  </kpp-winners-section>
+  
+  <!-- <kpp-base-section>
     <center-l size="wide">
       <div class="panel-grid" >
-        <h2 class="header header--1">Overview</h2>       
+        <h2 class="header header--1">Overview</h2>
         <kpp-prose class="description" :html-content="event.description_html" />
         <h2 class="header header--2 header--centered">Awarded Organizations</h2>
         <div class="winners">
@@ -22,12 +26,12 @@
         </div>
       </div>
     </center-l>
-  </kpp-base-section>
+  </kpp-base-section> -->
 
   <kpp-base-section class="ceremony-section">
     <center-l size="wide">
+      <h2 class="section-title">Event</h2>
       <stack-l v-if="event.ceremony_video">
-        <h2 class="text-align:center margin-bottom:s1">Ceremony</h2>
         <div  class="ceremony-video | frame">
           <iframe width="560" height="315" 
             :src="event.ceremony_video" 
@@ -44,13 +48,11 @@
         </figure>
       </reel-l>
     </center-l>
-
-      <!-- <pre>{{event.images}}</pre> -->
   </kpp-base-section>
 
   <kpp-base-section class="jury-section" >
     <center-l size="wide">
-      <h2 class="jury-section__title">Jury</h2>
+      <h2 class="section-title">Selection Committee</h2>
       <div class="grid">
         <kpp-person v-for="i in event.jury" :content="i" />         
       </div>
@@ -68,8 +70,12 @@ const event = await queryContent('events').where({
     year: Number(route.params.slug)
 }).findOne();
 
+useHead({
+  title: "Kluz Prize for PeaceTech",
+})
+
 const headerContent = {
-  brow: 'Kluz Peace Prize',
+  brow: 'Kluz Prize for PeaceTech',
   title: `${event.year} Winners`,
   tagline: `${event.tagline}`,
   // author: 'This is the author',
@@ -145,16 +151,6 @@ const headerContent = {
   width: 100%;
   height: 100%;
 
-}
-
-.jury-section {
-
-  &__title {
-    text-align: center;
-    padding-bottom:var(--s2);
-
-    @media (max-width: 768px) { font-size: 300%; }
-  }
 }
 
 .header--1   { grid-area: header1; }

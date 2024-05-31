@@ -1,10 +1,10 @@
 <template>
-  <kpp-hero height="50svh" title="2024" color="white" bg="/assets/images/events/2022/kluz-peace-tech-prize-2022-01.webp"/>
-  <kpp-cta color="base" :content="ctaContent"/>
+  <kpp-hero height="50svh" title="Kluz prize for PeaceTech | 2024" color="white" bg="/assets/images/events/2022/kluz-peace-tech-prize-2022-01.webp"/>
+  <kpp-cta color="primary" :content="ctaContent"/>
   <kpp-base-section color="tertiary">
     <center-l class="padding-bottom:s2" size="wide">
       <kpp-prose class="custom">
-        <p>This presents an exceptional opportunity to become recognized for your contribution to the evolving field of technologies for peace. We are seeking distinguished and accomplished PeaceTech initiatives and innovative solutions that leverage technology, including but not limited, to:</p>
+        <p>The Kluz Prize for PeaceTech presents an exceptional opportunity to become recognized for your contribution to the evolving field of technologies for peace. We are seeking distinguished and accomplished PeaceTech initiatives and innovative solutions that leverage technology, including but not limited, to:</p>
       </kpp-prose>
     </center-l>
     <center-l size="wide">      
@@ -37,28 +37,9 @@
 
     <kpp-base-section class="jury-section">
       <center-l size="wide">
-        <h2 class="jury-section__title">Jury</h2>
+        <h2 class="jury-section__title">Selection Committee</h2>
         <div class="grid">
           <kpp-person v-for="i in jury" :content="i" />         
-        </div>
-      </center-l>
-    </kpp-base-section>
-
-    <kpp-base-section>
-      <center-l size="wide">
-        <div class="split-panel">
-          <div class="panel">
-            <kpp-prose>
-              <p><em>The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/privacy-policy.html">review the full statement here</a>.</em></p>
-            </kpp-prose>
-          </div>
-          <div class="panel">
-            <kpp-prose>
-              <p>If you have any questions, please visit our <a href="/faq">FAQs page</a> or contact the organizers at: <a href="mailto:info@kluzprize.org">info@kluzprize.org</a>.</p>
-              <p><NuxtLink to="/faq" class="button">FAQs</NuxtLink></p>
-              <p><NuxtLink to="/roadmap" class="button">2024 Roadmap</NuxtLink></p>
-            </kpp-prose>
-          </div>
         </div>
       </center-l>
     </kpp-base-section>
@@ -68,16 +49,20 @@
 const route = useRoute()
 const event = await queryContent('events');
 
-const ctaContent = {
-  brow: 'Call for Applications',
-  title: 'Applications Open',
-  text: 'The Kluz Prize for PeaceTech is pleased to announce its Call for Applications, inviting individuals, organizations, peacebuilding enthusiasts, inventors, and tech entrepreneurs to submit their PeaceTech achievements and/or innovative projects that harness the power of emerging technologies to foster peace.',
-  extra: 'Applications are due by 11:59 PM EDT on X Date.',
-  action: {
-    label: 'Apply Now',
-    url: '/application'
-  }
-} 
+useHead({
+  title: "Kluz Prize for PeaceTech",
+})
+
+// const ctaContent = {
+//   brow: 'Call for Applications',
+//   title: 'Applications Open',
+//   text: 'The Kluz Prize for PeaceTech is pleased to announce its Call for Applications, inviting individuals, organizations, peacebuilding enthusiasts, inventors, and tech entrepreneurs to submit their PeaceTech achievements and/or innovative projects that harness the power of emerging technologies to foster peace.',
+//   extra: 'Applications are due by 11:59 PM EDT on X Date.',
+//   action: {
+//     label: 'Apply Now',
+//     url: '/application'
+//   }
+// } 
 const jury = [
     {
       "name": "Ana Carolina González Peña",
@@ -147,7 +132,7 @@ const jury = [
     },
     {
       "name": "Zara Khan",
-      "title": "Business Development at X, the moonshot factory",
+      "title": "Strategic Partnerships Lead at X, the moonshot factory",
       "image": "/assets/images/jury/zara-khan.jpg",
       "url": "https://www.linkedin.com/in/khanzara/"
     }

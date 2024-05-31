@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="content._path" class="kpp-update-grid-item">
     <div class="frame">
-      <img :src="content.cover_image" alt="">
+      <img :src="coverImage" alt="">
     </div>
     <div class="kpp-update-grid-item__content">
       <kpp-headers :content="headerContent" color="base"/>
@@ -19,6 +19,11 @@ const props = defineProps({
   },
 });
 
+const coverImage = computed(() => {
+  return content.value.cover_image ? content.value.cover_image : '/assets/images/fallback-cover.svg';
+});
+
+
 const { content } = toRefs(props)
 
 const bgImage = "var(--base-color)";
@@ -26,7 +31,7 @@ const bgImage = "var(--base-color)";
 const headerContent = computed(() => {
   return {
     brow: content.value.brow,
-    title: content.value.title,
+    title: content.value.heading,
     tagline: content.value.tagline,
     date: content.value.date,
     author: content.value.author

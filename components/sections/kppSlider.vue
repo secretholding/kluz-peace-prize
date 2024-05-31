@@ -1,10 +1,11 @@
 <template>
-  <kpp-hero color="white" height="max(70svh, 650px)" class="hero__slider">
+  <kpp-hero color="white" height="70svh" class="hero__slider">
     <div class="slider">
       <div class="slider__background" :style="`background-image: url('${headerContent.activeWinner.image}');`"></div>
       <div class="slide">
-        <center-l size="wide" class="center--forced slide__content">
-          <kpp-headers :content="headerContent.activeWinner" color="white" />
+        <center-l size="wide" class="slide__content | width:100%">
+          <kluz-logo v-if="headerContent.activeWinner.image == 'logo'" color="white" maxWidth="320px" class="logo-hero"/>
+          <kpp-headers :content="headerContent.activeWinner" color="white" class="hero__headers"/>
         </center-l>
         <div class="slider-nav">
           <button 
@@ -36,35 +37,42 @@ const images =  [
 const headerContent = reactive({
   winners: [
     {
-      slug: 'commit-global',
-      title: 'Commit Global',
-      tagline: 'A first of its kind Humanitarian Digital Civic Infrastructure for Refugees',
-      image: images[0]
+      title: 'Celebrating those who build peace',
+      tagline: 'Applications are Open',
+      image: 'logo',
+      action: 'Apply now',
+      path: '/application',
     },
-    {
-      slug: 'human-rights-analysis-group',
-      title: 'Human Rights Data Analysis Group',
-      tagline: 'Using data science to track patterns of violence during armed conflict',
-      image: images[1]
-    },
-    {
-      slug: 'palantir-foundry',
-      title: 'Palantir Foundry',
-      tagline: 'A decentralised immigration scheme that helped ensure the safe matching and resettlement of Refugees',
-      image: images[2]
-    },
-    {
-      slug: 'project-didi',
-      title: 'Project Didi',
-      tagline: 'Operationalizing peacebuilding theory using artificial intelligence, machine learning, and big data',
-      image: images[3]
-    },
-    {
-      slug: 'magnolia-foundation',
-      title: 'The Magnolia Foundation',
-      tagline: 'A multidisciplinary approach to teaching peace, mediation, and rehabilitation',
-      image: images[4]
-    },
+    // {
+    //   slug: 'commit-global',
+    //   title: 'Commit Global',
+    //   tagline: 'A first of its kind Humanitarian Digital Civic Infrastructure for Refugees',
+    //   image: images[0]
+    // },
+    // {
+    //   slug: 'human-rights-analysis-group',
+    //   title: 'Human Rights Data Analysis Group',
+    //   tagline: 'Using data science to track patterns of violence during armed conflict',
+    //   image: images[1]
+    // },
+    // {
+    //   slug: 'palantir-foundry',
+    //   title: 'Palantir Foundry',
+    //   tagline: 'A decentralised immigration scheme that helped ensure the safe matching and resettlement of Refugees',
+    //   image: images[2]
+    // },
+    // {
+    //   slug: 'project-didi',
+    //   title: 'Project Didi',
+    //   tagline: 'Operationalizing peacebuilding theory using artificial intelligence, machine learning, and big data',
+    //   image: images[3]
+    // },
+    // {
+    //   slug: 'magnolia-foundation',
+    //   title: 'The Magnolia Foundation',
+    //   tagline: 'A multidisciplinary approach to teaching peace, mediation, and rehabilitation',
+    //   image: images[4]
+    // },
   ],
   activeWinner: {},
   activeImage: images[0]
@@ -144,7 +152,7 @@ onUnmounted(() => {
 
 .hero__slider {
   // temporary. Client didn't understand the white transition. 
-  background-color: var(--base-color);
+  background-color: var(--primary-color);
 }
 
   .slider--transitioning {
@@ -188,6 +196,12 @@ onUnmounted(() => {
     transform: translateY(10%);
     opacity: 1;
     transition: all 0.2s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    height: 100%;
+    align-items: center;
+    justify-items: start;
   }
 
     .slide__content--left {
@@ -203,7 +217,7 @@ onUnmounted(() => {
 .slider-nav {
   position: absolute;
   bottom: var(--s2);
-  left: 50%;
+  right: 0;
   transform: translateX(-50%);
   display: flex;
   flex-flow: row nowrap;
@@ -212,30 +226,30 @@ onUnmounted(() => {
 }
 
   .slider-nav__trigger {
-    width: 12px;
-    height: 12px;
-    
-    border: none;
-    // border-radius: 50%;
-    background-color: var(--tertiary-color);
+    width: 14px;
+    height: 14px;
+    border: 1px solid hsla(var(--white-hsl), .2);
+    border-radius: 50%;
+    background-color: hsla(var(--white-hsl), 0);
     transition: all 0.4s ease-in-out;
   }
 
-    .slider-nav__trigger--active {
-      transform: rotate(45deg);
-      background-color: var(--accent-color);
-    }
+  .slider-nav__trigger:only-child { display: none; }
+  .slider-nav__trigger--active { background-color: hsla(var(--white-hsl), .2); }
 
     @keyframes scale {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-      100% {
-        transform: scale(1);
-      }
+      0% {   transform: scale(1);   }
+      50% {  transform: scale(1.1); }
+      100% { transform: scale(1);   }
     }
 
+    .hero__headers {
+      justify-self: flex-end;
+    }
+
+    .logo-hero {
+      margin-bottom: var(--0);
+      width: auto;
+      @media screen and (min-height: 640px) { margin-left: -2.75%; }
+    }
 </style>

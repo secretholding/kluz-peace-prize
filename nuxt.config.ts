@@ -4,7 +4,7 @@ import { resolve } from "path";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   meta: {
-    title: "PeaceTech Prize",
+    title: "Kluz Prize for PeaceTech",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
     ],

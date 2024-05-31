@@ -1,7 +1,6 @@
 <template>
   <kpp-base-section height="auto" class="about-section">
     <center-l size="wide">
-      <h2 class="section-title">About</h2>
       <div class="wrapper">
         <div class="panel">
           <img class="logo logo--kluz" src="/assets/images/kluz-prize-for-peacetech-horizontal.svg" alt="">
@@ -12,7 +11,7 @@
 
         <div class="panel">
           <img class="logo logo--govlab" src="/assets/images/govlab-logo.svg" alt="">
-          <h3>About The Govlab</h3>
+          <h3>About The GovLab</h3>
           <p>The GovLab is the main partner supporting the Kluz Prize for PeaceTech, and is an action research center based at New York University that aims to improve people's lives by changing the way we govern. The GovLab seeks to strengthen the ability of institutions — including but not limited to governments — and people to work more openly, collaboratively, effectively, and legitimately to make better decisions and solve public problems.</p>
           <base-button el="a" href="http://www.thegovlab.org" class="margin-top:s2" color="secondary">Learn More</base-button>
         </div>

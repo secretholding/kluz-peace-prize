@@ -105,6 +105,9 @@
   import { useSubmitForm } from "~/composables/useSubmitForm";
   const { validateForm, errors, hasErrors } = useValidation()
 
+  useHead({
+    title: "Kluz Prize for PeaceTech",
+  })
 
   const {
       success,
