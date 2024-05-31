@@ -27,7 +27,6 @@ const props = defineProps({
   }
 })
 
-// Commit Global, Didi, Palantir, and HRDAG.
 const winners = await queryContent('winners').where({ year: props.event.year }).sort({ order: 1 }).find();
 
 </script>
@@ -86,6 +85,7 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
 .winner {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: var(--s0);
   max-height: 360px;

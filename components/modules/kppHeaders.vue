@@ -15,6 +15,8 @@
       :href="`${content.path}`" 
       v-if="content.path" 
     />
+
+    
     
   </hgroup>
 </template>

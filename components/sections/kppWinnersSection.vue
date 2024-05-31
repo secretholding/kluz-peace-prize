@@ -21,11 +21,13 @@
         <NuxtLink :to="`/prizes/${content.ai_ml.slug}`" v-if="content.ai_ml" class="mention honorable-mention__logo mention__ai-ml">
           <img :src="content.ai_ml.logo" :alt="`${content.ai_ml.name} | ${content.ai_ml.prize}`">
         </NuxtLink>
-        <NuxtLink :to="`/prizes/${content.non_profit.slug}`" v-if="content.non_profit" class="mention honorable-mention__logo mention__non-profit">
-          <img :src="content.non_profit.logo" :alt="`${content.non_profit.name} | ${content.non_profit.prize}`">
-        </NuxtLink>
+        
         <NuxtLink :to="`/prizes/${content.big_tech.slug}`" v-if="content.big_tech" class="mention honorable-mention__logo mention__big-tech">
           <img :src="content.big_tech.logo" :alt="`${content.big_tech.name} | ${content.big_tech.prize}`">
+        </NuxtLink>
+
+        <NuxtLink :to="`/prizes/${content.non_profit.slug}`" v-if="content.non_profit" class="mention honorable-mention__logo mention__non-profit">
+          <img :src="content.non_profit.logo" :alt="`${content.non_profit.name} | ${content.non_profit.prize}`">
         </NuxtLink>
       </div>
       <!-- <pre>{{ content }}</pre> -->

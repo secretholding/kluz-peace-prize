@@ -7,7 +7,7 @@
           <kluz-logo v-if="headerContent.activeWinner.image == 'logo'" color="white" maxWidth="320px" class="logo-hero"/>
           <div class="width:100%">
             <kpp-headers :content="headerContent.activeWinner" color="white" class="hero__headers" hide-tagline/>
-            <h4 visual="h5" class="tagline | color:white">Applications are Open</h4>
+            <h4 visual="h5" class="tagline | color:white">Applications 2024 are open</h4>
           </div>
           
         </center-l>
@@ -252,7 +252,7 @@ onUnmounted(() => {
     }
 
     .logo-hero {
-      margin-bottom: var(--0);
+      margin-bottom: var(--s2);
       width: auto;
       
       @media screen and (max-width: 768px) { 
