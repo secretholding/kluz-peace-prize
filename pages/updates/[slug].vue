@@ -8,11 +8,7 @@
     height="70svh" 
     :color="bgUrl ? 'white' : 'primary'" 
   />
-  <kpp-base-section class="tagline-section" color="base" padding="var(--s0)">
-    <center-l size="wide" >
-      <p>{{ data.blog.tagline }}</p>
-    </center-l>
-  </kpp-base-section>
+  
   
   <kpp-base-section class="body">
     <center-l size="wide">

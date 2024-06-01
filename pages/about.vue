@@ -71,7 +71,7 @@
             <li>Biometrics, enabling fair democratic processes like elections and referenda, and facilitating targeted aid distribution</li>
             
           </ul>
-          <p>These are just a few examples of PeaceTech. The field is continually evolving as new technologies and methodologies are developed. Learn more about the key themes and challenges of technologies used by and created for peace efforts in <a href="https://sverhulst.medium.com/peace-by-design-unlocking-the-potential-of-seven-technologies-for-a-more-peaceful-future-f8b5eea829e5">“PeaceTech Topic Map: A Research Base for an Emerging Field”</a>.</p>
+          <p>These are just a few examples of PeaceTech. The field is continually evolving as new technologies and methodologies are developed. Learn more about the key themes and challenges of technologies used by and created for peace efforts in <a href="https://files.thegovlab.org/PeaceTechTopicMap.pdf" target="_blank">“PeaceTech Topic Map: A Research Base for an Emerging Field”</a>.</p>
         </div>
       </div>
     </center-l>

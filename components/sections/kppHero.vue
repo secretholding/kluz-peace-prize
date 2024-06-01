@@ -64,7 +64,10 @@ const hasBackground = computed(() => {
 
   .title-only { 
     color: var(--primary-color); 
-    font-size: 3rem;
+    
+    font-size: 2.5rem;
+    @media (min-width: 768px) { font-size: 3rem; }
+    
     font-weight: 100;
   }
 }

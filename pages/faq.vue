@@ -18,7 +18,7 @@
               <li>Biometrics, enabling fair democratic processes like elections and referenda, and facilitating targeted aid distribution.</li>
               <li>Robotics, offering surveillance capabilities and aid delivery to displaced populations, thereby minimizing wars and fostering peace.</li>
             </ul>
-            <p class="answer">These are just a few examples of PeaceTech. The field is continually evolving as new technologies and methodologies are developed. Learn more about the key themes and challenges of technologies used by and created for peace efforts in “PeaceTech Topic Map: A Research Base for an Emerging Field”.</p>
+            <p class="answer">These are just a few examples of PeaceTech. The field is continually evolving as new technologies and methodologies are developed. Learn more about the key themes and challenges of technologies used by and created for peace efforts in <a href="https://files.thegovlab.org/PeaceTechTopicMap.pdf" target="_blank">“PeaceTech Topic Map: A Research Base for an Emerging Field”</a>.</p>
           </div>
         </li>
         <li class="faq-item">
@@ -46,17 +46,18 @@
           <p class="question">Who’s eligible to apply?</p>
           <div class="answer">
             <p>The Kluz Prize for PeaceTech welcomes individuals and organizations worldwide, who have distinguished themselves through proven achievements or accomplishments, or innovative projects related to application of transformative technologies in building, supporting, keeping, and promoting peace.</p>
+            <p>Particularly those initiated by the younger generation and the tech community, including entrepreneurs, engineers, programmers, scientists, startups, accelerators, big-tech, and venture capitalists.</p>
             <p>Applications can be submitted individually or as a group, with the organization's name and legal representative indicated.</p>
             <p>Please note, we are not seeking applications proposing new projects. This grant will only be awarded to established projects which have had an impact in the field.</p>
           </div>
           </li>
           <li class="faq-item">
           <p class="question">Who is Kluz Ventures?</p>
-          <p class="answer">Kluz Ventures is a values-driven investment firm with a long-term vision of empowering human flourishing and technological development by investing in the exceptional entrepreneurs and technologies of tomorrow. Investments in these technologies can promote a global culture of genuine human growth that meets the current and future needs of all people, serving as an inspiration for future generations. Founded by Artur Kluz. Learn more at www.kluzventures.com.</p>
+          <p class="answer">Kluz Ventures is a values-driven investment firm with a long-term vision of empowering human flourishing and technological development by investing in the exceptional entrepreneurs and technologies of tomorrow. Investments in these technologies can promote a global culture of genuine human growth that meets the current and future needs of all people, serving as an inspiration for future generations. Founded by Artur Kluz. Learn more at <a href="http://www.kluzventures.com" target="_blank">www.kluzventures.com</a>.</p>
         </li>
         <li class="faq-item">
           <p class="question">What is The GovLab?</p>
-          <p class="answer">The GovLab at New York University’s Tandon School of Engineering is an action research center that aims to improve people's lives by changing the way we govern. The GovLab seeks to strengthen the ability of institutions — including but not limited to governments — and people to work more openly, collaboratively, effectively, and legitimately to make better decisions and solve public problems. For more information, visit www.thegovlab.org.</p>
+          <p class="answer">The GovLab at New York University’s Tandon School of Engineering is an action research center that aims to improve people's lives by changing the way we govern. The GovLab seeks to strengthen the ability of institutions — including but not limited to governments — and people to work more openly, collaboratively, effectively, and legitimately to make better decisions and solve public problems. For more information, visit <a href="https://www.thegovlab.org" target="_blank">www.thegovlab.org</a>.</p>
         </li>
       </ul>
     </center-l>

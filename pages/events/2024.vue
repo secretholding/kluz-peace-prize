@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero height="50svh" title="Kluz prize for PeaceTech | 2024" color="white" bg="/assets/images/events/2022/kluz-peace-tech-prize-2022-01.webp"/>
+  <kpp-hero height="auto" title="Kluz prize for PeaceTech | 2024" color="primary"/>
   <kpp-cta color="primary" :content="ctaContent"/>
   <kpp-base-section color="tertiary">
     <center-l class="padding-bottom:s2" size="wide">
@@ -132,7 +132,7 @@ const jury = [
     },
     {
       "name": "Zara Khan",
-      "title": "Strategic Partnerships Lead at X, the moonshot factory",
+      "title": "Strategic Partnerships Lead at Google",
       "image": "/assets/images/jury/zara-khan.jpg",
       "url": "https://www.linkedin.com/in/khanzara/"
     }
@@ -153,9 +153,12 @@ const jury = [
   @media screen and (min-width: 768px) { gap: var(--s3); }
 }
 
-.panel { flex: 1; }
+.panel { 
+  flex: 1; 
+}
 
-ul {
+.custom-list {
+  margin: inherit;
   @media screen and (min-width: 768px) { margin: 0; }
 }
 

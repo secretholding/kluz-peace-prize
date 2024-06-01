@@ -88,11 +88,10 @@
               :errorMessage="errors.collaboration"
             />
 
-            <h3 class="margin-top:s1">Terms and Conditions</h3>
-            
+            <h3 visual="h1" class="margin-top:s1">Terms and Conditions</h3>
             <p>By submitting this form, you are agreeing to the <a href="https://docs.google.com/document/d/1BzQvuLokS3dRBt9c4mz3f8qQnQlNoVdBkjtOFSLPlO4/edit?usp=sharing">Terms and Conditions</a>. Please check the box below to confirm that you have read and agree to the terms and conditions.</p>
 
-            <kpp-button class="margin-top:s2" el="button" size="l" color="primary" visual="primary" @click.prevent="handleSubmit" >Submit</kpp-button>
+            <kpp-button class="margin-top:s1" el="button" size="l" color="primary" visual="primary" @click.prevent="handleSubmit" >Submit</kpp-button>
           </stack-l>
         </form>
       </center-l>

@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero height="auto" color="primary" :title="event.heading">
+  <kpp-hero height="50svh" color="white" :title="event.heading" :bg="event.cover_image">
     <!-- <center-l size="wide" class="width:100%">
       <kpp-headers :content="headerContent" color="primary" />
     </center-l> -->
@@ -40,7 +40,8 @@
             allowfullscreen></iframe>
         </div>
       </stack-l>
-      <reel-l v-else class="ceremony-reel" itemWidth="90%" >
+      
+      <reel-l v-if="event.images" class="ceremony-reel" itemWidth="90%" >
         <figure class="ceremony-image | frame" v-for="i in event.images" :key="i">
           <img :src="i" alt="">
         </figure>
@@ -160,6 +161,7 @@ const headerContent = {
 
 .ceremony-reel {
   margin-top: var(--s2);
+  padding-inline: 0;
 }
 
 .ceremony-image {
