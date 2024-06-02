@@ -132,7 +132,7 @@ const jury = [
     },
     {
       "name": "Zara Khan",
-      "title": "Strategic Partnerships Lead at Google",
+      "title": "Strategic Partnerships Lead at X, the moonshot factory",
       "image": "/assets/images/jury/zara-khan.jpg",
       "url": "https://www.linkedin.com/in/khanzara/"
     }

@@ -4,19 +4,19 @@
     <center-l size="wide">
       <ul class="roadmap">
         <li class="roadmap__item" active="true">
-          <h4>June 1st, 2024<span> | Applications Open</span></h4>
+          <h4>June 1<sup>st</sup>, 2024<span> | Applications Open</span></h4>
           <p>Submit your application for the 2024 Kluz Prize for PeaceTech.</p>
         </li>
         <li class="roadmap__item">
-          <h4>July 15th, 2024<span> | Applications Deadline</span></h4>
+          <h4>July 15<sup>th</sup>, 2024<span> | Applications Deadline</span></h4>
           <p>Apply by 11:59 PM EDT</p>
         </li>
         <li class="roadmap__item">
-          <h4>MM DD YYYY <span> | Final Decision</span></h4>
+          <h4>September 6<sup>th</sup>, 2024<span> | Final Decision</span></h4>
           <p>Communication of the final decision to the winner(s) and invitation to the award ceremony</p>
         </li>
         <li class="roadmap__item">
-          <h4>September 20, 2024 <span> | Award ceremony</span></h4>
+          <h4>September 20<sup>th</sup>, 2024 <span> | Award ceremony</span></h4>
           <p>Communication of the final decision to the winner(s) and invitation to the award ceremony</p>
         </li>
         <!-- <li class="roadmap__item">
@@ -86,6 +86,12 @@ useHead({
     font-size: 1.25rem;
     font-weight: 400;
     color: var(--primary-color);
+
+    sup { 
+      color: var(--primary-color); 
+      font-weight: 400;
+      font-size: .85rem;
+    }
   }
   
   span {
