@@ -41,7 +41,7 @@ const images =  [
 const headerContent = reactive({
   winners: [
     {
-      title: 'Unlocking Power of PeaceTech',
+      title: 'Unlocking the Power of PeaceTech',
       tagline: 'Applications are Open | 2024',
       image: 'logo',
       action: 'Apply now',
