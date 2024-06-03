@@ -88,6 +88,8 @@
               :errorMessage="errors.collaboration"
             />
 
+            <p class="margin-bottom:s2"><strong class="color:primary">Do you have any pictures or videos that support making your technology come to life? Please email them to us at <a href="mailto:info@kluzprize.org" target="_blank" class="color:primary">info@kluzprize.org</a> with your name as the subject line.</strong></p>
+
             <h3 visual="h1" class="margin-top:s1">Terms and Conditions</h3>
             <p>By submitting this form, you are agreeing to the <a href="https://docs.google.com/document/d/1zla85Quk9FQqpZkUwpV2fSFwvFYHr-wkgydt-z3a4qk" target="_blank">Terms and Conditions</a>. The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/copyright-and-fair-use/digital-privacy-statement.html" target="_blank">review the full statement here</a>.</p>
             <kpp-button class="margin-top:s1" el="button" size="l" color="primary" visual="primary" @click.prevent="handleSubmit">Submit</kpp-button>
