@@ -4,7 +4,7 @@
   <kpp-base-section class="about-section">
     <center-l size="wide">
       <div class="split-panel">
-        <p>The Kluz Prize for PeaceTech is an initiative to celebrate, distinguish, and promote the use of new technologies in fostering peace, reducing conflict, and protecting human dignity and universal human rights across the globe. The Prize is dedicated to individuals, and all tech stakeholders (incl. tech entrepreneurs, engineers, programmers, scientists, start-ups, Big-Tech, accelerators, venture capitalists) for their distinguished achievements in peacebuilding, peacemaking, peacekeeping, or peace enforcement efforts. The goal of the Prize is to engage the tech industry, individuals, societies, states and international organizations in building up a local, national, and global PeaceTech movement.</p>
+        <p>The Kluz Prize for PeaceTech is an annual initiative designed to celebrate, recognize, and propel the innovative use of emerging technologies to foster peace, reduce conflict, and safeguard human dignity and universal human rights across the globe. The Prize is dedicated to individuals, organizations, or initiatives, particularly those initiated by the younger generation and the tech community, including entrepreneurs, engineers, programmers, scientists, startups, accelerators, and venture capitalists. It recognizes their distinguished achievements in peacebuilding, peacemaking, peacekeeping, or peace enforcement efforts, contributing to the development of a local, national, and global PeaceTech movement.</p>
         <img src="/assets/images/map.svg" alt="">
       </div>
     </center-l>

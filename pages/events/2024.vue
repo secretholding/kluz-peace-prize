@@ -1,5 +1,5 @@
 <template>
-  <kpp-hero height="auto" title="Kluz prize for PeaceTech | 2024" color="primary"/>
+  <kpp-hero height="auto" title="Kluz Prize for PeaceTech | 2024" color="primary"/>
   <kpp-cta color="primary" :content="ctaContent"/>
   <kpp-base-section color="tertiary">
     <center-l class="padding-bottom:s2" size="wide">
@@ -96,7 +96,7 @@ const jury = [
     },
     {
       "name": "François Chopard",
-      "title": "CEO - Starburst Aerospace",
+      "title": "CEO of Starburst Aerospace",
       "image": "/assets/images/jury/francois-chopard.png",
       "url": "https://www.linkedin.com/in/francoischopard"
     },
