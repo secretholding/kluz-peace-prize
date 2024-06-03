@@ -5,7 +5,7 @@
   </article>
   
   <kpp-cta color="tertiary" />
-  <kpp-footer />
+  <kpp-footer-2 />
 </template>
 
 <script setup>
