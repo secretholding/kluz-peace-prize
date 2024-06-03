@@ -39,7 +39,7 @@
     </div>
 
     <p class="copyright | margin-top:s2">
-      <em>The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/privacy-policy.html">review the full statement here</a>. </em>&copy; 2021 Kluz Prize for PeaceTech. All rights reserved
+      <em>The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/privacy-policy.html">review the full statement here</a>. </em>&copy; 2024 Kluz Prize for PeaceTech. All rights reserved
     </p> 
   </center-l>
 
