@@ -58,7 +58,8 @@ const hasBackground = computed(() => {
   align-items: flex-start;
   position: relative;
   padding-bottom: var(--s3);
-  height: var(--height);
+  min-height: var(--height);
+  height: auto;
   
   @media (min-width: 768px) { min-height: max(var(--height)); }
 
@@ -72,38 +73,38 @@ const hasBackground = computed(() => {
   }
 }
 
-.kpp-hero:not[collapse] {
+// .kpp-hero:not[collapse] {
 
-  @media (min-aspect-ratio: 3/4) and (max-height: 1000px) {
-    height: 60vh;
-    min-height: 0;
-  }
-  @media (max-aspect-ratio: 3/4) {
-    height: 50vh;
-    min-height: 0;
-  }
-  @media (max-height: 700px) {
-    height: 60vh;
-  }
+//   @media (min-aspect-ratio: 3/4) and (max-height: 1000px) {
+//     height: 60vh;
+//     min-height: 0;
+//   }
+//   @media (max-aspect-ratio: 3/4) {
+//     height: 50vh;
+//     min-height: 0;
+//   }
+//   @media (max-height: 700px) {
+//     height: 60vh;
+//   }
 
-  @media (min-aspect-ratio: 4/3) {
-    &[hide-on-wide] { 
-      height: auto;
-      min-height: 0;
-      padding-block: 0;
-      background: var(--primary-color);
-      &[bg] {
-        background-image: none;
-      }
-      & > :not(.kpp-top-bar) {
-        display: none;
-      }
-      &:before {
-       display: none;
-      }
-     }
-  }
-}
+//   @media (min-aspect-ratio: 4/3) {
+//     &[hide-on-wide] { 
+//       height: auto;
+//       min-height: 0;
+//       padding-block: 0;
+//       background: var(--primary-color);
+//       &[bg] {
+//         background-image: none;
+//       }
+//       & > :not(.kpp-top-bar) {
+//         display: none;
+//       }
+//       &:before {
+//        display: none;
+//       }
+//      }
+//   }
+// }
 
 .kpp-hero__top-bar {
   position: relative;
