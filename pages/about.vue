@@ -38,7 +38,7 @@
     <center-l size="wide">
       <div class="split-panel" align-items="center">
         
-        <img src="/assets/images/jury/artur-kluz.webp" alt="Artur Kluz">
+        <img src="/assets/images/jury/artur-kluz.jpg" alt="Artur Kluz">
         
         <blockquote>
           <p>Technology holds the key to unlocking a more peaceful world, and PeaceTech is the driving force behind this transformative opportunity. Together, by showcasing groundbreaking applications of technology to foster peace, we can accelerate the PeaceTech movement and create tangible, life-changing impact on a global scale.</p>
