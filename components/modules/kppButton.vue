@@ -28,5 +28,18 @@
   color: var(--base-color) !important;
 }
 
+.kpp-button[size="xxl"] {
+  --button-padding-block: var(--s0);
+  --button-padding-inline: var(--s2);
+  --button-font-size: 175%;
+}
+
+.kpp-button[size="xxl"][data-icon-before]:before,
+.kpp-button[size="xxl"][data-icon-after]:after,
+.kpp-button[size="xxl"][icon-before]:before,
+.kpp-button[size="xxl"][icon-after]:after {
+  font-size: calc(var(--button-font-size) * .9);
+}
+
 
 </style>
