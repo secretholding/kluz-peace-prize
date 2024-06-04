@@ -5,10 +5,10 @@
       <div class="about | stack">
         <NuxtLink to="/"><kluz-logo color="white" max-width="100px"/></NuxtLink>
         <p>The Kluz Prize for PeaceTech is an initiative to celebrate, distinguish, and promote the use of new technologies in fostering peace, reducing conflict, and protecting human dignity and universal human rights across the globe.</p>
-        <!-- <ul class="kpp-footer__social-media">
-          <li><social-link icon="linkedin" color="white" size="28px"/></li>
-          <li><social-link icon="youtube" color="white" size="28px"/></li>
-        </ul> -->
+        <ul class="kpp-footer__social-media">
+          <li><social-link icon="linkedin" color="white" size="28px" url="https://www.linkedin.com/company/kluz-prize/about/" /></li>
+          <li><social-link icon="x" color="white" size="28px" url="https://x.com/KluzPrize" /></li>
+        </ul>
       </div>
       <nav class="menu menu-1 | stack">
         <h4>Quick Links</h4>
