@@ -16,7 +16,7 @@
           <p>Communication of the final decision to the winner(s) and invitation to the award ceremony</p>
         </li>
         <li class="roadmap__item">
-          <h4>September 19<sup>th</sup>, 2024 <span> | Award ceremony</span></h4>
+          <h4>September 20<sup>th</sup>, 2024 <span> | Award ceremony</span></h4>
           <p>Winner will be honored at an award ceremony in New York City</p>
         </li>
         <!-- <li class="roadmap__item">
