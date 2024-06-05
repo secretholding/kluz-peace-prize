@@ -82,7 +82,57 @@ watch(() => data.textarea, (newValue) => {
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.base-textarea {
+  --textarea-height: v-bind(textareaHeight);
+  --textarea-padding-block: var(--form-padding-block, var(--base-padding-block));
+  --textarea-padding-inline: var(--form-padding-inline, var(--base-padding-inline));
+
+  --textarea-text-color: var(--form-text-color, var(--base-text-color));
+
+  --textarea-border: var(--form-border, var(--base-border));
+  --textarea-border-radius: var(--form-border-radius, var(--base-border-radius));
+  --textarea-shadow: var(--form-shadow, var(--base-shadow));
+  
+  --textarea-font-weight: var(--form-font-weight, var(--base-font-weight));
+  --textarea-font-family: var(--form-font-family, var(--body-font));
+  --textarea-letter-spacing: var(--form-letter-spacing);
+}
+
+.base-textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  height: var(--textarea-height);
+
+  // Paddings
+  padding-inline: var(--textarea-padding-inline);
+  padding-block: var(--textarea-padding-block);
+
+  // Colors
+  color: var(--textarea-text-color);
+
+  // Decorations
+  border: var(--textarea-border);
+  border-radius: var(--textarea-border-radius);
+  box-shadow: var(--textarea-shadow);
+  
+  // Typography
+  font-family: var(--textarea-font-family);
+  font-weight: var(--textarea-font-weight);
+  letter-spacing: var(--textarea-letter-spacing);
+}
+
+.base-textarea[resizeX='false'] {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.base-textarea__placeholder { 
+  color: var(--textarea-text-color);
+  opacity: .4;
+}
+
 .kpp-textarea { padding-inline: var(--s0); }
 .kpp-textarea:placeholder { color: red !important;}
 
