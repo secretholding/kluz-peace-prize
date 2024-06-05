@@ -1,13 +1,27 @@
 <template>
-  <kpp-hero color="white" height="70svh" class="hero__slider">
+  <kpp-hero color="white" height="50svh" class="hero__slider">
     <div class="slider">
       <div class="slider__background" :style="`background-image: url('${headerContent.activeWinner.image}');`"></div>
       <div class="slide">
         <center-l size="wide" class="slide__content | width:100%">
-          <kluz-logo v-if="headerContent.activeWinner.image == 'logo'" color="white" maxWidth="320px" class="logo-hero"/>
+          <kluz-logo v-if="headerContent.activeWinner.image == 'logo'" color="white" maxWidth="220px" class="logo-hero"/>
           <div class="width:100%">
-            <kpp-headers :content="headerContent.activeWinner" color="white" class="hero__headers" hide-tagline/>
-            <h4 visual="h5" class="tagline | color:white">Applications 2024 are open</h4>
+            <kpp-headers :content="headerContent.activeWinner" color="white" class="hero__headers" hide-tagline >
+              <template #action>
+                <kpp-button
+                  class="margin-top:s1"
+                  visual="unstyled"
+                  icon-after="arrow_forward"
+                  size="xxl"
+                  color="white"
+                  el="a" 
+                  label="Learn more" 
+                  href="/application" 
+                />
+                <h4 visual="h5" class="tagline | color:white">Applications 2024 are open</h4>
+              </template>
+            </kpp-headers>
+            
           </div>
           
         </center-l>
@@ -152,11 +166,13 @@ onUnmounted(() => {
   opacity: 1;
   transition: opacity .5s ease-in-out;
   overflow: hidden;
+  
 }
 
 .hero__slider {
   // temporary. Client didn't understand the white transition. 
   background-color: var(--primary-color);
+  min-height: 500px;
 }
 
   .slider--transitioning {
@@ -184,7 +200,6 @@ onUnmounted(() => {
   display: flex;
   align-items: flex-end;
   padding-bottom: var(--s4);
-  padding-inline: var(--s2);
   &::before {
     content: '';
     position: absolute;
@@ -202,10 +217,11 @@ onUnmounted(() => {
     transition: all 0.2s ease-in-out;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;
+    grid-template-rows: 1fr;
     height: 100%;
-    align-items: center;
+    align-items: flex-end;
     justify-items: start;
+    gap: var(--s1);
   }
 
     .slide__content--left {
@@ -254,11 +270,12 @@ onUnmounted(() => {
     .logo-hero {
       margin-bottom: var(--s2);
       width: auto;
+      align-self: flex-end;
       
       @media screen and (max-width: 768px) { 
         max-width: 180px;
-        transform: translateX(-5%);
+        // transform: translateX(-5%);
       }
-      @media screen and (min-height: 640px) { margin-left: -2.75%; }
+      // @media screen and (min-height: 640px) { margin-left: -1.75%; }
     }
 </style>

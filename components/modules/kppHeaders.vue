@@ -6,15 +6,18 @@
     <h5 class="date" v-if="content.date">{{ computedDate }}</h5>
     <p class="authors" v-if="content.author">By {{ content.author }}</p>
     
-    <kpp-button 
-      visual="unstyled"
-      icon-after="arrow_forward"
-      size="xl"
-      el="a" 
-      :label="content.action ? content.action : 'Learn more'" 
-      :href="`${content.path}`" 
-      v-if="content.path" 
-    />
+    <slot name="action">
+      <kpp-button 
+        visual="unstyled"
+        icon-after="arrow_forward"
+        size="xl"
+        el="a" 
+        :label="content.action ? content.action : 'Learn more'" 
+        :href="`${content.path}`" 
+        v-if="content.path" 
+      />
+    </slot>
+    
 
     
     
