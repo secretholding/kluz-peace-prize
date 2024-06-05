@@ -15,7 +15,7 @@
                   size="xxl"
                   color="white"
                   el="a" 
-                  label="Learn more" 
+                  label="Apply Now" 
                   href="/application" 
                 />
                 <h4 visual="h5" class="tagline | color:white">Applications 2024 are open</h4>
