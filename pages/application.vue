@@ -19,9 +19,9 @@
             <kpp-field type="text" inputName="location" inputId="location" label="Where is the project based?*" validate="required" placeholder="" :errorMessage="errors.location" />
             <kpp-field type="url" inputName="link" inputId="link" label="Link to your project or research*" validate="required" placeholder="" :errorMessage="errors.link" />
             <kpp-textarea 
+              ref="summary"
               label="Please provide a brief summary of your project or research.*" 
-              validate="required maxWords:300"
-              wordcount="Max. 300 words"
+              validate="required"
               maxlength="2000"
               inputName="summary"
               inputId="summary"
@@ -32,9 +32,7 @@
             <kpp-textarea 
               class="margin-top:0" 
               label="What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?" 
-              wordcount="Max. 200 words" 
               maxlength="1300" 
-              validate="maxWords:200"
               inputName="impact"
               inputId="impact"
               :errorMessage="errors.impact"
@@ -45,7 +43,6 @@
               class="margin-top:0" 
               label="How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?" 
               wordcount="Max. 200 words" 
-              validate="maxWords:200"
               maxlength="1300"
               inputName="relevance"
               inputId="relevance"
@@ -57,7 +54,6 @@
               class="margin-top:0" 
               label="In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?" 
               wordcount="Max. 200 words" 
-              validate="maxWords:200"
               maxlength="1300"
               inputName="innovation"
               inputId="innovation"
@@ -69,7 +65,6 @@
               class="margin-top:0" 
               label="With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?" 
               wordcount="Max. 200 words" 
-              validate="maxWords:200"
               maxlength="1300"
               inputName="scalability"
               inputId="scalability"
@@ -80,8 +75,6 @@
             <kpp-textarea 
               class="margin-top:0" 
               label="How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?" 
-              wordcount="Max. 200 words" 
-              validate="maxWords:200"
               maxlength="1300"
               inputName="collaboration"
               inputId="collaboration"
@@ -109,6 +102,7 @@
     title: "Kluz Prize for PeaceTech",
   })
 
+
   const {
       success,
       onSubmit,
@@ -131,10 +125,10 @@
   align-items: center;
   gap: var(--s-1); /* Sets the space between the icon and the text in the error message */
   --space: var(--s-3); 
-  color: var(--success-color); 
-  background-color: hsla(var(--success-hsl), .05);
+  color: var(--white-color); 
+  background-color: var(--success-color);
   .material-symbols-outlined {
-    color: var(--success-color); 
+    color: var(--white-color);
   }
 }
 

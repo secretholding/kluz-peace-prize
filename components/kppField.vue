@@ -114,10 +114,10 @@ input:invalid + p,
   align-items: center;
   gap: var(--s-1); /* Sets the space between the icon and the text in the error message */
   --space: var(--s-3); 
-  color: var(--error-color); 
-  background-color: hsla(var(--error-hsl), .1);
+  color: var(--white-color); 
+  background-color: var(--error-color);
   .icon {
-    color: var(--error-color); 
+    color: var(--white-color); 
   }
 }
 

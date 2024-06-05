@@ -1,7 +1,7 @@
 <template>
   <kpp-field :validate="validate" :maxWords="maxWords" :errorMessage="errorMessage">
-    <base-textarea
-      class="kpp-textarea"
+    <textarea
+      class="base-textarea kpp-textarea"
       :id="inputId" 
       :resizeX="resizeX"
       :textareaHeight="textareaHeight"
@@ -9,13 +9,15 @@
       :placeholder="textareaPlaceholder"
       :wordcount="wordcount"
       :name="inputName"
-    ></base-textarea>
-    <p class="wordcount">{{ wordcount }}</p>
+      :maxlength="maxlength"
+      v-model="data.textarea"
+    ></textarea>
+    <p class="wordcount" v-if="maxlength">{{ data.characterCount }} / {{ maxlength }}</p>
   </kpp-field>
 </template>
 
 <script setup>
-import { toRefs } from 'vue'
+import { toRefs, ref, watch, reactive } from 'vue'
 
 const props = defineProps({
   resizeX: {
@@ -53,10 +55,30 @@ const props = defineProps({
   errorMessage: {
     type: String,
     default: ''
+  },
+  maxlength: {
+    type: String,
+    default: '2000'
   }
 });
 
 const { resizeX, textareaId, textareaName, textareaPlaceholder, textareaHeight } = toRefs(props);
+
+
+const data = reactive({
+  characterCount: 0,
+  textarea: ''
+});
+
+const textarea = ref(null);
+
+watch(() => data.textarea, (newValue) => {
+  if(newValue) {
+    data.characterCount = newValue.length;
+  } else {
+    data.characterCount = 0;
+  }
+});
 
 </script>
 
