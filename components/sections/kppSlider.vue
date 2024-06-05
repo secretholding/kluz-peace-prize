@@ -166,11 +166,13 @@ onUnmounted(() => {
   opacity: 1;
   transition: opacity .5s ease-in-out;
   overflow: hidden;
+  
 }
 
 .hero__slider {
   // temporary. Client didn't understand the white transition. 
   background-color: var(--primary-color);
+  min-height: 500px;
 }
 
   .slider--transitioning {
@@ -198,7 +200,6 @@ onUnmounted(() => {
   display: flex;
   align-items: flex-end;
   padding-bottom: var(--s4);
-  padding-inline: var(--s2);
   &::before {
     content: '';
     position: absolute;
@@ -273,8 +274,8 @@ onUnmounted(() => {
       
       @media screen and (max-width: 768px) { 
         max-width: 180px;
-        transform: translateX(-5%);
+        // transform: translateX(-5%);
       }
-      @media screen and (min-height: 640px) { margin-left: -1.75%; }
+      // @media screen and (min-height: 640px) { margin-left: -1.75%; }
     }
 </style>
