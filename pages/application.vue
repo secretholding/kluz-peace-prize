@@ -22,7 +22,7 @@
               ref="summary"
               label="Please provide a brief summary of your project or research.*" 
               validate="required"
-              maxlength="2000"
+              max="300"
               inputName="summary"
               inputId="summary"
               :errorMessage="errors.summary"
@@ -32,7 +32,7 @@
             <kpp-textarea 
               class="margin-top:0" 
               label="What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?" 
-              maxlength="1300" 
+              max="200" 
               inputName="impact"
               inputId="impact"
               :errorMessage="errors.impact"
@@ -42,8 +42,7 @@
             <kpp-textarea
               class="margin-top:0" 
               label="How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?" 
-              wordcount="Max. 200 words" 
-              maxlength="1300"
+              max="200"
               inputName="relevance"
               inputId="relevance"
               :errorMessage="errors.relevance"
@@ -53,8 +52,7 @@
             <kpp-textarea 
               class="margin-top:0" 
               label="In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?" 
-              wordcount="Max. 200 words" 
-              maxlength="1300"
+              max="200"
               inputName="innovation"
               inputId="innovation"
               :errorMessage="errors.innovation"
@@ -64,8 +62,7 @@
             <kpp-textarea 
               class="margin-top:0" 
               label="With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?" 
-              wordcount="Max. 200 words" 
-              maxlength="1300"
+              max="200"
               inputName="scalability"
               inputId="scalability"
               :errorMessage="errors.scalability"
@@ -75,7 +72,7 @@
             <kpp-textarea 
               class="margin-top:0" 
               label="How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?" 
-              maxlength="1300"
+              max="200"
               inputName="collaboration"
               inputId="collaboration"
               :errorMessage="errors.collaboration"

@@ -14,8 +14,8 @@ export function useSubmitForm() {
 
       const body = JSON.stringify(payload.value);
 
-      const response = await fetch('https://formspree.io/f/xzbnqego', {
       //#TEST URL const response = await fetch('https://formspree.io/f/xzbnqvgy', {
+      const response = await fetch('https://formspree.io/f/xzbnqego', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

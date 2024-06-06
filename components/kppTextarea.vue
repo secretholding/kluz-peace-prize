@@ -12,7 +12,7 @@
       :maxlength="maxlength"
       v-model="data.textarea"
     ></textarea>
-    <p class="wordcount" v-if="maxlength">{{ data.characterCount }} / {{ maxlength }}</p>
+    <p class="wordcount" v-if="max">{{ max }} words max</p>
   </kpp-field>
 </template>
 
@@ -58,7 +58,11 @@ const props = defineProps({
   },
   maxlength: {
     type: String,
-    default: '2000'
+    default: ''
+  },
+  max: {
+    type: String,
+    default: ''
   }
 });
 
