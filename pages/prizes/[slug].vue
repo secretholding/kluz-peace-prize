@@ -23,7 +23,7 @@
                   </template> 
                 </kpp-person>
                 <p class="text-align:center margin-top:s2">
-                  <base-button size="l" color="primary" :href="winner.connect.url">{{ winner.connect.label }}</base-button>
+                  <base-button size="l" color="primary" el="a" target="_blank" :href="winner.connect.url">{{ winner.connect.label }}</base-button>
                 </p>
               </div>
             </aside>
