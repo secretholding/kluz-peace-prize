@@ -39,7 +39,8 @@
     </div>
 
     <p class="copyright | margin-top:s2">
-      <em>The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/privacy-policy.html">review the full statement here</a>. </em>&copy; 2024 Kluz Prize for PeaceTech. All rights reserved
+      <span>&copy; 2024 Kluz Prize for PeaceTech. All rights reserved.</span>
+      <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
     </p> 
   </center-l>
 
@@ -119,6 +120,8 @@
 .copyright {
   border-top: 1px solid hsla(var(--white-hsl), .2);
   padding-top: var(--s1);
+  display: flex;
+  justify-content: space-between;
   font-size: 85%;
   * { color: hsla(var(--white-hsl), .6); }
 

@@ -53,4 +53,7 @@ const eventsHighlights = {
 </script>
 
 <style lang="scss" scoped>
+.test {
+  color: red;
+}
 </style>
