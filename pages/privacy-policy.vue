@@ -26,7 +26,7 @@
         <h3>Categories of Personal Data We Collect</h3>
         <p>The chart below details the categories of Personal Data that we collect and have collected over the past 12 months. We may also collect other categories of Personal Data that you choose to provide to us, such as when you email us or interact with free-form fields on our website.</p>
         
-        <ccm-table>
+        <ccm-table class="desktop-only">
           <thead>
             <tr>
               <td>
@@ -115,12 +115,7 @@
                 <p>Date of birth</p>
                 <p>Zip code</p>
               </td>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td colspan=3 class="divider">
-                <p><strong>Service Providers</strong></p>
-              </td>
+              <td>Service Providers</td>
             </tr>
             <tr>
               <td>
@@ -169,6 +164,123 @@
             </tr>
           </tbody>
         </ccm-table>
+
+        <ccm-table class="mobile-only">
+          <tbody>
+            <tr>
+              <td>
+                <p><strong>Category of Personal Data</strong></p>
+                <p>Identifiers</p>
+                <p><strong>Examples of Personal Data We Collect</strong></p>
+                <p>First and last name</p>
+                <p>Email</p>
+                <p>Phone number</p>
+                <p>Mailing address</p>
+                <p>Usernames and passwords</p>
+                <p><strong>Categories of Third Parties To Whom We May Disclose this Personal Data:</strong></p>
+                <p>Service Providers</p>
+                <p>Business Partners</p>
+                <p>Parties You Authorize, Access or Authenticate</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Category of Personal Data</strong></p>
+                <p>Financial Data</p>
+                <p><strong>Examples of Personal Data We Collect</strong></p>
+                <p>None</p>
+                <p><strong>Categories of Third Parties To Whom We May Disclose this Personal Data:</strong></p>
+                <p>Service Providers</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Category of Personal Data</strong></p>
+                <p>Online Identifiers</p>
+                <p><strong>Examples of Personal Data We Collect</strong></p>
+                <p>IP address</p>
+                <p>Device ID</p>
+                <p><strong>Categories of Third Parties To Whom We May Disclose this Personal Data:</strong></p>
+                <p>Service Providers</p>
+                <p><strong>Category of Personal Data</strong></p>
+                <p>Internet Activity Information</p>
+                <p><strong>Examples of Personal Data We Collect</strong></p>
+                <p>Domain server</p>
+                <p>Type of device/operating system/browser used to access the Services</p>
+                <p>Browsing or search history</p>
+                <p>Web page interactions</p>
+                <p>Referring webpage/source through which you accessed the Services</p>
+                <p>Non-identifiable request IDs</p>
+                <p>Statistics associated with the interaction between device or browser and the Services</p>
+                <p><strong>Categories of Third Parties To Whom We May Disclose this Personal Data:</strong></p>
+                <p>Service Providers</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Category of Personal Data</strong></p>
+                <p>Internet Activity Information</p>
+                <p><strong>Examples of Personal Data We Collect</strong></p>
+                <p>Consumer Demographic Data (some of which includes Protected Classification Characteristics under applicable law)</p>
+                <p>Domain server</p>
+                <p>Type of device/operating system/browser used to access the Services</p>
+                <p>Browsing or search history</p>
+                <p>Web page interactions</p>
+                <p>Referring webpage/source through which you accessed the Services</p>
+                <p>Non-identifiable request IDs</p>
+                <p>Statistics associated with the interaction between device or browser and the Services</p>
+                <p>Age</p>
+                <p>Date of birth</p>
+                <p>Zip code</p>
+                <p><strong>Categories of Third Parties To Whom We May Disclose this Personal Data:</strong></p>
+                <p>Service Providers</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Category of Personal Data</strong></p>
+                <p>Geolocation Data</p>
+                <p><strong>Examples of Personal Data We Collect</strong></p>
+                <p>IP-address-based location information</p>
+                <p><strong>Categories of Third Parties To Whom We May Disclose this Personal Data:</strong></p>
+                <p>Service Providers</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Category of Personal Data</strong></p>
+                <p>Audiovisual Data</p>
+                <p><strong>Examples of Personal Data We Collect</strong></p>
+                <p>Photos, videos or recordings of your environment</p>
+                <p><strong>Categories of Third Parties To Whom We May Disclose this Personal Data:</strong></p>
+                <p>Service Providers</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Category of Personal Data</strong></p>
+                <p>Sensitive Personal Information or Sensitive Data (under applicable privacy laws)</p>
+                <p><strong>Examples of Personal Data We Collect</strong></p>
+                <p>Username/password for the Services</p>
+                <p>Ethnicity/race (if you chose to provide it when participating in our surveys)</p>
+                <p><strong>Categories of Third Parties To Whom We May Disclose this Personal Data:</strong></p>
+                <p>Service Providers</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Category of Personal Data</strong></p>
+                <p>Inferences Drawn from Other Personal Data Collected</p>
+                <p><strong>Examples of Personal Data We Collect</strong></p>
+                <p>Profiles reflecting user attributes, behaviors, preferences, or abilities/aptitude</p>
+                <p><strong>Categories of Third Parties To Whom We May Disclose this Personal Data:</strong></p>
+                <p>Service Providers</p>
+              </td>
+            </tr>
+          </tbody>
+        </ccm-table>
+
+
         <h3>Categories of Sources of Personal Data</h3>
         <p>We collect Personal Data about you from the following categories of sources:</p>
         <h4 visual="h5">You</h4>
