@@ -7,11 +7,19 @@ export default defineNuxtConfig({
     title: "Kluz Prize for PeaceTech",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { property: "og:url", content: "https://www.kluzprize.org" },
+      { property: "og:type", content: "website" },
       { property: "og:title", content: "Kluz Prize for PeaceTech" },
       { property: "og:description", content: "Unlocking the Power of PeaceTech" },
       { property: "og:image", content: "/assets/images/og-image.jpg" },
-      { property: "og:url", content: "https://www.kluzprize.org" },
-      { property: "og:type", content: "website" }
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "twitter:domain", content: "kluzprize.org" },
+      { property: "twitter:url", content: "https://www.kluzprize.org/" },
+      { name: "twitter:title", content: "Kluz Prize for PeaceTech" },
+      { name: "twitter:description", content: "Unlocking the Power of PeaceTech" },
+      { name: "twitter:image", content: "/assets/images/og-image.jpg" }
+      
+      
     ],
     script: [],
     link: [
