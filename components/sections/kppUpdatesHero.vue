@@ -46,11 +46,11 @@ const data = reactive({
 
 const headerContent = computed(() => {
   return {
-    brow: data.blog.brow,
-    title: data.blog.heading,
-    tagline: data.blog.tagline,
-    date: data.blog.date,
-    author: data.blog.author
+    brow: data.blog && data.blog.brow ? data.blog.brow : '',
+    title: data.blog && data.blog.heading ? data.blog.heading : '',
+    tagline: data.blog && data.blog.tagline ? data.blog.tagline : '',
+    date: data.blog && data.blog.date ? data.blog.date : '',
+    author: data.blog && data.blog.author ? data.blog.author : ''
   }}
 )
 

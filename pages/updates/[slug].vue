@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>{{ data.blog.heading }}</Title>
+    <Title>{{ data.blog && data.blog.heading ? data.blog.heading : '' }}</Title>
   </Head>
   <kpp-updates-hero 
     class="headers" 
@@ -12,7 +12,7 @@
   
   <kpp-base-section class="body">
     <center-l size="wide">
-      <kpp-prose :html-content="data.blog.main_content" class="blog-post"/>
+      <kpp-prose :html-content="data.blog && data.blog.main_content ? data.blog.main_content : ''" class="blog-post"/>
     </center-l>
   </kpp-base-section>
 
