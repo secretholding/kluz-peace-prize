@@ -1,13 +1,57 @@
 <template>
-  <kpp-hero height="auto" title="Kluz Prize for PeaceTech | 2024" color="primary"/>
-  <kpp-cta color="primary" :content="ctaContent"/>
+  <kpp-hero height="min(40svh, 900px)" title="" color="white" bg="/assets/images/the-century.jpg">
+    <center-l size="wide" class="kpp-hero__content">
+      <h4 class="kpp-hero__brow | color:white ">New York City</h4>
+      <h2 class="color:white margin-bottom:s2">2024 Kluz Prize for PeaceTech Event</h2>
+    </center-l>
+  </kpp-hero>
+  <!-- <kpp-cta color="primary" :content="ctaContent" /> -->
+
+
+
+  <kpp-base-section color="white">
+    <center-l class="padding-bottom:s2" size="wide">
+      <div class="columns">
+        <kpp-prose class="custom">
+          <p>Join us for the <strong>2024 Kluz Prize for PeaceTech award ceremony on Friday, September 20 from 5 - 7 pm at <a href="https://www.thecentury.org/Club/Scripts/Home/home.asp" target="_blank">the Century Association</a> in New York City</strong> (<a href="https://maps.app.goo.gl/yzg9qA8sb3H8v7Ze8">7 West 43rd Street, New York, NY 10036</a>). This event will take place as part of the broader 79th UN General Assembly events.</p>
+
+          <p>The Kluz Prize for PeaceTech is an annual initiative designed to celebrate, recognize, and propel the innovative use of emerging technologies to foster peace, reduce conflict, and safeguard human dignity and universal human rights across the globe.</p>
+
+          <p>This event seeks to bring together global leaders, policymakers, entrepreneurs, engineers, programmers, scientists, Big-Tech, startups, accelerators, and venture capitalists, as well as scholars and public
+            officials who are committed to using technology to create a peaceful world.</p>
+
+          <p>The event will include presentations from The Kluz Prize for PeaceTech winners and discussions on the critical role of technology in peacebuilding efforts around the world. The ceremony will be followed by a cocktail reception where you will have the chance to meet the award winner, as well as other leaders in the ecosystem.</p>
+
+          <p>Speakers will be announced in September 2024.</p>
+
+          <p>Please RSVP by filling out the form below no later than September 15<sup>th</sup>.</p>
+
+          <p>We hope you can join!</p>
+
+          <p>* Please note, the Century Association requires guests to abide by their dress code of jackets for
+            gentlemen and appropriate equivalent dress for women.</p>
+        </kpp-prose>
+        <aside class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.336167780134!2d-73.9810342!3d40.7546304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590026f6f3f1%3A0x675d21233fdf9006!2s7%20W%2043rd%20St%2C%20New%20York%2C%20NY%2010036%2C%20USA!5e0!3m2!1sen!2sca!4v1720558119118!5m2!1sen!2sca"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
+      </div>
+
+    </center-l>
+  </kpp-base-section>
+
   <kpp-base-section color="tertiary">
     <center-l class="padding-bottom:s2" size="wide">
       <kpp-prose class="custom">
-        <p>The Kluz Prize for PeaceTech presents an exceptional opportunity to become recognized for your contribution to the evolving field of technologies for peace. We are seeking distinguished and accomplished PeaceTech initiatives and innovative solutions that leverage technology, including but not limited, to:</p>
+        <h3 class="color:primary">About the Kluz Prize for PeaceTech</h3>
+        <p>The Kluz Prize for PeaceTech presents an exceptional opportunity to become recognized for your contribution
+          to the evolving field of technologies for peace. We are seeking distinguished and accomplished PeaceTech
+          initiatives and innovative solutions that leverage technology, including but not limited, to:</p>
       </kpp-prose>
     </center-l>
-    <center-l size="wide">      
+    <center-l size="wide">
       <div class="split-panel">
         <div class="panel">
           <kpp-prose>
@@ -16,7 +60,8 @@
               <li>Protecting human dignity and universal human rights written in universal moral law;</li>
               <li>Preventing military conflicts within and between nations;</li>
               <li>Facilitating dialogue between conflicting parties;</li>
-              <li>Addressing conflict, violence and social issues across local, national and international contexts;</li>
+              <li>Addressing conflict, violence and social issues across local, national and international contexts;
+              </li>
             </ul>
           </kpp-prose>
         </div>
@@ -27,22 +72,23 @@
               <li>Mobilizing disaster relief efforts more rapidly;</li>
               <li>Providing humanitarian aid to solve welfare conflicts;</li>
               <li>Monitoring human rights violations and peacekeeping efforts; and</li>
-              <li>Solving the most basic human problems and needs such as poverty, access to water, food, healthcare, and connectivity.</li>
+              <li>Solving the most basic human problems and needs such as poverty, access to water, food, healthcare,
+                and connectivity.</li>
             </ul>
           </kpp-prose>
         </div>
       </div>
-      </center-l>
-    </kpp-base-section>
+    </center-l>
+  </kpp-base-section>
 
-    <kpp-base-section class="jury-section">
-      <center-l size="wide">
-        <h2 class="jury-section__title">Selection Committee</h2>
-        <div class="grid">
-          <kpp-person v-for="i in jury" :content="i" />         
-        </div>
-      </center-l>
-    </kpp-base-section>
+  <kpp-base-section class="jury-section">
+    <center-l size="wide">
+      <h2 class="jury-section__title">Selection Committee</h2>
+      <div class="grid">
+        <kpp-person v-for="i in jury" :content="i" />
+      </div>
+    </center-l>
+  </kpp-base-section>
 </template>
 
 <script setup>
@@ -141,7 +187,24 @@ const jury = [
 
 <style lang="scss" scoped>
 .custom {
-  @media screen and (min-width: 768px) { max-width: 80ch; }
+  a {text-decoration: underline;}
+}
+
+.columns {
+  display: flex;
+  gap: var(--s1);
+  @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+  aside {
+    @media screen and (max-width: 768px) { 
+      height: 350px;
+    }
+    @media screen and (min-width: 768px) { max-width: 350px; }
+    width: 100%;
+    box-shadow: 4px 4px 8px hsla(var(--base-hsl), 0.2);
+  }
 }
 
 .callout {
