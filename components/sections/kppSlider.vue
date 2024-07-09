@@ -21,9 +21,7 @@
                 <h4 visual="h5" class="tagline | color:white">Applications 2024 are open</h4>
               </template>
             </kpp-headers>
-            
           </div>
-          
         </center-l>
         <div class="slider-nav">
           <button 
@@ -61,36 +59,42 @@ const headerContent = reactive({
       action: 'Apply now',
       path: '/application',
     },
-    // {
-    //   slug: 'commit-global',
-    //   title: 'Commit Global',
-    //   tagline: 'A first of its kind Humanitarian Digital Civic Infrastructure for Refugees',
-    //   image: images[0]
-    // },
+    {
+      slug: 'commit-global',
+      brow: 'Winner of the Kluz Prize of PeaceTech | 2023',
+      title: 'Commit Global',
+      image: "/assets/images/winners/commit-global/commit-global-in-action-3.jpg",
+      path: '/prizes/commit-global/'
+    },
+    {
+      slug: 'project-didi',
+      brow: 'Innovative Uses of AI/ML | 2023',
+      title: 'Project Didi',
+      image: "/assets/images/winners/project-didi/didi-in-action-8.jpg",
+      path: '/prizes/project-didi/'
+    },
+    {
+      slug: 'palantir-foundry',
+      brow: "Big Tech Building Peace | 2023",
+      title: 'Palantir Foundry',
+      image: "/assets/images/winners/palantir-foundry/palantir-foundry-in-action-3.webp",
+      path: '/prizes/palantir-foundry/'
+    },
     // {
     //   slug: 'human-rights-analysis-group',
+    //   brow: "Nonprofit Organization Advancing Peace | 2023",
     //   title: 'Human Rights Data Analysis Group',
-    //   tagline: 'Using data science to track patterns of violence during armed conflict',
-    //   image: images[1]
+    //   image: "",
+    //   path: '/prizes/human-rights-analysis-group/'
     // },
-    // {
-    //   slug: 'palantir-foundry',
-    //   title: 'Palantir Foundry',
-    //   tagline: 'A decentralised immigration scheme that helped ensure the safe matching and resettlement of Refugees',
-    //   image: images[2]
-    // },
-    // {
-    //   slug: 'project-didi',
-    //   title: 'Project Didi',
-    //   tagline: 'Operationalizing peacebuilding theory using artificial intelligence, machine learning, and big data',
-    //   image: images[3]
-    // },
-    // {
-    //   slug: 'magnolia-foundation',
-    //   title: 'The Magnolia Foundation',
-    //   tagline: 'A multidisciplinary approach to teaching peace, mediation, and rehabilitation',
-    //   image: images[4]
-    // },
+    {
+      slug: 'magnolia-foundation',
+      brow: "Winner of the Kluz Prize for PeaceTech | 2022",
+      title: 'The Magnolia Foundation',
+      image: "/assets/images/winners/magnolia-foundation/magnolia-foundation-slider.jpg",
+      path: '/prizes/magnolia-foundation/'
+    }
+    
   ],
   activeWinner: {},
   activeImage: images[0]
