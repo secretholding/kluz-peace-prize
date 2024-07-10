@@ -19,7 +19,8 @@
     </div>
     <div class="slider__nav">
       <a v-for="i in slides.length" el="a" :href="`/#slide-${i}`" :index="i" @click="setActiveIndex(i)">
-        <span class="icon">{{ i == activeIndex ? 'radio_button_checked' : 'radio_button_unchecked' }}</span>
+        <span class="icon" :active="i == activeIndex ? true : false">{{ i == activeIndex ? 'radio_button_checked' :
+          'radio_button_unchecked' }}</span>
       </a>
     </div>
   </kpp-hero>
@@ -132,9 +133,9 @@ const slides = [
 <style lang="scss" scoped>
 .slider__nav {
   position: absolute;
-  left: 80%;
-  bottom: var(--s2);
-  right: var(--s2);
+  right: 0;
+  bottom: var(--s1);
+  right: var(--s1);
   z-index: 10;
   color: white;
   display: flex;
@@ -144,6 +145,8 @@ const slides = [
     all: unset;
     cursor: pointer;
   }
+
+  span[active=false] { opacity: .5; }
 }
 
 .slider__wrapper {

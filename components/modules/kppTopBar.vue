@@ -1,5 +1,6 @@
 <template>
-  <div class="kpp-top-bar" :color="color" :isHomepage="route.path === '/' ? true : false">
+  <div class="kpp-top-bar" :color="color">
+  <!-- <div class="kpp-top-bar" :color="color" :isHomepage="route.path === '/' ? true : false"> -->
 
     <NuxtLink to="/" >
       <h1 class="kpp-top-bar__logo">
