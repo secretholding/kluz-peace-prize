@@ -73,7 +73,7 @@ const props = defineProps({
     color: var(--primary-color);
   }
   .title {
-    font-size: 400%;
+    font-size: 330%;
     font-weight: 200;
     @media screen and (max-width: 768px) { font-size: 200%; }
     @media (max-aspect-ratio: 3/4) { font-size: 175%; }
