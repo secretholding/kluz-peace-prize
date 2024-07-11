@@ -233,5 +233,9 @@ const hasQuote = computed(() => {
   opacity: .4;
 }
 
-
+.winner-reel {
+  margin-top: var(--s2);
+  padding-inline: 0;
+  @media screen and (min-width: 768px) { justify-content: center; }
+}
 </style>
