@@ -2,41 +2,53 @@
   <div>
     <kpp-hero height="auto" color="primary">
       <center-l size="wide" class="width:100%">
-        <kpp-headers :content="headerContent" color="primary" /> 
+        <kpp-headers :content="headerContent" color="primary" />
       </center-l>
     </kpp-hero>
-    
-    <kpp-base-section>
-        <center-l size="wide">
-          <div class="has-sidebar">
-            <div class="description" v-if="winner.content_html">
-              <h2>Overview</h2>
-              <kpp-prose :html-content="winner.content_html" />
-            </div>
 
-            <aside class="winners__sidebar">
-              <h2 class="text-align:center">Winners</h2>
-              <div>
-                <kpp-person v-for="i in winner.people" :content="i" :base-path="base_path">
-                  <template v-slot:image>
-                    <img slot="image" :src="`${base_path}${i.image}`" alt="">
-                  </template> 
-                </kpp-person>
-                <p class="text-align:center margin-top:s2">
-                  <base-button size="l" color="primary" el="a" target="_blank" :href="winner.connect.url">{{ winner.connect.label }}</base-button>
-                </p>
-              </div>
-            </aside>
+    <kpp-base-section>
+      <center-l size="wide">
+        <div class="has-sidebar">
+          <div class="description" v-if="winner.content_html">
+            <h2>Overview</h2>
+            <kpp-prose :html-content="winner.content_html" />
           </div>
-        </center-l>
+
+          <aside class="winners__sidebar">
+            <h2 class="text-align:center">Winners</h2>
+            <div>
+              <kpp-person v-for="i in winner.people" :content="i" :base-path="base_path">
+                <template v-slot:image>
+                  <img slot="image" :src="`${base_path}${i.image}`" alt="">
+                </template>
+              </kpp-person>
+              <p class="text-align:center margin-top:s2">
+                <base-button size="l" color="primary" el="a" target="_blank" :href="winner.connect.url">{{
+                  winner.connect.label }}</base-button>
+              </p>
+            </div>
+          </aside>
+        </div>
+      </center-l>
     </kpp-base-section>
-    
+
     <kpp-base-section v-if="winner.youtube_video">
       <center-l size="wide" class="width:100%">
         <div class="frame">
-          <iframe width="560" height="315" :src="winner.youtube_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" :src="winner.youtube_video" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </center-l>
+    </kpp-base-section>
+
+    <kpp-base-section v-if="winner.images.slider">
+      <center-l size="wide" class="width:100%">
+        <h2 class="margin-bottom:s2">{{ winner.title }} in action</h2>
+      </center-l>
+      <reel-l class="winner-reel">
+        <kpp-slide v-for="i in winner.images.slider" :key="i" :content="i" :slug="winner.slug" />
+      </reel-l>
     </kpp-base-section>
 
     <kpp-base-section v-if="winner.images.ceremony">
@@ -52,7 +64,7 @@
       <center-l size="wide">
         <h2 visual="h1" v-if="winner.impact.description_html">Impact</h2>
         <kpp-prose class="impact__description" :html-content="winner.impact.description_html" />
-        
+
         <div v-if="winner.impact.metrics" class="metrics | margin-top:s2">
           <img :src="`${base_path}${winner.images.impact}`" alt="">
           <h3 visual="h2" class="text-align:center">Metrics</h3>
@@ -62,16 +74,17 @@
               <span class="metrics__label">{{ i.label }}</span>
             </li>
           </ul>
-          <p v-if="winner.impact.metrics_source" class="metrics_source">Source: <a :href="winner.impact.metrics_source.url" target="_blank">{{ winner.impact.metrics_source.label }}</a></p>
+          <p v-if="winner.impact.metrics_source" class="metrics_source">Source: <a
+              :href="winner.impact.metrics_source.url" target="_blank">{{ winner.impact.metrics_source.label }}</a></p>
           <p v-else class="metrics_source">Source: Provided in the interview above</p>
         </div>
       </center-l>
     </kpp-base-section>
-    
+
     <kpp-base-section v-if="hasQuote">
       <center-l size="wide">
         <div class="quote">
-          <img :src="winner.quote.text" :alt="winner.quote.cite">
+          <img :src="winner.quote.image" :alt="winner.quote.cite">
           <blockquote>
             <p>{{ winner.quote.text }}</p>
             <cite>{{ winner.quote.cite }}</cite>
@@ -95,8 +108,8 @@
       </pre>
       
     </center-l> -->
-      
-    
+
+
   </div>
 </template>
 
