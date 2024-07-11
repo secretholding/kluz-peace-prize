@@ -9,8 +9,7 @@
               <h4>{{ slide.brow }}</h4>
               <h2>{{ slide.title }}</h2>
               <div class="slide__action">
-                <kpp-button el="nuxt-link" :to="slide.path" size="l" icon-after="arrow_forward">{{ slide.action
-                  }}</kpp-button>
+                <nuxt-link class="button" data-size="l" icon-after="arrow_forward" :to="slide.path">{{ slide.action }}</nuxt-link>
               </div>
             </stack-l>
           </center-l>
