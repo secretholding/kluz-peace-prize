@@ -8,6 +8,7 @@
     :controls="isVideo === 'video'"
     :muted="isVideo === 'video'"
   >
+  
   </component>
 </template>
 
