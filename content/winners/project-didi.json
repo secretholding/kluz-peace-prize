@@ -8,16 +8,21 @@
   "year": 2023,
   "order": 2,
   "images": {
-    "logo": "project-didi-logo.webp",
+    "logo": "project-didi-logo.png",
     "hero": "project-didi-ceremony.jpg",
     "ceremony": "project-didi-ceremony.jpg",
-    "impact": "project-didi-impact.svg"
-
+    "impact": "project-didi-impact.svg",
+    "slider": [
+      "didi-in-action-8.jpg",
+      "didi-in-action-2.jpg",
+      "didi-in-action-1.png",
+      "didi-in-action-7.jpg"
+    ]
   },
   "quote": {
-    "text": "",
-    "cite": "",
-    "image": ""
+    "text": "Since the Kluz Prize for PeaceTech, I’ve been exposed to many other players within the PeaceTech world [...] that very much complement what it is we’re doing.",
+    "cite": "Shawn Guttman, Co-Founder and CEO, Project Didi",
+    "image": "/assets/images/winners/shawn-guttman.jpg"
   },
   "impact": {
     "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Our mission is to assist peacemakers to transform and resolve entrenched conflicts. Our tools are designed to do just that by accurately and quickly measuring the impact of actors within a given conflict. Once we can measure impact, we can also provide guidance to optimize and broaden the effect of actions on a given conflict. This will allow us to foster and generate the moments of ripeness needed to transform and resolve entrenched conflicts, such as the Israeli-Palestinian conflict or a deep-seated large-scale social conflict like racial or gender inequality. Peace is not a utopian ideal beyond reach. Peace is achieved through pragmatic actions informed by quality information and intelligence gathered in real-time. We are harnessing cutting-edge technology to help actors and interested parties achieve the impact they seek. In doing so, we are creating a new paradigm for peacebuilding that has the potential to alleviate suffering and improve safety and prosperity across the globe.</p>",

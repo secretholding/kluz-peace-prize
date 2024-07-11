@@ -11,7 +11,14 @@
     "logo": "palantir-logo.png",
     "hero": "palantir-foundry-hero.jpg",
     "ceremony": "palantir-foundry-ceremony.jpg",
-    "impact": "palantir-foundry-impact.svg"
+    "impact": "palantir-foundry-impact.svg",
+    "slider": [
+      "palantir-foundry-in-action-1.gif",
+      "palantir-foundry-in-action-2.gif",
+      "palantir-foundry-in-action-3.webp",
+      "palantir-foundry-in-action-4.gif",
+      "palantir-foundry-in-action-5.jpg"
+    ]
   },
   "quote": {
     "text": "",
