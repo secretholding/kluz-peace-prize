@@ -67,7 +67,7 @@ const props = defineProps({
     font-size: 150%;
     @media screen and (max-width: 768px) { font-size: 100%; }
     @media (max-aspect-ratio: 3/4) { font-size: 85%; }
-    line-height: 1;
+    line-height: 1.2;
     font-weight: 800;
     text-transform: uppercase;
     color: var(--primary-color);
