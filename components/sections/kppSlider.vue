@@ -83,7 +83,7 @@ const slides = [
   {
     brow: 'Unlocking the Power of PeaceTech',
     title: '2024 Application Deadline Extended',
-    image: 'logo',
+    image: "/assets/images/kluz-prize-slide.jpg",
     action: 'Apply now',
     path: '/application',
   },
@@ -173,17 +173,36 @@ const slides = [
   // --bg: url('/assets/images/winners/commit-global/commit-global-in-action-3.jpg');
   width: 100%;
   background-color: var(--primary-color);
+  // background: var(--bg);
   background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .9) 50%), var(--bg);
   background-blend-mode: multiply;
   background-position: center;
+  background-size: 100% cover;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: var(--s2) 0;
+  position: relative;
+
+  &:after {
+    --special-hsl: 223, 57%, 54%;
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(var(--special-hsl), 1);
+    z-index: 1;
+    mix-blend-mode: color;
+  }
 }
 
 .slide__content {
+  z-index: 2;
+
   h4 {
     font-weight: bold;
     text-transform: uppercase;
