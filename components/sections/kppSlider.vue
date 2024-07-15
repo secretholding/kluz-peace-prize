@@ -82,7 +82,7 @@ onBeforeUnmount(() => {
 const slides = [
   {
     brow: 'Unlocking the Power of PeaceTech',
-    title: '2024 Applications are Open',
+    title: '2024 Application Deadline Extended',
     image: 'logo',
     action: 'Apply now',
     path: '/application',
@@ -175,6 +175,7 @@ const slides = [
   background-color: var(--primary-color);
   background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .9) 50%), var(--bg);
   background-blend-mode: multiply;
+  background-position: center;
   height: 100%;
   display: flex;
   flex-direction: column;
