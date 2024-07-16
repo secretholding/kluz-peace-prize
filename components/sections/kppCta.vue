@@ -35,8 +35,8 @@ const props = defineProps({
       text: 'Applications for the 2024 Kluz Prize for PeaceTech are now closed. This year, the award ceremony will take place on September 20th in New York City.',
       extra: 'Sign up for the event today.',
       action: {
-        label: 'Sign Up',
-        url: '/event-signup'
+        label: 'Learn More',
+        url: '/events/2024'
       }
     }
   }
