@@ -29,10 +29,53 @@
 <script setup>
 const activeIndex = ref(1);
 
-const setActiveIndex = (index) => {
-  activeIndex.value = index;
-  triggerNavigation(index);
-};
+// Vamos precisar ligar o objeto Winner com o slide. 
+//const winners = await queryContent('winners').find();
+const headerContent = reactive({
+  winners: [
+    {
+      title: 'Unlocking the Power of PeaceTech',
+      tagline: 'Applications are Open | 2024',
+      image: 'logo',
+      // action: 'Apply now',
+      // path: '/application',
+    },
+    {
+      slug: 'commit-global',
+      title: 'Commit Global',
+      tagline: 'A first of its kind Humanitarian Digital Civic Infrastructure for Refugees',
+      image: images[0]
+    },
+    {
+      slug: 'human-rights-analysis-group',
+      title: 'Human Rights Data Analysis Group',
+      tagline: 'Using data science to track patterns of violence during armed conflict',
+      image: images[1]
+    },
+    {
+      slug: 'palantir-foundry',
+      title: 'Palantir Foundry',
+      tagline: 'A decentralised immigration scheme that helped ensure the safe matching and resettlement of Refugees',
+      image: images[2]
+    },
+    {
+      slug: 'project-didi',
+      title: 'Project Didi',
+      tagline: 'Operationalizing peacebuilding theory using artificial intelligence, machine learning, and big data',
+      image: images[3]
+    },
+    {
+      slug: 'magnolia-foundation',
+      title: 'The Magnolia Foundation',
+      tagline: 'A multidisciplinary approach to teaching peace, mediation, and rehabilitation',
+      image: images[4]
+    }
+  ],
+  activeWinner: {},
+  activeImage: images[0]
+});
+const position = ref(0)
+const imagePosition = ref(0)
 
 const triggerNavigation = (index) => {
   const slideElement = document.getElementById(`slide-${index}`);
