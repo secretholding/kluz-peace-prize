@@ -3,13 +3,14 @@
     <div class="slider" :activeIndex="activeIndex">
       <div class="slider__track">
         <div :id="`slide-${index+1}`" class="slide" v-for="(slide, index) in slides"
-          :style="`--bg: url('${slide.image}')`" :index="index+1">
+          :style="`--bg: url('${slide.image}'); --bg-mobile: url('${slide.image_mobile}')`" :index="index+1">
           <center-l size="wide" class="slide__content | width:100%">
             <stack-l>
               <h4>{{ slide.brow }}</h4>
               <h2>{{ slide.title }}</h2>
               <div class="slide__action">
-                <nuxt-link class="button" data-size="l" icon-after="arrow_forward" :to="slide.path">{{ slide.action }}</nuxt-link>
+                <nuxt-link class="button" data-size="l" icon-after="arrow_forward" :to="slide.path">{{ slide.action
+                  }}</nuxt-link>
               </div>
             </stack-l>
           </center-l>
@@ -81,8 +82,8 @@ onBeforeUnmount(() => {
 
 const slides = [
   {
-    brow: 'Unlocking the Power of PeaceTech',
-    title: '2024 Application Deadline Extended',
+    brow: 'Application Deadline Extended',
+    title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
     image: "/assets/images/kluz-prize-slide.jpg",
     action: 'Apply now',
     path: '/application',
@@ -104,12 +105,13 @@ const slides = [
     path: '/prizes/project-didi/'
   },
   {
-    slug: 'palantir-foundry',
+    slug: 'palantir-technologies',
     brow: "Big Tech Building Peace | 2023",
-    title: 'Palantir Foundry',
-    image: "/assets/images/winners/palantir-foundry/palantir-foundry-in-action-3.webp",
+    title: 'Palantir Technologies',
+    image: "/assets/images/winners/palantir-technologies/palantir-foundry-in-action-3.webp",
+    image_mobile: "/assets/images/winners/palantir-technologies/palantir-foundry-in-action-3-mobile.webp",
     action: "Learn More",
-    path: '/prizes/palantir-foundry/'
+    path: '/prizes/palantir-technologies/'
   },
   {
     slug: 'human-rights-analysis-group',
@@ -174,6 +176,12 @@ const slides = [
   width: 100%;
   background-color: var(--primary-color);
   // background: var(--bg);
+
+  @media screen and (max-width: 768px){
+    background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .9) 50%), var(--bg), var(--bg-mobile);
+    background-position: center;
+  }
+
   background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .9) 50%), var(--bg);
   background-blend-mode: multiply;
   background-position: center;
