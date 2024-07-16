@@ -30,12 +30,12 @@ const props = defineProps({
     type: Object,
     default: {
       brow: 'Kluz Prize for PeaceTech 2024',
-      title: 'Application Deadline Extended',
-      text: 'Apply to the 2024 Kluz Prize for PeaceTech and be recognized for your achievements and contributions to the evolving field of technologies for peace.',
-      extra: 'Applications are now due July 29th at 11:59pm ET.',
+      title: 'Applications Closed',
+      text: 'Applications for the 2024 Kluz Prize for PeaceTech are now closed. This year, the award ceremony will take place on September 20th in New York City.',
+      extra: 'Sign up for the event today.',
       action: {
-        label: 'Apply Now',
-        url: '/application'
+        label: 'Sign Up',
+        url: '/event-signup'
       }
     }
   }
