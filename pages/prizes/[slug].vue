@@ -42,14 +42,7 @@
       </center-l>
     </kpp-base-section>
 
-    <kpp-base-section v-if="winner.images.slider">
-      <center-l size="wide" class="width:100%">
-        <h2 class="margin-bottom:s2">{{ winner.title }} in action</h2>
-      </center-l>
-      <reel-l class="winner-reel">
-        <kpp-slide v-for="i in winner.images.slider" :key="i" :content="i" :slug="winner.slug" />
-      </reel-l>
-    </kpp-base-section>
+
 
     <kpp-base-section v-if="winner.images.ceremony">
       <center-l size="wide">
@@ -81,16 +74,31 @@
       </center-l>
     </kpp-base-section>
 
+
+
     <kpp-base-section v-if="hasQuote">
       <center-l size="wide">
         <div class="quote">
-          <img :src="winner.quote.image" :alt="winner.quote.cite">
+          <!-- <img :src="winner.quote.image" :alt="winner.quote.cite"> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" class="quote__icon">
+            <path
+              d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
+          </svg>
           <blockquote>
-            <p>{{ winner.quote.text }}</p>
+            <p>"{{ winner.quote.text }}"</p>
             <cite>{{ winner.quote.cite }}</cite>
           </blockquote>
         </div>
       </center-l>
+    </kpp-base-section>
+
+    <kpp-base-section v-if="winner.images.slider">
+      <center-l size="wide" class="width:100%">
+        <h2 class="margin-bottom:s2">{{ winner.title }} in action</h2>
+      </center-l>
+      <reel-l class="winner-reel">
+        <kpp-slide v-for="i in winner.images.slider" :key="i" :content="i" :slug="winner.slug" />
+      </reel-l>
     </kpp-base-section>
 
     <!-- <kpp-base-section>
@@ -211,13 +219,15 @@ const hasQuote = computed(() => {
   gap: var(--s2);
   margin-block: var(--s2);
 
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-inline: auto;
-    margin-block: var(--s0);
-  }
+  &__icon * { fill: var(--primary-color); }
+
+  // img {
+  //   width: 200px;
+  //   height: 200px;
+  //   border-radius: 50%;
+  //   margin-inline: auto;
+  //   margin-block: var(--s0);
+  // }
 
   blockquote {
     border-left: 4px solid var(--accent-color);
