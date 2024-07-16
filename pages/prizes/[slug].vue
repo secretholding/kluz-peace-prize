@@ -95,10 +95,11 @@
     <kpp-base-section v-if="winner.images.slider">
       <center-l size="wide" class="width:100%">
         <h2 class="margin-bottom:s2">{{ winner.title }} in action</h2>
+        <div class="winner-reel | grid">
+          <kpp-slide v-for="i in winner.images.slider" :key="i" :content="i" :slug="winner.slug" />
+        </div>
       </center-l>
-      <reel-l class="winner-reel">
-        <kpp-slide v-for="i in winner.images.slider" :key="i" :content="i" :slug="winner.slug" />
-      </reel-l>
+
     </kpp-base-section>
 
     <!-- <kpp-base-section>
@@ -259,6 +260,8 @@ const hasQuote = computed(() => {
 .winner-reel {
   margin-top: var(--s2);
   padding-inline: 0;
-  @media screen and (min-width: 768px) { justify-content: center; }
+  gap: var(--s0);
+  --itemWidth: 400px;
+  // @media screen and (min-width: 768px) { justify-content: center; }
 }
 </style>
