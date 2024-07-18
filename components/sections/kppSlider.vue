@@ -117,7 +117,7 @@ const slides = [
     slug: 'human-rights-analysis-group',
     brow: "Nonprofit Organization Advancing Peace | 2023",
     title: 'Human Rights Data Analysis Group',
-    image: "",
+    image: "/assets/images/winners/human-rights-analysis-group/hdrag-slider.jpg", 
     action: "Learn More",
     path: '/prizes/human-rights-analysis-group/'
   },

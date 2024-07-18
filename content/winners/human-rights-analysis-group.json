@@ -9,9 +9,10 @@
   "order": 4,
   "images": {
     "logo": "human-rights-analysis-group-logo.png",
-    "hero": "",
+    "hero": "hdrag-slider.jpg",
     "ceremony": "",
-    "impact": "human-rights-analysis-group-impact.svg"
+    "impact": "human-rights-analysis-group-impact.svg",
+    "slider": ["hdrag-01.jpg", "hdrag-02.jpg", "hdrag-03.jpg"]
   },
   "quote": {
     "text": "",
