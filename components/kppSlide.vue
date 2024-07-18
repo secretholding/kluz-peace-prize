@@ -61,7 +61,7 @@ const closeLightbox = () => {
   }
 
   &:hover {
-    scale: 1.05;
+    box-shadow: 0 0 16px hsla(var(--base-hsl), .3);
   }
 }
 
