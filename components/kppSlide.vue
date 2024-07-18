@@ -49,7 +49,7 @@ const closeLightbox = () => {
 .winner-image {
   // height: 400px;
   cursor: pointer;
-  background-color: red;
+  background-color: var(--primary-color);
   aspect-ratio: 16/9;
   box-shadow: 4px 4px 8px hsla(var(--base-hsl), .1);
   transition: all 0.3s ease-in-out;
