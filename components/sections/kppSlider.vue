@@ -55,7 +55,7 @@ onMounted(() => {
     intervalId = setInterval(() => {
       activeIndex.value = activeIndex.value < slides.length ? activeIndex.value + 1 : 1;
       triggerNavigation(activeIndex.value);
-    }, 3000);
+    }, 4500);
   };
 
   const stopAnimation = () => {
