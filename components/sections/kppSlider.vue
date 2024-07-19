@@ -108,8 +108,7 @@ const slides = [
     slug: 'palantir-technologies',
     brow: "Big Tech Building Peace | 2023",
     title: 'Palantir Technologies',
-    image: "/assets/images/winners/palantir-technologies/palantir-foundry-in-action-3.webp",
-    image_mobile: "/assets/images/winners/palantir-technologies/palantir-foundry-in-action-3-mobile.webp",
+    image: "/assets/images/winners/palantir-technologies/palantir-foundry-slider.jpg",
     action: "Learn More",
     path: '/prizes/palantir-technologies/'
   },
