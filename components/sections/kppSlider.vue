@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="slider__nav">
-      <a v-for="i in slides.length" el="a" :href="`/#slide-${i}`" :index="i" @click="setActiveIndex(i)">
+      <a v-for="i in slides.length" el="a" :index="i" @click="setActiveIndex(i)">
         <span class="icon" :active="i == activeIndex ? true : false">{{ i == activeIndex ? 'radio_button_checked' :
           'radio_button_unchecked' }}</span>
       </a>
