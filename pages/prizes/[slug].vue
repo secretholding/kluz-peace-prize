@@ -150,7 +150,7 @@ const hasImpact = computed(() => {
 });
 
 const hasQuote = computed(() => {
-  return winner.quote.text && winner.quote.cite && winner.quote.image ? true : false;
+  return winner.quote.text && winner.quote.cite ? true : false;
 });
 
 
