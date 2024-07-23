@@ -84,28 +84,7 @@ const slides = [
   {
     brow: 'Application Deadline Extended',
     title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
-    image: "/assets/images/kluz-slide-01.jpg",
-    action: 'Apply now',
-    path: '/application',
-  },
-  {
-    brow: 'Application Deadline Extended',
-    title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
-    image: "/assets/images/kluz-slide-02.jpg",
-    action: 'Apply now',
-    path: '/application',
-  },
-  {
-    brow: 'Application Deadline Extended',
-    title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
-    image: "/assets/images/kluz-slide-03.jpg",
-    action: 'Apply now',
-    path: '/application',
-  },
-  {
-    brow: 'Application Deadline Extended',
-    title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
-    image: "/assets/images/kluz-slide-04.jpg",
+    image: "/assets/images/kluz-prize-slide.jpg",
     action: 'Apply now',
     path: '/application',
   },
@@ -191,7 +170,7 @@ const slides = [
 
 .slider__track {
   display: flex;
-  width: calc(100% * 9);
+  width: calc(100% * 6);
   height: 100%;
   background-color: var(--primary-color);
 }
