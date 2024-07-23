@@ -12,12 +12,19 @@
     "logo": "magnolia-foundation-logo.svg",
     "hero": "",
     "ceremony": "",
-    "impact": ""
+    "impact": "",
+    "slider": [
+      "magnolia-foundation-in-action-01.jpg",
+      "magnolia-foundation-in-action-02.jpg",
+      "magnolia-foundation-in-action-03.jpg",
+      "magnolia-foundation-in-action-04.jpg",
+      "magnolia-foundation-in-action-05.jpg"
+    ]
   },
-  "youtube_video": "https://www.youtube.com/embed/lcZj3zQDxhk?si=cDHyMqN0wx-qQhiL", 
+  "youtube_video": "https://www.youtube.com/embed/lcZj3zQDxhk?si=cDHyMqN0wx-qQhiL",
   "quote": {
-    "text": "",
-    "cite": "",
+    "text": "The Kluz Prize for PeaceTech helped us redesign our business model, expand our online learning events, and build a community around technology and peace.",
+    "cite": "Ana Carolina González Peña, Founder and CEO, Magnolia Foundation",
     "image": ""
   },
   "impact": {

@@ -32,9 +32,9 @@ useHead({
       blog: blogData[0]
   });
 
-  const bgUrl = computed(() => {
-    return data.blog && data.blog.image ? data.blog.image : false;
-  })
+  // const bgUrl = computed(() => {
+  //   return data.blog && data.blog.image ? data.blog.image : false;
+  // })
 
 </script>
 

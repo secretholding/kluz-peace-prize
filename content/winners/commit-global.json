@@ -10,12 +10,18 @@
   "images": {
     "logo": "commit-global-logo.png",
     "hero": "commit-global-1.jpg",
-    "ceremony": "commit-global-1.jpg"
+    "ceremony": "commit-global-1.jpg",
+    "slider": [
+      "commit-global-in-action-4.jpg",
+      "commit-global-in-action-5.jpg",
+      "commit-global-in-action-2.jpg",
+      "commit-global-in-action-3.jpg"
+    ]
   },
   "quote": {
-    "text": "",
-    "cite": "",
-    "image": ""
+    "text": "The Prize helped us a lot with gaining momentum with our vision of a shared humanitarian digital infrastructure at the global level. Right now, in fact, we’re operating and deploying this infrastructure in Lebanon and [...] Armenia, for example, in support of refugees.",
+    "cite": "Bogdan Ivanel, Founder & Chairperson, Commit Global",
+    "image": "/assets/images/winners/bogdan-ivanel.png"
   },
   "impact": {
     "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Access to information and resources is critical in any crisis. Making sure that both are available as quickly as possible in case of an emergency can save lives. Technology can help scale almost instantaneously every effort of intervention if deployed correctly. Having a shared common infrastructure among actors working in the field helps with reducing duplication of efforts, effective distribution of resources, accessing verified and trustworthy data, managing activities and supporting large numbers of beneficiaries simultaneously. Last but not least, it also means safety and standards. In such situations making sure you have the right technology at hand is essential. Our ecosystem is built open-source, making sure that all of the security, accessibility and inclusivity standards are followed in order to service every person as best as possible and reducing vulnerability to the best of its capacity.</p>",

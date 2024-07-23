@@ -32,6 +32,7 @@
 .prose :deep(a) {
   color: var(--primary-color);
   text-decoration: none;
+  word-break: break-word;
 }
 
 .prose:deep(a:hover) {

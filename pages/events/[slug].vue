@@ -12,7 +12,7 @@
   </kpp-base-section> -->
 
   <kpp-winners-section :content="event.winners" />
-  
+
   <!-- <kpp-base-section>
     <center-l size="wide">
       <div class="panel-grid" >
@@ -30,35 +30,28 @@
     <center-l size="wide">
       <h2 class="section-title">Event</h2>
       <stack-l v-if="event.ceremony_video">
-        <div  class="ceremony-video | frame">
-          <iframe width="560" height="315" 
-            :src="event.ceremony_video" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen></iframe>
+        <div class="ceremony-video | frame">
+          <iframe width="560" height="315" :src="event.ceremony_video" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </stack-l>
-      
-      <reel-l v-if="event.images" class="ceremony-reel" itemWidth="90%" >
-        <figure class="ceremony-image | frame" v-for="i in event.images" :key="i">
-          <img :src="i" alt="">
-        </figure>
-      </reel-l>
     </center-l>
+    <reel-l v-if="event.images" class="ceremony-reel">
+      <img class="ceremony-image" v-for="i in event.images" :key="i" :src="i" alt="" />
+    </reel-l>
   </kpp-base-section>
 
-  <kpp-base-section class="jury-section" >
+  <kpp-base-section class="jury-section">
     <center-l size="wide">
       <h2 class="section-title">Selection Committee</h2>
       <div class="grid">
-        <kpp-person v-for="i in event.jury" :content="i" />         
+        <kpp-person v-for="i in event.jury" :content="i" />
       </div>
     </center-l>
   </kpp-base-section>
 
-    <!-- <pre>{{ event }}</pre> -->
+  <!-- <pre>{{ event }}</pre> -->
 </template>
 
 <script setup>
@@ -165,6 +158,7 @@ const headerContent = {
 }
 
 .ceremony-image {
+  max-height: 400px;
   --n: 9;
   --d: 16;
 }

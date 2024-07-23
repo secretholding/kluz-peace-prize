@@ -17,10 +17,6 @@
         v-if="content.path" 
       />
     </slot>
-    
-
-    
-    
   </hgroup>
 </template>
 
@@ -81,7 +77,7 @@ const computedDate = computed(() => {
 
 .title {
   font-weight: 200;  
-  line-height: 1.15;
+  line-height: 1.2;
   @media (max-width: 768px) {
     line-height: 1.3;
    }
@@ -106,8 +102,8 @@ const computedDate = computed(() => {
 }
 
 .brow    { font-size: .75rem; }
-.title   { font-size: 1.3rem; }
-.tagline { font-size: .9rem;   }
+.title   { font-size: 1.6rem; }
+.tagline { font-size: .9rem;  }
 .authors { font-size: .85rem; }
 .date    { font-size: .75rem; }
 

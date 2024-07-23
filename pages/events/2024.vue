@@ -1,13 +1,54 @@
 <template>
-  <kpp-hero height="auto" title="Kluz Prize for PeaceTech | 2024" color="primary"/>
-  <kpp-cta color="primary" :content="ctaContent"/>
+  <kpp-hero height="min(40svh, 900px)" title="" color="primary">
+    <center-l size="wide" class="kpp-hero__content">
+      <h4 class="kpp-hero__brow">New York City</h4>
+      <h2 class="margin-bottom:s2">2024 Kluz Prize for PeaceTech Event</h2>
+    </center-l>
+  </kpp-hero>
+  <!-- <kpp-cta color="primary" :content="ctaContent" /> -->
+
+
+
+  <kpp-base-section color="white">
+    <center-l class="padding-bottom:s2" size="wide">
+      <div class="columns">
+        <kpp-prose class="custom">
+          <p>The Kluz Prize for PeaceTech is an annual initiative designed to celebrate, recognize, and propel the
+            innovative use of emerging technologies to foster peace, reduce conflict, and safeguard human dignity and
+            universal human rights across the globe.</p>
+
+          <p>The 2024 Kluz Prize for PeaceTech award ceremony will take place on Friday, September 20<sup>th</sup> in
+            New York
+            City. This event will take place as part of the broader 79<sup>th</sup> UN General Assembly events.</p>
+
+          <p>The event seeks to bring together global leaders, policymakers, entrepreneurs, engineers, programmers,
+            scientists, Big-Tech, startups, accelerators, and venture capitalists, as well as scholars and public
+            officials who are committed to using technology to create a peaceful world.</p>
+
+          <p>The event will include presentations from The Kluz Prize for PeaceTech winners and discussions on the
+            critical role of technology in peacebuilding efforts around the world. The ceremony will be followed by a
+            cocktail reception where you will have the chance to meet the award winner, as well as other leaders in the
+            ecosystem.</p>
+
+          <p>Speakers will be announced in September 2024.</p>
+
+          <p><strong>If you are interested in attending the award ceremony, please contact the organizers via email at<a href="mailto:info@kluzprize.org">info@kluzprize.org</a> to learn more.</strong></p>
+        </kpp-prose>
+      </div>
+
+    </center-l>
+  </kpp-base-section>
+
   <kpp-base-section color="tertiary">
     <center-l class="padding-bottom:s2" size="wide">
       <kpp-prose class="custom">
-        <p>The Kluz Prize for PeaceTech presents an exceptional opportunity to become recognized for your contribution to the evolving field of technologies for peace. We are seeking distinguished and accomplished PeaceTech initiatives and innovative solutions that leverage technology, including but not limited, to:</p>
+        <h3 class="color:primary">About the Kluz Prize for PeaceTech</h3>
+        <p>The Kluz Prize for PeaceTech presents an exceptional opportunity to become recognized for your contribution
+          to the evolving field of technologies for peace. We are seeking distinguished and accomplished PeaceTech
+          initiatives and innovative solutions that leverage technology, including but not limited, to:</p>
       </kpp-prose>
     </center-l>
-    <center-l size="wide">      
+    <center-l size="wide">
       <div class="split-panel">
         <div class="panel">
           <kpp-prose>
@@ -16,7 +57,8 @@
               <li>Protecting human dignity and universal human rights written in universal moral law;</li>
               <li>Preventing military conflicts within and between nations;</li>
               <li>Facilitating dialogue between conflicting parties;</li>
-              <li>Addressing conflict, violence and social issues across local, national and international contexts;</li>
+              <li>Addressing conflict, violence and social issues across local, national and international contexts;
+              </li>
             </ul>
           </kpp-prose>
         </div>
@@ -27,22 +69,23 @@
               <li>Mobilizing disaster relief efforts more rapidly;</li>
               <li>Providing humanitarian aid to solve welfare conflicts;</li>
               <li>Monitoring human rights violations and peacekeeping efforts; and</li>
-              <li>Solving the most basic human problems and needs such as poverty, access to water, food, healthcare, and connectivity.</li>
+              <li>Solving the most basic human problems and needs such as poverty, access to water, food, healthcare,
+                and connectivity.</li>
             </ul>
           </kpp-prose>
         </div>
       </div>
-      </center-l>
-    </kpp-base-section>
+    </center-l>
+  </kpp-base-section>
 
-    <kpp-base-section class="jury-section">
-      <center-l size="wide">
-        <h2 class="jury-section__title">Selection Committee</h2>
-        <div class="grid">
-          <kpp-person v-for="i in jury" :content="i" />         
-        </div>
-      </center-l>
-    </kpp-base-section>
+  <kpp-base-section class="jury-section">
+    <center-l size="wide">
+      <h2 class="jury-section__title">Selection Committee</h2>
+      <div class="grid">
+        <kpp-person v-for="i in jury" :content="i" />
+      </div>
+    </center-l>
+  </kpp-base-section>
 </template>
 
 <script setup>
@@ -141,7 +184,23 @@ const jury = [
 
 <style lang="scss" scoped>
 .custom {
-  @media screen and (min-width: 768px) { max-width: 80ch; }
+  a { text-decoration: underline; }
+  sup { font-size: 0.75em; }
+}
+
+.columns {
+  display: flex;
+  @media screen and (min-width: 768px) { gap: var(--s2); }
+  @media screen and (max-width: 768px) { flex-direction: column; }
+
+  aside {
+    width: 100%;
+    box-shadow: 4px 4px 8px hsla(var(--base-hsl), 0.2);
+
+    @media screen and (max-width: 768px) { height: 350px; }
+    @media screen and (min-width: 768px) { max-width: 350px; }
+    
+  }
 }
 
 .callout {
@@ -178,4 +237,5 @@ const jury = [
     @media (max-width: 768px) { font-size: 300%; }
   }
 }
+
 </style>

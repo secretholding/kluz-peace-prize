@@ -1,0 +1,60 @@
+{
+  "prize": "Big Tech Building Peace",
+  "title": "Palantir Technologies",
+  "slug": "palantir-technologies",
+  "project_url": "https://www.palantir.com/uk/government/#homes-for-ukraine",
+  "applicant": "Ishrq Irteza",
+  "country": "United Kingdom",
+  "year": 2023,
+  "order": 3,
+  "images": {
+    "logo": "palantir-logo.png",
+    "hero": "palantir-foundry-slider.jpg",
+    "ceremony": "palantir-foundry-ceremony.jpg",
+    "impact": "palantir-foundry-impact.svg",
+    "slider": [
+      "palantir-foundry-in-action-1.gif",
+      "palantir-foundry-in-action-2.gif",
+      "palantir-foundry-in-action-3.webp",
+      "palantir-foundry-in-action-4.gif",
+      "palantir-foundry-in-action-5.jpg"
+    ]
+  },
+  "quote": {
+    "text": "",
+    "cite": "",
+    "image": ""
+  },
+  "impact": {
+    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Foundry has helped the UK government resettle over 130,000 Ukraine refugees in just over a year. The software is used by over 3,000 caseworkers to manage the complex operations behind a novel refugee resettlement program.</p><p>With cross-government collaboration of this size, scale and sensitivity, data security and governance is of paramount importance. With the right technology, there need not be a tradeoff between security and collaboration, or force policymakers to compromise on doing the right thing.</p><p>It reduces the risk of homelessness for refugees by providing tools to match housing needs to refugees, allocating over 600,000 available bed spaces to help home those displaced.</p><p>The platform has reduced the risk of unsuitable hosting situations using responsible automation and enabling a collaborative model of safeguarding. Over 400,000 safeguarding checks have been recorded on the platform - ensuring that the speed of resettlement does not compromise the security of guests or hosts.</p>",
+    "image": "",
+    "metrics": [
+      {
+        "label": "Users across local and central government",
+        "value": "3,000+"
+      },
+      {
+        "label": "Ukraine refugees assisted",
+        "value": "130,000+"
+      },
+      {
+        "label": "Safeguarding checks on the platform",
+        "value": "400,000+"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Ishrq Irteza",
+      "title": "",
+      "bio": "",
+      "image": "ishrq-irteza.jpg"
+    }
+  ],
+  "connect": {
+    "message": "Contact Message",
+    "label": "Visit website",
+    "url": "https://www.palantir.com/uk/government/#homes-for-ukraine"
+  },
+  "content_html": "<p>An estimated 12 million people have fled their homes since Russia’s brutal invasion of Ukraine began, according to the United Nations — resulting in one of the largest humanitarian catastrophes since the Second World War.</p><p>With countries in Europe and beyond stepping up to come to the assistance of Ukraine and those displaced, the UK government launched the Homes for Ukraine (HFU) scheme, built on Palantir’s Foundry software. This is a novel decentralised immigration scheme with the aim of quickly providing safe passage and resettlement to refugees.</p><p>In just over a year, it has helped ensure the safe matching and resettlement of over 130,000 Ukraine refugees in the UK to date. Palantir’s Foundry software is the operational platform for the scheme. Through unprecedented cross-governmental collaboration enabled by the software, more than 3,000 users across local and central government use the platform to manage the operations of the resettlement scheme end-to-end, drastically speeding up the time taken to get refugees safely accommodated and resettled into the UK.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>Enabled by cutting edge technology, Foundry has helped policymakers to boldly rethink traditional models of refugee resettlement.</p><p>Homes for Ukraine, for the first time, offers the public a way to directly express support for refugees by offering their homes. When the program went live in March 2022, the public responded overwhelmingly with over 120,000+ offers of accommodation within 24 hours.</p><p>By enabling the decentralisation of the resettlement process across local (300+ council sites) and central government, it upscaled the ability of government to manage distributed community resettlement at scale and speed, without compromise to security. Since March 2022, 130,000 Ukraine refugees found safety in the UK. The previous largest resettlement scheme brought in 20,000 people over 5 years.</p><p>Homes for Ukraine is testament to what’s possible when policy ideas aren't inhibited by technical limitations - when political and public will come together to enact policies that change lives.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>The decentralised refugee resettlement model, enabled in the UK by Palantir Foundry, provides a distinct alternative to centralised resettlement methods. Uninhibited by technology, governments can ensure that the collective will of their citizens to help those fleeing humanitarian disasters, can be reflected in bold policy proposals.</p><p>Though we hope there is no need for programs like Homes for Ukraine in future, we hope that the lessons from this programme enable governments to design bold policies to quickly and safely help the most amount of people.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>With this award, we hope to bring light to how innovative technology may enable more ambitious policy ideas for refugee resettlement, a problem faced throughout the world. We hope that it may highlight the value of decentralised refugee resettlement projects to other governments facing similar issues.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>Only collaboration can resolve the operational challenge presented by a decentralised refugee resettlement program.</p><p>Across multiple systems and sites lie multiple thousands of applications and offers of accommodation.</p><p>On Foundry, all users are working from the same view of the data, and decisions are implicitly shared across relevant actors. For example, when a caseworker flags a concern, they know that decision makers further down the line will be alerted in real-time.</p><p>Without this collaboration, it is not possible for local governments to know who may come to their area and when, or to perform necessary safeguarding checks. For the central government, without local context, it is not possible to understand the suitability of hosting arrangements.</p><p>Only together can both gain a clear picture of what is really happening on the ground.</p><p>Heightened security from this technology has enabled further bold policies, such as the resettlement of unaccompanied children.</p>"
+}

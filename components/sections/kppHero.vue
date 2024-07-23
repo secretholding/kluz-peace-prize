@@ -71,6 +71,13 @@ const hasBackground = computed(() => {
     
     font-weight: 100;
   }
+
+  .kpp-hero__brow {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+
+
 }
 
 // .kpp-hero:not[collapse] {
@@ -137,11 +144,10 @@ const hasBackground = computed(() => {
   font-weight: 400;
   line-height: 1.2;
   color: var(--primary-color);
-
 }
 
-// :deep(.brow) { color: var(--primary-color); }
-// :deep(.tagline) { color: var(--base-color); }
+:deep(.brow) { color: var(--primary-color); }
+:deep(.tagline) { color: var(--base-color); }
 
 .kpp-hero[color="white"] h2 { color: var(--white-color); }
 .kpp-hero[color="primary"] h2 { color: var(--primary-color); }
@@ -150,5 +156,14 @@ const hasBackground = computed(() => {
 .kpp-hero[color="accent"] h2 { color: var(--accent-color); }
 .kpp-hero[color="base"] h2 { color: var(--base-color); }
 
+:deep(.kpp-hero__content) {
+  z-index: 10;
+  width: 100%;
+}
 
+:deep(.kpp-hero__brow) {
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
 </style>

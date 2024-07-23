@@ -9,13 +9,14 @@
   "order": 4,
   "images": {
     "logo": "human-rights-analysis-group-logo.png",
-    "hero": "",
+    "hero": "hdrag-slider.jpg",
     "ceremony": "",
-    "impact": "human-rights-analysis-group-impact.svg"
+    "impact": "human-rights-analysis-group-impact.svg",
+    "slider": ["hdrag-01.jpg", "hdrag-02.jpg", "hdrag-03.jpg"]
   },
   "quote": {
-    "text": "",
-    "cite": "",
+    "text": "The Prize has supported us in our mission to collaborate closely with people and organizations that want to learn more about how to use the power of statistical tools to account for the violence in their communities. Data-driven advocacy is a meaningful way to acknowledge victims and their families, and to help nations reckon with their painful past, both of which are important goals of the work we do with the Colombian Truth Commission and the Special Jurisdiction for Peace.",
+    "cite": "Megan Price, Executive Director of HRDAG",
     "image": ""
   },
   "impact": {

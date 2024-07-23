@@ -1,281 +1,221 @@
 <template>
-  <kpp-hero color="white" height="50svh" class="hero__slider">
-    <div class="slider">
-      <div class="slider__background" :style="`background-image: url('${headerContent.activeWinner.image}');`"></div>
-      <div class="slide">
-        <center-l size="wide" class="slide__content | width:100%">
-          <kluz-logo v-if="headerContent.activeWinner.image == 'logo'" color="white" maxWidth="220px" class="logo-hero"/>
-          <div class="width:100%">
-            <kpp-headers :content="headerContent.activeWinner" color="white" class="hero__headers" hide-tagline >
-              <template #action>
-                <kpp-button
-                  class="margin-top:s1"
-                  visual="unstyled"
-                  icon-after="arrow_forward"
-                  size="xxl"
-                  color="white"
-                  el="a" 
-                  label="Apply Now" 
-                  href="/application" 
-                />
-                <h4 visual="h5" class="tagline | color:white">Applications 2024 are open</h4>
-              </template>
-            </kpp-headers>
-            
-          </div>
-          
-        </center-l>
-        <div class="slider-nav">
-          <button 
-            @click="position = index" 
-            class="slider-nav__trigger" 
-            :class="{'slider-nav__trigger--active': position == index}" 
-            v-for="(w, index) in headerContent.winners" 
-            v-bind:key="w.slug"
-          ></button>
+  <kpp-hero color="white" height="auto" class="slider__wrapper">
+    <div class="slider" :activeIndex="activeIndex">
+      <div class="slider__track">
+        <div :id="`slide-${index+1}`" class="slide" v-for="(slide, index) in slides"
+          :style="`--bg: url('${slide.image}'); --bg-mobile: url('${slide.image_mobile}')`" :index="index+1">
+          <center-l size="wide" class="slide__content | width:100%">
+            <stack-l>
+              <h4>{{ slide.brow }}</h4>
+              <h2>{{ slide.title }}</h2>
+              <div class="slide__action">
+                <nuxt-link class="button" data-size="l" icon-after="arrow_forward" :to="slide.path">{{ slide.action
+                  }}</nuxt-link>
+              </div>
+            </stack-l>
+          </center-l>
         </div>
       </div>
+    </div>
+    <div class="slider__nav">
+      <a v-for="i in slides.length" el="a" :index="i" @click="setActiveIndex(i)">
+        <span class="icon" :active="i == activeIndex ? true : false">{{ i == activeIndex ? 'radio_button_checked' :
+          'radio_button_unchecked' }}</span>
+      </a>
     </div>
   </kpp-hero>
 </template>
 
 <script setup>
-import { reactive, ref, watch, onMounted, onUnmounted } from 'vue'
-const route = useRoute()
-const images =  [
-  '/assets/images/slides/slider-atlas.webp',
-  '/assets/images/slides/slider-drone.webp',
-  '/assets/images/slides/slider-spacex.webp',
-  '/assets/images/slides/slider-starlink.webp',
-  '/assets/images/slides/slider-drone.webp'
-]
+const activeIndex = ref(1);
 
-// Vamos precisar ligar o objeto Winner com o slide. 
-//const winners = await queryContent('winners').find();
-const headerContent = reactive({
-  winners: [
-    {
-      title: 'Unlocking the Power of PeaceTech',
-      tagline: 'Applications are Open | 2024',
-      image: 'logo',
-      action: 'Apply now',
-      path: '/application',
-    },
-    // {
-    //   slug: 'commit-global',
-    //   title: 'Commit Global',
-    //   tagline: 'A first of its kind Humanitarian Digital Civic Infrastructure for Refugees',
-    //   image: images[0]
-    // },
-    // {
-    //   slug: 'human-rights-analysis-group',
-    //   title: 'Human Rights Data Analysis Group',
-    //   tagline: 'Using data science to track patterns of violence during armed conflict',
-    //   image: images[1]
-    // },
-    // {
-    //   slug: 'palantir-foundry',
-    //   title: 'Palantir Foundry',
-    //   tagline: 'A decentralised immigration scheme that helped ensure the safe matching and resettlement of Refugees',
-    //   image: images[2]
-    // },
-    // {
-    //   slug: 'project-didi',
-    //   title: 'Project Didi',
-    //   tagline: 'Operationalizing peacebuilding theory using artificial intelligence, machine learning, and big data',
-    //   image: images[3]
-    // },
-    // {
-    //   slug: 'magnolia-foundation',
-    //   title: 'The Magnolia Foundation',
-    //   tagline: 'A multidisciplinary approach to teaching peace, mediation, and rehabilitation',
-    //   image: images[4]
-    // },
-  ],
-  activeWinner: {},
-  activeImage: images[0]
-});
-const position = ref(0)
-const imagePosition = ref(0)
+const setActiveIndex = (index) => {
+  activeIndex.value = index;
+  triggerNavigation(index);
+};
 
-/*winners.forEach((w, index) => {
-  const winner = {
-    slug: w.slug,
-    brow: `Kluz Prize for PeaceTech | ${w.year}`,
-    title: w.title,
-    tagline: w.quote.text,
-    date: w.quote.cite,
-    image: images[index]
+const triggerNavigation = (index) => {
+  const slideElement = document.getElementById(`slide-${index}`);
+  if (slideElement) {
+    slideElement.scrollIntoView({ behavior: 'smooth' });
   }
-  headerContent.winners.push(winner)
-});*/
-
-headerContent.activeWinner = headerContent.winners[0];
-
-
-/*watch(position, (newValue, oldValue) => {
-  const slider = document.querySelector('.slider');
-  const content = document.querySelector('.slide__content');
-  content.classList.add('slide__content--left');
-  slider.classList.add('slider--transitioning');
-  window.setTimeout(() => {
-    headerContent.activeWinner = headerContent.winners[newValue]
-    content.classList.remove('slide__content--left');
-    content.classList.add('slide__content--right');
-  }, 200);
-  window.setTimeout(() => {
-    content.classList.remove('slide__content--right');
-  }, 400);
-  window.setTimeout(() => {
-    slider.classList.remove('slider--transitioning');
-  }, 800);
-});*/
-
-watch(position, (newValue, oldValue) => {
-  const slider = document.querySelector('.slider');
-  slider.classList.add('slider--transitioning');
-  window.setTimeout(() => {
-    headerContent.activeWinner = headerContent.winners[newValue]
-  }, 500);
-  window.setTimeout(() => {
-    slider.classList.remove('slider--transitioning');
-  }, 500);
-});
-
-let sliderTimer = null;
-onMounted(() => {
-  sliderTimer = setInterval(() => {
-    // This controls the time interval for each slide
-    position.value = position.value >= (headerContent.winners.length - 1) ? 0 : position.value + 1;
-  }, 8000);
-});
-
-onUnmounted(() => {
-  clearInterval(sliderTimer);
-});
-
-</script>
-
-<style lang="scss" scoped>
-.slider {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 1;
-  transition: opacity .5s ease-in-out;
-  overflow: hidden;
   
-}
+  // Check if the URL contains /#slide-N and clear it if it does
+  const url = new URL(window.location);
+  if (url.hash.startsWith('#slide-')) {
+    url.hash = '';
+    history.replaceState(null, '', url.toString());
+  }
+};
 
-.hero__slider {
-  // temporary. Client didn't understand the white transition. 
-  background-color: var(--primary-color);
-  min-height: 500px;
-}
+let intervalId;
 
-  .slider--transitioning {
-    opacity: 0;
+onMounted(() => {
+  const startAnimation = () => {
+    intervalId = setInterval(() => {
+      activeIndex.value = activeIndex.value < slides.length ? activeIndex.value + 1 : 1;
+      triggerNavigation(activeIndex.value);
+    }, 4500);
+  };
+
+  const stopAnimation = () => {
+    clearInterval(intervalId);
+  };
+
+  startAnimation();
+
+  const heroElement = document.querySelector('.slider__wrapper');
+  if (heroElement) {
+    heroElement.addEventListener('mouseenter', stopAnimation);
+    heroElement.addEventListener('mouseleave', () => {
+      // Ensure any existing interval is cleared before starting a new one
+      clearInterval(intervalId);
+      startAnimation();
+    });
+  }
+});
+
+onBeforeUnmount(() => {
+  clearInterval(intervalId);
+});
+
+
+const slides = [
+  {
+    brow: 'Application Deadline Extended',
+    title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
+    image: "/assets/images/kluz-prize-slide.jpg",
+    action: 'Apply now',
+    path: '/application',
+  },
+  {
+    slug: 'commit-global',
+    brow: 'Winner of the Kluz Prize of PeaceTech | 2023',
+    title: 'Commit Global',
+    image: "/assets/images/winners/commit-global/commit-global-in-action-3.jpg",
+    action: "Learn More",
+    path: '/prizes/commit-global/'
+  },
+  {
+    slug: 'project-didi',
+    brow: 'Innovative Uses of AI/ML | 2023',
+    title: 'Project Didi',
+    image: "/assets/images/winners/project-didi/didi-in-action-8.jpg",
+    action: "Learn More",
+    path: '/prizes/project-didi/'
+  },
+  {
+    slug: 'palantir-technologies',
+    brow: "Big Tech Building Peace | 2023",
+    title: 'Palantir Technologies',
+    image: "/assets/images/winners/palantir-technologies/palantir-foundry-slider.jpg",
+    action: "Learn More",
+    path: '/prizes/palantir-technologies/'
+  },
+  {
+    slug: 'human-rights-analysis-group',
+    brow: "Nonprofit Organization Advancing Peace | 2023",
+    title: 'Human Rights Data Analysis Group',
+    image: "/assets/images/winners/human-rights-analysis-group/hdrag-slider.jpg", 
+    action: "Learn More",
+    path: '/prizes/human-rights-analysis-group/'
+  },
+  {
+    slug: 'magnolia-foundation',
+    brow: "Winner of the Kluz Prize for PeaceTech | 2022",
+    title: 'The Magnolia Foundation',
+    image: "/assets/images/winners/magnolia-foundation/magnolia-foundation-slider.jpg",
+    action: "Learn More",
+    path: '/prizes/magnolia-foundation/'
+  }
+]
+</script>
+<style lang="scss" scoped>
+.slider__nav {
+  position: absolute;
+  bottom: var(--s1);
+  
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  @media screen and (min-width: 768px) { right: var(--s1); }
+  z-index: 10;
+  color: white;
+  display: flex;
+  gap: var(--s-2);
+
+  a {
+    all: unset;
+    cursor: pointer;
   }
 
-.slider__background {
+  span[active=false] { opacity: .5; }
+}
+
+.slider__wrapper {
+  height: min(800px, 80svh);
+}
+
+.slider {
+  height: 100%;
+  width: 100vw;
   position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background-size: cover;
-  background-position: center center;
-  transition: background-image .5s ease-in-out;
-  animation: scale 20s infinite alternate;
+  z-index: 9;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider__track {
+  display: flex;
+  width: calc(100% * 6);
+  height: 100%;
+  background-color: var(--primary-color);
 }
 
 .slide {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  width: 100%;
+  background: linear-gradient(hsla(var(--base-hsl), .2) 10%, hsla(var(--base-hsl), .4) 50%), var(--bg);
+  
+  @media screen and (max-width: 768px){ padding-bottom: var(--s4); }
+
+  background-size: cover;
+  background-position: center;
+  height: 100%;
   display: flex;
-  align-items: flex-end;
-  padding-bottom: var(--s4);
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background-image: linear-gradient(180deg, transparent 0%, var(--base-color-70) 70%, var(--base-color-70) 100%);
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--s2) 0;
+  position: relative;
+}
+
+.slide__content {
+  z-index: 2;
+
+  h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: .5;
+  }
+
+  h2 { 
+    --space: 0; 
+    font-size: 350%;
+    @media screen and (max-width: 768px) {
+      font-size: 250%;
+    }
+  }
+
+  * {
+    color: white !important;
   }
 }
 
-  .slide__content {
-    transform: translateY(10%);
-    opacity: 1;
-    transition: all 0.2s ease-in-out;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 100%;
-    align-items: flex-end;
-    justify-items: start;
-    gap: var(--s1);
-  }
-
-    .slide__content--left {
-      opacity: 0;
-      transform: translateY(0%);
-    }
-
-    .slide__content--right {
-      opacity: 0;
-      transform: translateX(30%);
-    }
-
-.slider-nav {
-  position: absolute;
-  bottom: var(--s2);
-  right: 0;
-  transform: translateX(-50%);
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  gap: var(--s0);
+.slide__action {
+  --space: var(--s2);
 }
+ </style>
 
-  .slider-nav__trigger {
-    width: 14px;
-    height: 14px;
-    border: 1px solid hsla(var(--white-hsl), .2);
-    border-radius: 50%;
-    background-color: hsla(var(--white-hsl), 0);
-    transition: all 0.4s ease-in-out;
-  }
 
-  .slider-nav__trigger:only-child { display: none; }
-  .slider-nav__trigger--active { background-color: hsla(var(--white-hsl), .2); }
-
-    @keyframes scale {
-      0% {   transform: scale(1);   }
-      50% {  transform: scale(1.1); }
-      100% { transform: scale(1);   }
-    }
-
-    .hero__headers {
-      justify-self: flex-end;
-    }
-
-    .logo-hero {
-      margin-bottom: var(--s2);
-      width: auto;
-      align-self: flex-end;
-      
-      @media screen and (max-width: 768px) { 
-        max-width: 180px;
-        // transform: translateX(-5%);
-      }
-      // @media screen and (min-height: 640px) { margin-left: -1.75%; }
-    }
-</style>
