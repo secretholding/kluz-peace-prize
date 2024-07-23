@@ -84,7 +84,28 @@ const slides = [
   {
     brow: 'Application Deadline Extended',
     title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
-    image: "/assets/images/kluz-prize-slide.jpg",
+    image: "/assets/images/kluz-slide-01.jpg",
+    action: 'Apply now',
+    path: '/application',
+  },
+  {
+    brow: 'Application Deadline Extended',
+    title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
+    image: "/assets/images/kluz-slide-02.jpg",
+    action: 'Apply now',
+    path: '/application',
+  },
+  {
+    brow: 'Application Deadline Extended',
+    title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
+    image: "/assets/images/kluz-slide-03.jpg",
+    action: 'Apply now',
+    path: '/application',
+  },
+  {
+    brow: 'Application Deadline Extended',
+    title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
+    image: "/assets/images/kluz-slide-04.jpg",
     action: 'Apply now',
     path: '/application',
   },
@@ -133,9 +154,14 @@ const slides = [
 <style lang="scss" scoped>
 .slider__nav {
   position: absolute;
-  right: 0;
   bottom: var(--s1);
-  right: var(--s1);
+  
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  @media screen and (min-width: 768px) { right: var(--s1); }
   z-index: 10;
   color: white;
   display: flex;
@@ -150,7 +176,7 @@ const slides = [
 }
 
 .slider__wrapper {
-  height: min(600px, 80svh);
+  height: min(800px, 80svh);
 }
 
 .slider {
@@ -165,46 +191,25 @@ const slides = [
 
 .slider__track {
   display: flex;
-  width: calc(100% * 6);
+  width: calc(100% * 9);
   height: 100%;
   background-color: var(--primary-color);
 }
 
 .slide {
-  // --bg: url('/assets/images/winners/commit-global/commit-global-in-action-3.jpg');
   width: 100%;
-  background-color: var(--primary-color);
-  // background: var(--bg);
+  background: linear-gradient(hsla(var(--base-hsl), .2) 10%, hsla(var(--base-hsl), .4) 50%), var(--bg);
+  
+  @media screen and (max-width: 768px){ padding-bottom: var(--s4); }
 
-  @media screen and (max-width: 768px){
-    background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .9) 50%), var(--bg), var(--bg-mobile);
-    background-position: center;
-  }
-
-  background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .9) 50%), var(--bg);
-  background-blend-mode: multiply;
+  background-size: cover;
   background-position: center;
-  background-size: 100% cover;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: var(--s2) 0;
   position: relative;
-
-  &:after {
-    --special-hsl: 223, 57%, 54%;
-
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: hsla(var(--special-hsl), 1);
-    z-index: 1;
-    mix-blend-mode: color;
-  }
 }
 
 .slide__content {
@@ -219,6 +224,9 @@ const slides = [
   h2 { 
     --space: 0; 
     font-size: 350%;
+    @media screen and (max-width: 768px) {
+      font-size: 250%;
+    }
   }
 
   * {
@@ -229,7 +237,6 @@ const slides = [
 .slide__action {
   --space: var(--s2);
 }
- 
-</style>
+ </style>
 
 
