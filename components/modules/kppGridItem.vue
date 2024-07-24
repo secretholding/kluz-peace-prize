@@ -4,7 +4,7 @@
       <img :src="coverImage" alt="">
     </div>
     <div class="kpp-update-grid-item__content">
-      <kpp-headers :content="headerContent" color="base" :hide-tagline="hideTagline" />
+      <kpp-headers :content="headerContent" color="primary" :hide-tagline="hideTagline" />
     </div>
   </NuxtLink>
 </template>

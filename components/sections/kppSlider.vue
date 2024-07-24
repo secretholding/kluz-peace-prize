@@ -154,13 +154,14 @@ const slides = [
 
 .slide {
   width: 100%;
-  background: linear-gradient(45deg, hsla(var(--base-hsl), 0) 0%, hsla(var(--base-hsl), .55) 100%);
+  background: linear-gradient(45deg, var(--primary-color) 0%, hsl(230, 35%, 33%) 100%);
   background-size: cover;
   background-position: center;
   height: 100%;
   flex-direction: column;
   justify-content: flex-end;
   padding: var(--s2) 0;
+  @media screen and (max-width: 768px) { padding-bottom: calc(var(--s3) + 1rem);  }
   position: absolute;
   top: 0;
   left: 0;
