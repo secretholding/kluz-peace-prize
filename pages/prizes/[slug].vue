@@ -80,7 +80,7 @@
       <center-l size="wide">
         <div class="quote">
           <!-- <img :src="winner.quote.image" :alt="winner.quote.cite"> -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" class="quote__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quote__icon">
             <path
               d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
           </svg>
@@ -220,6 +220,9 @@ const hasQuote = computed(() => {
   gap: var(--s2);
   margin-block: var(--s2);
 
+  &__icon {
+    flex-shrink: 0;
+  }
   &__icon * { fill: var(--primary-color); }
 
   // img {
