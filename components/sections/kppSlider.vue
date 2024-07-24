@@ -85,20 +85,20 @@ const slides = [
     path: '/prizes/project-didi/'
   },
   {
-    slug: 'palantir-technologies',
+    slug: 'palantir-foundry',
     brow: "Big Tech Building Peace | 2023",
-    title: 'Palantir Technologies',
-    image: "/assets/images/winners/palantir-technologies/palantir-foundry-slider.jpg",
+    title: 'Palantir Foundry',
+    image: "/assets/images/winners/palantir-foundry/palantir-foundry-slider.jpg",
     action: "Learn More",
-    path: '/prizes/palantir-technologies/'
+    path: '/prizes/palantir-foundry/'
   },
   {
-    slug: 'human-rights-analysis-group',
+    slug: 'human-rights-data-analysis-group',
     brow: "Nonprofit Organization Advancing Peace | 2023",
     title: 'Human Rights Data Analysis Group',
-    image: "/assets/images/winners/human-rights-analysis-group/hdrag-slider.jpg", 
+    image: "/assets/images/winners/human-rights-data-analysis-group/hdrag-slider.jpg", 
     action: "Learn More",
-    path: '/prizes/human-rights-analysis-group/'
+    path: '/prizes/human-rights-data-analysis-group/'
   },
   {
     slug: 'magnolia-foundation',
@@ -135,7 +135,7 @@ const slides = [
 }
 
 .slider__wrapper {
-  height: min(800px, 80svh);
+  height: min(500px, 80svh);
 }
 
 .slider {
