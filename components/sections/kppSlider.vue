@@ -131,7 +131,7 @@ const slides = [
     cursor: pointer;
   }
 
-  span[active=false] { opacity: .5; }
+  span[active=false] { opacity: .3; }
 }
 
 .slider__wrapper {
