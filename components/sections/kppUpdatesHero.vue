@@ -11,7 +11,7 @@
           <kpp-button class="back-button" is="NuxtLink" visual="unstyled" icon-before="arrow_back" :color="primary" >Back to Updates
           </kpp-button>
         </NuxtLink>
-        <kpp-headers class="headers" :content="headerContent" :color="content.image != '' ? 'white' : 'primary'" />
+        <kpp-headers class="headers" :content="headerContent" :color="primary" />
       </center-l>
     </slot>
     

@@ -9,7 +9,6 @@
     :color="bgUrl ? 'white' : 'primary'" 
   />
   
-  
   <kpp-base-section class="body">
     <center-l size="wide">
       <kpp-prose :html-content="data.blog && data.blog.main_content ? data.blog.main_content : ''" class="blog-post"/>
