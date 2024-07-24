@@ -31,14 +31,14 @@
     "big_tech": {
       "name": "Palantir Foundry",
       "prize": "Big Tech Building Peace",
-      "slug": "palantir-technologies",
+      "slug": "palantir-foundry",
       "logo": "/assets/images/winners/palantir-logo.png"
     },
     "non_profit": {
       "name": "Human Rights Data Analysis Group",
       "prize": "Non Profit Organization Advancing Peace",
-      "slug": "human-rights-analysis-group",
-      "logo": "/assets/images/winners/human-rights-analysis-group-logo.png"
+      "slug": "human-rights-data-analysis-group",
+      "logo": "/assets/images/winners/human-rights-data-analysis-group-logo.png"
     }
   },
   "jury": [
