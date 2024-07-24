@@ -1,17 +1,17 @@
 {
   "prize": "Non Profit Organization Advancing Peace",
-  "title": "Human Rights Analysis Group",
-  "slug": "human-rights-analysis-group",
+  "title": "Human Rights Data Analysis Group",
+  "slug": "human-rights-data-analysis-group",
   "project_url": "https://hrdag.org/",
   "applicant": "Megan Price",
   "country": "Colombia",
   "year": 2023,
   "order": 4,
   "images": {
-    "logo": "human-rights-analysis-group-logo.png",
+    "logo": "human-rights-data-analysis-group-logo.png",
     "hero": "hdrag-slider.jpg",
     "ceremony": "",
-    "impact": "human-rights-analysis-group-impact.svg",
+    "impact": "human-rights-data-analysis-group-impact.svg",
     "slider": ["hdrag-01.jpg", "hdrag-02.jpg", "hdrag-03.jpg"]
   },
   "quote": {

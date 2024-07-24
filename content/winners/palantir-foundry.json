@@ -1,9 +1,9 @@
 {
   "prize": "Big Tech Building Peace",
-  "title": "Palantir Technologies",
-  "slug": "palantir-technologies",
+  "title": "Palantir Foundry",
+  "slug": "palantir-foundry",
   "project_url": "https://www.palantir.com/uk/government/#homes-for-ukraine",
-  "applicant": "Ishrq Irteza",
+  "applicant": "Palantir Technologies",
   "country": "United Kingdom",
   "year": 2023,
   "order": 3,
@@ -45,10 +45,10 @@
   },
   "people": [
     {
-      "name": "Ishrq Irteza",
+      "name": "Palantir Technologies",
       "title": "",
       "bio": "",
-      "image": "ishrq-irteza.jpg"
+      "image": "palantir-logo-profile.png"
     }
   ],
   "connect": {
