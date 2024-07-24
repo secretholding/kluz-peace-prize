@@ -1,23 +1,26 @@
 <template>
   <kpp-hero color="white" height="auto" class="slider__wrapper">
     <div class="slider" :activeIndex="activeIndex">
-      <transition-group name="slide-fade" tag="div" class="slider__track">
-        <div :id="`slide-${index+1}`" class="slide" v-for="(slide, index) in slides" :index="index+1" :class="{ active: index + 1 === activeIndex }" :key="slide.slug">
+      <div class="slider__track">
+        <!-- <div :id="`slide-${index+1}`" class="slide" v-for="(slide, index) in slides" :style="`--bg: url('${slide.image}'); --bg-mobile: url('${slide.image_mobile}')`" :index="index+1"> -->
+        <div :id="`slide-${index+1}`" class="slide" v-for="(slide, index) in slides" :index="index+1">
           <center-l size="wide" class="slide__content | width:100%">
             <stack-l>
               <h4>{{ slide.brow }}</h4>
               <h2>{{ slide.title }}</h2>
               <div class="slide__action">
-                <nuxt-link class="button" data-size="l" icon-after="arrow_forward" :to="slide.path">{{ slide.action }}</nuxt-link>
+                <nuxt-link class="button" data-size="l" icon-after="arrow_forward" :to="slide.path">{{ slide.action
+                  }}</nuxt-link>
               </div>
             </stack-l>
           </center-l>
         </div>
-      </transition-group>
+      </div>
     </div>
     <div class="slider__nav">
       <a v-for="i in slides.length" el="a" :index="i" @click="setActiveIndex(i)">
-        <span class="icon" :active="i == activeIndex ? true : false">{{ i == activeIndex ? 'radio_button_checked' : 'radio_button_unchecked' }}</span>
+        <span class="icon" :active="i == activeIndex ? true : false">{{ i == activeIndex ? 'radio_button_checked' :
+          'radio_button_unchecked' }}</span>
       </a>
     </div>
   </kpp-hero>
@@ -28,6 +31,21 @@ const activeIndex = ref(1);
 
 const setActiveIndex = (index) => {
   activeIndex.value = index;
+  triggerNavigation(index);
+};
+
+const triggerNavigation = (index) => {
+  const slideElement = document.getElementById(`slide-${index}`);
+  if (slideElement) {
+    slideElement.scrollIntoView({ behavior: 'smooth' });
+  }
+  
+  // Check if the URL contains /#slide-N and clear it if it does
+  const url = new URL(window.location);
+  if (url.hash.startsWith('#slide-')) {
+    url.hash = '';
+    history.replaceState(null, '', url.toString());
+  }
 };
 
 let intervalId;
@@ -36,7 +54,8 @@ onMounted(() => {
   const startAnimation = () => {
     intervalId = setInterval(() => {
       activeIndex.value = activeIndex.value < slides.length ? activeIndex.value + 1 : 1;
-    }, 4000);
+      triggerNavigation(activeIndex.value);
+    }, 4500);
   };
 
   const stopAnimation = () => {
@@ -59,6 +78,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   clearInterval(intervalId);
 });
+
 
 const slides = [
   {
@@ -143,36 +163,32 @@ const slides = [
   width: 100vw;
   position: absolute;
   z-index: 9;
-  overflow: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .slider__track {
-  position: relative;
+  display: flex;
+  width: calc(100% * 6);
   height: 100%;
-  background: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .slide {
   width: 100%;
-  background: linear-gradient(45deg, hsla(var(--base-hsl), 0) 0%, hsla(var(--base-hsl), .55) 100%);
+  background: linear-gradient(hsla(var(--base-hsl), .2) 10%, hsla(var(--base-hsl), .4) 50%), var(--bg);
+  
+  @media screen and (max-width: 768px){ padding-bottom: var(--s4); }
+
   background-size: cover;
   background-position: center;
   height: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: var(--s2) 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-  visibility: hidden;
-  align-content: end;
-
-  &.active {
-    opacity: 1;
-    visibility: visible;
-  }
+  position: relative;
 }
 
 .slide__content {
@@ -200,32 +216,6 @@ const slides = [
 .slide__action {
   --space: var(--s2);
 }
+ </style>
 
-.slide-fade-enter-active, .slide-fade-leave-active {
-  transition: opacity 1s;
-}
 
-.slide-fade-enter, .slide-fade-leave-to /* .slide-fade-leave-active in <2.1.8 */ {
-  opacity: 0;
-}
-
-.slide-fade-enter-active {
-  animation: fadeIn 2s forwards;
-}
-
-.slide-fade-leave-active {
-  animation: fadeOut 2s forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    visibility: visible;
-  }
-}
-
-@keyframes fadeOut {
-  to {
-    visibility: hidden;
-  }
-}
-</style>
