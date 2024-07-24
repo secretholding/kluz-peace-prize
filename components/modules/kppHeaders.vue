@@ -66,13 +66,21 @@ const computedDate = computed(() => {
 .headers > * {
   position: relative;
   z-index: 1;
-  color: hsla(var(--header-hsl), 1);  
+  color: hsla(var(--header-hsl), 1);
 }
+
+// Increasing specificity here to override the Hero Styles
+.headers .brow, 
+.headers .title, 
+.headers .tagline, 
+.headers .authors, 
+.headers .date { color: hsla(var(--header-hsl), 1); }
 
 .brow {
   font-weight: 600;  
   line-height: 1.4;
   text-transform: uppercase;
+  
 }
 
 .title {

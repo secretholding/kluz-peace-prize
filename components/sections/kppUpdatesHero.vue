@@ -7,8 +7,8 @@
   >
     <slot>
       <center-l size="wide" class="width:100%">
-        <NuxtLink v-if="showHeroBackButton" to="/updates">
-          <kpp-button class="back-button" is="NuxtLink" visual="unstyled" icon-before="arrow_back" :color="primary" >Back to Updates
+        <NuxtLink v-if="showHeroBackButton" to="/updates" class="color:primary">
+          <kpp-button class="back-button" is="span" visual="unstyled" icon-before="arrow_back" :color="primary" >Back to Updates
           </kpp-button>
         </NuxtLink>
         <kpp-headers class="headers" :content="headerContent" :color="primary" />
