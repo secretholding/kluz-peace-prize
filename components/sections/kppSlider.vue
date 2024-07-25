@@ -87,7 +87,7 @@ const slides = [
   {
     slug: 'palantir-foundry',
     brow: "Big Tech Building Peace | 2023",
-    title: 'Palantir Foundry',
+    title: "Palantir's Foundry",
     image: "/assets/images/winners/palantir-foundry/palantir-foundry-slider.jpg",
     action: "Learn More",
     path: '/prizes/palantir-foundry/'
