@@ -171,16 +171,14 @@ const slides = [
 
 .slide {
   width: 100%;
-  background-color: var(--primary-color);
-  // background: var(--bg);
+  background: var(--primary-color);
 
   @media screen and (max-width: 768px) {
-    background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .9) 50%), var(--bg), var(--bg-mobile);
+    background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .3) 50%);
     background-position: center;
   }
 
-  background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .9) 50%),
-  var(--bg);
+  background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .3) 50%);
   background-blend-mode: multiply;
   background-position: center;
   height: 100%;

@@ -31,10 +31,10 @@ const props = defineProps({
     type: Object,
     default: {
       brow: 'Kluz Prize for PeaceTech 2024',
-      title: 'Sign up for the event today',
-      text: 'Applications for the 2024 Kluz Prize for PeaceTech are now closed. This year, the award ceremony will take place on September 20th in New York City.',
+      title: 'Interested in attending?',
+      text: 'Learn more about the 2024 Kluz Prize for PeaceTech Award ceremony',
       action: {
-        label: 'Learn more about the event',
+        label: 'About the event',
         url: '/events/2024'
       }
     }

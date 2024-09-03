@@ -32,7 +32,7 @@
 
           <p>Speakers will be announced in September 2024.</p>
 
-          <p><strong>If you are interested in attending the award ceremony, please contact the organizers via email at<a href="mailto:info@kluzprize.org">info@kluzprize.org</a> to learn more.</strong></p>
+          <p><strong>If you are interested in attending the award ceremony, please contact the organizers via email at <a href="mailto:info@kluzprize.org">info@kluzprize.org</a> to learn more.</strong></p>
         </kpp-prose>
       </div>
 
