@@ -30,6 +30,20 @@ const setActiveIndex = (index) => {
   activeIndex.value = index;
 };
 
+const triggerNavigation = (index) => {
+  const slideElement = document.getElementById(`slide-${index}`);
+  if (slideElement) {
+    slideElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Check if the URL contains /#slide-N and clear it if it does
+  const url = new URL(window.location);
+  if (url.hash.startsWith('#slide-')) {
+    url.hash = '';
+    history.replaceState(null, '', url.toString());
+  }
+};
+
 let intervalId;
 
 onMounted(() => {
@@ -62,11 +76,12 @@ onBeforeUnmount(() => {
 
 const slides = [
   {
-    brow: 'Application Deadline Extended',
-    title: 'Apply Now for the 2024 Kluz Prize for PeaceTech',
+    slug: 'applications-closed',
+    brow: 'Kluz Prize of PeaceTech | 2024',
+    title: 'Applications Closed',
     image: "/assets/images/kluz-prize-slide.jpg",
-    action: 'Apply now',
-    path: '/application',
+    action: "Learn More",
+    path: '/events/2024'
   },
   {
     slug: 'commit-global',
@@ -131,7 +146,9 @@ const slides = [
     cursor: pointer;
   }
 
-  span[active=false] { opacity: .3; }
+  span[active=false] {
+    opacity: .5;
+  }
 }
 
 .slider__wrapper {
@@ -154,8 +171,17 @@ const slides = [
 
 .slide {
   width: 100%;
-  background: linear-gradient(45deg, var(--primary-color) 0%, hsl(230, 35%, 33%) 100%);
-  background-size: cover;
+  background-color: var(--primary-color);
+  // background: var(--bg);
+
+  @media screen and (max-width: 768px) {
+    background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .9) 50%), var(--bg), var(--bg-mobile);
+    background-position: center;
+  }
+
+  background: linear-gradient(transparent 0%, hsla(var(--base-hsl), .9) 50%),
+  var(--bg);
+  background-blend-mode: multiply;
   background-position: center;
   height: 100%;
   flex-direction: column;
@@ -185,8 +211,8 @@ const slides = [
     opacity: .5;
   }
 
-  h2 { 
-    --space: 0; 
+  h2 {
+    --space: 0;
     font-size: 350%;
     @media screen and (max-width: 768px) {
       font-size: 250%;
@@ -200,33 +226,5 @@ const slides = [
 
 .slide__action {
   --space: var(--s2);
-}
-
-.slide-fade-enter-active, .slide-fade-leave-active {
-  transition: opacity 1s;
-}
-
-.slide-fade-enter, .slide-fade-leave-to /* .slide-fade-leave-active in <2.1.8 */ {
-  opacity: 0;
-}
-
-.slide-fade-enter-active {
-  animation: fadeIn 2s forwards;
-}
-
-.slide-fade-leave-active {
-  animation: fadeOut 2s forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    visibility: visible;
-  }
-}
-
-@keyframes fadeOut {
-  to {
-    visibility: hidden;
-  }
 }
 </style>
