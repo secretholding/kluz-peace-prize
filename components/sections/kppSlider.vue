@@ -78,7 +78,7 @@ const slides = [
   {
     slug: 'applications-closed',
     brow: 'Kluz Prize of PeaceTech | 2024',
-    title: 'Applications Closed',
+    title: 'Winners to be announced on Sep 20th',
     image: "/assets/images/kluz-prize-slide.jpg",
     action: "Learn More",
     path: '/events/2024'
@@ -152,7 +152,7 @@ const slides = [
 }
 
 .slider__wrapper {
-  height: min(500px, 80svh);
+  min-height: min(500px, 80svh);
 }
 
 .slider {
