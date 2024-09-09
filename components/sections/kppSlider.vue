@@ -77,7 +77,7 @@ onBeforeUnmount(() => {
 const slides = [
   {
     slug: 'applications-closed',
-    brow: 'Kluz Prize of PeaceTech | 2024',
+    brow: 'Kluz Prize for PeaceTech | 2024',
     title: 'Winners to be announced on Sep 20th',
     image: "/assets/images/kluz-prize-slide.jpg",
     action: "Learn More",
@@ -85,7 +85,7 @@ const slides = [
   },
   {
     slug: 'commit-global',
-    brow: 'Winner of the Kluz Prize of PeaceTech | 2023',
+    brow: 'Winner of the Kluz Prize for PeaceTech | 2023',
     title: 'Commit Global',
     image: "/assets/images/winners/commit-global/commit-global-in-action-3.jpg",
     action: "Learn More",
