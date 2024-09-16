@@ -1,39 +1,39 @@
 {
-  "prize": "",
-  "title": "Views",
-  "slug": "views",
-  "project_url": "",
-  "applicant": "",
-  "country": "",
+  "prize": "Special Distinction for Humanitarian Impact",
+  "title": "Deep",
+  "slug": "deep",
+  "project_url": "https://thedeep.io/",
+  "applicant": "Joel Myhre",
+  "country": "Denmark",
   "year": 2024,
-  "order": 2,
+  "order": 3,
   "images": {
-    "logo": "",
+    "logo": "deep/deep-logo.png",
     "hero": "",
     "ceremony": "",
     "impact": "",
     "slider": [""]
   },
   "quote": {
-    "text": "",
-    "cite": "",
+    "text": "On behalf of our global DEEP team and the Danish Refugee Council (home of the DEEP Secretariat), we welcome the special distinction via the Kluz Prize to showcase how our DEEP efforts leverage open-source and NLP-enabled humanitarian technology to advance PeaceTech globally via the UN’s Protection Cluster.",
+    "cite": "Joel Myhre",
     "image": ""
   },
   "impact": {
-    "description_html": "<h4>Question</h4><p>Answer</p>",
+    "description_html": "<p>The Data Entry and Exploration Platform (DEEP) offers a suite of free, open-source tools that meet the needs for compiling, storing and structuring data and qualitative information. It was initially established in 2016 in the aftermath of the Nepal Earthquake to strengthen collective sense-making and analysis. DEEP promotes transparency, information sharing and collaborative workflows and minimizes fragmentation of initiatives, and duplication of efforts. DEEP uses data standards and common taxonomies to ensure compatibility with other tools, datasets and processes.</p>",
     "image": "",
     "metrics": [
       {
-        "label": "",
-        "value": ""
+        "label": "registered users",
+        "value": "8,000"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Organizations",
+        "value": "90"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Countries",
+        "value": "8"
       }
     ]
   },
@@ -48,7 +48,7 @@
   "connect": {
     "message": "Contact Message",
     "label": "Visit website",
-    "url": ""
+    "url": "https://thedeep.io/"
   },
-  "content_html": "<h4>Question</h4><p>Answer</p>"
+  "content_html": "<h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>From Ukraine to Sudan to Türkiye etc., the DEEP global community of experts have leveraged this scale-able suite of capabilities to address some of the most pressing humanitarian information challenges of the past decade. Currently, the DEEP Surge team is continuing its longstanding collaboration with the United Nations Disaster Assessment and Coordination system (UNDAC) via its formal role supporting the Assessment and Analysis (A&A) cell deployment throughout the 2024 Atlantic and Caribbean Hurricane Season. Strategically, the DEEP project has furthered data-driven human rights information management globally via the <a href='https://globalprotectioncluster.org/' target='_blank'>Protection Cluster</a>.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>The platform has garnered longstanding support from committed organizations, such as IFRC, iMMAP, UNOCHA, the Office of the United Nations High Commissioner for Human Rights (OHCHR), the Office of the United Nations High Commissioner for Refugees (UNHCR), and donors such as USAID/BHA and US Centers for Disease Control and Prevention (CDC). In addition, DEEP's engagement with UN Development Coordination Office (UNDCO) aligns with the vision to cross-analyze data across Humanitarian-Development Nexus. Academic institutions, such as the University College London (UCL), have supported DEEP vis a vis NLP development and reinforcing its technological advancement.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>Looking forward, a forthcoming DEEP Joint Analysis Workspace (JAWS) will integrate qualitative and quantitative data with expert judgment elicitation to ensure a collaborative, comprehensive, and unified analytical approach. With the expansion of the DEEP’s quantitative and expert analysis capabilities via JAWS, a number of use cases spanning risk and response analysis, needs assessments, and outcome monitoring have been devised for both single organizations and intersectoral processes. The integration of the  <a href='https://www.jiaf.info/' target='_blank'>Joint Intersectoral Analysis Framework (JIAF)</a> has been a prominent focus along with strategic engagement with the UNOCHA Centre for Humanitarian Data.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>DEEP innovations are guided by a diverse <a href='https://thedeep.io/#partners' target='_blank'>Governance Board</a> and <a href='https://thedeep.io/DEEP_Governance.pdf' target='_blank'>Guide</a>, which aims to reinforce DEEP as an indispensable suite of tools for humanitarian analysis. DEEP’ global users also contribute to the DEEP Technical Advisory Group (TAG) and <a href='https://nlp.thedeep.io/' target='_blank'>NLP efforts</a>.</p><h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>For over 8 years, DEEP has played a pivotal role contributing to strategic planning through the UN’s Humanitarian Program Cycle (HPC) and supporting secondary data analysis for Humanitarian Needs Overviews (HNO) in multiple countries in Africa, Latin America, and the Asia Pacific regions. DEEP has also been a foundational tool for recent, large-scale humanitarian response operations in support of the UN’s Disaster Assessment and Coordination Assessment and Analysis cell, the IFRC, and the Caribbean Disaster Emergency Management Agency (CDEMA). Specific sudden onset crises where DEEP has garnered acclaim include: the Türkiye Earthquake (DEEP surge), Sudan (iMMAP), Libya (IFRC), and Gaza (UNOCHA).</p>"
 }

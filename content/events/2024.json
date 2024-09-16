@@ -1,13 +1,32 @@
-// // this is not being used. The actual data is in the 2024.vue file in /events
-
 {
   "slug": "kluz-peace-prize-2024",
   "brow": "Event",
   "title": "Kluz Peace Prize 2024",
   "tagline": "Celebrating those who promote peace and resolve conflicts",
   "year": 2024,
-  "description_html": "<p>Apply to the 2024 Kluz Prize for PeaceTech and be recognized for your achievements and contributions to the evolving field of technologies for peace.</p>",
+  "description_html": "Test",
   "images": [],
+  "winners": {
+    "overview": "",
+    "winner": {
+      "name": "Aerobatics7",
+      "prize": "winner",
+      "slug": "aerobatics7",
+      "logo": "/assets/images/winners/aerobotics/aerobotics-logo.png"
+    },
+    "ai_ml": {
+      "name": "Views",
+      "prize": "Special Distinction for the Use of AI for Peace",
+      "slug": "views",
+      "logo": "/assets/images/winners/views/views-logo.png"
+    },
+    "non_profit": {
+      "name": "Deep",
+      "prize": "Special Distinction for Humanitarian Impact",
+      "slug": "deep",
+      "logo": "/assets/images/winners/deep/deep-logo.png"
+    }
+  },
   "jury": [
     {
       "name": "Ana Carolina González Peña",
@@ -81,10 +100,5 @@
       "image": "/assets/images/jury/zara-khan.jpg",
       "url": "https://www.linkedin.com/in/khanzara/"
     }
-    // {
-    //   "name": "",
-    //   "title": "",
-    //   "image": ""
-    // },
   ]
 }

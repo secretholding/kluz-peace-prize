@@ -12,7 +12,7 @@ useHead({
   title: 'Kluz Prize for PeaceTech',
 })
 
-const events = await queryContent('events').where({year: {$in: [2023, 2022]}}).sort({year: -1}).find();
+const events = await queryContent('events').sort({year: -1}).find();
 
 </script>
 
