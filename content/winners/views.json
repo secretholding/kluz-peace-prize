@@ -1,0 +1,54 @@
+{
+  "prize": "",
+  "title": "Views",
+  "slug": "views",
+  "project_url": "",
+  "applicant": "",
+  "country": "",
+  "year": 2024,
+  "order": 2,
+  "images": {
+    "logo": "",
+    "hero": "",
+    "ceremony": "",
+    "impact": "",
+    "slider": [""]
+  },
+  "quote": {
+    "text": "",
+    "cite": "",
+    "image": ""
+  },
+  "impact": {
+    "description_html": "<h4>Question</h4><p>Answer</p>",
+    "image": "",
+    "metrics": [
+      {
+        "label": "",
+        "value": ""
+      },
+      {
+        "label": "",
+        "value": ""
+      },
+      {
+        "label": "",
+        "value": ""
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "",
+      "title": "",
+      "bio": "",
+      "image": ""
+    }
+  ],
+  "connect": {
+    "message": "Contact Message",
+    "label": "Visit website",
+    "url": ""
+  },
+  "content_html": "<h4>Question</h4><p>Answer</p>"
+}
