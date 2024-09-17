@@ -5,9 +5,8 @@
   "tagline": "Celebrating those who promote peace and resolve conflicts",
   "year": 2024,
   "description_html": "Test",
-  "images": [],
   "winners": {
-    "overview": "",
+    "overview": "<p>The Kluz Prize for PeaceTech is an annual initiative designed to celebrate, recognize, and propel the innovative use of emerging technologies to foster peace, reduce conflict, and safeguard human dignity and universal human rights across the globe.</p><p>The 2024 Kluz Prize for PeaceTech award ceremony will take place on Friday, September 20th in New York City. This event will take place as part of the broader 79th UN General Assembly events.</p><p>The event seeks to bring together global leaders, policymakers, entrepreneurs, engineers, programmers, scientists, Big-Tech, startups, accelerators, and venture capitalists, as well as scholars and public officials who are committed to using technology to create a peaceful world.</p><p>The event will include presentations from The Kluz Prize for PeaceTech winners and discussions on the critical role of technology in peacebuilding efforts around the world. The ceremony will be followed by a cocktail reception where you will have the chance to meet the award winner, as well as other leaders in the ecosystem.</p>",
     "winner": {
       "name": "Aerobatics7",
       "prize": "winner",

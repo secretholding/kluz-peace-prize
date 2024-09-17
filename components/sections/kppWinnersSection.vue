@@ -4,7 +4,7 @@
       <div class="kpp-winners-section__grid">
         <div class="overview">
           <stack-l>
-            <h2 class="overview__title">Overview</h2>
+            <h2 v-if="content.overview" class="overview__title">Overview</h2>
             <kpp-prose :htmlContent="content.overview" />
           </stack-l>
         </div>

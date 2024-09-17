@@ -1,8 +1,8 @@
 <template>
-  <kpp-hero height="50svh" color="white" :title="event.heading" :bg="event.cover_image">
-    <!-- <center-l size="wide" class="width:100%">
+  <kpp-hero height="50svh" :color="event.cover_image ? 'white' : 'primary'" :title="event.heading" :bg="event.cover_image">
+    <center-l v-if="noBg" size="wide" class="width:100%">
       <kpp-headers :content="headerContent" color="primary" />
-    </center-l> -->
+    </center-l>
   </kpp-hero>
 
   <!-- <kpp-base-section class="tagline" color="primary">
@@ -26,7 +26,7 @@
     </center-l>
   </kpp-base-section> -->
 
-  <kpp-base-section class="ceremony-section" padding="0">
+  <kpp-base-section class="ceremony-section" padding="0" v-if="event.images">
     <center-l size="wide">
       <h2 class="section-title">Event</h2>
       <stack-l v-if="event.ceremony_video">
@@ -67,12 +67,18 @@ useHead({
 })
 
 const headerContent = {
-  brow: 'Kluz Prize for PeaceTech',
-  title: `${event.year} Winners`,
+  brow: 'Winners',
+  title: `Kluz Prize for PeaceTech ${event.year}`,
   tagline: `${event.tagline}`,
   // author: 'This is the author',
   // date: 'Mon DD, YYYY'
 }
+
+const noBg = computed(() => {
+  return !event.cover_image;
+});
+
+
 </script>
 
 <style lang="scss" scoped>
