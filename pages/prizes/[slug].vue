@@ -39,7 +39,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-          <video v-else-if="winner.video" :src="`/assets/images/winners/aerobotics7/${winner.video}`" controls></video>
+          <video v-else-if="winner.video" :src="`/assets/images/winners/${winner.slug}/${winner.video}`" controls></video>
         </div>
       </center-l>
     </kpp-base-section>

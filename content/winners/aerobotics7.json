@@ -1,7 +1,7 @@
 {
   "prize": "2024 Kluz Prize for PeaceTech",
   "title": "Aerobotics7",
-  "slug": "aerobatics7",
+  "slug": "aerobotics7",
   "project_url": "https://www.aerobotics7.com/",
   "applicant": "Harsh Zala",
   "country": "India",
@@ -12,7 +12,11 @@
     "logo": "aerobotics7/aerobotics-logo.png",
     "hero": "",
     "ceremony": "",
-    "impact": ""  
+    "impact": "",
+    "slider": [
+      "aerobotics-1.jpg",
+      "aerobotics-2.jpg"
+    ]
   },
   "quote": {
     "text": "The Kluz Prize for PeaceTech has been a pivotal moment for Aerobotics7, helping us accelerate our mission to innovate in landmine detection and UXO removal. This recognition not only validates our work but also connects us with key partners in the PeaceTech movement, driving global impact.",
