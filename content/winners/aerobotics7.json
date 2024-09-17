@@ -1,0 +1,60 @@
+{
+  "prize": "2024 Kluz Prize for PeaceTech",
+  "title": "Aerobotics7",
+  "slug": "aerobatics7",
+  "project_url": "https://www.aerobotics7.com/",
+  "applicant": "Harsh Zala",
+  "country": "India",
+  "year": 2024,
+  "order": 1,
+  "video": "eagle-a7-demo.mp4",
+  "images": {
+    "logo": "aerobotics7/aerobotics-logo.png",
+    "hero": "",
+    "ceremony": "",
+    "impact": ""  
+  },
+  "quote": {
+    "text": "The Kluz Prize for PeaceTech has been a pivotal moment for Aerobotics7, helping us accelerate our mission to innovate in landmine detection and UXO removal. This recognition not only validates our work but also connects us with key partners in the PeaceTech movement, driving global impact.",
+    "cite": "Harsh Zala – CEO",
+    "image": ""
+  },
+  "impact": {
+    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>The EAGLE A7 system has the potential to drastically improve post-conflict recovery by accelerating the detection and removal of landmines and explosive remnants of war. Globally, the economic toll of landmine contamination is immense, with Ukraine alone facing an annual cost of $11.2 billion. Our technology can significantly reduce the time at least by 50X and resources required for traditional demining, addressing the $34.6 billion estimated cost of clearing landmines in conflict-affected regions. By deploying innovative AI-driven solutions, EAGLE A7 helps reclaim agricultural land, rebuild communities, and support displaced populations returning to their homes. This creates safer environments and drives long-term economic recovery, with wide-reaching benefits for local economies and global food security.</p>",
+    "image": "",
+    "metrics": [
+      {
+        "label": "faster detection than manual methods",
+        "value": "50X"
+      },
+      {
+        "label": "R&D hours Invested",
+        "value": "12,500+"
+      },
+      {
+        "label": "detection accuracy in recent testing on relevant environments",
+        "value": "95%+"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Harsh Zala",
+      "title": "CEO",
+      "bio": "",
+      "image": "/aerobotics7/harsh-zala.jpg"
+    },
+    {
+      "name": "Urvashi Kikani",
+      "title": "CTO",
+      "bio": "",
+      "image": "/aerobotics7/urvashi.jpg"
+    }
+  ],
+  "connect": {
+    "message": "Contact Message",
+    "label": "Visit website",
+    "url": "https://www.aerobotics7.com/"
+  },
+  "content_html": "<p>Aerobotics7 focuses on the detection and removal of landmines and unexploded ordnance (UXO) using advanced AI, sensor fusion, and autonomous systems. Our technology, EAGLE A7 is a drone-based system that can detect, track and help neutralize hidden threats such as landmines without risking human-lives on the field providing accurate, efficient and scalable solution to mitigate the risks posed by active and post-war threats, enhancing safety and freedom of movement.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>The EAGLE A7 project directly contributes to peacebuilding by addressing the urgent need for landmine and unexploded ordnance (UXO) detection and removal in post-conflict zones. By making these areas safe again, we enable displaced communities to return to their homes and restore vital agriculture and infrastructure. This accelerates development and rebuilds trust in conflict-torn regions, fostering long-term peace and stability. Our work helps reduce the dangers of explosive remnants of war, supporting recovery in regions such as Ukraine, where the aftermath of conflict continues to impact civilians.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>The EAGLE A7 project advances the PeaceTech ecosystem by combining AI/ML, autonomous systems and advanced sensor fusion for more effective landmine and UXO detection. Our approach is designed to complement existing demining efforts while offering a faster and safer solution for communities affected by war. By working with international demining organizations and governments, including Ukraine, we can provide valuable data and real-world application insights that contribute to global research and innovation in post-conflict recovery and safety technologies.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>The award funds will enable us to enhance the EAGLE A7 system’s adaptability across diverse and complex terrains and different kinds of modern threats found in Ukraine and other conflict-affected regions. It will help us refine the system’s AI models to handle such variabilities including soil types, weather conditions, and terrains. These expanded pilots will help us validate its performance on a broader scale, ensuring the technology can be deployed globally. Additionally, we plan to invest in improving the system’s real-time data processing capabilities to make it more versatile and user-friendly for field operators.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>We actively collaborate with international demining organizations, humanitarian agencies, and government bodies to address the critical issue of landmines. These partnerships provide us with invaluable insights into real-world field conditions, allowing us to tailor and improve our technology for practical, on-the-ground use. Our collaborations have also opened doors for pilot deployments in conflict zones, helping us to expand the reach and scope of our efforts. These relationships enable us to scale our impact while ensuring that local demining teams and affected communities directly benefit from our innovations.</p>"
+}

@@ -32,12 +32,14 @@
       </center-l>
     </kpp-base-section>
 
-    <kpp-base-section v-if="winner.youtube_video">
+    <kpp-base-section v-if="winner.youtube_video || winner.video">
       <center-l size="wide" class="width:100%">
         <div class="frame">
-          <iframe width="560" height="315" :src="winner.youtube_video" title="YouTube video player" frameborder="0"
+          <iframe v-if="winner.youtube_video" width="560" height="315" :src="winner.youtube_video" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <video v-else-if="winner.video" :src="`/assets/images/winners/aerobotics7/${winner.video}`" controls></video>
         </div>
       </center-l>
     </kpp-base-section>
