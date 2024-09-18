@@ -7,7 +7,6 @@
   "country": "United States",
   "year": 2024,
   "order": 4,
-  "youtube_video": "https://www.youtube.com/embed/3HcIV5NbWRM?si=HVmhtBGtbrxVCexu",
   "images": {
     "logo": "lunasonde/lunasonde-logo.svg",
     "hero": "",
@@ -26,7 +25,7 @@
     "image": ""
   },
   "impact": {
-    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Water scarcity is a reality for 5.52 billion people in 186 countries around the world due to a range of naturally occurring and human-caused issues (ex., climate change, uneven distribution of available water, water pollution, lax resource management, and political tensions).As an example, 1.34 billion of those facing water insecurity live in Sub-Saharan Africa, where the water crisis is largely due to climate change. Despite the majority of the arid or semi-arid African continent holding nearly 9 percent of all freshwater resources worldwide, these water resources are unevenly distributed, leaving half of those living in Sub-Saharan Africa facing an ongoing water crisis. Lunasonde’s AstroGPR™ is envisioned to enable people to be lifted out of this water poverty through the discovery of safe, healthy drinking water. This will decrease mortality rates that are associated with a lack of safe drinking water. Higher death rates occur due to waterborne diseases from unsafe water, and malnutrition due to low levels of healthy, edible livestock and agriculture affecting 41 percent of those living in these areas.</p>",
+    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Water scarcity is a reality for 5.52 billion people in 186 countries around the world due to a range of naturally occurring and human-caused issues (ex., climate change, uneven distribution of available water, water pollution, lax resource management, and political tensions). As an example, 1.34 billion of those facing water insecurity live in Sub-Saharan Africa, where the water crisis is largely due to climate change. Despite the majority of the arid or semi-arid African continent holding nearly 9 percent of all freshwater resources worldwide, these water resources are unevenly distributed, leaving half of those living in Sub-Saharan Africa facing an ongoing water crisis. Lunasonde’s AstroGPR™ is envisioned to enable people to be lifted out of this water poverty through the discovery of safe, healthy drinking water. This will decrease mortality rates that are associated with a lack of safe drinking water. Higher death rates occur due to waterborne diseases from unsafe water, and malnutrition due to low levels of healthy, edible livestock and agriculture affecting 41 percent of those living in these areas.</p>",
     "image": "",
     "metrics": [
       {
