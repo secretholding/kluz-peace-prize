@@ -1,0 +1,66 @@
+{
+  "prize": "Special Distinction for Space Technology",
+  "title": "Lunasonde",
+  "slug": "lunasonde",
+  "project_url": "https://www.lunasonde.com/",
+  "applicant": "Jeremiah Pate",
+  "country": "United States",
+  "year": 2024,
+  "order": 4,
+  "youtube_video": "https://www.youtube.com/embed/3HcIV5NbWRM?si=HVmhtBGtbrxVCexu",
+  "images": {
+    "logo": "lunasonde/lunasonde-logo.png",
+    "hero": "",
+    "ceremony": "",
+    "impact": "",
+    "slider": [
+      "lunasonde-1.jpg",
+      "lunasonde-2.jpg",
+      "lunasonde-3.jpg",
+      "lunasonde-4.webp"
+    ]
+  },
+  "quote": {
+    "text": "PeachTech reinforced Lunasonde’s core mission to develop space technology that enhances lives by locating essential resources and preserving our planet.",
+    "cite": "Jeremiah Pate – Founder & CEO",
+    "image": ""
+  },
+  "impact": {
+    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Water scarcity is a reality for 5.52 billion people in 186 countries around the world due to a range of naturally occurring and human-caused issues (ex., climate change, uneven distribution of available water, water pollution, lax resource management, and political tensions).As an example, 1.34 billion of those facing water insecurity live in Sub-Saharan Africa, where the water crisis is largely due to climate change. Despite the majority of the arid or semi-arid African continent holding nearly 9 percent of all freshwater resources worldwide, these water resources are unevenly distributed, leaving half of those living in Sub-Saharan Africa facing an ongoing water crisis. Lunasonde’s AstroGPR™ is envisioned to enable people to be lifted out of this water poverty through the discovery of safe, healthy drinking water. This will decrease mortality rates that are associated with a lack of safe drinking water. Higher death rates occur due to waterborne diseases from unsafe water, and malnutrition due to low levels of healthy, edible livestock and agriculture affecting 41 percent of those living in these areas.</p>",
+    "image": "",
+    "metrics": [
+      {
+        "label": "Refugees assisted",
+        "value": "130,000+"
+      },
+      {
+        "label": "Users across local and central government",
+        "value": "3,000+"
+      },
+      {
+        "label": "Organizations using our datasets",
+        "value": "100+"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Jeremiah Pate",
+      "title": "Founder & CEO",
+      "bio": "",
+      "image": "/lunasonde/jeremiah-pate.jpg"
+    },
+    {
+      "name": "Max Cooper",
+      "title": "PhD",
+      "bio": "",
+      "image": "/lunasonde/max-cooper.jpg"
+    },
+  ],
+  "connect": {
+    "message": "Contact Message",
+    "label": "Visit website",
+    "url": "https://www.lunasonde.com/"
+  },
+  "content_html": "<p>Lunasonde is supporting global peace and sustainability efforts through our proprietary AstroGPR™ satellite remote sensing radar that benefits humanity by locating valuable subsurface resources, especially previously unknown aquifers, and groundwater deposits.Our approach advances the needs of the underserved around the world through the intelligence gleaned from our technologically innovative remote sensing radar satellite constellation. Gaining these insights from space into where aquifers lie deep underground has the potential to empower people around the world.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>The discovery of uncharted water on Earth to provide needed water in areas suffering from physical and/or economic water scarcity, such as in Sub-Saharan Africa, could change the quality of life for millions of people suffering from a lack of potable water. Discoveries of large bodies of underground water could lead to a multitude of positive outcomes from the availability of safe drinking water where populations are at risk of death due to dehydration, to water resources for crop sustainability that will provide food in areas where there has previously been famine due to low water supplies, and even to creating new economies built around newly discovered aquifers that help build and enliven communities where none had previously existed.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>While there are a large number of non-governmental organizations, state agencies, and companies in the water scarcity space, none are directly sensing underground at scale. This presents a significant lacuna in water policy around the world. Lunasonde addresses this challenge in two ways. We detect the depth to water table in known aquifers, giving a near real-time measurement of regional water scarcity. Lunasonde also can discover hitherto untapped “fossil aquifers”, providing a new water source for drought-stricken areas.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>The award funds will allow the Lunasonde team to promote our capability to water resource stakeholders globally. Many in the water resource community are still not aware of our technology and its revolutionary capabilities. As such, we need to embark on a substantial user education effort to ensure that our data reaches those who can make the most impact utilizing it.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>Our project is by nature a multilateral collaboration, as we work with SpaceX to launch our spacecraft and AWS to process our data in a timely manner. In the case of the latter, we participated in the AWS Space Accelerator program that allowed us to forge a strong partnership with AWS from post-processing the monumental amounts of subsurface data that we receive from our sensors and satellites.</p>"
+}

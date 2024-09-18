@@ -12,7 +12,7 @@
         <div class="winner">
           <h2 class="winner__title">Winner</h2>
           <NuxtLink :to="`/prizes/${content.winner.slug}`" class="winner__logo">
-            <img :src="content.winner.logo" alt="" >
+            <img :src="content.winner.logo" >
             <!-- {{ content.winner }} -->
           </NuxtLink>
         </div>

@@ -19,6 +19,12 @@
       "slug": "views",
       "logo": "/assets/images/winners/views/views-logo.png"
     },
+    "big_tech": {
+      "name": "Lunasonde",
+      "prize": "Special Distinction for Space Technology",
+      "slug": "lunasonde",
+      "logo": "/assets/images/winners/lunasonde/lunasonde-logo.svg"
+    },
     "non_profit": {
       "name": "Deep",
       "prize": "Special Distinction for Humanitarian Impact",
