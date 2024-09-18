@@ -42,15 +42,14 @@ const winners = await queryContent('winners').where({ year: props.event.year }).
     "winner2"  
     "winner3"
     "winner4";
-  gap: 0;
+  // gap: var(--s2);
   
   @media (min-width: 1000px) {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
-        "title title"
-        "winner1 winner2"  
-        "winner3 winner4";
+        "title title title title"
+        "winner1 winner2 winner3 winner4";
   }
 }
 
