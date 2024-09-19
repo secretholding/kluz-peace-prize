@@ -1,6 +1,6 @@
 {
   "prize": "Use of AI for Peace",
-  "title": "Views",
+  "title": "VIEWS",
   "slug": "views",
   "project_url": "https://viewsforecasting.org/",
   "applicant": "Håvard Hegre",
@@ -34,7 +34,7 @@
     "image": "",
     "metrics": [
       {
-        "label": "conflict prediction datasets produced",
+        "label": "Conflict prediction datasets produced",
         "value": "70+"
       },
       {
@@ -42,7 +42,7 @@
         "value": "100+"
       },
       {
-        "label": "Partner Institutes",
+        "label": "Partner institutes",
         "value": "18"
       }
     ]

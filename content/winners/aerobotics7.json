@@ -1,9 +1,9 @@
 {
-  "prize": "2024 Kluz Prize for PeaceTech",
+  "prize": "Kluz Prize for PeaceTech",
   "title": "Aerobotics7",
   "slug": "aerobotics7",
   "project_url": "https://www.aerobotics7.com/",
-  "applicant": "Harsh Zala",
+  "applicant": "Harshwardhan Zala",
   "country": "India",
   "year": 2024,
   "order": 1,
@@ -23,7 +23,7 @@
   },
   "quote": {
     "text": "The Kluz Prize for PeaceTech has been a pivotal moment for Aerobotics7, helping us accelerate our mission to innovate in landmine detection and UXO removal. This recognition not only validates our work but also connects us with key partners in the PeaceTech movement, driving global impact.",
-    "cite": "Harsh Zala – CEO",
+    "cite": "Harshwardhan Zala - CEO & Co-Founder",
     "image": ""
   },
   "impact": {
@@ -31,29 +31,29 @@
     "image": "",
     "metrics": [
       {
-        "label": "faster detection than manual methods",
+        "label": "Faster detection than manual methods",
         "value": "50X"
       },
       {
-        "label": "R&D hours Invested",
+        "label": "R&D hours invested",
         "value": "12,500+"
       },
       {
-        "label": "detection accuracy in recent testing on relevant environments",
+        "label": "Detection accuracy in recent testing on relevant environments",
         "value": "95%+"
       }
     ]
   },
   "people": [
     {
-      "name": "Harsh Zala",
-      "title": "CEO",
+      "name": "Harshwardhan Zala",
+      "title": "CEO & Co-Founder",
       "bio": "",
       "image": "/aerobotics7/harsh-zala.jpg"
     },
     {
       "name": "Urvashi Kikani",
-      "title": "CTO",
+      "title": "CTO and Co-Founder",
       "bio": "",
       "image": "/aerobotics7/urvashi.jpg"
     }

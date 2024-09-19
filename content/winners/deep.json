@@ -1,6 +1,6 @@
 {
   "prize": "Special Distinction for Humanitarian Impact",
-  "title": "Deep",
+  "title": "The Danish Refugee Council's DEEP",
   "slug": "deep",
   "project_url": "https://thedeep.io/",
   "applicant": "Joel Myhre",
@@ -26,7 +26,7 @@
   },
   "quote": {
     "text": "On behalf of our global DEEP team and the Danish Refugee Council (home of the DEEP Secretariat), we welcome the special distinction via the Kluz Prize to showcase how our DEEP efforts leverage open-source and NLP-enabled humanitarian technology to advance PeaceTech globally via the UN’s Protection Cluster.",
-    "cite": "Joel Myhre – DEEP Project Coordinator",
+    "cite": "Joel Myhre – DEEP Project Manager, Global Protection Unit",
     "image": ""
   },
   "impact": {
@@ -34,7 +34,7 @@
     "image": "",
     "metrics": [
       {
-        "label": "registered users",
+        "label": "Registered users",
         "value": "8,000"
       },
       {
@@ -50,7 +50,7 @@
   "people": [
     {
       "name": "Joel Myhre",
-      "title": "DEEP Project Coordinator",
+      "title": "DEEP Project Manager, Global Protection Unit",
       "bio": "",
       "image": "/deep/joel-myhre.png"
     }
