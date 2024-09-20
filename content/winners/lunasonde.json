@@ -29,16 +29,16 @@
     "image": "",
     "metrics": [
       {
-        "label": "Refugees assisted",
-        "value": "130,000+"
+        "label": "Square kilometers mapped",
+        "value": "1M"
       },
       {
         "label": "Users across local and central government",
         "value": "3,000+"
       },
       {
-        "label": "Organizations using our datasets",
-        "value": "100+"
+        "label": "Data updated",
+        "value": "Bimonthly"
       }
     ]
   },
