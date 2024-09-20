@@ -1,5 +1,5 @@
 <template>
-  <kpp-base-section class="kpp-cta" height="auto" :color="color" :content="content">
+  <kpp-base-section v-if="route.path !== content.action.url" class="kpp-cta" height="auto" :color="color" :content="content">
     <center-l size="wide">
       <div class="wrapper">
         <stack-l class="panel panel--header">
@@ -11,7 +11,7 @@
           </div>
         </stack-l>
         <stack-l class="panel panel--action">
-          <nuxt-link :to="content.action.url" unstyled="color">
+          <nuxt-link  :to="content.action.url" unstyled="color">
             <kpp-button class="button" visual="primary" :to="content.action.url" size="xl">{{ content.action.label }}</kpp-button>
           </nuxt-link>
         </stack-l>
@@ -22,6 +22,8 @@
 
 
 <script setup>
+const route = useRoute();
+
 const props = defineProps({
   color: {
     type: String,
@@ -39,6 +41,10 @@ const props = defineProps({
       }
     }
   }
+});
+
+const isCurrentUrl = computed(() => {
+  return route.path === content.action.url;
 });
 
 

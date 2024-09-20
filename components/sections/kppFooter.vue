@@ -23,7 +23,7 @@
       <nav class="menu menu-2 | stack">
         <h4>Applications</h4>
         <ul class="stack">
-          <li><NuxtLink to="/events/2024">2024 (Open)</NuxtLink></li>
+          <li><NuxtLink to="/events/2024">2024 (See Winners)</NuxtLink></li>
           <li><NuxtLink to="/events/2023">2023 (See Winners)</NuxtLink></li>
           <li><NuxtLink to="/events/2022">2022 (See Winners)</NuxtLink></li>
           <li><NuxtLink to="/faq">FAQ</NuxtLink></li>

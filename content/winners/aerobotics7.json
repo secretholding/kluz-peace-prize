@@ -4,7 +4,7 @@
   "slug": "aerobotics7",
   "project_url": "https://www.aerobotics7.com/",
   "applicant": "Harshwardhan Zala",
-  "country": "India",
+  "country": "United States",
   "year": 2024,
   "order": 1,
   "video": "eagle-a7-demo.mp4",
@@ -31,16 +31,16 @@
     "image": "",
     "metrics": [
       {
+        "label": "Detection accuracy in recent testing on relevant environments",
+        "value": "95%+"
+      },
+      {
         "label": "Faster detection than manual methods",
         "value": "50X"
       },
       {
         "label": "R&D hours invested",
         "value": "12,500+"
-      },
-      {
-        "label": "Detection accuracy in recent testing on relevant environments",
-        "value": "95%+"
       }
     ]
   },
