@@ -76,7 +76,7 @@ onBeforeUnmount(() => {
 
 const slides = [
   {
-    slug: 'applications-closed',
+    slug: 'winners',
     brow: 'Kluz Prize for PeaceTech | 2024',
     title: 'Winners of the Kluz Prize for PeaceTech',
     image: "/assets/images/kluz-prize-slide.jpg",
@@ -84,44 +84,32 @@ const slides = [
     path: '/events/2024'
   },
   {
-    slug: 'commit-global',
-    brow: 'Winner of the Kluz Prize for PeaceTech | 2023',
-    title: 'Commit Global',
-    image: "/assets/images/winners/commit-global/commit-global-in-action-3.jpg",
+    slug: 'aerobatics7',
+    brow: 'Winner of the Kluz Prize for PeaceTech | 2024',
+    title: 'Aerobotics7',
     action: "Learn More",
-    path: '/prizes/commit-global/'
+    path: 'prizes/aerobotics7'
   },
   {
-    slug: 'project-didi',
-    brow: 'Innovative Uses of AI/ML | 2023',
-    title: 'Project Didi',
-    image: "/assets/images/winners/project-didi/didi-in-action-8.jpg",
+    slug: 'deep',
+    brow: 'Distinction for Humanitarian Impact | 2024',
+    title: "The Danish Refugee Council's DEEP",
     action: "Learn More",
-    path: '/prizes/project-didi/'
+    path: 'prizes/deep/'
   },
   {
-    slug: 'palantir-foundry',
-    brow: "Big Tech Building Peace | 2023",
-    title: "Palantir's Foundry",
-    image: "/assets/images/winners/palantir-foundry/palantir-foundry-slider.jpg",
+    slug: 'views',
+    brow: "Distinction for Use of AI for Peace | 2024",
+    title: "VIEWS",
     action: "Learn More",
-    path: '/prizes/palantir-foundry/'
+    path: 'prizes/views/'
   },
   {
-    slug: 'human-rights-data-analysis-group',
-    brow: "Nonprofit Organization Advancing Peace | 2023",
-    title: 'Human Rights Data Analysis Group',
-    image: "/assets/images/winners/human-rights-data-analysis-group/hdrag-slider.jpg", 
+    slug: 'lunasonde',
+    brow: "Special Distinction for Space Technology | 2024",
+    title: 'Lunasonde',
     action: "Learn More",
-    path: '/prizes/human-rights-data-analysis-group/'
-  },
-  {
-    slug: 'magnolia-foundation',
-    brow: "Winner of the Kluz Prize for PeaceTech | 2022",
-    title: 'The Magnolia Foundation',
-    image: "/assets/images/winners/magnolia-foundation/magnolia-foundation-slider.jpg",
-    action: "Learn More",
-    path: '/prizes/magnolia-foundation/'
+    path: 'prizes/lunasonde/'
   }
 ]
 </script>
