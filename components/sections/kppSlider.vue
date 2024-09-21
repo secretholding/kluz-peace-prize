@@ -78,7 +78,7 @@ const slides = [
   {
     slug: 'applications-closed',
     brow: 'Kluz Prize for PeaceTech | 2024',
-    title: 'Winners to be announced on Sep 20th',
+    title: 'Winners of the Kluz Prize for PeaceTech',
     image: "/assets/images/kluz-prize-slide.jpg",
     action: "Learn More",
     path: '/events/2024'
