@@ -1,6 +1,6 @@
 {
   "prize": "Special Distinction for Humanitarian Impact",
-  "title": "The Danish Refugee Council's DEEP",
+  "title": "The Data Entry and Exploration Platform (DEEP)",
   "slug": "deep",
   "project_url": "https://thedeep.io/",
   "applicant": "Joel Myhre",
@@ -11,7 +11,7 @@
   "images": {
     "logo": "deep/deep-logo.png",
     "hero": "",
-    "ceremony": "",
+    "ceremony": "deep/kluz-prize-winners-deep-1.jpg",
     "impact": "",
     "slider": [
       "deep-1.png",
