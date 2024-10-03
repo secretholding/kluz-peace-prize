@@ -6,6 +6,7 @@
     :title="title" 
     :bg="bg"
     :has-background="hasBackground"
+    :year="year"
   >
     <kpp-top-bar class="kpp-hero__top-bar" :color="color" />
     <slot>
@@ -27,6 +28,10 @@ const props = defineProps({
     default: 'white'
   },
   bg: {
+    type: String,
+    default: ''
+  },
+  year: {
     type: String,
     default: ''
   },
@@ -138,6 +143,9 @@ const hasBackground = computed(() => {
     z-index: 1;
   }
 }
+
+.kpp-hero[has-background="true"][year="2024"] { background-position: center -14rem; }
+.kpp-hero[has-background="true"][year="2023"] { background-position: center -14rem; }
 
 .title-only {
   font-size: 6rem;

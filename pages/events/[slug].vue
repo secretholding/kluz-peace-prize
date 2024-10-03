@@ -1,10 +1,10 @@
 <template>
-  <kpp-hero height="50svh" :color="event.cover_image ? 'white' : 'primary'" :title="event.heading" :bg="event.cover_image">
+  <kpp-hero height="50svh" :color="event.cover_image ? 'white' : 'primary'" :title="event.heading" :bg="event.cover_image" :year="event.year">
     <center-l v-if="noBg" size="wide" class="width:100%">
       <kpp-headers :content="headerContent" color="primary" />
     </center-l>
   </kpp-hero>
-
+  
   <!-- <kpp-base-section class="tagline" color="primary">
    <center-l size="wide">
       <span v-html="headerContent.tagline"></span>
