@@ -144,8 +144,11 @@ const hasBackground = computed(() => {
   }
 }
 
-.kpp-hero[has-background="true"][year="2024"] { background-position: center -14rem; }
-.kpp-hero[has-background="true"][year="2023"] { background-position: center -14rem; }
+@media screen and (min-width: 768px) {
+  .kpp-hero[has-background="true"][year="2024"] { background-position: center -14rem; }
+  .kpp-hero[has-background="true"][year="2023"] { background-position: center -14rem; }  
+}
+
 
 .title-only {
   font-size: 6rem;
