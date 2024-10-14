@@ -73,12 +73,12 @@ You have to do this everytime you open a new terminal session.
 
 # More information
 ## Other authentication options
-### Opção 1:
+### Option 1:
 - Edit the .npmrc file replacing `${NPM_TOKEN}` on line `//npm.pkg.github.com/:_authToken=${NPM_TOKEN}` with the personal access token.
 
 **WARNING**: Do not commit your changes to `.npmrc` file with your personal token!
 
-### Opção 2:
+### Option 2:
 - On your terminal, log in npm with the following command:
 
 ```
