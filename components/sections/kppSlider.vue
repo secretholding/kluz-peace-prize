@@ -74,44 +74,67 @@ onBeforeUnmount(() => {
   clearInterval(intervalId);
 });
 
-const slides = [
-  {
+let slides = [];
+const highlights = await queryContent('highlights').find();
+highlights.forEach((hl) => {
+  slides = hl.winners.map((winner) => {
+    return {
+      slug: winner.slug,
+      brow: winner.brow,
+      title: winner.title,
+      path: `/prizes/${winner.slug}`, 
+      action: "Learn More",
+    }
+  });
+  slides.unshift({
     slug: 'winners',
-    brow: 'Kluz Prize for PeaceTech | 2024',
-    title: 'Winners of the Kluz Prize for PeaceTech',
+    brow: hl.brow,
+    title: hl.title,
     image: "/assets/images/kluz-prize-slide.jpg",
     action: "Learn More",
-    path: '/events/2024'
-  },
-  {
-    slug: 'aerobatics7',
-    brow: 'Winner of the Kluz Prize for PeaceTech | 2024',
-    title: 'Aerobotics7',
-    action: "Learn More",
-    path: 'prizes/aerobotics7'
-  },
-  {
-    slug: 'deep',
-    brow: 'Distinction for Humanitarian Impact | 2024',
-    title: "The Danish Refugee Council's DEEP",
-    action: "Learn More",
-    path: 'prizes/deep/'
-  },
-  {
-    slug: 'views',
-    brow: "Distinction for Use of AI for Peace | 2024",
-    title: "VIEWS",
-    action: "Learn More",
-    path: 'prizes/views/'
-  },
-  {
-    slug: 'lunasonde',
-    brow: "Special Distinction for Space Technology | 2024",
-    title: 'Lunasonde',
-    action: "Learn More",
-    path: 'prizes/lunasonde/'
-  }
-]
+    path: `/events/${hl.event_year}` 
+  })
+
+});
+
+// const slides = [
+//   {
+//     slug: 'winners',
+//     brow: 'Kluz Prize for PeaceTech | 2024',
+//     title: 'Winners of the Kluz Prize for PeaceTech',
+//     image: "/assets/images/kluz-prize-slide.jpg",
+//     action: "Learn More",
+//     path: '/events/2024'
+//   },
+//   {
+//     slug: 'aerobatics7',
+//     brow: 'Winner of the Kluz Prize for PeaceTech | 2024',
+//     title: 'Aerobotics7',
+//     action: "Learn More",
+//     path: 'prizes/aerobotics7'
+//   },
+//   {
+//     slug: 'deep',
+//     brow: 'Distinction for Humanitarian Impact | 2024',
+//     title: "The Danish Refugee Council's DEEP",
+//     action: "Learn More",
+//     path: 'prizes/deep/'
+//   },
+//   {
+//     slug: 'views',
+//     brow: "Distinction for Use of AI for Peace | 2024",
+//     title: "VIEWS",
+//     action: "Learn More",
+//     path: 'prizes/views/'
+//   },
+//   {
+//     slug: 'lunasonde',
+//     brow: "Special Distinction for Space Technology | 2024",
+//     title: 'Lunasonde',
+//     action: "Learn More",
+//     path: 'prizes/lunasonde/'
+//   }
+// ]
 </script>
 <style lang="scss" scoped>
 .slider__nav {
