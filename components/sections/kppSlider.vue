@@ -75,7 +75,7 @@ onBeforeUnmount(() => {
 });
 
 let slides = [];
-const highlights = await queryContent('highlights').find();
+const highlights = await queryContent('highlights').where({ event_year: { $exists: true } }).sort({ event_year: -1 }).find();
 highlights.forEach((hl) => {
   slides = hl.winners.map((winner) => {
     return {

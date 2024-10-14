@@ -50,6 +50,18 @@ const { title, description } = await queryContent('winners').find();
 </script>
 ```
 
+## Slides in Home Screen
+Slides data comes from the Highlights content model in the CMS.
+- The fields Brow, Title and Event_year should be filled with the event data.
+
+- The Winner field is a relational with Winners content model.
+Use the Adding Existing button to select one of those existing winners or use Create new button to add a new winner straight from the highlight form.
+
+- Make sure to set status equal published to the highlight you want to show on the site. Othewise the most recent will be selected.
+
+P.S Winner content model is described above on the Directus section.
+
+
 ## CCMDESIGN Components package library
 
 ## Authenticating
