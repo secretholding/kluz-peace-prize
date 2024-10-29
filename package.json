@@ -12,7 +12,7 @@
     "nuxt": "^3.7.0"
   },
   "dependencies": {
-    "@ccmdesign/ccm-ds": "0.5.0",
+    "@ccmdesign/ccm-ds": "0.6.3",
     "path": "^0.12.7",
     "sass": "^1.54.4",
     "@directus/sdk": "10.3.3",
