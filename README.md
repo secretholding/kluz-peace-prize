@@ -12,6 +12,7 @@ To edit or add new content for any of the following models, use the CMS:
 - Winner
 - Agenda
 - Blogposts
+- Highlights
 
 All data is fetched through the contentImporter.js. The environment variable with the CMS endpoint is expected. The imported scripts is available in the directus folder.
 
@@ -46,7 +47,7 @@ npm run genereate
 </template>
 
 <script setup>
-const { title, description } = await queryContent('winners').find();
+const { title, description } = await queryContent('winners').findOne();
 </script>
 ```
 
