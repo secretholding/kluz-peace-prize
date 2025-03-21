@@ -1,6 +1,6 @@
 # Execute project for development
 
-## Prerequisites
+## Prerequisites 1
 - Create a Github personal access token as shown on: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
 - Node.js (v14 or later)
