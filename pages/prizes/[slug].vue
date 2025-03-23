@@ -218,9 +218,9 @@ const hasQuote = computed(() => {
 .quote {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 768px) { flex-direction: row; }
   gap: var(--s2);
   margin-block: var(--s2);
+  @media screen and (min-width: 768px) { flex-direction: row; }
 
   &__icon {
     flex-shrink: 0;

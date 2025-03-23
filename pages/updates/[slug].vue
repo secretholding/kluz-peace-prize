@@ -49,11 +49,11 @@ useHead({
 }
 
 .tagline-section {
+  font-size: 1.2rem;
+  font-weight: 200;
   @media screen and (min-width: 768px){
     display: none;
   }
-  font-size: 1.2rem;
-  font-weight: 200;
 }
 
 

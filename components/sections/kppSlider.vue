@@ -140,6 +140,10 @@ highlights.forEach((hl) => {
 .slider__nav {
   position: absolute;
   bottom: var(--s1);
+  z-index: 10;
+  color: white;
+  display: flex;
+  gap: var(--s-2);
   
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -147,10 +151,6 @@ highlights.forEach((hl) => {
   }
   
   @media screen and (min-width: 768px) { right: var(--s1); }
-  z-index: 10;
-  color: white;
-  display: flex;
-  gap: var(--s-2);
 
   a {
     all: unset;
