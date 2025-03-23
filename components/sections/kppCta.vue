@@ -72,20 +72,20 @@ const isCurrentUrl = computed(() => {
 .kpp-cta {
   .brow {
     font-size: 150%;
-    @media screen and (max-width: 768px) { font-size: 100%; }
-    @media (max-aspect-ratio: 3/4) { font-size: 85%; }
     line-height: 1.2;
     font-weight: 800;
     text-transform: uppercase;
     color: var(--primary-color);
+    @media screen and (max-width: 768px) { font-size: 100%; }
+    @media (max-aspect-ratio: 3/4) { font-size: 85%; }
   }
   .title {
     font-size: 330%;
     font-weight: 200;
-    @media screen and (max-width: 768px) { font-size: 200%; }
-    @media (max-aspect-ratio: 3/4) { font-size: 175%; }
     line-height: 1.2;
     --space: 0;
+    @media screen and (max-width: 768px) { font-size: 200%; }
+    @media (max-aspect-ratio: 3/4) { font-size: 175%; }
   }
 
   p { 

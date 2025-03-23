@@ -134,6 +134,10 @@ const slides = [
 .slider__nav {
   position: absolute;
   bottom: var(--s1);
+  z-index: 10;
+  color: white;
+  display: flex;
+  gap: var(--s-2);
   
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -141,10 +145,6 @@ const slides = [
   }
   
   @media screen and (min-width: 768px) { right: var(--s1); }
-  z-index: 10;
-  color: white;
-  display: flex;
-  gap: var(--s-2);
 
   a {
     all: unset;
@@ -178,9 +178,6 @@ const slides = [
 .slide {
   width: 100%;
   background: linear-gradient(hsla(var(--base-hsl), .2) 10%, hsla(var(--base-hsl), .4) 50%), var(--bg);
-  
-  @media screen and (max-width: 768px){ padding-bottom: var(--s4); }
-
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -189,6 +186,8 @@ const slides = [
   justify-content: flex-end;
   padding: var(--s2) 0;
   position: relative;
+  
+  @media screen and (max-width: 768px){ padding-bottom: var(--s4); }
 }
 
 .slide__content {

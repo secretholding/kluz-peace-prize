@@ -72,9 +72,8 @@ const hasBackground = computed(() => {
     color: var(--primary-color); 
     
     font-size: 2.5rem;
-    @media (min-width: 768px) { font-size: 3rem; }
-    
     font-weight: 100;
+    @media (min-width: 768px) { font-size: 3rem; }
   }
 
   .kpp-hero__brow {
