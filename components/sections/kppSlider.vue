@@ -183,12 +183,6 @@ highlights.forEach((hl) => {
 .slide {
   width: 100%;
   background-color: var(--primary-color);
-
-  @media screen and (max-width: 768px) {
-    background-image: linear-gradient(transparent 0%, hsla(var(--base-hsl), .3) 50%);
-    background-position: center;
-  }
-
   background-image: linear-gradient(transparent 0%, hsla(var(--base-hsl), .3) 50%);
   background-blend-mode: multiply;
   background-position: center;
@@ -196,7 +190,6 @@ highlights.forEach((hl) => {
   flex-direction: column;
   justify-content: flex-end;
   padding: var(--s2) 0;
-  @media screen and (max-width: 768px) { padding-bottom: calc(var(--s3) + 1rem);  }
   position: absolute;
   top: 0;
   left: 0;
@@ -204,6 +197,12 @@ highlights.forEach((hl) => {
   transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
   visibility: hidden;
   align-content: end;
+  @media screen and (max-width: 768px) { padding-bottom: calc(var(--s3) + 1rem);  }
+
+  @media screen and (max-width: 768px) {
+    background-image: linear-gradient(transparent 0%, hsla(var(--base-hsl), .3) 50%);
+    background-position: center;
+  }
 
   &.active {
     opacity: 1;
