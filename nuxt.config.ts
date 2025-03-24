@@ -28,6 +28,9 @@ export default defineNuxtConfig({
       ],
     }
   },
+  nitro: {
+    preset: 'netlify-static'
+  },
   css: [
     '@ccmdesign/ccm-ds/assets/css/main.scss',
     '/public/assets/css/theme.css',
@@ -66,3 +69,6 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ]
 });
+
+
+
