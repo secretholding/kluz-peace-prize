@@ -11,9 +11,7 @@ export default defineNuxtConfig({
         port: 443
       },
       // This is where allowedHosts should be configured for Vite
-      host: true, // This allows external connections
-      // Alternative: You can specify allowed hosts like this:
-      // host: ['localhost', '.kluzprize.org', '.netlify.app']
+      host: ['localhost', '.kluzprize.org', '.netlify.app']
     }
   },
   app: {
