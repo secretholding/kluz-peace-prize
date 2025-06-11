@@ -2,16 +2,20 @@ import { defineNuxtConfig } from "nuxt/config";
 import { resolve } from "path";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  // Add Vite configuration for allowed hosts
+  // Add Vite configuration with allowedHosts as the error message suggests
   vite: {
     server: {
+      allowedHosts: [
+        '.localhost',
+        '.kluzprize.org',
+        '.netlify.app',
+        'devserver-testing-2025--kluz-prize.netlify.app'
+      ],
       hmr: {
         protocol: 'wss',
         clientPort: 443,
         port: 443
-      },
-      // This is where allowedHosts should be configured for Vite
-      host: ['localhost', '.kluzprize.org', '.netlify.app']
+      }
     }
   },
   app: {
