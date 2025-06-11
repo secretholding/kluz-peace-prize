@@ -79,16 +79,6 @@
 
             <kpp-field type="url" inputName="link" inputId="link" label="Link to your project or research*" validate="required" placeholder="" :errorMessage="errors.link" />
 
-            <legend>If you are awarded the KluzPrize, would you be available to attend an awards ceremony in New York City on Friday, September 19th?</legend>
-            <div>
-              <input type="radio" id="attendance" value="yes" checked />
-              <label for "yes" />Yes</label>
-            </div>
-            <div>
-              <input type="radio" id="attendance value="no" />
-              <label for "no" />No</label>
-            </div>
-
             <p class="margin-bottom:s2"><strong class="color:primary">Do you have any pictures or videos that support making your technology come to life? Please email them to us at <a href="mailto:info@kluzprize.org" target="_blank" class="color:primary">info@kluzprize.org</a> with your name as the subject line.</strong></p>
 
             <h3 visual="h1" class="margin-top:s1">Terms and Conditions</h3>
