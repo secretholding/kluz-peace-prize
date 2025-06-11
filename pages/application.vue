@@ -79,7 +79,24 @@
 
             <kpp-field type="url" inputName="link" inputId="link" label="Link to your project or research*" validate="required" placeholder="" :errorMessage="errors.link" />
 
-            <p class="margin-bottom:s2"><strong class="color:primary">Do you have any pictures or videos that support making your technology come to life? Please email them to us at <a href="mailto:info@kluzprize.org" target="_blank" class="color:primary">info@kluzprize.org</a> with your name as the subject line.</strong></p>
+            <!-- New Attendance Question -->
+            <div class="radio-group margin-top:s1">
+              <label class="radio-label">If you are awarded the KluzPrize, would you be available to attend an awards ceremony in New York City on Friday, September 19th?*</label>
+              <div class="radio-options">
+                <label class="radio-option">
+                  <input type="radio" name="attendance" value="yes" id="attendance-yes" required>
+                  <span>Yes</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="attendance" value="no" id="attendance-no" required>
+                  <span>No</span>
+                </label>
+              </div>
+              <p v-if="errors.attendance" class="error-message">
+                <span class="material-symbols-outlined">error</span>
+                {{ errors.attendance }}
+              </p>
+            </div>
 
             <h3 visual="h1" class="margin-top:s1">Terms and Conditions</h3>
             <p>By submitting this form, you are agreeing to the <a href="https://docs.google.com/document/d/1zla85Quk9FQqpZkUwpV2fSFwvFYHr-wkgydt-z3a4qk" target="_blank">Terms and Conditions</a>. The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/copyright-and-fair-use/digital-privacy-statement.html" target="_blank">review the full statement here</a>.</p>
@@ -132,5 +149,66 @@
 
 p a {
   text-decoration: underline;
+}
+
+/* Radio Button Styles */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.radio-label {
+  font-weight: 600;
+  margin-bottom: var(--s-2);
+}
+
+.radio-options {
+  display: flex;
+  gap: var(--s1);
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  cursor: pointer;
+  padding: var(--s-2);
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.radio-option:hover {
+  background-color: var(--hover-bg, #f5f5f5);
+  border-color: var(--primary-color, #007bff);
+}
+
+.radio-option input[type="radio"] {
+  margin: 0;
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"]:checked + span {
+  font-weight: 600;
+  color: var(--primary-color, #007bff);
+}
+
+.radio-option input[type="radio"]:checked ~ .radio-option {
+  border-color: var(--primary-color, #007bff);
+  background-color: var(--selected-bg, #f0f7ff);
+}
+
+.error-message {
+  color: var(--error-color, #d32f2f);
+  font-size: 0.875rem;
+  margin-top: var(--s-3);
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+
+.error-message .material-symbols-outlined {
+  font-size: 1.2rem;
 }
 </style>
