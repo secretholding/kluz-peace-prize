@@ -4,7 +4,7 @@ import { resolve } from "path";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   server: {
-    allowedHosts: ['kluzprize.org', 'devserver-main--kluz-prize.netlify.app'] // Replace with your hostnames
+    allowedHosts: ['.kluzprize.org', '.netlify.app']
   },
   app: {
     head: {
