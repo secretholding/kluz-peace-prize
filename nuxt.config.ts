@@ -1,10 +1,20 @@
 import { defineNuxtConfig } from "nuxt/config";
 import { resolve } from "path";
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  server: {
-    allowedHosts: ['.kluzprize.org', '.netlify.app']
+  // Add Vite configuration for allowed hosts
+  vite: {
+    server: {
+      hmr: {
+        protocol: 'wss',
+        clientPort: 443,
+        port: 443
+      },
+      // This is where allowedHosts should be configured for Vite
+      host: true, // This allows external connections
+      // Alternative: You can specify allowed hosts like this:
+      // host: ['localhost', '.kluzprize.org', '.netlify.app']
+    }
   },
   app: {
     head: {
@@ -72,6 +82,3 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ]
 });
-
-
-
