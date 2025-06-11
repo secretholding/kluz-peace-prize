@@ -5,7 +5,7 @@ import { resolve } from "path";
 export default defineNuxtConfig({
   server: {
     allowedHosts: ['kluzprize.org', 'devserver-main--kluz-prize.netlify.app'] // Replace with your hostnames
-  }
+  },
   app: {
     head: {
       title: "Kluz Prize for PeaceTech",
