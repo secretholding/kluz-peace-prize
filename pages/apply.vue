@@ -3,7 +3,7 @@
   <kpp-hero height="auto" color="primary">
     <slot>
       <center-l size="wide">
-        <h2 class="text-align:center">Application for 2025</h2>
+        <h2 class="text-align:center">Application for 2024</h2>
       </center-l>
     </slot>
   </kpp-hero> 
@@ -16,7 +16,8 @@
             <kpp-field type="email" inputName="email" inputId="email" label="Email*" validate="required email" placeholder="" :errorMessage="errors.email" />
             <kpp-field type="text" inputName="applicant" inputId="applicant" label="Name of Applicant*" validate="required" placeholder="" :errorMessage="errors.applicant" />
             <kpp-field type="text" inputName="affiliation" inputId="affiliation" label="Affiliation*" validate="required" placeholder="" :errorMessage="errors.affiliation" />
-            <kpp-field type="text" inputName="location" inputId="location" label="Where is the project or research based?*" validate="required" placeholder="" :errorMessage="errors.location" />
+            <kpp-field type="text" inputName="location" inputId="location" label="Where is the project based?*" validate="required" placeholder="" :errorMessage="errors.location" />
+            <kpp-field type="url" inputName="link" inputId="link" label="Link to your project or research*" validate="required" placeholder="" :errorMessage="errors.link" />
             <kpp-textarea 
               ref="summary"
               label="Please provide a brief summary of your project or research.*" 
@@ -76,13 +77,6 @@
               inputId="collaboration"
               :errorMessage="errors.collaboration"
             />
-
-            <kpp-field type="url" inputName="link" inputId="link" label="Link to your project or research*" validate="required" placeholder="" :errorMessage="errors.link" />
-
-            <legend>If you are awarded the KluzPrize, would you be available to attend an awards ceremony in New York City on Friday, September 19th?</legend>
-
-            <kpp-field type="radio" inputName="attendance" inputId="attendance" value="yes" label="Yes" validate="required" placeholder="" :errorMessage="errors.attendance" />
-            <kpp-field type="radio" inputName="attendance" inputId="attendance" value="no" label="No" validate="required" placeholder="" :errorMessage="errors.attendance" />
 
             <p class="margin-bottom:s2"><strong class="color:primary">Do you have any pictures or videos that support making your technology come to life? Please email them to us at <a href="mailto:info@kluzprize.org" target="_blank" class="color:primary">info@kluzprize.org</a> with your name as the subject line.</strong></p>
 
