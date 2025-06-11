@@ -79,7 +79,6 @@
 
             <kpp-field type="url" inputName="link" inputId="link" label="Link to your project or research*" validate="required" placeholder="" :errorMessage="errors.link" />
 
-            <!-- New Attendance Question -->
             <div class="radio-group margin-top:s1">
               <label class="radio-label">If you are awarded the KluzPrize, would you be available to attend an awards ceremony in New York City on Friday, September 19th?*</label>
               <div class="radio-options">
