@@ -17,6 +17,31 @@
     </center-l>
   </kpp-base-section>
 
+  <!-- Roadmap Section -->
+  <kpp-base-section>
+    <center-l size="wide">
+      <h2 class="section-title">2025 Timeline</h2>
+      <ul class="roadmap">
+        <li class="roadmap__item" active="true">
+          <h4>Applications Are Now Open</h4>
+          <p>Submit your application for the 2025 Kluz Prize for PeaceTech.</p>
+        </li>
+        <li class="roadmap__item">
+          <h4>July 20<sup>th</sup>, 2025<span> | Applications Deadline</span></h4>
+          <p>Apply by 11:59 PM EDT</p>
+        </li>
+        <li class="roadmap__item">
+          <h4>Beginning of September, 2025<span> | Final Decision</span></h4>
+          <p>Communication of the final decision to the winner(s) and invitation to the award ceremony</p>
+        </li>
+        <li class="roadmap__item">
+          <h4>September 19<sup>th</sup>, 2025 <span> | Award ceremony</span></h4>
+          <p>Winner will be honored at an award ceremony</p>
+        </li>
+      </ul>
+    </center-l>
+  </kpp-base-section>
+
   <kpp-winners-section :content="event.winners" v-if="event.winners && event.winners.winner" />
 
   <kpp-base-section class="ceremony-section" padding="0" v-if="event.images">
@@ -162,41 +187,58 @@ const noBg = computed(() => {
 
 /* 2025 Application Styles */
 :deep(.application-notice) {
-  background: linear-gradient(135deg, hsla(var(--primary-hsl), 0.1) 0%, hsla(var(--primary-hsl), 0.05) 100%);
+  background-color: var(--primary-color);
+  color: var(--white-color);
   padding: var(--s3);
-  border-radius: 8px;
-  text-align: center;
+  margin: calc(var(--s3) * -1);
   margin-bottom: var(--s3);
-  border: 1px solid hsla(var(--primary-hsl), 0.2);
+}
+
+:deep(.notice-content) {
+  text-align: center;
+  max-width: 60ch;
+  margin: 0 auto;
 }
 
 :deep(.application-notice h2) {
-  color: var(--primary-color);
+  font-size: 330%;
+  font-weight: 200;
+  line-height: 1.2;
+  color: var(--white-color);
   margin-bottom: var(--s1);
+  @media screen and (max-width: 768px) { font-size: 200%; }
 }
 
 :deep(.cta-button) {
   display: inline-block;
-  background-color: var(--primary-color);
-  color: white;
-  padding: var(--s0) var(--s2);
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+  color: var(--base-color);
+  padding: var(--s0) var(--s3);
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   transition: all 0.3s ease;
+  margin: var(--s1) 0;
 }
 
 :deep(.cta-button:hover) {
-  background-color: var(--primary-dark, #0056b3);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: transparent;
+  color: var(--white-color);
+  border-color: var(--white-color);
+  transform: scale(1.05);
 }
 
 :deep(.deadline) {
-  font-size: 0.9em;
-  color: var(--secondary-color);
-  margin-top: var(--s0);
+  font-size: 125%;
+  color: var(--white-color);
+  margin-top: var(--s2);
   font-weight: 500;
+  opacity: 0.9;
 }
 
 :deep(.timeline) {
@@ -240,6 +282,75 @@ const noBg = computed(() => {
 :deep(.apply-cta) {
   text-align: center;
   margin-top: var(--s2);
+}
+
+/* Roadmap Styles from roadmap.vue */
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  align-items: flex-start;
+  position: relative;
+
+  &__item { 
+    padding: var(--s0) var(--s1); 
+    position: relative;
+  }
+
+  &__item:before {
+    content: 'radio_button_unchecked';
+    font-family: var(--icon-font);
+    position: absolute;
+    left: -1.5rem;
+    top: 19px;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--secondary-color);
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  &__item:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 45px;
+    bottom: -83px;
+    left: -13px;
+    width: 2px;
+    background-color: var(--secondary-color);
+  }
+
+  &__item[active] {
+    background: linear-gradient(to right, transparent 0%, hsla(var(--primary-hsl), .1) 10%, transparent 100%);
+  }
+  
+  &__item[active]:not(:last-child):after {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    animation: animateGradient 1s linear infinite reverse;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-color);
+
+    sup { 
+      color: var(--primary-color); 
+      font-weight: 400;
+      font-size: .85rem;
+    }
+  }
+  
+  span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--base-color);
+  }
+
+  .roadmap__item[active='true']:before {
+    content: 'radio_button_checked';
+    color: var(--primary-color);
+  }
 }
 
 
