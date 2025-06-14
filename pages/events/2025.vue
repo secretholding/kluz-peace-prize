@@ -224,12 +224,12 @@ const noBg = computed(() => {
   background-color: var(--tertiary-color);
   border: 2px solid var(--tertiary-color);
   color: var(--base-color);
-  padding: var(--s0) var(--s3);
+  padding: var(--s0) var(--s2);
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1;
+  font-size: 1rem;
+  line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: all 0.3s ease;
@@ -240,7 +240,6 @@ const noBg = computed(() => {
   background-color: transparent;
   color: var(--white-color);
   border-color: var(--white-color);
-  transform: scale(1.05);
 }
 
 :deep(.deadline) {
@@ -302,16 +301,21 @@ const noBg = computed(() => {
 :deep(.faq-button) {
   display: inline-block;
   background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   color: var(--white-color);
   padding: var(--s-1) var(--s1);
   border-radius: 4px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   transition: all 0.3s ease;
 }
 
 :deep(.faq-button:hover) {
   background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .final-section {
@@ -326,20 +330,22 @@ const noBg = computed(() => {
 .final-apply-button {
   display: inline-block;
   background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
   color: var(--white-color);
-  padding: var(--s0) var(--s3);
+  padding: var(--s0) var(--s2);
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: all 0.3s ease;
 }
 
 .final-apply-button:hover {
-  background-color: var(--primary-dark, #0056b3);
-  transform: scale(1.05);
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 /* Roadmap Styles from roadmap.vue */
