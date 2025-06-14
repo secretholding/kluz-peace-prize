@@ -38,7 +38,7 @@ const props = defineProps({
       extra: 'Applications are due by 11:59 PM EDT on July 20th, 2025.',
       action: {
         label: 'Apply Now',
-        url: '/apply'
+        url: '/application'
       }
     }
   }
