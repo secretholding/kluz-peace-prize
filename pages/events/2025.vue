@@ -42,6 +42,16 @@
     </center-l>
   </kpp-base-section>
 
+  <!-- Privacy Policy and Final CTA -->
+  <kpp-base-section>
+    <center-l size="wide" class="final-section">
+      <p>For information regarding privacy, please review the Kluz Prize's Privacy Policy <a href="/privacy-policy">here</a>.</p>
+      <div class="final-cta">
+        <a href="/application" class="final-apply-button">Apply Now</a>
+      </div>
+    </center-l>
+  </kpp-base-section>
+
   <kpp-winners-section :content="event.winners" v-if="event.winners && event.winners.winner" />
 
   <kpp-base-section class="ceremony-section" padding="0" v-if="event.images && event.images.length > 0">
@@ -282,6 +292,54 @@ const noBg = computed(() => {
 :deep(.apply-cta) {
   text-align: center;
   margin-top: var(--s2);
+}
+
+:deep(.faq-button-wrapper) {
+  text-align: center;
+  margin: var(--s2) 0;
+}
+
+:deep(.faq-button) {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: var(--s-1) var(--s1);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+:deep(.faq-button:hover) {
+  background-color: var(--primary-color);
+}
+
+.final-section {
+  text-align: center;
+  padding: var(--s2) 0;
+}
+
+.final-cta {
+  margin-top: var(--s2);
+}
+
+.final-apply-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: var(--s0) var(--s3);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.final-apply-button:hover {
+  background-color: var(--primary-dark, #0056b3);
+  transform: scale(1.05);
 }
 
 /* Roadmap Styles from roadmap.vue */
