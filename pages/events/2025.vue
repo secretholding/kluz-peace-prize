@@ -49,10 +49,8 @@
 
 <script setup>
 
-const route = useRoute()
-
 const event = await queryContent('events').where({
-    year: Number(route.params.slug)
+    year: 2025
 }).findOne();
 
 useHead({

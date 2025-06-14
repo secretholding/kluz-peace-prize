@@ -7,7 +7,7 @@
           <h2 class="title">{{ content.title }}</h2>
           <div class="margin-top:s1">
             <p>{{ content.text }}</p>
-            <p v-if="content.extra"><strong>{{ content.extra }}</strong></p>
+            <p v-if="content.extra" class="extra-text"><strong>{{ content.extra }}</strong></p>
           </div>
         </stack-l>
         <stack-l class="panel panel--action">
@@ -93,6 +93,10 @@ const isCurrentUrl = computed(() => {
     --space: var(--s1); 
     font-size: 125%;
     @media (max-aspect-ratio: 3/4) { font-size: 100%; }
+  }
+  
+  .extra-text {
+    margin-top: var(--s2);
   }
 }
 
