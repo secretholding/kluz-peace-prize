@@ -98,7 +98,19 @@
             </div>
 
             <h3 visual="h1" class="margin-top:s1">Terms and Conditions</h3>
-            <p>By submitting this form, you are agreeing to the <a href="https://docs.google.com/document/d/1zla85Quk9FQqpZkUwpV2fSFwvFYHr-wkgydt-z3a4qk" target="_blank">Terms and Conditions</a>. The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/copyright-and-fair-use/digital-privacy-statement.html" target="_blank">review the full statement here</a>.</p>
+            <p>By submitting this form, you are agreeing to the <a href="https://docs.google.com/document/d/1zla85Quk9FQqpZkUwpV2fSFwvFYHr-wkgydt-z3a4qk" target="_blank">Terms and Conditions</a>. Please check the box below to confirm that you have read and agree to the terms and conditions.</p>
+            
+            <p class="checkbox-wrapper">
+              <label class="checkbox-label">
+                <input type="checkbox" name="terms" id="terms" required>
+                <span>I agree to the terms and conditions as they are outlined above.</span>
+              </label>
+              <span v-if="errors.terms" class="error-message">
+                <span class="material-symbols-outlined">error</span>
+                {{ errors.terms }}
+              </span>
+            </p>
+
             <kpp-button class="margin-top:s1" el="button" size="l" color="primary" visual="primary" @click.prevent="handleSubmit">Submit</kpp-button>
           </stack-l>
         </form>
@@ -209,5 +221,28 @@ p a {
 
 .error-message .material-symbols-outlined {
   font-size: 1.2rem;
+}
+
+/* Checkbox Styles */
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+
+.checkbox-label span {
+  flex: 1;
 }
 </style>
