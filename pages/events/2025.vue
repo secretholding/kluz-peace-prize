@@ -83,7 +83,7 @@ useHead({
 })
 
 const headerContent = {
-  brow: 'Winners',
+  brow: event.brow || 'Event',
   title: `Kluz Prize for PeaceTech ${event.year}`,
   tagline: `${event.tagline}`,
   // author: 'This is the author',
