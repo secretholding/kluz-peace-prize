@@ -14,9 +14,6 @@
   <kpp-base-section v-if="event.description_html">
     <center-l size="wide">
       <kpp-prose :html-content="event.description_html" />
-      <div class="top-cta">
-        <nuxt-link class="button slider-button" data-size="l" to="/application">Apply Now</nuxt-link>
-      </div>
     </center-l>
   </kpp-base-section>
 
@@ -279,24 +276,13 @@ const noBg = computed(() => {
   margin: var(--s2) 0;
 }
 
-.top-cta {
+:deep(.top-apply-cta) {
   text-align: center;
   margin-top: var(--s2);
 }
 
-.slider-button {
+:deep(.top-apply-cta *) {
   color: white !important;
-  border: 2px solid white;
-  background: transparent;
-  padding: var(--s-1) var(--s1);
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.slider-button:hover {
-  background: white;
-  color: var(--primary-color) !important;
 }
 
 .final-section {
