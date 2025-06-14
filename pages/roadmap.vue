@@ -4,7 +4,7 @@
     <center-l size="wide">
       <ul class="roadmap">
         <li class="roadmap__item" active="true">
-          <h4>Applications Are Now Open</span></h4>
+          <h4>Applications Are Now Open</h4>
           <p>Submit your application for the 2025 Kluz Prize for PeaceTech.</p>
         </li>
         <li class="roadmap__item">
