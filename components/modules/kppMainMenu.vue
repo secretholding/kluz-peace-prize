@@ -7,7 +7,7 @@
 
       <ul>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/">Home</NuxtLink></li>
-        <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/events/2024">Event</NuxtLink></li>
+        <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/events/2025">Event</NuxtLink></li>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/prizes/">Prizes</NuxtLink></li>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/updates/">Updates</NuxtLink></li>
         <li><NuxtLink class="main-menu__item" @click="isOpen = false" to="/about">About</NuxtLink></li>
