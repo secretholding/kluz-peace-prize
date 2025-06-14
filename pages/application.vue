@@ -137,6 +137,21 @@
   const appForm = ref()
   const handleSubmit = async () => {
     validateForm(appForm.value)
+    
+    // Check if attendance radio is selected
+    const attendanceChecked = appForm.value.querySelector('input[name="attendance"]:checked')
+    if (!attendanceChecked) {
+      hasErrors.value = true
+      errors.value.attendance = 'Please select an option'
+    }
+    
+    // Check if terms checkbox is checked
+    const termsCheckbox = appForm.value.querySelector('#terms')
+    if (!termsCheckbox.checked) {
+      hasErrors.value = true
+      errors.value.terms = 'You must agree to the terms and conditions'
+    }
+    
     document.getElementById('appForm').scrollIntoView()
     if (!hasErrors.value) { 
       await onSubmit(appForm.value)
