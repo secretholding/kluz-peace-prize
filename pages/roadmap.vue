@@ -8,7 +8,7 @@
           <p>Submit your application for the 2025 Kluz Prize for PeaceTech.</p>
         </li>
         <li class="roadmap__item">
-          <h4>July 20<sup>th</sup>, 2025<span> | Applications Deadline</span></h4>
+          <h4>July 20<sup>th</sup>, 2025<span> | Application Deadline</span></h4>
           <p>Apply by 11:59 PM EDT</p>
         </li>
         <li class="roadmap__item">

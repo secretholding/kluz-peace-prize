@@ -27,7 +27,7 @@
           <p>Submit your application for the 2025 Kluz Prize for PeaceTech.</p>
         </li>
         <li class="roadmap__item">
-          <h4>July 20<sup>th</sup>, 2025<span> | Applications Deadline</span></h4>
+          <h4>July 20<sup>th</sup>, 2025<span> | Application Deadline</span></h4>
           <p>Apply by 11:59 PM EDT</p>
         </li>
         <li class="roadmap__item">
@@ -44,7 +44,7 @@
 
   <kpp-winners-section :content="event.winners" v-if="event.winners && event.winners.winner" />
 
-  <kpp-base-section class="ceremony-section" padding="0" v-if="event.images">
+  <kpp-base-section class="ceremony-section" padding="0" v-if="event.images && event.images.length > 0">
     <center-l size="wide">
       <h2 class="section-title">Event</h2>
       <stack-l v-if="event.ceremony_video">
@@ -60,7 +60,7 @@
     </reel-l>
   </kpp-base-section>
 
-  <kpp-base-section class="jury-section">
+  <kpp-base-section class="jury-section" v-if="event.jury && event.jury.length > 0">
     <center-l size="wide">
       <h2 class="section-title">Selection Committee</h2>
       <div class="grid">
