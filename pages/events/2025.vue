@@ -47,7 +47,7 @@
     <center-l size="wide" class="final-section">
       <p>For information regarding privacy, please review the Kluz Prize's Privacy Policy <a href="/privacy-policy">here</a>.</p>
       <div class="final-cta">
-        <a href="/application" class="final-apply-button">Apply Now</a>
+        <a class="button" visual="primary" color="primary" href="/application">Apply Now</a>
       </div>
     </center-l>
   </kpp-base-section>
@@ -219,28 +219,6 @@ const noBg = computed(() => {
   @media screen and (max-width: 768px) { font-size: 200%; }
 }
 
-:deep(.cta-button) {
-  display: inline-block;
-  background-color: var(--tertiary-color);
-  border: 2px solid var(--tertiary-color);
-  color: var(--base-color);
-  padding: var(--s0) var(--s2);
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
-  margin: var(--s1) 0;
-}
-
-:deep(.cta-button:hover) {
-  background-color: transparent;
-  color: var(--white-color);
-  border-color: var(--white-color);
-}
 
 :deep(.deadline) {
   font-size: 125%;
@@ -298,26 +276,6 @@ const noBg = computed(() => {
   margin: var(--s2) 0;
 }
 
-:deep(.faq-button) {
-  display: inline-block;
-  background-color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
-  color: var(--white-color);
-  padding: var(--s-1) var(--s1);
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
-}
-
-:deep(.faq-button:hover) {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
 .final-section {
   text-align: center;
   padding: var(--s2) 0;
@@ -327,26 +285,6 @@ const noBg = computed(() => {
   margin-top: var(--s2);
 }
 
-.final-apply-button {
-  display: inline-block;
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-  color: var(--white-color);
-  padding: var(--s0) var(--s2);
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
-}
-
-.final-apply-button:hover {
-  background-color: transparent;
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-}
 
 /* Roadmap Styles from roadmap.vue */
 .roadmap {
