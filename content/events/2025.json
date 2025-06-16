@@ -11,5 +11,54 @@
   "winners": {
     "overview": "<p>The 2025 Kluz Prize for PeaceTech winners will be announced in September 2025.</p><p class='apply-cta'><a href='/application' class='button' visual='primary'>Apply Now</a></p>"
   },
-  "jury": []
+  "jury": [
+    {
+      "name": "Andrew Schroeder",
+      "title": "Vice President of Research and Analysis at Direct Relief",
+      "image": "/assets/images/jury/andrew-schroeder.jpg",
+      "url": "https://www.linkedin.com/in/aischroeder"
+    },
+    {
+      "name": "Artur Kluz",
+      "title": "Founder & CEO of Kluz Ventures",
+      "image": "/assets/images/jury/artur-kluz.jpg",
+      "url": "https://www.linkedin.com/in/akluz"
+    },
+    {
+      "name": "Bradley Tusk",
+      "title": "Co-Founder & Managing Partner of Tusk Venture Partners, Founder of Tusk Strategies",
+      "image": "/assets/images/jury/bradley-tusk.jpg",
+      "url": "https://www.bradleytusk.com/"
+    },
+    {
+      "name": "Christine Keung",
+      "title": "General Partner of J2 Ventures",
+      "image": "/assets/images/jury/christine-keung.jpg",
+      "url": "https://www.linkedin.com/in/christinekeung/"
+    },
+    {
+      "name": "François Chopard",
+      "title": "CEO - Starburst Aerospace",
+      "image": "/assets/images/jury/francois-chopard.png",
+      "url": "https://www.linkedin.com/in/francoischopard"
+    },
+    {
+      "name": "Matthew Sanders",
+      "title": "CEO of Humanity 2.0 and Longbeard",
+      "image": "/assets/images/jury/matthew-sanders.jpg",
+      "url": "https://www.linkedin.com/in/matthew-harvey-sanders"
+    },
+    {
+      "name": "Michelle Volz",
+      "title": "Founder & Managing Partner of Pax Ventures",
+      "image": "/assets/images/jury/michelle-volz.jpg",
+      "url": "https://www.linkedin.com/in/michellevolz1"
+    },
+    {
+      "name": "Stefaan Verhulst",
+      "title": "Co-Founder & Chief Research & Development Officer of The GovLab ",
+      "image": "/assets/images/jury/stefaan-verhulst.jpg",
+      "url": "https://www.linkedin.com/in/stefaan-verhulst"
+    }
+  ]
 }
