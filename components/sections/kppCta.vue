@@ -32,7 +32,7 @@ const props = defineProps({
   content: {
     type: Object,
     default: {
-      brow: 'Kluz Prize for PeaceTech 2025',
+      brow: 'Kluz Prize for PeaceTech | 2025',
       title: 'Applications Are Now Open',
       text: 'Apply to the 2025 Kluz Prize for PeaceTech and gain recognition for your achievements and innovations in emerging technologies to advance peace and human dignity.',
       extra: 'Applications are due by 11:59 PM EDT on July 20th, 2025.',
