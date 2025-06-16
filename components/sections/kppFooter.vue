@@ -14,7 +14,7 @@
         <h4>Quick Links</h4>
         <ul class="stack">
           <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/events/2024">Event</NuxtLink></li>
+          <li><NuxtLink to="/events/2025">Event</NuxtLink></li>
           <li><NuxtLink to="/prizes/">Prizes</NuxtLink></li>
           <li><NuxtLink to="/updates/">Updates</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
@@ -23,6 +23,7 @@
       <nav class="menu menu-2 | stack">
         <h4>Applications</h4>
         <ul class="stack">
+          <li><NuxtLink to="/events/2025">2025 (Apply Now)</NuxtLink></li>
           <li><NuxtLink to="/events/2024">2024 (See Winners)</NuxtLink></li>
           <li><NuxtLink to="/events/2023">2023 (See Winners)</NuxtLink></li>
           <li><NuxtLink to="/events/2022">2022 (See Winners)</NuxtLink></li>

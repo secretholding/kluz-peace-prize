@@ -7,7 +7,7 @@
           <h2 class="title">{{ content.title }}</h2>
           <div class="margin-top:s1">
             <p>{{ content.text }}</p>
-            <p v-if="content.extra"><strong>{{ content.extra }}</strong></p>
+            <p v-if="content.extra" class="extra-text"><strong>{{ content.extra }}</strong></p>
           </div>
         </stack-l>
         <stack-l class="panel panel--action">
@@ -32,12 +32,13 @@ const props = defineProps({
   content: {
     type: Object,
     default: {
-      brow: 'Kluz Prize for PeaceTech 2024',
-      title: 'Meet the Winners',
-      text: 'Explore the groundbreaking innovations recognized at the 2024 Kluz Prize for PeaceTech.',
+      brow: 'Kluz Prize for PeaceTech | 2025',
+      title: 'Applications Are Now Open',
+      text: 'Apply to the 2025 Kluz Prize for PeaceTech and gain recognition for your achievements and innovations in emerging technologies to advance peace and human dignity.',
+      extra: 'Applications are due by 11:59 PM EDT on July 20th, 2025.',
       action: {
-        label: 'Learn More',
-        url: '/events/2024'
+        label: 'Apply Now',
+        url: '/events/2025'
       }
     }
   }
@@ -92,6 +93,10 @@ const isCurrentUrl = computed(() => {
     --space: var(--s1); 
     font-size: 125%;
     @media (max-aspect-ratio: 3/4) { font-size: 100%; }
+  }
+  
+  .extra-text {
+    margin-top: var(--s2);
   }
 }
 

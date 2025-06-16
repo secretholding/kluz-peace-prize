@@ -4,20 +4,20 @@
     <center-l size="wide">
       <ul class="roadmap">
         <li class="roadmap__item" active="true">
-          <h4>June 1<sup>st</sup>, 2024<span> | Applications Open</span></h4>
-          <p>Submit your application for the 2024 Kluz Prize for PeaceTech.</p>
+          <h4>Applications Are Now Open</h4>
+          <p>Submit your application for the 2025 Kluz Prize for PeaceTech.</p>
         </li>
         <li class="roadmap__item">
-          <h4>July 15<sup>th</sup>, 2024<span> | Applications Deadline</span></h4>
+          <h4>July 20<sup>th</sup>, 2025<span> | Application Deadline</span></h4>
           <p>Apply by 11:59 PM EDT</p>
         </li>
         <li class="roadmap__item">
-          <h4>September 6<sup>th</sup>, 2024<span> | Final Decision</span></h4>
+          <h4>Beginning of September, 2025<span> | Final Decision</span></h4>
           <p>Communication of the final decision to the winner(s) and invitation to the award ceremony</p>
         </li>
         <li class="roadmap__item">
-          <h4>September 20<sup>th</sup>, 2024 <span> | Award ceremony</span></h4>
-          <p>Winner will be honored at an award ceremony in New York City</p>
+          <h4>September 19<sup>th</sup>, 2025 <span> | Award ceremony</span></h4>
+          <p>Winner will be honored at an award ceremony</p>
         </li>
         <!-- <li class="roadmap__item">
           <h4>March, 2025 <span>| Winner’s official presentation</span></h4>

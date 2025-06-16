@@ -15,7 +15,7 @@
         </div>
       </transition-group>
     </div>
-    <div class="slider__nav">
+    <div class="slider__nav" v-if="slides.length > 1">
       <a v-for="i in slides.length" el="a" :index="i" @click="setActiveIndex(i)">
         <span class="icon" :active="i == activeIndex ? true : false">{{ i == activeIndex ? 'radio_button_checked' : 'radio_button_unchecked' }}</span>
       </a>
@@ -57,7 +57,7 @@ onMounted(() => {
     clearInterval(intervalId);
   };
 
-  startAnimation();
+  // startAnimation(); // Commented out for single slide
 
   const heroElement = document.querySelector('.slider__wrapper');
   if (heroElement) {
@@ -74,28 +74,39 @@ onBeforeUnmount(() => {
   clearInterval(intervalId);
 });
 
-let slides = [];
-const highlights = await queryContent('highlights').where({ event_year: { $exists: true } }).sort({ event_year: -1 }).find();
-highlights.forEach((hl) => {
-  slides = hl.winners.map((winner) => {
-    return {
-      slug: winner.slug,
-      brow: winner.brow,
-      title: winner.title,
-      path: `/prizes/${winner.slug}`, 
-      action: "Learn More",
-    }
-  });
-  slides.unshift({
-    slug: 'winners',
-    brow: hl.brow,
-    title: hl.title,
-    image: "/assets/images/kluz-prize-slide.jpg",
-    action: "Learn More",
-    path: `/events/${hl.event_year}` 
-  })
+// Comment out CMS query and use hardcoded slide instead
+// let slides = [];
+// const highlights = await queryContent('highlights').where({ event_year: { $exists: true } }).sort({ event_year: -1 }).find();
+// highlights.forEach((hl) => {
+//   slides = hl.winners.map((winner) => {
+//     return {
+//       slug: winner.slug,
+//       brow: winner.brow,
+//       title: winner.title,
+//       path: `/prizes/${winner.slug}`, 
+//       action: "Learn More",
+//     }
+//   });
+//   slides.unshift({
+//     slug: 'winners',
+//     brow: hl.brow,
+//     title: hl.title,
+//     image: "/assets/images/kluz-prize-slide.jpg",
+//     action: "Learn More",
+//     path: `/events/${hl.event_year}` 
+//   })
+// });
 
-});
+// Single hardcoded slide
+const slides = [
+  {
+    slug: 'apply-2025',
+    brow: 'Kluz Price for PeaceTech | 2025',
+    title: 'Calling All PeaceTech Innovators',
+    path: '/events/2025',
+    action: 'Apply Now'
+  }
+];
 
 // const slides = [
 //   {

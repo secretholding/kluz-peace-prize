@@ -3,7 +3,7 @@
   <kpp-hero height="auto" color="primary">
     <slot>
       <center-l size="wide">
-        <h2 class="text-align:center">Application for 2024</h2>
+        <h2 class="text-align:center">Application for 2025</h2>
       </center-l>
     </slot>
   </kpp-hero> 
@@ -16,8 +16,7 @@
             <kpp-field type="email" inputName="email" inputId="email" label="Email*" validate="required email" placeholder="" :errorMessage="errors.email" />
             <kpp-field type="text" inputName="applicant" inputId="applicant" label="Name of Applicant*" validate="required" placeholder="" :errorMessage="errors.applicant" />
             <kpp-field type="text" inputName="affiliation" inputId="affiliation" label="Affiliation*" validate="required" placeholder="" :errorMessage="errors.affiliation" />
-            <kpp-field type="text" inputName="location" inputId="location" label="Where is the project based?*" validate="required" placeholder="" :errorMessage="errors.location" />
-            <kpp-field type="url" inputName="link" inputId="link" label="Link to your project or research*" validate="required" placeholder="" :errorMessage="errors.link" />
+            <kpp-field type="text" inputName="location" inputId="location" label="Where is the project or research based?*" validate="required" placeholder="" :errorMessage="errors.location" />
             <kpp-textarea 
               ref="summary"
               label="Please provide a brief summary of your project or research.*" 
@@ -78,10 +77,40 @@
               :errorMessage="errors.collaboration"
             />
 
-            <p class="margin-bottom:s2"><strong class="color:primary">Do you have any pictures or videos that support making your technology come to life? Please email them to us at <a href="mailto:info@kluzprize.org" target="_blank" class="color:primary">info@kluzprize.org</a> with your name as the subject line.</strong></p>
+            <kpp-field type="url" inputName="link" inputId="link" label="Link to your project or research*" validate="required" placeholder="" :errorMessage="errors.link" />
+
+            <div class="radio-group margin-top:s1">
+              <label class="radio-label">If you are awarded the KluzPrize, would you be available to attend an awards ceremony in New York City on Friday, September 19th?*</label>
+              <div class="radio-options">
+                <label class="radio-option">
+                  <input type="radio" name="attendance" value="yes" id="attendance-yes" required>
+                  <span>Yes</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="attendance" value="no" id="attendance-no" required>
+                  <span>No</span>
+                </label>
+              </div>
+              <p v-if="errors.attendance" class="error-message">
+                <span class="material-symbols-outlined">error</span>
+                {{ errors.attendance }}
+              </p>
+            </div>
 
             <h3 visual="h1" class="margin-top:s1">Terms and Conditions</h3>
-            <p>By submitting this form, you are agreeing to the <a href="https://docs.google.com/document/d/1zla85Quk9FQqpZkUwpV2fSFwvFYHr-wkgydt-z3a4qk" target="_blank">Terms and Conditions</a>. The GovLab and its partners are committed to respecting your privacy. We abide by all the practices and principles outlined by New York University in its Digital Privacy Statement. For more information, please <a href="https://www.nyu.edu/footer/copyright-and-fair-use/digital-privacy-statement.html" target="_blank">review the full statement here</a>.</p>
+            <p>By submitting this form, you are agreeing to the <a href="https://docs.google.com/document/d/1zla85Quk9FQqpZkUwpV2fSFwvFYHr-wkgydt-z3a4qk" target="_blank">Terms and Conditions</a>. Please check the box below to confirm that you have read and agree to the terms and conditions.</p>
+            
+            <p class="checkbox-wrapper">
+              <label class="checkbox-label">
+                <input type="checkbox" name="terms" id="terms" required>
+                <span>I agree to the terms and conditions as they are outlined above.</span>
+              </label>
+              <span v-if="errors.terms" class="error-message">
+                <span class="material-symbols-outlined">error</span>
+                {{ errors.terms }}
+              </span>
+            </p>
+
             <kpp-button class="margin-top:s1" el="button" size="l" color="primary" visual="primary" @click.prevent="handleSubmit">Submit</kpp-button>
           </stack-l>
         </form>
@@ -108,6 +137,21 @@
   const appForm = ref()
   const handleSubmit = async () => {
     validateForm(appForm.value)
+    
+    // Check if attendance radio is selected
+    const attendanceChecked = appForm.value.querySelector('input[name="attendance"]:checked')
+    if (!attendanceChecked) {
+      hasErrors.value = true
+      errors.value.attendance = 'Please select an option'
+    }
+    
+    // Check if terms checkbox is checked
+    const termsCheckbox = appForm.value.querySelector('#terms')
+    if (!termsCheckbox.checked) {
+      hasErrors.value = true
+      errors.value.terms = 'You must agree to the terms and conditions'
+    }
+    
     document.getElementById('appForm').scrollIntoView()
     if (!hasErrors.value) { 
       await onSubmit(appForm.value)
@@ -131,5 +175,89 @@
 
 p a {
   text-decoration: underline;
+}
+
+/* Radio Button Styles */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.radio-label {
+  font-weight: 600;
+  margin-bottom: var(--s-2);
+}
+
+.radio-options {
+  display: flex;
+  gap: var(--s1);
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  cursor: pointer;
+  padding: var(--s-2);
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.radio-option:hover {
+  background-color: var(--hover-bg, #f5f5f5);
+  border-color: var(--primary-color, #007bff);
+}
+
+.radio-option input[type="radio"] {
+  margin: 0;
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"]:checked + span {
+  font-weight: 600;
+  color: var(--primary-color, #007bff);
+}
+
+.radio-option input[type="radio"]:checked ~ .radio-option {
+  border-color: var(--primary-color, #007bff);
+  background-color: var(--selected-bg, #f0f7ff);
+}
+
+.error-message {
+  color: var(--error-color, #d32f2f);
+  font-size: 0.875rem;
+  margin-top: var(--s-3);
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+
+.error-message .material-symbols-outlined {
+  font-size: 1.2rem;
+}
+
+/* Checkbox Styles */
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+
+.checkbox-label span {
+  flex: 1;
 }
 </style>
