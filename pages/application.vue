@@ -8,7 +8,7 @@
     </slot>
   </kpp-hero> 
     <kpp-base-section>
-      <center-l>
+      <center-l size="wide">
         <form id="appForm" ref="appForm">
           <stack-l>
             <p class="success-message" v-if="success"><span class="material-symbols-outlined">check</span>Application submitted successfully</p>
