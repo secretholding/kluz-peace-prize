@@ -98,7 +98,7 @@
             </div>
 
             <h3 visual="h1" class="margin-top:s1">Terms and Conditions</h3>
-            <p>By submitting this form, you are agreeing to the <a href="https://docs.google.com/document/d/1zla85Quk9FQqpZkUwpV2fSFwvFYHr-wkgydt-z3a4qk" target="_blank">Terms and Conditions</a>. Please check the box below to confirm that you have read and agree to the terms and conditions.</p>
+            <p>By submitting this form, you are agreeing to the <a href="https://docs.google.com/document/d/1r6WoQyFCJvFU9BslERkot4ERzq4HML0GqGCKIAY9GY0" target="_blank">Terms and Conditions</a>. Please check the box below to confirm that you have read and agree to the terms and conditions.</p>
             
             <p class="checkbox-wrapper">
               <label class="checkbox-label">
