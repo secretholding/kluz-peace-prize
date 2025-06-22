@@ -204,6 +204,12 @@ const noBg = computed(() => {
   padding: var(--s3);
   margin: calc(var(--s3) * -1);
   margin-bottom: var(--s3);
+  
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: var(--s-1);
+  }
 }
 
 :deep(.notice-content) {
