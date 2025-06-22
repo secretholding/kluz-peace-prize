@@ -11,7 +11,7 @@
     </center-l>
   </kpp-base-section> -->
 
-  <kpp-base-section v-if="event.description_html">
+  <kpp-base-section v-if="event.description_html" class="description-section">
     <center-l size="wide">
       <kpp-prose :html-content="event.description_html" />
     </center-l>
@@ -197,6 +197,13 @@ const noBg = computed(() => {
   --d: 16;
 }
 
+/* Description section to handle overflow */
+.description-section {
+  @media (max-width: 768px) {
+    overflow-x: hidden;
+  }
+}
+
 /* 2025 Application Styles */
 :deep(.application-notice) {
   background-color: var(--primary-color);
@@ -204,12 +211,6 @@ const noBg = computed(() => {
   padding: var(--s3);
   margin: calc(var(--s3) * -1);
   margin-bottom: var(--s3);
-  
-  @media (max-width: 768px) {
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: var(--s-1);
-  }
 }
 
 :deep(.notice-content) {
