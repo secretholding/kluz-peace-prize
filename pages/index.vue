@@ -28,7 +28,12 @@ const updatesHighlights = {
   }
 }
 let posts = {}
-const events = await queryContent('events').limit(2).find();
+// Get all events and sort by year descending
+const allEvents = await queryContent('events').sort({year: -1}).find();
+// Get current year
+const currentYear = new Date().getFullYear();
+// Filter out the most recent year and take only 2 events
+const events = allEvents.filter(event => event.year < currentYear).slice(0, 2);
 let groupedByYear = (events.reduce((grouped, event) => {
   const year = event.year; // replace 'year' with the actual attribute name in your event object
   grouped[year] = event;

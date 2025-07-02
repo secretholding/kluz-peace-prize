@@ -45,7 +45,7 @@
   <!-- Privacy Policy and Final CTA -->
   <kpp-base-section>
     <center-l size="wide" class="final-section">
-      <p>For information regarding privacy, please review the Kluz Prize's Privacy Policy <a href="/privacy-policy">here</a>.</p>
+      <kpp-prose><p>For information regarding privacy, please review the Kluz Prize's Privacy Policy <a href="/privacy-policy">here</a>.</p></kpp-prose>
       <div class="final-cta">
         <a href="/application">
           <kpp-button class="button" visual="primary" size="xl">Apply Now</kpp-button>

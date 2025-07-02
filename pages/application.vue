@@ -17,6 +17,8 @@
             <kpp-field type="text" inputName="applicant" inputId="applicant" label="Name of Applicant*" validate="required" placeholder="" :errorMessage="errors.applicant" />
             <kpp-field type="text" inputName="affiliation" inputId="affiliation" label="Affiliation*" validate="required" placeholder="" :errorMessage="errors.affiliation" />
             <kpp-field type="text" inputName="location" inputId="location" label="Where is the project or research based?*" validate="required" placeholder="" :errorMessage="errors.location" />
+            
+            <h3 class="margin-top:s1">Overview</h3>
             <kpp-textarea 
               ref="summary"
               label="Please provide a brief summary of your project or research.*" 

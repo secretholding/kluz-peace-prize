@@ -40,7 +40,7 @@
     </div>
 
     <p class="copyright | margin-top:s2">
-      <span>&copy; 2024 Kluz Prize for PeaceTech. All rights reserved.</span>
+      <span>&copy; {{ new Date().getFullYear() }} Kluz Prize for PeaceTech. All rights reserved.</span>
       <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
     </p> 
   </center-l>
