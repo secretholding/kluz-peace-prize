@@ -35,7 +35,21 @@ export default defineNuxtConfig({
         { name: "twitter:description", content: "Unlocking the Power of PeaceTech" },
         { name: "twitter:image", content: "/assets/images/og-image.jpg" }
       ],
-      script: [],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-F3H5C6TG39',
+          async: true
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-F3H5C6TG39');
+          `,
+          type: 'text/javascript'
+        }
+      ],
       link: [
         { rel: "preconnect", href: "https://use.typekit.net" },
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
