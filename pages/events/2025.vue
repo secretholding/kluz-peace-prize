@@ -23,11 +23,11 @@
       <h2 class="section-title">2025 Timeline</h2>
       <ul class="roadmap">
         <li class="roadmap__item" active="true">
-          <h4>Applications Are Now Open</h4>
+          <h4>Applications Open</h4>
           <p>Submit your application for the 2025 Kluz Prize for PeaceTech.</p>
         </li>
         <li class="roadmap__item">
-          <h4>July 20<sup>th</sup>, 2025<span> | Application Deadline</span></h4>
+          <h4>August 1<sup>st</sup>, 2025<span> | Application Deadline</span></h4>
           <p>Apply by 11:59 PM EDT</p>
         </li>
         <li class="roadmap__item">
