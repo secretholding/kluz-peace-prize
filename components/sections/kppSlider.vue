@@ -102,9 +102,9 @@ const slides = [
   {
     slug: 'apply-2025',
     brow: 'Kluz Price for PeaceTech | 2025',
-    title: 'Calling all PeaceTech Innovators',
+    title: 'Recognizing the Changemakers of Tomorrow',
     path: '/events/2025',
-    action: 'Apply Now'
+    action: 'Learn More'
   }
 ];
 

@@ -26,7 +26,7 @@
           <h4>Applications Open</h4>
           <p>Submit your application for the 2025 Kluz Prize for PeaceTech.</p>
         </li>
-        <li class="roadmap__item">
+        <li class="roadmap__item" active="true">
           <h4>August 1<sup>st</sup>, 2025<span> | Application Deadline</span></h4>
           <p>Apply by 11:59 PM EDT</p>
         </li>
@@ -46,11 +46,6 @@
   <kpp-base-section>
     <center-l size="wide" class="final-section">
       <kpp-prose><p>For information regarding privacy, please review the Kluz Prize's Privacy Policy <a href="/privacy-policy">here</a>.</p></kpp-prose>
-      <div class="final-cta">
-        <a href="/application">
-          <kpp-button class="button" visual="primary" size="xl">Apply Now</kpp-button>
-        </a>
-      </div>
     </center-l>
   </kpp-base-section>
 
