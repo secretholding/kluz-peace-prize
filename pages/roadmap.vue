@@ -7,11 +7,11 @@
           <h4>Applications Open</h4>
           <p>Submit your application for the 2025 Kluz Prize for PeaceTech.</p>
         </li>
-        <li class="roadmap__item">
+        <li class="roadmap__item" active="true">
           <h4>August 1<sup>st</sup>, 2025<span> | Application Deadline</span></h4>
           <p>Apply by 11:59 PM EDT</p>
         </li>
-        <li class="roadmap__item">
+        <li class="roadmap__item" active="true">
           <h4>Beginning of September, 2025<span> | Final Decision</span></h4>
           <p>Communication of the final decision to the winner(s) and invitation to the award ceremony</p>
         </li>

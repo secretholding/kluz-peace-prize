@@ -103,7 +103,7 @@ const slides = [
     slug: 'apply-2025',
     brow: 'Kluz Price for PeaceTech | 2025',
     title: 'Recognizing the Changemakers of Tomorrow',
-    path: '/events/2025',
+    path: 'https://www.kluzprize.org/updates/announcing-the-2025-kluz-prize-for-peacetech',
     action: 'Learn More'
   }
 ];

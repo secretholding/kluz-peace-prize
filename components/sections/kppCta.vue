@@ -37,7 +37,7 @@ const props = defineProps({
       text: 'Thank you to everyone who applied to the 2025 Kluz Prize for PeaceTech. Distinguished participants will be notified in September.',
       action: {
         label: 'Learn More',
-        url: '/events/2025'
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSeIgESzXqHlF38JhegxBtaJNXcul-UjQOiuuujw4e68N3D2Ug/viewform?usp=sf_link'
       }
     }
   }
