@@ -34,7 +34,7 @@ const props = defineProps({
     default: {
       brow: 'Kluz Prize for PeaceTech | 2025',
       title: 'Applications Closed',
-      text: 'Thank you to everyone who applied to the 2025 Kluz Prize for PeaceTech. Distinguished participants will be notified in September.',
+      text: 'Thank you to everyone who applied to the 2025 Kluz Prize for PeaceTech. Winners will be announced on September 19th, 2025 during the Award Ceremony in New York.',
       action: {
         label: 'Learn More',
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSeIgESzXqHlF38JhegxBtaJNXcul-UjQOiuuujw4e68N3D2Ug/viewform?usp=sf_link'
