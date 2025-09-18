@@ -69,7 +69,11 @@
               <span class="metrics__label">{{ i.label }}</span>
             </li>
           </ul>
-          <p v-if="winner.impact.metrics_source" class="metrics_source">Source: {{ winner.impact.metrics_source.label }}</p>
+          <p v-if="winner.impact.metrics_source && winner.impact.metrics_source[0]" class="metrics_source">
+            Source:
+            <a v-if="winner.impact.metrics_source[0].url" :href="winner.impact.metrics_source[0].url" target="_blank">{{ winner.impact.metrics_source[0].label }}</a>
+            <span v-else>{{ winner.impact.metrics_source[0].label }}</span>
+          </p>
           <p v-else class="metrics_source">Source: Provided in the interview above</p>
         </div>
       </center-l>
