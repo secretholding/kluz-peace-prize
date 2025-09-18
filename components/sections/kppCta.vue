@@ -32,12 +32,12 @@ const props = defineProps({
   content: {
     type: Object,
     default: {
-      brow: 'Kluz Prize for PeaceTech | 2025',
-      title: 'Meet the Winners',
-      text: 'Discover the innovators shaping the future of PeaceTech.',
+      brow: 'Kluz Prize for PeaceTech',
+      title: 'Stay Engaged',
+      text: 'Sign up to receive updates on the Kluz Prize for PeaceTech, upcoming opportunities, and future events.',
       action: {
-        label: 'Learn More',
-        url: '/events/2025'
+        label: 'Join Now',
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSeIgESzXqHlF38JhegxBtaJNXcul-UjQOiuuujw4e68N3D2Ug/viewform'
       }
     }
   }
