@@ -6,62 +6,61 @@
   "applicant": "Arvid Bell",
   "country": "United States",
   "year": 2025,
-  "order": 1,
-  "video": "eagle-a7-demo.mp4",
+  "order": 2,
+  "video": "https://vimeo.com/1089423077/088d8d22cc?fl=pl&fe=vl",
   "images": {
     "logo": "anadyr-horizon/anadyr-horizon-logo.png",
     "hero": "",
-    "ceremony": "aerobotics7/kluz-prize-aerobotics7-ak.jpg",
+    "ceremony": "",
     "impact": "",
-    "slider": [
-      "aerobotics-1.jpg",
-      "aerobotics-2.jpg",
-      "aerobotics-3.jpg",
-      "aerobotics-4.jpg",
-      "aerobotics-5.jpg"
-    ]
   },
   "quote": {
-    "text": "The Kluz Prize for PeaceTech has been a pivotal moment for Aerobotics7, helping us accelerate our mission to innovate in landmine detection and UXO removal. This recognition not only validates our work but also connects us with key partners in the PeaceTech movement, driving global impact.",
-    "cite": "Harshwardhan Zala - CEO & Co-Founder",
+    "text": "The Kluz Prize is catalyzing a global ecosystem of innovators using science and technology to prevent conflict.  We are proud to stand with the Kluz team at the frontier where technology and strategy decide the future.",
+    "cite": "Arvid Bell - Co-Founder & CEO",
     "image": ""
   },
   "impact": {
-    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>The EAGLE A7 system has the potential to drastically improve post-conflict recovery by accelerating the detection and removal of landmines and explosive remnants of war. Globally, the economic toll of landmine contamination is immense, with Ukraine alone facing an annual cost of $11.2 billion. Our technology can significantly reduce the time at least by 50X and resources required for traditional demining, addressing the $34.6 billion estimated cost of clearing landmines in conflict-affected regions. By deploying innovative AI-driven solutions, EAGLE A7 helps reclaim agricultural land, rebuild communities, and support displaced populations returning to their homes. This creates safer environments and drives long-term economic recovery, with wide-reaching benefits for local economies and global food security.</p>",
+    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Our co-founders have spent decades building tools for peace - often in places where it felt impossible. One led de-escalation interventions in Afghanistan and the Middle East. Another created cryptographic systems for nuclear disarmament. Another built the world’s largest open-source database on WMDs. Now it all converges in one engine. Anadyr Horizon is an impact multiplier - scaling decades of peacebuilding into a single platform for crisis prevention.</p>",
     "image": "",
     "metrics": [
       {
-        "label": "Detection accuracy in recent testing on relevant environments",
-        "value": "95%+"
+        "label": "Of combined scientific research across negotiation science, physics, and national security by Anadyr's co-founders",
+        "value": "100+ years"
       },
       {
-        "label": "Faster detection than manual methods",
-        "value": "50X"
+        "label": "Number of days in advance Anadyr predicted Russia's invasion of Ukraine, based on our Red Horizon prototype at Harvard",
+        "value": "75 days"
       },
       {
-        "label": "R&D hours invested",
-        "value": "12,500+"
+        "label": "Of possible futures simulated",
+        "value": "Millions"
       }
     ]
   },
   "people": [
     {
-      "name": "Harshwardhan Zala",
-      "title": "CEO & Co-Founder",
+      "name": "Dr. Arvid Bell",
+      "title": "Co-Founder & Chief Executive Officer",
       "bio": "",
-      "image": "/aerobotics7/harsh-zala.jpg"
+      "image": "/anadyr-horizon/arvid-bell.avif"
     },
     {
-      "name": "Urvashi Kikani",
-      "title": "CTO and Co-Founder",
+      "name": "Dr. Ferenc Dalnoki-Veress",
+      "title": "Co-Founder & Chief Scientific Officer",
       "bio": "",
-      "image": "/aerobotics7/urvashi.jpg"
+      "image": "/anadyr-horizon/ferenc-dalnoki-veress.avif"
+    },
+    {
+      "name": "Dr. William C. Potter",
+      "title": "Co-Founder & Senior Scientific Advisor",
+      "bio": "",
+      "image": "/anadyr-horizon/william-c-potter.avif"
     }
   ],
   "connect": {
     "message": "Contact Message",
     "label": "Visit website",
-    "url": "https://www.aerobotics7.com/"
+    "url": "https://www.anadyr-horizon.com/"
   },
-  "content_html": "<p>Aerobotics7 focuses on the detection and removal of landmines and unexploded ordnance (UXO) using advanced AI, sensor fusion, and autonomous systems. Our technology, EAGLE A7 is a drone-based system that can detect, track and help neutralize hidden threats such as landmines without risking human-lives on the field providing accurate, efficient and scalable solution to mitigate the risks posed by active and post-war threats, enhancing safety and freedom of movement.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>The EAGLE A7 project directly contributes to peacebuilding by addressing the urgent need for landmine and unexploded ordnance (UXO) detection and removal in post-conflict zones. By making these areas safe again, we enable displaced communities to return to their homes and restore vital agriculture and infrastructure. This accelerates development and rebuilds trust in conflict-torn regions, fostering long-term peace and stability. Our work helps reduce the dangers of explosive remnants of war, supporting recovery in regions such as Ukraine, where the aftermath of conflict continues to impact civilians.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>The EAGLE A7 project advances the PeaceTech ecosystem by combining AI/ML, autonomous systems and advanced sensor fusion for more effective landmine and UXO detection. Our approach is designed to complement existing demining efforts while offering a faster and safer solution for communities affected by war. By working with international demining organizations and governments, including Ukraine, we can provide valuable data and real-world application insights that contribute to global research and innovation in post-conflict recovery and safety technologies.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>The award funds will enable us to enhance the EAGLE A7 system’s adaptability across diverse and complex terrains and different kinds of modern threats found in Ukraine and other conflict-affected regions. It will help us refine the system’s AI models to handle such variabilities including soil types, weather conditions, and terrains. These expanded pilots will help us validate its performance on a broader scale, ensuring the technology can be deployed globally. Additionally, we plan to invest in improving the system’s real-time data processing capabilities to make it more versatile and user-friendly for field operators.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>We actively collaborate with international demining organizations, humanitarian agencies, and government bodies to address the critical issue of landmines. These partnerships provide us with invaluable insights into real-world field conditions, allowing us to tailor and improve our technology for practical, on-the-ground use. Our collaborations have also opened doors for pilot deployments in conflict zones, helping us to expand the reach and scope of our efforts. These relationships enable us to scale our impact while ensuring that local demining teams and affected communities directly benefit from our innovations.</p>"
+  "content_html": "<p>Anadyr Horizon is a venture-backed predictive intelligence company that builds decision infrastructure for the age of strategic surprise. Our Agentic Systems Intelligence (ASI) engine runs millions of high-fidelity simulations to surface hidden escalation pathways, geopolitical anomalies, and decision-maker patterns. We serve national security, finance, and insurance leaders who can't afford to be surprised.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>Anadyr Horizon provides novel insights into crisis signal prediction. Our North Star platform simulates actors under stress and deception to anticipate the signals that drive high-risk outcomes in volatile situations. This capability stress-tests peace strategies, reduces civilian risk, anticipates institutional failure, and times interventions. When real-world signals emerge, our clients' responses are already pre-positioned and outcomes mitigated.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>Our ASI technology is grounded in decades of research in physics, negotiation, and escalation modeling. Collectively, our founders have published 200+ scientific papers and 20+ books on topics from missile trajectories to terrorist decision-making.</p><p>With today's breakthroughs in AI and compute power, we've transformed that record into ASI - an operational platform delivering predictive decision infrastructure directly into boardrooms and situation rooms where it matters most.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>We're a SaaS AI company serving government and financial markets. The Kluz Price reminds us to stay mission-driven - ensuring peace-focused modeling for fragile conflict zones expands alongside high-revenue theaters like Europe and East Asia.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>At Anadyr, collaboration is our core. We co-develop with scientists, universities, diplomats, and intelligence leaders. Our investors join our off-sites, working shoulder-to-shoulder with our technical team. We're a hub where people, disciplines, and missions meet to shape better decisions. Because collaboration is the greatest human superpower.</p>"
 }

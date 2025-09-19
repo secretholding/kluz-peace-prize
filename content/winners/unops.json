@@ -2,11 +2,11 @@
   "prize": "Special Distinction for International Organization Advancing Peace",
   "title": "United Nations Office for Project Services",
   "slug": "unops",
-  "project_url": "https://www.commonspace.world/",
+  "project_url": "",
   "applicant": "Rory Collins",
   "country": "Afghanistan",
   "year": 2025,
-  "order": 1,
+  "order": 4,
   "video": "eagle-a7-demo.mp4",
   "images": {
     "logo": "aerobotics7/aerobotics-logo.png",
