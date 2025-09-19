@@ -7,7 +7,7 @@
   "country": "United States",
   "year": 2025,
   "order": 2,
-  "video": "https://vimeo.com/1089423077/088d8d22cc?fl=pl&fe=vl",
+  "vimeo_video": "https://player.vimeo.com/video/1089423077?h=088d8d22cc",
   "images": {
     "logo": "anadyr-horizon/anadyr-horizon-logo.png",
     "hero": "",
