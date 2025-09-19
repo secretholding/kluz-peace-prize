@@ -22,7 +22,7 @@
                   <img slot="image" :src="`${base_path}${i.image}`" alt="">
                 </template>
               </kpp-person>
-              <p class="text-align:center margin-top:s2">
+              <p v-if="winner.connect.url" class="text-align:center margin-top:s2">
                 <base-button size="l" color="primary" el="a" target="_blank" :href="winner.connect.url">{{
                   winner.connect.label }}</base-button>
               </p>
