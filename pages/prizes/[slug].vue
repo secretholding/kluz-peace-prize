@@ -22,7 +22,7 @@
                   <img slot="image" :src="`${base_path}${i.image}`" alt="">
                 </template>
               </kpp-person>
-              <p class="text-align:center margin-top:s2">
+              <p v-if="winner.connect.url" class="text-align:center margin-top:s2">
                 <base-button size="l" color="primary" el="a" target="_blank" :href="winner.connect.url">{{
                   winner.connect.label }}</base-button>
               </p>
@@ -32,10 +32,14 @@
       </center-l>
     </kpp-base-section>
 
-    <kpp-base-section v-if="winner.youtube_video || winner.video">
+    <kpp-base-section v-if="winner.youtube_video || winner.vimeo_video || winner.video">
       <center-l size="wide" class="width:100%">
         <div class="frame">
           <iframe v-if="winner.youtube_video" width="560" height="315" :src="winner.youtube_video" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <iframe v-else-if="winner.vimeo_video" width="560" height="315" :src="winner.vimeo_video" title="Vimeo video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -69,8 +73,11 @@
               <span class="metrics__label">{{ i.label }}</span>
             </li>
           </ul>
-          <p v-if="winner.impact.metrics_source" class="metrics_source">Source: <a
-              :href="winner.impact.metrics_source.url" target="_blank">{{ winner.impact.metrics_source.label }}</a></p>
+          <p v-if="winner.impact.metrics_source && winner.impact.metrics_source[0]" class="metrics_source">
+            Source:
+            <a v-if="winner.impact.metrics_source[0].url" :href="winner.impact.metrics_source[0].url" target="_blank">{{ winner.impact.metrics_source[0].label }}</a>
+            <span v-else>{{ winner.impact.metrics_source[0].label }}</span>
+          </p>
           <p v-else class="metrics_source">Source: Provided in the interview above</p>
         </div>
       </center-l>
@@ -143,8 +150,8 @@ const winner = await queryContent('winners').where({
 const headerContent = {
   brow: winner.prize  + ' | ' + winner.year,
   title: winner.title,
-  tagline: winner.country,
-  date: winner.applicant
+  tagline: winner.country
+  // date: winner.applicant
 }
 
 const hasImpact = computed(() => {

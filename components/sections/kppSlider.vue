@@ -75,38 +75,38 @@ onBeforeUnmount(() => {
 });
 
 // Comment out CMS query and use hardcoded slide instead
-// let slides = [];
-// const highlights = await queryContent('highlights').where({ event_year: { $exists: true } }).sort({ event_year: -1 }).find();
-// highlights.forEach((hl) => {
-//   slides = hl.winners.map((winner) => {
-//     return {
-//       slug: winner.slug,
-//       brow: winner.brow,
-//       title: winner.title,
-//       path: `/prizes/${winner.slug}`, 
-//       action: "Learn More",
-//     }
-//   });
-//   slides.unshift({
-//     slug: 'winners',
-//     brow: hl.brow,
-//     title: hl.title,
-//     image: "/assets/images/kluz-prize-slide.jpg",
-//     action: "Learn More",
-//     path: `/events/${hl.event_year}` 
-//   })
-// });
+let slides = [];
+const highlights = await queryContent('highlights').where({ event_year: { $exists: true } }).sort({ event_year: -1 }).find();
+highlights.forEach((hl) => {
+  slides = hl.winners.map((winner) => {
+    return {
+      slug: winner.slug,
+      brow: winner.brow,
+      title: winner.title,
+      path: `/prizes/${winner.slug}`, 
+      action: "Learn More",
+    }
+  });
+  slides.unshift({
+    slug: 'winners',
+    brow: hl.brow,
+    title: hl.title,
+    image: "/assets/images/kluz-prize-slide.jpg",
+    action: "Learn More",
+    path: `/events/${hl.event_year}` 
+  })
+});
 
 // Single hardcoded slide
-const slides = [
-  {
-    slug: 'apply-2025',
-    brow: 'Kluz Price for PeaceTech | 2025',
-    title: 'Recognizing the Changemakers of Tomorrow',
-    path: 'https://www.kluzprize.org/updates/announcing-the-2025-kluz-prize-for-peacetech',
-    action: 'Learn More'
-  }
-];
+// const slides = [
+//  {
+//    slug: 'apply-2025',
+//    brow: 'Kluz Price for PeaceTech | 2025',
+//    title: 'Recognizing the Changemakers of Tomorrow',
+//    path: 'https://www.kluzprize.org/updates/announcing-the-2025-kluz-prize-for-peacetech',
+//    action: 'Learn More'
+//  }
+// ];
 
 // const slides = [
 //   {

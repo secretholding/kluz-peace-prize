@@ -1,0 +1,59 @@
+{
+  "prize": "Special Distinction for International Organization Advancing Peace",
+  "title": "United Nations Office for Project Services",
+  "slug": "unops",
+  "project_url": "",
+  "applicant": "Rory Collins",
+  "country": "Afghanistan",
+  "year": 2025,
+  "order": 4,
+  "video": "ai-for-good-unops.mov",
+  "images": {
+    "logo": "unops/unops-logo.png",
+    "hero": "",
+    "ceremony": "",
+    "impact": ""
+  },
+  "quote": {
+    "text": "The Kluz Prize for PeaceTech highlights how innovation can directly save lives and restore communities. This recognition amplifies our work at UNOPS and accelerates the PeaceTech movement, showing how technology can be harnessed to build lasting peace.",
+    "cite": "Rory Collins - Information Management and Analytics Advisor",
+    "image": ""
+  },
+  "impact": {
+    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>The potential impact of Compass is profound: over 60 million people live under the threat of EO contamination, limiting their freedom of movement, safety, and economic recovery. By cutting false alarms by up to 50%, Compass accelerates land release, reduces clearance costs, and saves lives. Beyond immediate safety, it empowers communities with targeted risk education, enabling safe return to schools, farmland, and markets. Its scalable design positions it as a global public good for peace and resilience.</p>",
+    "image": "",
+    "metrics": [
+      {
+        "label": "Hazardous areas mapped with AI-driven risk models in Afghanistan pilot",
+        "value": "200+"
+      },
+      {
+        "label": "Increase in safe land released for community use compared to conventional planning methods",
+        "value": "15%"
+      },
+      {
+        "label": "Community members in high-risk areas received targeted risk education messages",
+        "value": "10,000+"
+      }
+    ],
+    "metrics_source": [
+      {
+        "label": "UNOPS / Compass Project Reports, 2025, Pilot deployment results validated by partner demining teams, UNMAS / UNOPS field engagement data"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Rory Collins",
+      "title": "Information Management and Analytics Advisor",
+      "bio": "",
+      "image": "/unops/rory-collins.jpg"
+    }
+  ],
+  "connect": {
+    "message": "Contact Message",
+    "label": "Visit website",
+    "url": ""
+  },
+  "content_html": "<p>The threat of explosive ordnance (EO) contamination impacts 60 million people, with current clearance methods being so slow and costly it could take over a millennium to demine the planet. This reality demands innovative, evidence-based approaches to make humanitarian mine action (HMA) safer and more efficient. Our project, the \"Compass\" toolkit, is a modular AI system designed to meet this urgent need by more effectively identifying and prioritizing hazardous areas.</p><p>The toolkit has three integrated components. First, a data fusion module ingests and standardizes diverse inputs—from military records to community information—into a unified dataset. Second, an interpretable AI prediction engine uses deep learning to generate highly accurate risk maps of EO contamination, significantly reducing uncertainty. In our results, this approach reduced false alarms during clearance operations by up to 50%. Finally, an Explosive Ordnance Risk Education (EORE) prioritization module translates these risk predictions into targeted educational interventions, helping keep communities safe even before clearance teams arrive.</p><p>By establishing a continuous feedback loop where field data enhances model accuracy, Compass fundamentally transforms HMA planning. It bridges the critical gap between initial assessment and clearance operations, accelerating the return of safe land to communities and shifting the operational paradigm from reactive response to proactive prevention.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>The Compass toolkit strengthens peacebuilding by reducing the risks posed by explosive ordnance (EO), which perpetuates fear, displacement, and economic stagnation in conflict-affected areas. By accelerating clearance and guiding risk education, Compass helps restore access to land, infrastructure, and livelihoods. This not only fosters community safety but also builds trust, reduces tensions, and creates the foundations for post-conflict recovery and durable peace.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>Compass advances PeaceTech by merging AI, geospatial intelligence, and humanitarian operations into a scalable, evidence-based system. It fills a critical research gap by demonstrating how interpretable AI can guide life-saving clearance activities while remaining transparent for field operators. By building bridges between cutting-edge data science and grassroots humanitarian mine action, Compass shows how PeaceTech can transform not just digital security, but physical safety in fragile environments.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>With Kluz Prize support, Compass can expand beyond pilot deployments in Afghanistan to additional EO-affected countries. Funds will allow us to strengthen multilingual interfaces, enhance the risk education module, and integrate near-real-time satellite imagery. This will make Compass more adaptable to different conflict and post-conflict contexts, ensuring faster scale-up and enabling global humanitarian actors to deploy more effective, technology-enabled responses.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>Compass is co-developed with humanitarian operators, researchers, and technology partners. By aligning AI innovation with UNOPS’ global mandate and working alongside national authorities, NGOs, and academic institutions like MIT, we maximize real-world applicability and impact.</p>"
+}

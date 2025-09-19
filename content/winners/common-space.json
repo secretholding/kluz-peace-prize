@@ -1,0 +1,70 @@
+{
+  "prize": "Kluz Prize for PeaceTech",
+  "title": "Common Space",
+  "slug": "common-space",
+  "project_url": "https://www.commonspace.world/",
+  "applicant": "Rhiannan Price",
+  "country": "United States",
+  "year": 2025,
+  "order": 1,
+  "video": "",
+  "images": {
+    "logo": "common-space/common-space-logo.png",
+    "hero": "",
+    "ceremony": "",
+    "impact": "",
+    "slider": [
+      "common-space-1.jpg",
+      "common-space-2.jpg",
+      "common-space-3.jpg"
+    ]
+  },
+  "quote": {
+    "text": "The Kluz Prize for PeaceTech affirms that peace deserves bold infrastructure, not just incremental fixes. For Common Space, this recognition helps catalyze a movement to repurpose satellites as tools for dignity, protection, and peace.",
+    "cite": "Rhiannan Price - Co-Founder",
+    "image": ""
+  },
+  "impact": {
+    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Our satellite mission offers systemic change: transforming restricted, militarized imagery into an open public good. Communities in conflict zones will gain the ability to verify truth and demand accountability; journalists will access trusted evidence; responders will map damage and deliver aid faster. Following humanitarian principles to build this satellite mission, we shift power to local actors, improving lives at scale through transparency, resilience, and protection. This paradigm shift will make satellites a tool for peace, not surveillance and control.</p>",
+    "image": "",
+    "metrics": [
+      {
+        "label": "Organizations engaged in global needs assessment for humanitarian satellite requirements",
+        "value": "85+"
+      },
+      {
+        "label": "Of community respondents supporting an independent, humanitarian satellite mission",
+        "value": "100%"
+      },
+      {
+        "label": "People living in countries affected by fragility, conflict or violence who can benefit from a satellite for peace",
+        "value": "2 Billion"
+      }
+    ],
+    "metrics_source": [
+      {
+        "label": "Common Space Needs Assessment, 2025 & World Bank"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Rhiannan Price",
+      "title": "Co-Founder",
+      "bio": "",
+      "image": "/common-space/rhiannan-price.jpg"
+    },
+    {
+      "name": "Bill Greer",
+      "title": "Co-Founder",
+      "bio": "",
+      "image": "/common-space/bill-greer.jpg"
+    }
+  ],
+  "connect": {
+    "message": "Contact Message",
+    "label": "Visit website",
+    "url": "https://www.commonspace.world/"
+  },
+  "content_html": "<p>​​Common Space is building the first independent, community-tasked satellite mission dedicated to peace and humanitarian action. Our mission will deliver trusted, open-access imagery where it matters most: empowering humanitarians and communities to act, advocate, and respond in the moments that matter most. This paradigm shift tackles decades of information asymmetries, supporting communities as they verify truth, demand accountability, and build more resilient societies.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>Common Space strengthens peacebuilding by breaking data monopolies that often obscure crises or fuel disinformation. By providing open, high-resolution imagery over fragile and conflict-affected regions, our mission equips local responders, journalists, and human rights defenders with the evidence they need to document abuses, negotiate safe passage, and deliver life-saving aid. Access to timely, trusted data empowers communities to resolve conflict with transparency and accountability at the core.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>Our work expands PeaceTech by introducing the first community-governed space infrastructure for humanitarian action. While most PeaceTech relies on adapting existing data sources, Common Space addresses the structural barrier of access itself. We complement existing research and tools by ensuring the underlying imagery is open, ethical, and reliable. This creates a foundation for AI, civic tech, and human rights platforms to scale their impact with data rooted in trust and humanitarian principles.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>Award funds will accelerate our transition from needs assessment to mission design. Specifically, we will produce an open report synthesizing insights from 85+ organizations, develop detailed technical requirements for the satellite, and produce case studies on successful public-benefit missions. Funding will also support the design of an equitable tasking and governance model, broadening our pilot into a scalable global effort with direct pathways to launch.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>Common Space is co-designed with 85+ partners across humanitarian response, journalism, and civil society. By engaging a diverse coalition early, we unlock shared governance, build trust across sectors, and ensure the mission directly reflects user needs and values.</p>"
+}
