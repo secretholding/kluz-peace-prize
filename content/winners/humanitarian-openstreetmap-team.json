@@ -6,62 +6,69 @@
   "applicant": "Jessie Pechmann",
   "country": "Global",
   "year": 2025,
-  "order": 1,
-  "video": "eagle-a7-demo.mp4",
+  "order": 3,
+  "video": "",
   "images": {
-    "logo": "aerobotics7/aerobotics-logo.png",
+    "logo": "humanitarian-openstreetmap-team/humanitarian-openstreetmap-team-logo.png",
     "hero": "",
-    "ceremony": "aerobotics7/kluz-prize-aerobotics7-ak.jpg",
+    "ceremony": "",
     "impact": "",
     "slider": [
-      "aerobotics-1.jpg",
-      "aerobotics-2.jpg",
-      "aerobotics-3.jpg",
-      "aerobotics-4.jpg",
-      "aerobotics-5.jpg"
+      "humanitarian-openstreetmap-team-1.jpg",
+      "humanitarian-openstreetmap-team-2.png",
+      "humanitarian-openstreetmap-team-3.jpg",
+      "humanitarian-openstreetmap-team-4.jpg"
     ]
   },
   "quote": {
-    "text": "The Kluz Prize for PeaceTech has been a pivotal moment for Aerobotics7, helping us accelerate our mission to innovate in landmine detection and UXO removal. This recognition not only validates our work but also connects us with key partners in the PeaceTech movement, driving global impact.",
-    "cite": "Harshwardhan Zala - CEO & Co-Founder",
+    "text": "We are honored to be recognized by the Kluz Prize for linking real people to community maps through open source technology, raising awareness of conflict impacts, and supporting rebuilding efforts.",
+    "cite": "Jessie Pechmann - Humanitarian GIS & Data Protection Lead",
     "image": ""
   },
   "impact": {
-    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>The EAGLE A7 system has the potential to drastically improve post-conflict recovery by accelerating the detection and removal of landmines and explosive remnants of war. Globally, the economic toll of landmine contamination is immense, with Ukraine alone facing an annual cost of $11.2 billion. Our technology can significantly reduce the time at least by 50X and resources required for traditional demining, addressing the $34.6 billion estimated cost of clearing landmines in conflict-affected regions. By deploying innovative AI-driven solutions, EAGLE A7 helps reclaim agricultural land, rebuild communities, and support displaced populations returning to their homes. This creates safer environments and drives long-term economic recovery, with wide-reaching benefits for local economies and global food security.</p>",
+    "description_html": "<h4>What is the potential of your work for widespread impact? How do you meaningfully improve the lives of people?</h4><p>Creating data on a map reconnects people to their home: an OSM contributor from the Sudanese diaspora said, \"As someone who left [Sudan] at a young age because of the war, I didn't get to see my home, so participating in this project helped me see where I came from. It gave me a sense of comfort\".</p><p>The data produced also is sometimes the only accessible pre-conflict reference to inform where people lived. When the pre-conflict record comes from crowdsourcing with affected communities, it is more representative, leading to more accurate damage assessments and context appropriate planning and coordination.</p>",
     "image": "",
     "metrics": [
       {
-        "label": "Detection accuracy in recent testing on relevant environments",
-        "value": "95%+"
+        "label": "OpenStreetMap Edits",
+        "value": "5 Million"
       },
       {
-        "label": "Faster detection than manual methods",
-        "value": "50X"
+        "label": "OpenStreetMap Contributors",
+        "value": "7,000"
       },
       {
-        "label": "R&D hours invested",
-        "value": "12,500+"
+        "label": "Open dataset downloads (2024-2025)",
+        "value": "6,850"
       }
+    ],
+    "metrics_source": [
+      {
+        "url": "https://stats.now.ohsome.org/",
+        "label": "ohsome"
+      },
+      {
+        "url": "https://stats.now.ohsome.org/",
+        "label": "ohsome"
+      },
+      {
+        "url": "https://hotosm.github.io/raw-data-api-metrics/",
+        "label": "Raw Data Metrics"
+      },
     ]
   },
   "people": [
     {
-      "name": "Harshwardhan Zala",
-      "title": "CEO & Co-Founder",
+      "name": "Jessie Pechmann",
+      "title": "Humanitarian GIS & Data Protection Lead",
       "bio": "",
-      "image": "/aerobotics7/harsh-zala.jpg"
-    },
-    {
-      "name": "Urvashi Kikani",
-      "title": "CTO and Co-Founder",
-      "bio": "",
-      "image": "/aerobotics7/urvashi.jpg"
+      "image": "/humanitarian-openstreetmap-team/jessie-pechmann.jpg"
     }
   ],
   "connect": {
     "message": "Contact Message",
     "label": "Visit website",
-    "url": "https://www.aerobotics7.com/"
+    "url": "https://www.hotosm.org/programs/conflict-displacement"
   },
-  "content_html": "<p>Aerobotics7 focuses on the detection and removal of landmines and unexploded ordnance (UXO) using advanced AI, sensor fusion, and autonomous systems. Our technology, EAGLE A7 is a drone-based system that can detect, track and help neutralize hidden threats such as landmines without risking human-lives on the field providing accurate, efficient and scalable solution to mitigate the risks posed by active and post-war threats, enhancing safety and freedom of movement.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>The EAGLE A7 project directly contributes to peacebuilding by addressing the urgent need for landmine and unexploded ordnance (UXO) detection and removal in post-conflict zones. By making these areas safe again, we enable displaced communities to return to their homes and restore vital agriculture and infrastructure. This accelerates development and rebuilds trust in conflict-torn regions, fostering long-term peace and stability. Our work helps reduce the dangers of explosive remnants of war, supporting recovery in regions such as Ukraine, where the aftermath of conflict continues to impact civilians.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>The EAGLE A7 project advances the PeaceTech ecosystem by combining AI/ML, autonomous systems and advanced sensor fusion for more effective landmine and UXO detection. Our approach is designed to complement existing demining efforts while offering a faster and safer solution for communities affected by war. By working with international demining organizations and governments, including Ukraine, we can provide valuable data and real-world application insights that contribute to global research and innovation in post-conflict recovery and safety technologies.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>The award funds will enable us to enhance the EAGLE A7 system’s adaptability across diverse and complex terrains and different kinds of modern threats found in Ukraine and other conflict-affected regions. It will help us refine the system’s AI models to handle such variabilities including soil types, weather conditions, and terrains. These expanded pilots will help us validate its performance on a broader scale, ensuring the technology can be deployed globally. Additionally, we plan to invest in improving the system’s real-time data processing capabilities to make it more versatile and user-friendly for field operators.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>We actively collaborate with international demining organizations, humanitarian agencies, and government bodies to address the critical issue of landmines. These partnerships provide us with invaluable insights into real-world field conditions, allowing us to tailor and improve our technology for practical, on-the-ground use. Our collaborations have also opened doors for pilot deployments in conflict zones, helping us to expand the reach and scope of our efforts. These relationships enable us to scale our impact while ensuring that local demining teams and affected communities directly benefit from our innovations.</p>"
+  "content_html": "<p>The Conflict & Displacement Program uses crowdsourcing with OpenStreetMap (OSM) and other open tools to locate infrastructure and create a baseline map pre-conflict, helping to better track structural impacts of war, and inform recovery needs. We navigate the challenges of collecting data in unstable contexts through flexible remote methods, conducting group “Mapathons” and other initiatives virtually or from safe locations with local open data champions and supportive global OSM experts.</p><h4>How does your project support peacebuilding and/or conflict resolution efforts in the context of a humanitarian crisis or developmental context?</h4><p>Crowdsourced infrastructure data underpins equitable rebuilding and long-term stability by providing representative pre-conflict baselines that help identify both what has been lost and what remains. Comprehensive building footprints ensure that all people affected by conflict are recognized, while mapping heritage sites, schools, and community centers helps preserve identity, reconnect displaced communities, and prioritize what matters most to those rebuilding their lives, strengthening social cohesion and laying the groundwork for sustainable recovery.</p><h4>In what ways does your project contribute to the existing PeaceTech ecosystem and research efforts in a compelling way?</h4><p>PeaceTech requires input from real people, and we are setting the precedent for people-based data with open tools, workflows, and a community of practice in conflict. OSM's neutrality and transparency make it an impactful resource for building trust and fostering collaboration with conflict affected communities.</p><p>The data is invaluable. OSM mapped 65%+ more buildings in some areas with better coverage than machine learning models. Community-driven information on basic services, key cultural sites, and home landscapes is more complete, leading to better informed stabilization activities to rebuild.</p><h4>With the award funds, how would you expand the scope and applicability of your project or research beyond its initial pilot?</h4><p>After our initial success crowdsourcing infrastructure baselines in Gaza, Lebanon, Myanmar, and Sudan, we aim to build on partnerships with local OSM champions and diaspora groups. Our next steps include funding local mappers and advancing replicable, innovative AI-enabled data methods to strengthen OSM and support recovery and resilience. Multilingual datasets and culture-focused sites remain a priority, and we plan to create iterative mapping processes with open-source intelligence to map heritage sites, community centers, and schools, vital anchors of identity in early recovery.</p><h4>How does your work leverage collaborations and partnerships to unlock new opportunities and maximize impact?</h4><p>The Program connects local actors with international networks, fostering collaboration around shared data needs with open tools. By linking priorities across groups such as OSM communities, DDMG, and humanitarian IMWGs, crowdsourcing impact is strengthened through solidarity.</p>"
 }
