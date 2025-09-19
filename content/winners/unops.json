@@ -7,14 +7,12 @@
   "country": "Afghanistan",
   "year": 2025,
   "order": 4,
-  "video": "unops/ai-for-good-unops.mov",
+  "video": "ai-for-good-unops.mov",
   "images": {
     "logo": "unops/unops-logo.png",
     "hero": "",
     "ceremony": "",
-    "impact": "",
-    "slider": [
-    ]
+    "impact": ""
   },
   "quote": {
     "text": "The Kluz Prize for PeaceTech highlights how innovation can directly save lives and restore communities. This recognition amplifies our work at UNOPS and accelerates the PeaceTech movement, showing how technology can be harnessed to build lasting peace.",
