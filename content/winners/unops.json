@@ -24,14 +24,6 @@
     "image": "",
     "metrics": [
       {
-        "label": "People live under threat of explosive ordnance worldwide",
-        "value": "60+ million"
-      },
-      {
-        "label": "Reduction in false alarms in clearance operations in Compass pilot testing",
-        "value": "Up to 50%"
-      },
-      {
         "label": "Hazardous areas mapped with AI-driven risk models in Afghanistan pilot",
         "value": "200+"
       },
@@ -46,7 +38,7 @@
     ],
     "metrics_source": [
       {
-        "label": "Landmine Monitor 2024 (ICBL-CMC), UNOPS internal field trial data, 2025, UNOPS / Compass Project Reports, 2025, Pilot deployment results validated by partner demining teams, UNMAS / UNOPS field engagement data"
+        "label": "UNOPS / Compass Project Reports, 2025, Pilot deployment results validated by partner demining teams, UNMAS / UNOPS field engagement data"
       }
     ]
   },

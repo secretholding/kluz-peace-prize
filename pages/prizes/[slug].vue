@@ -150,8 +150,8 @@ const winner = await queryContent('winners').where({
 const headerContent = {
   brow: winner.prize  + ' | ' + winner.year,
   title: winner.title,
-  tagline: winner.country,
-  date: winner.applicant
+  tagline: winner.country
+  // date: winner.applicant
 }
 
 const hasImpact = computed(() => {
