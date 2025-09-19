@@ -44,16 +44,7 @@
     ],
     "metrics_source": [
       {
-        "url": "https://stats.now.ohsome.org/",
-        "label": "ohsome"
-      },
-      {
-        "url": "https://stats.now.ohsome.org/",
-        "label": "ohsome"
-      },
-      {
-        "url": "https://hotosm.github.io/raw-data-api-metrics/",
-        "label": "Raw Data Metrics"
+        "label": "https://stats.now.ohsome.org/ & https://hotosm.github.io/raw-data-api-metrics/"
       }
     ]
   },
